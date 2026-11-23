@@ -1,7 +1,8 @@
 /**
- * 対象の都市（人口 100 万人以上）。東京は 23 区（特別区）を 1 つの都市として扱う。
+ * 対象の都市。人口 100 万人以上の 12 都市（東京は 23 区＝特別区を 1 つの都市として扱う）に、
+ * 観光・出張・空港の拠点として作者が選んだ都市（那覇・熊本・千歳・静岡・金沢）を加えている。
  * 緯度・経度は、ホテルが集まる中心部（中継サーバーが楽天トラベルを半径 3km で検索する中心）。
- * worker/src/cities.js と id・緯度・経度をそろえる。
+ * worker/src/cities.js と id・緯度・経度をそろえる。並びは北から（一覧の順）
  */
 export interface City {
   id: CityId
@@ -12,7 +13,7 @@ export interface City {
   /** 人口（万人、おおよそ） */
   pop: number
   /**
-   * 全国表示の時に、顔のアイコンを本来の位置からずらす量（px）。首都圏・関西は都市が近く、重なるため。
+   * 全国表示の時に、顔のアイコンを本来の位置からずらす量（px）。首都圏・関西などは都市が近く、重なるため。
    * 地図を拡大すると、ずらす量を小さくする（JapanMap.tsx）
    */
   offset: [number, number]
@@ -27,17 +28,22 @@ export interface City {
 
 export type CityId =
   | 'sapporo'
+  | 'chitose'
   | 'sendai'
   | 'saitama'
   | 'tokyo'
   | 'kawasaki'
   | 'yokohama'
+  | 'kanazawa'
+  | 'shizuoka'
   | 'nagoya'
   | 'kyoto'
   | 'osaka'
   | 'kobe'
   | 'hiroshima'
   | 'fukuoka'
+  | 'kumamoto'
+  | 'naha'
 
 export const CITIES: City[] = [
   {
@@ -47,11 +53,24 @@ export const CITIES: City[] = [
     lat: 43.0618,
     lng: 141.3545,
     pop: 196,
-    offset: [0, 0],
+    offset: [-24, -26],
     base: 0,
     rakutenPref: 'hokkaido',
     jalanPref: '010000',
-    near: [],
+    near: ['chitose'],
+  },
+  {
+    id: 'chitose',
+    name: { ja: '千歳', en: 'Chitose' },
+    pref: { ja: '北海道', en: 'Hokkaido' },
+    lat: 42.8195,
+    lng: 141.652,
+    pop: 10,
+    offset: [30, 30],
+    base: -0.5,
+    rakutenPref: 'hokkaido',
+    jalanPref: '010000',
+    near: ['sapporo'],
   },
   {
     id: 'sendai',
@@ -73,7 +92,7 @@ export const CITIES: City[] = [
     lat: 35.9064,
     lng: 139.6237,
     pop: 135,
-    offset: [-34, -46],
+    offset: [12, -56],
     base: -0.5,
     rakutenPref: 'saitama',
     jalanPref: '110000',
@@ -119,13 +138,39 @@ export const CITIES: City[] = [
     near: ['tokyo', 'kawasaki'],
   },
   {
+    id: 'kanazawa',
+    name: { ja: '金沢', en: 'Kanazawa' },
+    pref: { ja: '石川県', en: 'Ishikawa' },
+    lat: 36.57,
+    lng: 136.653,
+    pop: 46,
+    offset: [14, -52],
+    base: 0.5,
+    rakutenPref: 'ishikawa',
+    jalanPref: '170000',
+    near: [],
+  },
+  {
+    id: 'shizuoka',
+    name: { ja: '静岡', en: 'Shizuoka' },
+    pref: { ja: '静岡県', en: 'Shizuoka' },
+    lat: 34.9717,
+    lng: 138.389,
+    pop: 68,
+    offset: [4, 50],
+    base: -0.5,
+    rakutenPref: 'shizuoka',
+    jalanPref: '220000',
+    near: [],
+  },
+  {
     id: 'nagoya',
     name: { ja: '名古屋', en: 'Nagoya' },
     pref: { ja: '愛知県', en: 'Aichi' },
     lat: 35.1702,
     lng: 136.8955,
     pop: 233,
-    offset: [24, 54],
+    offset: [0, 0],
     base: 0,
     rakutenPref: 'aichi',
     jalanPref: '230000',
@@ -138,7 +183,7 @@ export const CITIES: City[] = [
     lat: 34.9965,
     lng: 135.7605,
     pop: 144,
-    offset: [0, -50],
+    offset: [-14, -50],
     base: 0.5,
     rakutenPref: 'kyoto',
     jalanPref: '260000',
@@ -190,10 +235,36 @@ export const CITIES: City[] = [
     lat: 33.5905,
     lng: 130.4103,
     pop: 166,
-    offset: [0, 0],
+    offset: [-26, -22],
     base: 0.5,
     rakutenPref: 'fukuoka',
     jalanPref: '400000',
+    near: [],
+  },
+  {
+    id: 'kumamoto',
+    name: { ja: '熊本', en: 'Kumamoto' },
+    pref: { ja: '熊本県', en: 'Kumamoto' },
+    lat: 32.798,
+    lng: 130.7,
+    pop: 74,
+    offset: [20, 30],
+    base: 0,
+    rakutenPref: 'kumamoto',
+    jalanPref: '430000',
+    near: [],
+  },
+  {
+    id: 'naha',
+    name: { ja: '那覇', en: 'Naha' },
+    pref: { ja: '沖縄県', en: 'Okinawa' },
+    lat: 26.2148,
+    lng: 127.6792,
+    pop: 32,
+    offset: [0, 0],
+    base: 0.5,
+    rakutenPref: 'okinawa',
+    jalanPref: '470000',
     near: [],
   },
 ]

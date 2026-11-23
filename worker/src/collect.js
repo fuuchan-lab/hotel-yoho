@@ -3,9 +3,9 @@ import { CITIES } from './cities.js'
 
 export const HORIZON_DAYS = 61
 /** 1 回の実行で検索する数（外部リクエストは 1 回の実行で 50 件まで） */
-export const PER_RUN = 20
+export const PER_RUN = 24
 /** そのうち、直近 1 週間を優先して検索する数 */
-export const NEAR_PER_RUN = 4
+export const NEAR_PER_RUN = 5
 export const NEAR_DAYS = 7
 
 export function todayJst(now = Date.now()) {

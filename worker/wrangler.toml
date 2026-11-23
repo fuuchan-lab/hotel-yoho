@@ -7,7 +7,7 @@ compatibility_date = "2026-10-01"
 binding = "HOTEL"
 id = "99e23e9743724865a536393d528beb9d"
 
-# 5 分ごとに楽天トラベルを 20 件ずつ検索する（index.js の scheduled）。12 都市 × 61 日を約 4 時間で一巡し、直近 1 週間は約 2 時間ごと
+# 5 分ごとに楽天トラベルを 24 件ずつ検索する（index.js の scheduled）。17 都市 × 61 日を約 4.5 時間で一巡し、直近 1 週間は約 2 時間ごと
 [triggers]
 crons = ["*/5 * * * *"]
 
@@ -17,4 +17,4 @@ crons = ["*/5 * * * *"]
 # アプリに「許可されたWebサイト」を登録した場合は、同じ URL を vars に入れる（Referer として送る）
 # ローカルでは worker/.dev.vars に RAKUTEN_APP_ID=... と書く（コミットしない）
 [vars]
-RAKUTEN_REFERER = "https://fuuchan-lab.github.io/hotel-yoho/"
+RAKUTEN_REFERER = "https://hotel-yoho.doitmyself.net/"

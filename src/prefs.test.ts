@@ -30,3 +30,12 @@ test('新しいほうを残す', () => {
 test('泊ごとの日付（月をまたぐ）', () => {
   assert.deepEqual(tripNights({ id: 'x', city: 'tokyo', checkin: '2026-12-30', nights: 3, note: '' }), ['2026-12-30', '2026-12-31', '2027-01-01'])
 })
+
+test('言語・配色も残す（知らない値は既定に）', () => {
+  const p = normalizePrefs({ lang: 'en', theme: 'dark' })
+  assert.equal(p.lang, 'en')
+  assert.equal(p.theme, 'dark')
+  const q = normalizePrefs({ lang: 'fr', theme: 'pink' })
+  assert.equal(q.lang, null)
+  assert.equal(q.theme, 'auto')
+})

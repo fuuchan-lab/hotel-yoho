@@ -359,6 +359,22 @@ button.link.danger {
   align-items: center;
   gap: 10px;
   min-width: 0;
+  /* 押すとホームへ（ボタンの見た目を消す） */
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  color: inherit;
+}
+
+.brand:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+
+.brand .eyebrow {
+  display: block;
 }
 
 .brand-logo {
@@ -613,6 +629,68 @@ button.link.danger {
 .date-chip[aria-pressed='true'] {
   border: 2px solid var(--accent);
   background: var(--info-bg);
+}
+
+.strip-name {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--accent-text);
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 1px 10px;
+}
+
+/* 沖縄の囲みは左上（排他的経済水域の外で、白く隠れている所）に置き、九州に重ねない */
+.okinawa-inset {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 4px 10px 6px;
+  border: 1.5px dashed #3d6fb6;
+  border-radius: 10px;
+  background: rgba(190, 210, 255, 0.92);
+}
+
+.okinawa-title {
+  font-size: 10px;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+.okinawa-inset.selected {
+  border-style: solid;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+:root[data-theme='dark'] .okinawa-inset {
+  background: rgba(26, 35, 50, 0.92);
+}
+
+:root[data-theme='dark'] .okinawa-title {
+  color: #bfdbfe;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .okinawa-inset {
+    background: rgba(26, 35, 50, 0.92);
+  }
+  :root:not([data-theme]) .okinawa-title {
+    color: #bfdbfe;
+  }
+}
+
+.city-pin.selected .pin-bubble .face {
+  filter: drop-shadow(0 0 0 #fff) drop-shadow(0 0 4px var(--accent)) drop-shadow(0 0 2px var(--accent));
+}
+
+.city-pin.selected .pin-name {
+  color: var(--accent);
 }
 
 .map-title {

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import type { BigEvent } from './events.ts'
-import { cityBaseline, estimateForecast, forecastFor, liveForecast, type CityData, type Summary } from './forecast.ts'
+import { averageMood, cityBaseline, estimateForecast, forecastFor, liveForecast, type CityData, type Summary } from './forecast.ts'
 
 const dome: BigEvent = {
   id: 'dome',
@@ -68,4 +68,11 @@ test('古い観測は推定に戻す', () => {
   assert.equal(forecastFor('tokyo', '2026-12-09', summary, [], now).source, 'estimate')
   summary.cities.tokyo!.days['2026-12-09'].at = now - 3_600_000
   assert.equal(forecastFor('tokyo', '2026-12-09', summary, [], now).source, 'live')
+})
+
+test('全国平均の顔', () => {
+  assert.equal(averageMood([0, 0, 4, 4]), 2)
+  assert.equal(averageMood([1, 2, 2]), 2)
+  assert.equal(averageMood([0, 1, 0]), 0)
+  assert.equal(averageMood([]), 2)
 })

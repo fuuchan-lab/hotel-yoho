@@ -17,7 +17,7 @@ export default defineConfig({
       manifest: {
         name: 'ホテル予報 Hotel Forecast',
         short_name: 'ホテル予報',
-        description: '日本の大都市のホテルの空室・料金高騰を、天気予報のように2か月先まで予報。大型イベントのカレンダー付き',
+        description: '日本の主要都市のホテルの空室・料金高騰を、天気予報のように2か月先まで予報。大型イベントのカレンダー付き',
         lang: 'ja',
         id: './',
         display: 'standalone',
@@ -48,9 +48,9 @@ export default defineConfig({
           },
           {
             // 日本の排他的経済水域の範囲（めったに変わらない）
-            urlPattern: /\/data\/area\.json$/,
+            urlPattern: /\/data\/(area|rail)\.json$/,
             handler: 'StaleWhileRevalidate',
-            options: { cacheName: 'area', cacheableResponse: { statuses: [0, 200] } },
+            options: { cacheName: 'map-data', cacheableResponse: { statuses: [0, 200] } },
           },
           {
             // イベント情報は、新しいものがあれば次に開いた時に反映する

@@ -1,7 +1,8 @@
 /** 画面の文言。日本語を基準にし、英語は同じキーをすべて持つ（足りないと型エラーになる） */
 export const ja = {
   'app.title': 'ホテル予報',
-  'header.eyebrow': '大都市のホテル 空室・料金の予報',
+  'header.eyebrow': '主要都市のホテル 空室・料金の予報',
+  'header.home': 'ホーム（予報地図）に戻る',
   'common.close': '閉じる',
   'common.delete': '削除',
   'common.cancel': 'キャンセル',
@@ -10,7 +11,7 @@ export const ja = {
   'google.login': 'Google でログイン',
   'google.connecting': '接続中…',
   'google.connected': 'ログイン中',
-  'account.storage': 'ウォッチリスト（お気に入り・ウォッチする日・印）は、あなたの Google ドライブの「{folder}」フォルダーに保存します。',
+  'account.storage': 'ウォッチリスト（お気に入り・ウォッチする日・印）と言語・配色は、あなたの Google ドライブの「{folder}」フォルダーに保存します。',
   'account.switch': 'アカウントを切り替える',
   'account.signOut': 'ログアウト',
   'err.detail': '詳細',
@@ -81,6 +82,8 @@ export const ja = {
 
   // 地図
   'map.title': '{date} チェックイン（1泊）の予報',
+  'map.national': '全国平均',
+  'map.okinawa': '沖縄',
   'map.pickDate': '日付を選ぶ',
   'map.aria': '全国の予報地図',
   'map.hint': '顔を押すと、その都市の1週間の予報が見られます。地図は指で拡大できます。',
@@ -197,6 +200,7 @@ export type MessageKey = keyof typeof ja
 export const en: Record<MessageKey, string> = {
   'app.title': 'Hotel Forecast',
   'header.eyebrow': 'Hotel availability & price forecast for Japan',
+  'header.home': 'Back to home (forecast map)',
   'common.close': 'Close',
   'common.delete': 'Delete',
   'common.cancel': 'Cancel',
@@ -204,7 +208,7 @@ export const en: Record<MessageKey, string> = {
   'google.login': 'Sign in with Google',
   'google.connecting': 'Connecting…',
   'google.connected': 'Signed in',
-  'account.storage': 'Your watchlist (favorites, watched dates, stars) is saved in the "{folder}" folder of your Google Drive.',
+  'account.storage': 'Your watchlist (favorites, watched dates, stars), language and theme are saved in the "{folder}" folder of your Google Drive.',
   'account.switch': 'Switch account',
   'account.signOut': 'Sign out',
   'err.detail': 'Details',
@@ -271,6 +275,8 @@ export const en: Record<MessageKey, string> = {
   'reason.soldOut': 'Sold out',
 
   'map.title': 'Forecast for check-in on {date} (1 night)',
+  'map.national': 'National average',
+  'map.okinawa': 'Okinawa',
   'map.pickDate': 'Pick a date',
   'map.aria': 'Forecast map of Japan',
   'map.hint': 'Tap a face to see that city’s 7-day forecast. Pinch to zoom the map.',

@@ -6,10 +6,12 @@ interface Props {
   onChange: (id: CityId | 'all') => void
   allowAll?: boolean
   favorites?: CityId[]
+  /** 「すべて」の代わりの文言（地図では「全国平均」） */
+  allLabel?: string
 }
 
 /** 都市を選ぶ横並びのボタン（お気に入りを先に） */
-export function CityPicker({ value, onChange, allowAll = false, favorites = [] }: Props) {
+export function CityPicker({ value, onChange, allowAll = false, favorites = [], allLabel }: Props) {
   const { t, lang } = useI18n()
   const fav = new Set(favorites)
   const cities = [...CITIES].sort((a, b) => Number(fav.has(b.id)) - Number(fav.has(a.id)))
@@ -17,7 +19,7 @@ export function CityPicker({ value, onChange, allowAll = false, favorites = [] }
     <div className="chip-row" role="group" aria-label={t('city.pick')}>
       {allowAll && (
         <button type="button" className="chip" aria-pressed={value === 'all'} onClick={() => onChange('all')}>
-          {t('city.all')}
+          {allLabel ?? t('city.all')}
         </button>
       )}
       {cities.map((c) => (

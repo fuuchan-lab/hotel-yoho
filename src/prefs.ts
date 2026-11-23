@@ -3,6 +3,8 @@
  * 同じアカウントの端末で共通にする（新しく変えたほうを残す）。
  */
 import { isCityId, type CityId } from './cities.ts'
+import type { Lang } from './i18n/context.ts'
+import type { ThemePreference } from './theme.ts'
 
 export interface Trip {
   id: string
@@ -27,6 +29,10 @@ export interface Prefs {
   trips: Trip[]
   /** 印を付けたイベント */
   starred: string[]
+  /** 自分で選んだ言語（選んでいなければ null = 端末の言語）。同じアカウントの端末で共通 */
+  lang: Lang | null
+  /** 配色。同じアカウントの端末で共通 */
+  theme: ThemePreference
   /** 最後に変えた時刻（ミリ秒）。端末とドライブのどちらが新しいかの判定に使う */
   updatedAt: number
 }
@@ -34,7 +40,7 @@ export interface Prefs {
 export const PREFS_KEY = 'hotelyoho-prefs'
 export const PREFS_FILE = 'prefs.json'
 
-export const EMPTY_PREFS: Prefs = { favorites: [], homeCity: null, trips: [], starred: [], updatedAt: 0 }
+export const EMPTY_PREFS: Prefs = { favorites: [], homeCity: null, trips: [], starred: [], lang: null, theme: 'auto', updatedAt: 0 }
 
 function isTrip(t: unknown): t is Trip {
   if (typeof t !== 'object' || t === null) return false
@@ -68,6 +74,8 @@ export function normalizePrefs(raw: unknown): Prefs {
     homeCity: isCityId(v.homeCity) ? v.homeCity : null,
     trips,
     starred,
+    lang: v.lang === 'ja' || v.lang === 'en' ? v.lang : null,
+    theme: v.theme === 'light' || v.theme === 'dark' ? v.theme : 'auto',
     updatedAt: typeof v.updatedAt === 'number' && Number.isFinite(v.updatedAt) ? v.updatedAt : 0,
   }
 }

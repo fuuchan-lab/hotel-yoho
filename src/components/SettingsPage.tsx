@@ -7,7 +7,8 @@ import type { GoogleAuth } from '../hooks/useGoogleAuth.ts'
 import type { ForecastData } from '../hooks/useForecastData.ts'
 import type { PrefsState } from '../hooks/usePrefs.ts'
 import { useI18n } from '../i18n/useI18n.ts'
-import { applyTheme, saveTheme, type ThemePreference } from '../theme.ts'
+import type { Lang } from '../i18n/context.ts'
+import type { ThemePreference } from '../theme.ts'
 import { Face } from './Face.tsx'
 
 interface Props {
@@ -15,12 +16,15 @@ interface Props {
   prefs: PrefsState
   data: ForecastData
   theme: ThemePreference
+  /** 配色を選ぶ（端末と、ログイン中は Google ドライブにも残す） */
   onTheme: (t: ThemePreference) => void
+  /** 言語を選ぶ（端末と、ログイン中は Google ドライブにも残す） */
+  onLang: (l: Lang) => void
   onDoc: (page: 'help' | 'privacy', hash?: string) => void
 }
 
-export function SettingsPage({ auth, prefs, data, theme, onTheme, onDoc }: Props) {
-  const { t, lang, setLang } = useI18n()
+export function SettingsPage({ auth, prefs, data, theme, onTheme, onLang, onDoc }: Props) {
+  const { t, lang } = useI18n()
   const p = prefs.prefs
   const updated = data.summary?.updatedAt
 
@@ -58,10 +62,10 @@ export function SettingsPage({ auth, prefs, data, theme, onTheme, onDoc }: Props
       <section className="card">
         <h2>{t('set.language')}</h2>
         <div className="seg">
-          <button type="button" className={lang === 'ja' ? 'on' : ''} onClick={() => setLang('ja')}>
+          <button type="button" className={lang === 'ja' ? 'on' : ''} onClick={() => onLang('ja')}>
             日本語
           </button>
-          <button type="button" className={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>
+          <button type="button" className={lang === 'en' ? 'on' : ''} onClick={() => onLang('en')}>
             English
           </button>
         </div>
@@ -72,11 +76,7 @@ export function SettingsPage({ auth, prefs, data, theme, onTheme, onDoc }: Props
               key={v}
               type="button"
               className={theme === v ? 'on' : ''}
-              onClick={() => {
-                saveTheme(v)
-                applyTheme(v)
-                onTheme(v)
-              }}
+              onClick={() => onTheme(v)}
             >
               {t(`theme.${v}`)}
             </button>

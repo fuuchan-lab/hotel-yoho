@@ -7,10 +7,12 @@ interface Props {
   auth: GoogleAuth
   syncing: boolean
   onAccount: () => void
+  /** 左上のアイコン・アプリ名: ホーム（予報地図・今日）に戻る */
+  onHome: () => void
 }
 
 /** アプリ名と Google ログインボタン（LeadLog と同じ形）。ログイン中に押すと設定のアカウントへ */
-export function Header({ auth, syncing, onAccount }: Props) {
+export function Header({ auth, syncing, onAccount, onHome }: Props) {
   const { t } = useI18n()
   const { account, connecting, login } = auth
   const online = useOnline()
@@ -20,13 +22,13 @@ export function Header({ auth, syncing, onAccount }: Props) {
   return (
     <>
       <header className="topbar">
-        <div className="brand">
+        <button type="button" className="brand" onClick={onHome} aria-label={t('header.home')}>
           <img className="brand-logo" src="./icon-192.png" alt="" />
-          <div className="brand-text">
-            <p className="eyebrow">{t('header.eyebrow')}</p>
+          <span className="brand-text">
+            <span className="eyebrow">{t('header.eyebrow')}</span>
             <h1>{t('app.title')}</h1>
-          </div>
-        </div>
+          </span>
+        </button>
         <button
           type="button"
           className={`google-button${live ? ' google-button-live' : ''}${account && syncing ? ' google-button-syncing' : ''}`}

@@ -269,6 +269,13 @@ export function estimateForecast(cityId: CityId, night: Ymd, events: BigEvent[])
   return { city: cityId, date: night, mood: moodFromEstimateScore(score), source: 'estimate', reasons }
 }
 
+/** 全国平均の顔（各都市の顔の平均を四捨五入） */
+export function averageMood(moods: Mood[]): Mood {
+  if (moods.length === 0) return 2
+  const mean = moods.reduce<number>((s, m) => s + m, 0) / moods.length
+  return Math.min(4, Math.max(0, Math.round(mean))) as Mood
+}
+
 /** 実データ（新しいもの）があればそれを、なければ推定を使う。イベントは、どちらの場合も理由に加える */
 export function forecastFor(
   cityId: CityId,

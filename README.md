@@ -1,6 +1,6 @@
 # ホテル予報 / Hotel Forecast
 
-日本の大都市（人口 100 万人以上の 12 都市）のホテルの空室・料金の高騰を、天気予報のように約 2 か月先まで予報する Web アプリ（PWA）です。
+日本の主要都市（人口 100 万人以上の 12 都市＋千歳・金沢・静岡・熊本・那覇の 17 都市）のホテルの空室・料金の高騰を、天気予報のように約 2 か月先まで予報する Web アプリ（PWA）です。
 全国地図に各都市のその日のようすを顔のアイコンで出し、都市を押すと 1 週間の予報が見られます。ライブ・フェス・コンサート・スポーツの大型試合・展示会などの大型イベントをカレンダーに載せています。
 
 LeadLog・海ログと同じ構成です（React + TypeScript + Vite、Google ログイン、Google ドライブ保存、日英切り替え）。地図はのりものレーダーと同じ（MapLibre GL ＋ 地理院タイル、日本の排他的経済水域の外は白）。
@@ -28,14 +28,14 @@ LeadLog・海ログと同じ構成です（React + TypeScript + Vite、Google �
 
 ## 中継サーバー（`worker/`、Cloudflare Workers 無料プラン）
 
-- 5 分ごと（cron）に 20 件ずつ検索（1 秒に 1 回まで）。直近 1 週間を毎回 4 件優先し、12 都市 × 61 日を約 4 時間で一巡。
+- 5 分ごと（cron）に 24 件ずつ検索（1 秒に 1 回まで）。直近 1 週間を毎回 5 件優先し、17 都市 × 61 日を約 4.5 時間で一巡。
 - 観測は KV（`HOTEL`）のキー `state` に 1 つの JSON で保存（書き込みは 1 日約 290 回で無料枠の 1,000 回に収まる）。1 日 1 回 `hist:YYYY-MM-DD` に、その日の予報を残す（あとで精度を確かめ、季節ごとの「ふだん」を学ぶため）。
 - `GET /forecast`（全都市の要約）、`GET /city?id=tokyo`（日ごとの安いホテル 3 軒）、`GET /status`（集め具合）。5 分キャッシュ。
 - 楽天ウェブサービスのアプリ ID・アクセスキーは secret（利用者には求めない）。
 
 ### 楽天ウェブサービスの準備（作者が 1 回だけ）
 
-1. https://webservice.rakuten.co.jp/ でアプリを登録し、アプリ ID とアクセスキーを受け取る（許可するWebサイトに `https://fuuchan-lab.github.io/hotel-yoho/` を入れる）
+1. https://webservice.rakuten.co.jp/ でアプリを登録し、アプリ ID とアクセスキーを受け取る（許可するWebサイトに `https://hotel-yoho.doitmyself.net/` を入れる）
 2. `cd worker && npx wrangler secret put RAKUTEN_APP_ID` と `npx wrangler secret put RAKUTEN_ACCESS_KEY`
 3. `npx wrangler deploy`
 4. `https://hotel-yoho.shinkansen-location-live.workers.dev/status` で `configured: true` と集め具合を確かめる
@@ -52,7 +52,7 @@ LeadLog・海ログと同じ構成です（React + TypeScript + Vite、Google �
 
 | ファイル | 内容 |
 | --- | --- |
-| `prefs.json` | お気に入りの都市・カレンダーで最初に開く都市・ウォッチする日（`trips`。前に見た時の顔 `seen` つき）・印を付けたイベント（全端末で共通。新しく変えたほうを残す） |
+| `prefs.json` | 言語・配色・お気に入りの都市・カレンダーで最初に開く都市・ウォッチする日（`trips`。前に見た時の顔 `seen` つき）・印を付けたイベント（全端末で共通。新しく変えたほうを残す） |
 
 ## 開発
 
@@ -65,12 +65,14 @@ npm run build    # dist/ に出力
 ```
 
 `main` に push すると GitHub Actions で GitHub Pages に公開します（`.github/workflows/deploy.yml`）。
-公開先: https://fuuchan-lab.github.io/hotel-yoho/
+公開先: https://hotel-yoho.doitmyself.net/ （GitHub Pages ＋ Value-Domain の CNAME。`public/CNAME`）
+- Value-Domain で CNAME `hotel-yoho` → `fuuchan-lab.github.io` を設定する
+- GitHub の Settings → Pages の「Custom domain」に `hotel-yoho.doitmyself.net` が入り、「Enforce HTTPS」をオンにする
 
 ### Google ログイン
 
 当面は LeadLog と同じ OAuth クライアントを使います（承認済みの JavaScript 生成元に `https://fuuchan-lab.github.io` が登録済み。ログイン画面のアプリ名は「LeadLog」と出ます）。
-独自ドメインにする場合は、その OAuth クライアントの「承認済みの JavaScript 生成元」に追加してください。専用にする場合は、Google Cloud で OAuth クライアント（Web）を作り、Drive API を有効にして、リポジトリの Variables に `VITE_GOOGLE_CLIENT_ID` を入れてください。
+`https://hotel-yoho.doitmyself.net` で Google ログインを使うには、その OAuth クライアントの「承認済みの JavaScript 生成元」に `https://hotel-yoho.doitmyself.net` を追加してください。専用にする場合は、Google Cloud で OAuth クライアント（Web）を作り、Drive API を有効にして、リポジトリの Variables に `VITE_GOOGLE_CLIENT_ID` を入れてください。
 
 ### 地図の範囲
 

@@ -9,8 +9,8 @@ interface Props {
   today: Ymd
   value: Ymd
   onChange: (date: Ymd) => void
-  /** その日の全国のようす（いちばん多い顔） */
-  overall: (date: Ymd) => Mood
+  /** その日の顔（全国平均か、選んだ都市） */
+  overall: (date: Ymd) => { mood: Mood; estimate: boolean }
 }
 
 /** 2 か月分の日付を横に並べ、選んだ日の予報を地図に出す（天気予報の週間表示のように） */
@@ -36,7 +36,7 @@ export function DateStrip({ today, value, onChange, overall }: Props) {
         >
           <span className="date-chip-wd">{i === 0 ? t('date.today') : i === 1 ? t('date.tomorrow') : weekdayLabel(d, lang)}</span>
           <span className="date-chip-d">{formatShortDate(d, lang)}</span>
-          <Face mood={overall(d)} size={22} />
+          <Face mood={overall(d).mood} size={22} estimate={overall(d).estimate} />
         </button>
       ))}
     </div>
