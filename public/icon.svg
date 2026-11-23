@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1678b8"/>
+      <stop offset="1" stop-color="#0e4f7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- ホテルの建物 -->
+  <g fill="#ffffff">
+    <rect x="104" y="196" width="196" height="220" rx="10"/>
+    <rect x="300" y="276" width="108" height="140" rx="10" opacity=".85"/>
+  </g>
+  <g fill="#0e4f7a">
+    <rect x="130" y="224" width="34" height="34" rx="5"/><rect x="185" y="224" width="34" height="34" rx="5"/><rect x="240" y="224" width="34" height="34" rx="5"/>
+    <rect x="130" y="280" width="34" height="34" rx="5"/><rect x="185" y="280" width="34" height="34" rx="5"/><rect x="240" y="280" width="34" height="34" rx="5"/>
+    <rect x="130" y="336" width="34" height="34" rx="5"/><rect x="240" y="336" width="34" height="34" rx="5"/>
+    <rect x="182" y="346" width="40" height="70" rx="6"/>
+    <rect x="324" y="304" width="26" height="26" rx="4"/><rect x="362" y="304" width="26" height="26" rx="4"/>
+    <rect x="324" y="350" width="26" height="26" rx="4"/><rect x="362" y="350" width="26" height="26" rx="4"/>
+  </g>
+  <rect x="84" y="410" width="344" height="14" rx="7" fill="#ffffff" opacity=".6"/>
+  <!-- 予報の顔（太陽のように） -->
+  <g transform="translate(346 166)">
+    <g stroke="#fde047" stroke-width="12" stroke-linecap="round">
+      <path d="M0-104v-22M0 104v22M-104 0h-22M104 0h22M-74-74l-15-15M74-74l15-15M-74 74l-15 15M74 74l15 15"/>
+    </g>
+    <circle r="86" fill="#22c55e" stroke="#ffffff" stroke-width="8"/>
+    <path d="M-50-16q14-22 28 0M22-16q14-22 28 0" fill="none" stroke="#3b2a1a" stroke-width="11" stroke-linecap="round"/>
+    <path d="M-52 14h104q-6 50-52 50t-52-50z" fill="#3b2a1a"/>
+    <path d="M-26 46q26 18 52 0q-10 14-26 14t-26-14z" fill="#f87171"/>
+  </g>
+</svg>

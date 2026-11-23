@@ -1,0 +1,20 @@
+name = "hotel-yoho"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+# 空室・料金の観測を 1 つの JSON（キー state）に保存する。1 日 1 回、その日の予報を hist:YYYY-MM-DD に残す
+[[kv_namespaces]]
+binding = "HOTEL"
+id = "99e23e9743724865a536393d528beb9d"
+
+# 5 分ごとに楽天トラベルを 20 件ずつ検索する（index.js の scheduled）。12 都市 × 61 日を約 4 時間で一巡し、直近 1 週間は約 2 時間ごと
+[triggers]
+crons = ["*/5 * * * *"]
+
+# 楽天ウェブサービスのアプリ ID・アクセスキーは secret で渡す（値を表示・コミットしない）:
+#   npx wrangler secret put RAKUTEN_APP_ID
+#   npx wrangler secret put RAKUTEN_ACCESS_KEY
+# アプリに「許可されたWebサイト」を登録した場合は、同じ URL を vars に入れる（Referer として送る）
+# ローカルでは worker/.dev.vars に RAKUTEN_APP_ID=... と書く（コミットしない）
+[vars]
+RAKUTEN_REFERER = "https://fuuchan-lab.github.io/hotel-yoho/"

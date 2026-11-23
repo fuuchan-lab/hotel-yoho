@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>プライバシーポリシー / Privacy Policy — ホテル予報</title>
+    <style>
+      body { font-family: system-ui, -apple-system, 'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.7; color: #1f2937; background: #f4f6fb; }
+      h1 { font-size: 1.5rem; margin-right: 48px; } h2 { font-size: 1.15rem; margin-top: 2em; }
+      section { background: #fff; border-radius: 12px; padding: 8px 20px 16px; margin-bottom: 24px; }
+      .doc-close { position: fixed; top: 10px; right: 12px; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #d5dae1; background: #fff; font-size: 20px; line-height: 1; cursor: pointer; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
+      @media (prefers-color-scheme: dark) { body { background: #0f172a; color: #e5e7eb; } section { background: #1e293b; } a { color: #93c5fd; } .doc-close { background: #1e293b; color: #e5e7eb; border-color: #334155; } }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="doc-close" aria-label="閉じる / Close" onclick="closeDoc()">×</button>
+    <section lang="ja" id="ja">
+      <h1>プライバシーポリシー（ホテル予報）</h1>
+      <p>ホテル予報（以下「本アプリ」）は、日本の大都市のホテルの空室・料金を予報するアプリです。</p>
+      <p>最終更新：2026年11月23日</p>
+      <h2>扱う情報</h2>
+      <ul>
+        <li>お気に入りの都市、カレンダーで最初に開く都市</li>
+        <li>利用者が登録した泊まる予定（都市・チェックイン日・泊数・メモ）と、印を付けたイベント</li>
+        <li>設定（言語・配色）</li>
+        <li>Google アカウントの名前・メールアドレス・プロフィール画像（ログイン中の表示のため）</li>
+      </ul>
+      <p>位置情報は使いません。</p>
+      <h2>保存先</h2>
+      <ul>
+        <li>利用している端末のブラウザ内（localStorage）</li>
+        <li>ログインした場合は、利用者の Google ドライブの「HotelYoho」フォルダー（prefs.json）</li>
+      </ul>
+      <p>開発者のサーバーには、利用者の情報を保存しません。</p>
+      <h2>外部への通信</h2>
+      <ul>
+        <li>空室・料金の予報を表示するため、開発者が運用する中継サーバー（Cloudflare Workers）から、全都市の予報データを受け取ります。利用者を識別する情報は送りません（通常の通信と同じく IP アドレスなどは届きますが、記録しません）。中継サーバーは、楽天ウェブサービス（楽天トラベル）の API から空室・料金を集めています。</li>
+        <li>地図の表示のため、国土地理院の地図タイルを読み込みます。</li>
+        <li>予約サイト（楽天トラベル・じゃらん・Yahoo!トラベル）やイベントの公式ページは、利用者がリンクを押した時だけ開きます。</li>
+      </ul>
+      <h2>Google のデータの利用</h2>
+      <p>本アプリは Google ドライブへのアクセス権（drive.file：本アプリが作成したファイルだけに限られます）と、プロフィール情報を利用します。これらは上記の保存・表示のためだけに使い、第三者に提供しません。</p>
+      <h2>広告・アクセス解析</h2>
+      <p>広告・アクセス解析は使っていません。</p>
+      <h2>削除</h2>
+      <p>本アプリで予定を削除すると、ログイン中は Google ドライブからも削除されます。Google ドライブの「HotelYoho」フォルダーを削除すると、すべてのデータを削除できます。端末のデータは、ブラウザ（アプリ）のデータを削除すると消えます。</p>
+      <h2>お問い合わせ</h2>
+      <p>DoItMyself（<a href="https://doitmyself.net/" target="_blank" rel="noopener">doitmyself.net</a>）</p>
+    </section>
+
+    <section lang="en" id="en">
+      <h1>Privacy Policy (Hotel Forecast)</h1>
+      <p>Hotel Forecast ("the app") forecasts hotel availability and prices in Japan’s major cities.</p>
+      <p>Last updated: November 23, 2026</p>
+      <h2>Information handled</h2>
+      <ul>
+        <li>Your favorite cities and the city shown first in the calendar</li>
+        <li>Trips you add (city, check-in date, nights, note) and events you star</li>
+        <li>Settings (language, theme)</li>
+        <li>Your Google account name, email address and profile picture (to show that you are signed in)</li>
+      </ul>
+      <p>The app does not use your location.</p>
+      <h2>Where it is stored</h2>
+      <ul>
+        <li>In the browser on your device (localStorage)</li>
+        <li>If you sign in, in the “HotelYoho” folder (prefs.json) of your Google Drive</li>
+      </ul>
+      <p>None of your information is stored on the developer’s server.</p>
+      <h2>Network communication</h2>
+      <ul>
+        <li>To show forecasts, the app downloads forecast data for all cities from a relay server run by the developer (Cloudflare Workers). No information identifying you is sent (your IP address reaches the server as with any connection, but it is not recorded). The relay server collects vacancies and prices from the Rakuten Web Service (Rakuten Travel) API.</li>
+        <li>Map tiles are loaded from GSI Japan.</li>
+        <li>Booking sites (Rakuten Travel, Jalan, Yahoo! Travel) and official event pages open only when you tap a link.</li>
+      </ul>
+      <h2>Use of Google data</h2>
+      <p>The app uses access to Google Drive (drive.file: limited to files the app creates) and your profile information, only for the storage and display described above. It is never shared with third parties.</p>
+      <h2>Ads and analytics</h2>
+      <p>The app uses no ads and no analytics.</p>
+      <h2>Deletion</h2>
+      <p>Deleting a trip in the app also deletes it from Google Drive while you are signed in. Deleting the “HotelYoho” folder in Google Drive removes all of your data. Data on the device is removed when you clear the browser’s (app’s) data.</p>
+      <h2>Contact</h2>
+      <p>DoItMyself (<a href="https://doitmyself.net/" target="_blank" rel="noopener">doitmyself.net</a>)</p>
+    </section>
+    <script>
+      function closeDoc() {
+        if (window.parent !== window) window.parent.postMessage('close-doc', location.origin);
+        else if (document.referrer.indexOf(location.origin) === 0 && history.length > 1) history.back();
+        else location.href = './';
+      }
+      if (window.parent !== window) document.querySelector('.doc-close').hidden = true;
+    </script>
+  </body>
+</html>

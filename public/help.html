@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ヘルプ / Help — ホテル予報</title>
+    <style>
+      body { font-family: system-ui, -apple-system, 'Segoe UI', 'Hiragino Sans', 'Noto Sans JP', sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.7; color: #1f2937; background: #f4f6fb; }
+      h1 { font-size: 1.5rem; margin-right: 48px; } h2 { font-size: 1.15rem; margin-top: 1.8em; } h3 { font-size: 1rem; margin-bottom: 0.3em; }
+      section { background: #fff; border-radius: 12px; padding: 8px 20px 16px; margin-bottom: 24px; }
+      nav { margin: 0 48px 16px 0; font-size: 0.95rem; }
+      .toc { columns: 2; font-size: 0.92rem; padding-left: 1.2em; }
+      table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+      td, th { border-top: 1px solid #e5e7eb; padding: 6px 4px; text-align: left; vertical-align: top; }
+      .face { display: inline-block; width: 1.4em; height: 1.4em; border-radius: 50%; vertical-align: -0.35em; border: 2px solid #fff; box-shadow: 0 0 0 1px #cbd5e1; }
+      .donate { background: #fff8f6; border: 1px solid #e3c9c9; border-radius: 10px; padding: 4px 16px 12px; margin: 12px 0; }
+      .amt-chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 12px; }
+      .amt-chips button { background: #fff; border: 2px solid #f2b98a; color: #c0561a; font-weight: bold; border-radius: 999px; padding: 0.35em 1.1em; cursor: pointer; font-size: 0.95em; }
+      .amt-chips button:hover, .amt-chips button.on { background: #f28c38; border-color: #f28c38; color: #fff; }
+      .donate-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+      .donate-row input { padding: 0.45em 0.65em; border: 1px solid #ccc; border-radius: 6px; font-size: 1em; width: 90px; }
+      .paypal-btn { display: inline-flex; align-items: center; gap: 10px; background: #ffc439; color: #111; font-weight: bold; font-size: 16px; padding: 0.65em 1.8em; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18); }
+      .paypal-btn:hover { background: #f2b52e; }
+      .paypal-btn img { height: 24px; width: auto; display: block; }
+      .donate-note { font-size: 13px; color: #666; line-height: 1.8; }
+      .doc-close { position: fixed; top: 10px; right: 12px; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #d5dae1; background: #fff; font-size: 20px; line-height: 1; cursor: pointer; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
+      @media (prefers-color-scheme: dark) { body { background: #0f172a; color: #e5e7eb; } section { background: #1e293b; } a { color: #93c5fd; } td, th { border-color: #334155; } .donate { background: #2a2320; border-color: #5b4038; } .amt-chips button { background: #1e293b; } .donate-row input { background: #0f172a; color: #e5e7eb; border-color: #334155; } .donate-note { color: #9ca3af; } .doc-close { background: #1e293b; color: #e5e7eb; border-color: #334155; } }
+      @media (max-width: 520px) { .toc { columns: 1; } }
+      /* Android アプリ（Google Play 版）の中では、寄付（外部の決済）への案内を出さない */
+      .in-app .donate-part { display: none; }
+    </style>
+    <script>
+      try {
+        if (document.referrer.indexOf('android-app://') === 0 || sessionStorage.getItem('opened-from-android-app') === '1') document.documentElement.classList.add('in-app');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <button type="button" class="doc-close" aria-label="閉じる / Close" onclick="closeDoc()">×</button>
+    <nav><a href="#ja">日本語</a> ・ <a href="#en">English</a> ・ <a href="privacy.html">プライバシーポリシー / Privacy</a></nav>
+
+    <section lang="ja" id="ja">
+      <h1>ヘルプ（ホテル予報）</h1>
+      <ol class="toc">
+        <li><a href="#ja-about">このアプリについて</a></li>
+        <li><a href="#ja-faces">顔の意味</a></li>
+        <li><a href="#ja-menu">下のメニュー</a></li>
+        <li><a href="#ja-how">予報のしくみ</a></li>
+        <li><a href="#ja-cities">対象の都市</a></li>
+        <li><a href="#ja-login">ログインと保存</a></li>
+        <li><a href="#ja-data">データについて</a></li>
+        <li><a href="#ja-disclaimer">免責事項</a></li>
+        <li><a href="#ja-author">作者について</a></li>
+        <li class="donate-part"><a href="#ja-donate">運営資金のご協力</a></li>
+      </ol>
+
+      <h2 id="ja-about">1. このアプリについて</h2>
+      <p>ホテル予報は、日本の大都市（人口100万人以上）のホテルの空室と料金の高騰を、天気予報のように約2か月先まで予報するアプリです。全国地図で各都市のようすを顔のアイコンで一目で見られ、都市を押すと1週間の予報が見られます。ライブ・フェス・コンサート・スポーツの大型試合・展示会などの大型イベントもカレンダーに載せています。</p>
+
+      <h2 id="ja-faces">2. 顔の意味</h2>
+      <table>
+        <tr><td><span class="face" style="background:#22c55e"></span></td><td><strong>空室多・お得</strong>：空室が多く、料金はふだん以下。予約のねらい目。</td></tr>
+        <tr><td><span class="face" style="background:#a3d93b"></span></td><td><strong>空室あり</strong>：空室があり、料金もふだんどおり。</td></tr>
+        <tr><td><span class="face" style="background:#facc15"></span></td><td><strong>ふつう</strong>：人気のホテルは埋まり始めることがあります。</td></tr>
+        <tr><td><span class="face" style="background:#fb923c"></span></td><td><strong>少なめ・高め</strong>：空室が少なめ、または料金が高め。早めの予約を。</td></tr>
+        <tr><td><span class="face" style="background:#ef4444"></span></td><td><strong>満室近く・高騰</strong>：困った顔。空室がとても少なく、料金が高騰。近くの都市も検討を。</td></tr>
+      </table>
+      <p>顔の縁が<strong>点線</strong>のものは<strong>推定</strong>です（下の「予報のしくみ」）。</p>
+
+      <h2 id="ja-menu">3. 下のメニュー</h2>
+      <ul>
+        <li><strong>予報地図</strong>：上の日付を選ぶと、その日にチェックインして1泊する場合の全国のようすを地図に出します。日付の下の小さな顔は、その日の全国でいちばん多い顔です。地図の下に都市の一覧もあります。</li>
+        <li><strong>カレンダー</strong>：都市ごとに、月のカレンダーに日ごとの顔とイベント（🎤ライブ 🎪フェス 🎻コンサート 🏟️スポーツ 🏢展示会 🏮祭り・行事）を出します。</li>
+        <li><strong>イベント</strong>：大型イベントの一覧。都市・種類で絞り込み、☆で印を付けられます。顔を押すとその日の予報が開きます。</li>
+        <li><strong>マイ予定</strong>：泊まる予定を登録すると、泊ごとの予報を出します。困った顔の日があると、メニューに「！」が付きます。</li>
+        <li><strong>設定</strong>：アカウント、言語（日本語・English）、配色、お気に入りの都市、データの状況。</li>
+      </ul>
+
+      <h2 id="ja-how">4. 予報のしくみ</h2>
+      <p><strong>実データ</strong>：中継サーバーが数時間ごとに、楽天トラベルの空室検索 API で、各都市の中心部（半径3km）について、日付ごとに「空室のあるホテルの数」と「安いほうから30軒の料金（大人1人・1泊）」を集めます。料金の中央値をその都市のふだんの料金と、空室の数をその都市の空室の多い日と比べて、5段階の顔にします。</p>
+      <p><strong>推定</strong>：まだ集めていない日や、中継サーバーにつながらない時は、曜日（土曜・休前日は混む）、祝日、年末年始・お盆などの時期、その都市と近くの都市の大型イベントから見積もります。</p>
+      <p>じゃらん・Yahoo!トラベルは、自動で情報を集めることが利用規約で認められていないため、予約サイトへのリンクだけを載せています。</p>
+
+      <h2 id="ja-cities">5. 対象の都市</h2>
+      <p>人口100万人以上の12都市：札幌・仙台・さいたま・東京23区・川崎・横浜・名古屋・京都・大阪・神戸・広島・福岡。地図は、のりものレーダーと同じく、日本の排他的経済水域（陸地を含む）だけを表示しています。</p>
+
+      <h2 id="ja-login">6. ログインと保存</h2>
+      <p>ログインしなくても使えます。Google でログインすると、お気に入りの都市・マイ予定・イベントの印を、あなたの Google ドライブの「HotelYoho」フォルダー（prefs.json）に保存し、同じアカウントの端末で共通にできます。開発者のサーバーには保存しません。</p>
+
+      <h2 id="ja-data">7. データについて</h2>
+      <ul>
+        <li>空室・料金：楽天トラベル（<a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">Supported by Rakuten Developers</a>）</li>
+        <li>イベント：各会場・主催者の発表をもとに、作者が手で載せています（日程は変わることがあります）。</li>
+        <li>地図：<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">国土地理院</a>（淡色地図）、排他的経済水域：<a href="https://www.marineregions.org" target="_blank" rel="noopener">Marine Regions</a>（CC BY 4.0）を加工</li>
+        <li>祝日：内閣府の「国民の祝日」の決まりに沿って端末で計算</li>
+      </ul>
+
+      <h2 id="ja-disclaimer">8. 免責事項</h2>
+      <p>予報は目安で、正確さを保証するものではありません。実際の空室・料金は、予約サイトで確かめてください。このアプリの情報によって生じた損害について、作者は責任を負いません。</p>
+
+      <h2 id="ja-author">9. 作者について</h2>
+      <p><strong>DoItMyself</strong>（<a href="https://doitmyself.net/" target="_blank" rel="noopener">doitmyself.net</a>）：Harry が自分で作ったアプリを公開している場所です。</p>
+
+      <div class="donate-part">
+      <h2 id="ja-donate">10. 運営資金のご協力</h2>
+      <p>ホテル予報は、無料・広告なしで公開しています。中継サーバーやドメインなど、続けるための費用は作者が負担しています。アプリを気に入っていただけたら、コーヒー1杯分の <strong>200円</strong> からご支援いただけるとうれしいです。</p>
+      <div class="donate">
+        <h3>PayPal で安全にご支援いただけます</h3>
+        <form action="https://www.paypal.com/jp/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_xclick" />
+          <input type="hidden" name="business" value="admin@youme.info" />
+          <input type="hidden" name="item_name" value="Donate to Hotel Forecast" />
+          <input type="hidden" name="currency_code" value="JPY" />
+          <div class="amt-chips"><button type="button" class="on" data-amount="200">200円</button><button type="button" data-amount="500">500円</button><button type="button" data-amount="1000">1,000円</button><button type="button" data-amount="3000">3,000円</button></div>
+          <div class="donate-row">
+            <label for="donate-amt-ja"><strong>ご寄付額</strong></label>
+            <input type="text" id="donate-amt-ja" name="amount" value="200" inputmode="numeric" />
+            <strong>円</strong>
+          </div>
+          <button type="submit" class="paypal-btn"><img src="https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg" alt="PayPal" /><span>で寄付する</span></button>
+        </form>
+        <p class="donate-note">※ 金額を選ぶか入力してボタンを押すと、PayPal の決済ページが新しいタブで開きます。<br />
+        ※ 支払先は運営出納代行会社の「ユーアンドミーテクノロジー」と表示されます（<a href="https://www.youme.info" target="_blank" rel="noopener">https://www.youme.info</a>）。</p>
+      </div>
+      <p>一つひとつのご支援が、このアプリを続ける大きな力になります。心より感謝申し上げます。</p>
+      </div>
+    </section>
+
+    <section lang="en" id="en">
+      <h1>Help (Hotel Forecast)</h1>
+      <ol class="toc">
+        <li><a href="#en-about">About</a></li>
+        <li><a href="#en-faces">What the faces mean</a></li>
+        <li><a href="#en-menu">Bottom menu</a></li>
+        <li><a href="#en-how">How the forecast works</a></li>
+        <li><a href="#en-cities">Cities covered</a></li>
+        <li><a href="#en-login">Sign-in and storage</a></li>
+        <li><a href="#en-data">Data sources</a></li>
+        <li><a href="#en-disclaimer">Disclaimer</a></li>
+        <li><a href="#en-author">About the author</a></li>
+        <li class="donate-part"><a href="#en-donate">Support the app</a></li>
+      </ol>
+
+      <h2 id="en-about">1. About</h2>
+      <p>Hotel Forecast predicts hotel availability and price surges in Japan’s major cities (population 1 million+) about two months ahead, like a weather forecast. A map of Japan shows each city’s outlook at a glance as a face; tap a city for its 7-day forecast. Major events — concerts, music festivals, big sports matches, expos and more — appear on the calendar.</p>
+
+      <h2 id="en-faces">2. What the faces mean</h2>
+      <table>
+        <tr><td><span class="face" style="background:#22c55e"></span></td><td><strong>Great</strong>: plenty of rooms, prices at or below usual. A good time to book.</td></tr>
+        <tr><td><span class="face" style="background:#a3d93b"></span></td><td><strong>Good</strong>: rooms available at usual prices.</td></tr>
+        <tr><td><span class="face" style="background:#facc15"></span></td><td><strong>Normal</strong>: popular hotels may start to fill up.</td></tr>
+        <tr><td><span class="face" style="background:#fb923c"></span></td><td><strong>Pricey</strong>: fewer rooms or higher prices. Book early.</td></tr>
+        <tr><td><span class="face" style="background:#ef4444"></span></td><td><strong>Surging</strong>: the troubled face. Very few rooms and surging prices. Consider nearby cities.</td></tr>
+      </table>
+      <p>Faces with a <strong>dotted rim</strong> are <strong>estimates</strong> (see below).</p>
+
+      <h2 id="en-menu">3. Bottom menu</h2>
+      <ul>
+        <li><strong>Forecast</strong>: pick a date at the top to see the outlook for checking in that day for one night. The small face under each date is the most common face across Japan. A list of cities follows the map.</li>
+        <li><strong>Calendar</strong>: a monthly calendar per city with daily faces and events (🎤 live, 🎪 music festival, 🎻 concert, 🏟️ sports, 🏢 expo, 🏮 festivals).</li>
+        <li><strong>Events</strong>: list of major events, filterable by city and type; star the ones you care about. Tap the face to open that day’s forecast.</li>
+        <li><strong>My trips</strong>: add planned stays to see the forecast for each night. A “!” appears in the menu if any night looks nearly sold out.</li>
+        <li><strong>Settings</strong>: account, language, theme, favorite cities and data status.</li>
+      </ul>
+
+      <h2 id="en-how">4. How the forecast works</h2>
+      <p><strong>Observed data</strong>: every few hours, a relay server uses the Rakuten Travel vacancy search API to collect, for each city center (3 km radius) and date, the number of hotels with vacancies and the prices of the 30 cheapest (1 adult, 1 night). The median price is compared with the city’s usual price and the vacancy count with the city’s high-vacancy days, giving one of five faces.</p>
+      <p><strong>Estimates</strong>: for dates not yet collected, or when the server can’t be reached, the forecast is estimated from the day of week (Saturdays and nights before holidays are busy), public holidays, seasons such as New Year and Obon, and major events in the city and nearby cities.</p>
+      <p>Jalan and Yahoo! Travel do not permit automated collection in their terms, so only links to them are provided.</p>
+
+      <h2 id="en-cities">5. Cities covered</h2>
+      <p>The 12 cities with 1 million+ people: Sapporo, Sendai, Saitama, Tokyo (23 wards), Kawasaki, Yokohama, Nagoya, Kyoto, Osaka, Kobe, Hiroshima and Fukuoka. Like Norimono Radar, the map shows only Japan’s exclusive economic zone (including land).</p>
+
+      <h2 id="en-login">6. Sign-in and storage</h2>
+      <p>You can use the app without signing in. If you sign in with Google, your favorite cities, trips and starred events are saved to the “HotelYoho” folder (prefs.json) in your own Google Drive and shared across your devices. Nothing is stored on the developer’s server.</p>
+
+      <h2 id="en-data">7. Data sources</h2>
+      <ul>
+        <li>Vacancies & prices: Rakuten Travel (<a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">Supported by Rakuten Developers</a>)</li>
+        <li>Events: compiled by the author from venue and organizer announcements (dates may change).</li>
+        <li>Map: <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">GSI Japan</a>; EEZ: adapted from <a href="https://www.marineregions.org" target="_blank" rel="noopener">Marine Regions</a> (CC BY 4.0)</li>
+        <li>Holidays: calculated on the device from Japan’s national holiday rules</li>
+      </ul>
+
+      <h2 id="en-disclaimer">8. Disclaimer</h2>
+      <p>Forecasts are a guide only and accuracy is not guaranteed. Check actual availability and prices on the booking sites. The author is not liable for any loss arising from the use of this information.</p>
+
+      <h2 id="en-author">9. About the author</h2>
+      <p><strong>DoItMyself</strong> (<a href="https://doitmyself.net/" target="_blank" rel="noopener">doitmyself.net</a>): where Harry publishes apps he has made.</p>
+
+      <div class="donate-part">
+      <h2 id="en-donate">10. Support the app</h2>
+      <p>Hotel Forecast is free and ad-free. The author pays for the relay server, domain and other running costs. If you like the app, support from <strong>¥200</strong> — about a cup of coffee — would be greatly appreciated.</p>
+      <div class="donate">
+        <h3>Donate securely with PayPal</h3>
+        <form action="https://www.paypal.com/jp/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_xclick" />
+          <input type="hidden" name="business" value="admin@youme.info" />
+          <input type="hidden" name="item_name" value="Donate to Hotel Forecast" />
+          <input type="hidden" name="currency_code" value="JPY" />
+          <div class="amt-chips"><button type="button" class="on" data-amount="200">¥200</button><button type="button" data-amount="500">¥500</button><button type="button" data-amount="1000">¥1,000</button><button type="button" data-amount="3000">¥3,000</button></div>
+          <div class="donate-row">
+            <label for="donate-amt-en"><strong>Amount</strong></label>
+            <input type="text" id="donate-amt-en" name="amount" value="200" inputmode="numeric" />
+            <strong>yen</strong>
+          </div>
+          <button type="submit" class="paypal-btn"><img src="https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg" alt="PayPal" /><span>Donate</span></button>
+        </form>
+        <p class="donate-note">* Choose or enter an amount and press the button. PayPal's payment page opens in a new tab.<br />
+        * The payee is shown as 「ユーアンドミーテクノロジー」, the company that handles the payments (<a href="https://www.youme.info" target="_blank" rel="noopener">https://www.youme.info</a>).</p>
+      </div>
+      <p>Every bit of support helps keep the app running. Thank you very much.</p>
+      </div>
+    </section>
+
+    <script>
+      // 右上の ×: アプリの中で重ねて開いたときはアプリに閉じてもらう。直接開いたときは前の画面かアプリへ戻る
+      function closeDoc() {
+        if (window.parent !== window) window.parent.postMessage('close-doc', location.origin);
+        else if (document.referrer.indexOf(location.origin) === 0 && history.length > 1) history.back();
+        else location.href = './';
+      }
+      // アプリの中で開いたときは、アプリの × を使う（重ならないよう、ページの × は隠す）
+      if (window.parent !== window) document.querySelector('.doc-close').hidden = true;
+      // 寄付額のボタン: 押した金額を入力欄に入れる
+      document.querySelectorAll('.amt-chips button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          b.closest('form').querySelector('[name=amount]').value = b.dataset.amount;
+          b.parentNode.querySelectorAll('button').forEach(function (o) { o.classList.toggle('on', o === b); });
+        });
+      });
+    </script>
+  </body>
+</html>

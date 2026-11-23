@@ -1,0 +1,38 @@
+# ホテル予報（Hotel Forecast）— プロジェクトの指示
+
+日本の大都市（人口 100 万人以上）のホテルの空室・料金高騰を、天気予報のように約 2 か月先まで予報する Web アプリ。
+リポジトリ: fuuchan-lab/hotel-yoho。公開先: https://fuuchan-lab.github.io/hotel-yoho/ （GitHub Pages。Vite の base は `./`）
+
+## やりとり
+- 日本語で答える。作者（Harry）はスマホでの見た目を重視する
+- 指示があいまいなときは、いちばん自然な解釈で進め、解釈を最初に一言書く
+- 実際に動かして確かめてから報告する（Playwright でのスクリーンショットなど）。確かめていないことは、そう書く
+
+## 構成
+- フロントエンド: React + TypeScript + Vite + MapLibre GL（`src/`）。`main` への push で GitHub Actions がデプロイ
+- 空室・料金の中継: Cloudflare Workers（`worker/`、無料プラン、KV `HOTEL`）。`cd worker && npx wrangler deploy`
+- 詳細は README.md
+
+## 守ること（これまでの指示）
+- 対象は人口 100 万人以上の都市（東京 23 区を含む 12 都市）。`src/cities.ts` と `worker/src/cities.js` の id・緯度・経度をそろえる
+- 空室・料金は楽天トラベル（公式 API）から。じゃらん・Yahoo!トラベルは規約上自動で集められないので、リンクだけにする（スクレイピングしない）
+- 顔は 5 段階: 空室が多く料金が平均以下は笑顔、空室が少なく高騰は困った顔。推定の日は縁を点線にし「推定」と明記する
+- 全国地図で各都市のその日のようすを顔で出し、都市を押すと 1 週間の予報
+- 地図はのりものレーダーと同じ: 地理院タイル（淡色地図）、日本の排他的経済水域（`public/data/area.json`）の外は白（ダークは暗い色）、境界は破線
+- カレンダーに大型イベント（ライブ・フェス・コンサート・スポーツの大型試合・展示会など）。`public/data/events.json` は公式の発表で確かめたものだけ載せる
+- 日本語・英語の両方に対応する。画面の文言は `src/i18n/messages.ts`（英語が欠けると型エラー）
+- ログインは Google（GIS のトークン方式、LeadLog と同じ）。個人の情報（お気に入り・予定・印）は利用者の Google ドライブの「HotelYoho」フォルダー（prefs.json）に保存。ゲストは端末だけ
+- 個人の情報の扱いを変えたら `public/privacy.html`（日本語・英語）も直す
+- 利用者に API キーの登録を求めない。楽天のキーは作者が中継サーバーの secret に持つ
+- 画面に「Supported by Rakuten Developers」を出す（楽天ウェブサービスの規約）
+- 運営資金の寄付は PayPal（のりものレーダーと同じ形式。支払先 admin@youme.info）。ヘルプの「10. 運営資金のご協力」と設定の「アプリを応援する」から
+- Cloudflare は無料枠に収める（1 回の実行の外部リクエストは 50 件まで、KV の書き込みは 1 日 1,000 回まで）
+
+## 秘密の情報
+- 楽天ウェブサービスのアプリ ID・アクセスキーは Cloudflare の secret `RAKUTEN_APP_ID`・`RAKUTEN_ACCESS_KEY` と `worker/.dev.vars`（gitignore 済み）。値を表示・コミットしない
+- Google の OAuth クライアント ID は公開してよい値
+
+## コード
+- 周りのコードに合わせる（コメントは日本語、命名・書き方も既存に合わせる）
+- 変更後は `npm test`・`npm run lint`・`npm run build`（型チェックを含む）が通ることを確かめる
+- コミットメッセージは日本語で、何を・なぜを短く
