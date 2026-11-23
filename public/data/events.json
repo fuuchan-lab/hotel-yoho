@@ -1,2637 +1,3555 @@
 [
- {
-  "id": "munich-xmas-sapporo-2026",
-  "city": "sapporo",
-  "start": "2026-11-20",
-  "end": "2026-12-25",
-  "venue": {
-   "ja": "大通公園 西1・2丁目",
-   "en": "Odori Park (W1-2)"
-  },
-  "title": {
-   "ja": "ミュンヘン・クリスマス市 in Sapporo",
-   "en": "Munich Christmas Market in Sapporo"
-  },
-  "category": "festival",
-  "scale": 1,
-  "url": "https://www.sapporo.travel/white-illumination/event/munich/"
- },
- {
-  "id": "tomoo-osakajo",
-  "city": "osaka",
-  "start": "2026-11-23",
-  "end": "2026-11-23",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "TOMOO 大阪城ホール公演",
-   "en": "TOMOO at Osaka-Jo Hall"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://www.osaka-johall.com/event/"
- },
- {
-  "id": "giants-fanfesta-2026",
-  "city": "tokyo",
-  "start": "2026-11-23",
-  "end": "2026-11-23",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "ジャイアンツ・ファンフェスタ2026",
-   "en": "Giants Fan Festa 2026"
-  },
-  "category": "sports",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html"
- },
- {
-  "id": "generations-osakajo",
-  "city": "osaka",
-  "start": "2026-11-25",
-  "end": "2026-11-26",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "GENERATIONS 2026 全国アリーナツアー",
-   "en": "GENERATIONS 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/78.html"
- },
- {
-  "id": "chotokkyu-tokyo-dome",
-  "city": "tokyo",
-  "start": "2026-11-25",
-  "end": "2026-11-26",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "超特急 BULLET TRAIN 1st DOME LIVE Signal",
-   "en": "BULLET TRAIN (Chotokkyu) 1st Dome Live \"Signal\""
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html"
- },
- {
-  "id": "snowman-vantelin",
-  "city": "nagoya",
-  "start": "2026-11-26",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "バンテリンドーム ナゴヤ",
-   "en": "Vantelin Dome Nagoya"
-  },
-  "title": {
-   "ja": "Snow Man DOME TOUR 2026-2027 ALL SUITE",
-   "en": "Snow Man Dome Tour 2026-2027 ALL SUITE"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/44.html"
- },
- {
-  "id": "yonezu-marinemesse",
-  "city": "fukuoka",
-  "start": "2026-11-27",
-  "end": "2026-11-28",
-  "venue": {
-   "ja": "マリンメッセ福岡",
-   "en": "Marine Messe Fukuoka"
-  },
-  "title": {
-   "ja": "米津玄師 2026 全国アリーナツアー",
-   "en": "Kenshi Yonezu 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/71.html"
- },
- {
-  "id": "bigbang-kyocera",
-  "city": "osaka",
-  "start": "2026-11-27",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "BIGBANG 2026-2027 WORLD TOUR <XX : COSMOS> IN JAPAN",
-   "en": "BIGBANG 2026-2027 World Tour <XX: COSMOS> in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "yoasobi-paypay",
-  "city": "fukuoka",
-  "start": "2026-11-28",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "みずほPayPayドーム福岡",
-   "en": "Mizuho PayPay Dome Fukuoka"
-  },
-  "title": {
-   "ja": "YOASOBI ASIA DOME & STADIUM TOUR 2026-2027",
-   "en": "YOASOBI Asia Dome & Stadium Tour 2026-2027"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/38.html"
- },
- {
-  "id": "bump-hiroshima-green-arena",
-  "city": "hiroshima",
-  "start": "2026-11-28",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "広島グリーンアリーナ",
-   "en": "Hiroshima Green Arena"
-  },
-  "title": {
-   "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
-   "en": "BUMP OF CHICKEN Tour 2026-2027 Ratio Clavis"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/79.html"
- },
- {
-  "id": "cutie-street-ig",
-  "city": "nagoya",
-  "start": "2026-11-28",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "IGアリーナ",
-   "en": "IG Arena"
-  },
-  "title": {
-   "ja": "CUTIE STREET 2026 アリーナツアー",
-   "en": "CUTIE STREET 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/763.html"
- },
- {
-  "id": "yazawa-osakajo",
-  "city": "osaka",
-  "start": "2026-11-28",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "矢沢永吉 2026 全国ツアー",
-   "en": "Eikichi Yazawa 2026 Japan Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/78.html"
- },
- {
-  "id": "glay-ariake",
-  "city": "tokyo",
-  "start": "2026-11-28",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "有明アリーナ",
-   "en": "Ariake Arena"
-  },
-  "title": {
-   "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
-   "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/663.html"
- },
- {
-  "id": "haipa-game-final-tokyo-dome",
-  "city": "tokyo",
-  "start": "2026-11-28",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "配信者ハイパーゲーム大会 FINAL",
-   "en": "Streamer Hyper Game Tournament FINAL"
-  },
-  "category": "expo",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html"
- },
- {
-  "id": "yamapi-pia-arena",
-  "city": "yokohama",
-  "start": "2026-11-28",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "ぴあアリーナMM",
-   "en": "PIA Arena MM"
-  },
-  "title": {
-   "ja": "山下智久 TOUR 2026 DREAMING",
-   "en": "Tomohisa Yamashita Tour 2026 DREAMING"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/603.html"
- },
- {
-  "id": "macaroni-glion",
-  "city": "kobe",
-  "start": "2026-11-29",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "GLION ARENA KOBE",
-   "en": "GLION ARENA KOBE"
-  },
-  "title": {
-   "ja": "マカロニえんぴつ 2026 全国アリーナツアー",
-   "en": "Macaroni Enpitsu 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/748.html"
- },
- {
-  "id": "japan-cup-2026",
-  "city": "tokyo",
-  "start": "2026-11-29",
-  "end": "2026-11-29",
-  "venue": {
-   "ja": "東京競馬場（府中）",
-   "en": "Tokyo Racecourse (Fuchu)"
-  },
-  "title": {
-   "ja": "ジャパンカップ（GI）",
-   "en": "Japan Cup (G1)"
-  },
-  "category": "sports",
-  "scale": 3,
-  "url": "https://www.jra.go.jp/datafile/ranking/g1/2026.html"
- },
- {
-  "id": "aimyon-budokan",
-  "city": "tokyo",
-  "start": "2026-11-30",
-  "end": "2026-12-01",
-  "venue": {
-   "ja": "日本武道館",
-   "en": "Nippon Budokan"
-  },
-  "title": {
-   "ja": "あいみょん AIMYON 10th anniversary LIVE 2026",
-   "en": "Aimyon 10th Anniversary Live 2026"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/87.html"
- },
- {
-  "id": "uverworld-osakajo",
-  "city": "osaka",
-  "start": "2026-12-01",
-  "end": "2026-12-02",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "UVERworld 大阪城ホール公演",
-   "en": "UVERworld at Osaka-Jo Hall"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://www.osaka-johall.com/event/"
- },
- {
-  "id": "enhypen-tokyo-dome",
-  "city": "tokyo",
-  "start": "2026-12-01",
-  "end": "2026-12-02",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN JAPAN",
-   "en": "ENHYPEN World Tour 'BLOOD SAGA' in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
- },
- {
-  "id": "mga-glion",
-  "city": "kobe",
-  "start": "2026-12-02",
-  "end": "2026-12-03",
-  "venue": {
-   "ja": "GLION ARENA KOBE",
-   "en": "GLION ARENA KOBE"
-  },
-  "title": {
-   "ja": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\"",
-   "en": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/748.html"
- },
- {
-  "id": "aiko-gaishi",
-  "city": "nagoya",
-  "start": "2026-12-02",
-  "end": "2026-12-03",
-  "venue": {
-   "ja": "日本ガイシホール",
-   "en": "Nippon Gaishi Hall"
-  },
-  "title": {
-   "ja": "aiko Love Like Pop vol.26",
-   "en": "aiko Love Like Pop vol.26"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/70.html"
- },
- {
-  "id": "numberi-kyocera",
-  "city": "osaka",
-  "start": "2026-12-02",
-  "end": "2026-12-02",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "Number_i LIVE TOUR No.III",
-   "en": "Number_i Live Tour No.III"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "ecopro-2026",
-  "city": "tokyo",
-  "start": "2026-12-02",
-  "end": "2026-12-04",
-  "venue": {
-   "ja": "東京ビッグサイト",
-   "en": "Tokyo Big Sight"
-  },
-  "title": {
-   "ja": "エコプロ2026",
-   "en": "Eco-Products 2026"
-  },
-  "category": "expo",
-  "scale": 2,
-  "url": "https://messe.nikkei.co.jp/images/ecopro26_fieldtripguide.pdf"
- },
- {
-  "id": "mrchildren-yokohama-arena",
-  "city": "yokohama",
-  "start": "2026-12-02",
-  "end": "2026-12-03",
-  "venue": {
-   "ja": "横浜アリーナ",
-   "en": "Yokohama Arena"
-  },
-  "title": {
-   "ja": "Mr.Children 2026 全国アリーナツアー",
-   "en": "Mr.Children 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/63.html"
- },
- {
-  "id": "yonezu-grandi21",
-  "city": "sendai",
-  "start": "2026-12-03",
-  "end": "2026-12-04",
-  "venue": {
-   "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
-   "en": "Sekisui Heim Super Arena (Grandi 21)"
-  },
-  "title": {
-   "ja": "米津玄師 2026 全国アリーナツアー",
-   "en": "Kenshi Yonezu 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/75.html"
- },
- {
-  "id": "yazawa-budokan-1203",
-  "city": "tokyo",
-  "start": "2026-12-03",
-  "end": "2026-12-03",
-  "venue": {
-   "ja": "日本武道館",
-   "en": "Nippon Budokan"
-  },
-  "title": {
-   "ja": "矢沢永吉 2026 全国ツアー",
-   "en": "Eikichi Yazawa 2026 Japan Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/87.html"
- },
- {
-  "id": "snowman-paypay",
-  "city": "fukuoka",
-  "start": "2026-12-04",
-  "end": "2026-12-06",
-  "venue": {
-   "ja": "みずほPayPayドーム福岡",
-   "en": "Mizuho PayPay Dome Fukuoka"
-  },
-  "title": {
-   "ja": "Snow Man DOME TOUR 2026-2027 ALL SUITE",
-   "en": "Snow Man Dome Tour 2026-2027 ALL SUITE"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/38.html"
- },
- {
-  "id": "dreamination-2026",
-  "city": "hiroshima",
-  "start": "2026-12-04",
-  "end": "2027-01-24",
-  "venue": {
-   "ja": "平和大通り ほか市内中心部",
-   "en": "Peace Boulevard & central Hiroshima"
-  },
-  "title": {
-   "ja": "ひろしまドリミネーション2026",
-   "en": "Hiroshima Dreamination 2026"
-  },
-  "category": "festival",
-  "scale": 1,
-  "url": "https://www.walkerplus.com/event/ar0834e17637/"
- },
- {
-  "id": "sendai-pageant-2026",
-  "city": "sendai",
-  "start": "2026-12-04",
-  "end": "2026-12-27",
-  "venue": {
-   "ja": "定禅寺通",
-   "en": "Jozenji-dori Avenue"
-  },
-  "title": {
-   "ja": "SENDAI光のページェント",
-   "en": "SENDAI Pageant of Starlight"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://www.city.sendai.jp/kyoikukate/documents/20260819hikapeangels.pdf"
- },
- {
-  "id": "bigbang-vantelin",
-  "city": "nagoya",
-  "start": "2026-12-05",
-  "end": "2026-12-06",
-  "venue": {
-   "ja": "バンテリンドーム ナゴヤ",
-   "en": "Vantelin Dome Nagoya"
-  },
-  "title": {
-   "ja": "BIGBANG 2026-2027 WORLD TOUR IN JAPAN",
-   "en": "BIGBANG 2026-2027 World Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/44.html"
- },
- {
-  "id": "exile-kyocera",
-  "city": "osaka",
-  "start": "2026-12-05",
-  "end": "2026-12-06",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "EXILE 25th ANNIVERSARY BEST LIVE ～LDH PERFECT YEAR 2026～",
-   "en": "EXILE 25th Anniversary Best Live - LDH Perfect Year 2026"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "macaroni-ariake",
-  "city": "tokyo",
-  "start": "2026-12-05",
-  "end": "2026-12-06",
-  "venue": {
-   "ja": "有明アリーナ",
-   "en": "Ariake Arena"
-  },
-  "title": {
-   "ja": "マカロニえんぴつ 2026 全国アリーナツアー",
-   "en": "Macaroni Enpitsu 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/663.html"
- },
- {
-  "id": "yazawa-budokan-1205",
-  "city": "tokyo",
-  "start": "2026-12-05",
-  "end": "2026-12-06",
-  "venue": {
-   "ja": "日本武道館",
-   "en": "Nippon Budokan"
-  },
-  "title": {
-   "ja": "矢沢永吉 2026 全国ツアー",
-   "en": "Eikichi Yazawa 2026 Japan Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/87.html"
- },
- {
-  "id": "yoasobi-tokyo-dome",
-  "city": "tokyo",
-  "start": "2026-12-05",
-  "end": "2026-12-06",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "YOASOBI 11-CITY ASIA-OCEANIA TOUR 2026-2027 \"超惑星\"",
-   "en": "YOASOBI Asia-Oceania Tour 2026-2027 \"Chouwakusei\""
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
- },
- {
-  "id": "ryokushaka-yokohama-arena",
-  "city": "yokohama",
-  "start": "2026-12-05",
-  "end": "2026-12-06",
-  "venue": {
-   "ja": "横浜アリーナ",
-   "en": "Yokohama Arena"
-  },
-  "title": {
-   "ja": "緑黄色社会 2026 全国アリーナツアー",
-   "en": "Ryokuoushoku Shakai 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/63.html"
- },
- {
-  "id": "yamapi-marinemesse",
-  "city": "fukuoka",
-  "start": "2026-12-06",
-  "end": "2026-12-06",
-  "venue": {
-   "ja": "マリンメッセ福岡",
-   "en": "Marine Messe Fukuoka"
-  },
-  "title": {
-   "ja": "山下智久 TOUR 2026 DREAMING",
-   "en": "Tomohisa Yamashita Tour 2026 DREAMING"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/71.html"
- },
- {
-  "id": "yonezu-portmesse",
-  "city": "nagoya",
-  "start": "2026-12-08",
-  "end": "2026-12-09",
-  "venue": {
-   "ja": "ポートメッセなごや",
-   "en": "Port Messe Nagoya"
-  },
-  "title": {
-   "ja": "米津玄師 2026 全国アリーナツアー",
-   "en": "Kenshi Yonezu 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/383.html"
- },
- {
-  "id": "mga-marinemesse",
-  "city": "fukuoka",
-  "start": "2026-12-09",
-  "end": "2026-12-10",
-  "venue": {
-   "ja": "マリンメッセ福岡",
-   "en": "Marine Messe Fukuoka"
-  },
-  "title": {
-   "ja": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\"",
-   "en": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/71.html"
- },
- {
-  "id": "hinatazaka-xmas-yoyogi",
-  "city": "tokyo",
-  "start": "2026-12-09",
-  "end": "2026-12-11",
-  "venue": {
-   "ja": "国立代々木競技場 第一体育館",
-   "en": "Yoyogi National Gymnasium"
-  },
-  "title": {
-   "ja": "日向坂46 クリスマスイベント2026",
-   "en": "Hinatazaka46 Christmas Event 2026"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/84.html"
- },
- {
-  "id": "numberi-tokyo-dome",
-  "city": "tokyo",
-  "start": "2026-12-09",
-  "end": "2026-12-10",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "Number_i LIVE TOUR No.III",
-   "en": "Number_i Live Tour No.III"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
- },
- {
-  "id": "yazawa-budokan-1209",
-  "city": "tokyo",
-  "start": "2026-12-09",
-  "end": "2026-12-09",
-  "venue": {
-   "ja": "日本武道館",
-   "en": "Nippon Budokan"
-  },
-  "title": {
-   "ja": "矢沢永吉 2026 全国ツアー",
-   "en": "Eikichi Yazawa 2026 Japan Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/87.html"
- },
- {
-  "id": "fujiikaze-kyocera-1210",
-  "city": "osaka",
-  "start": "2026-12-10",
-  "end": "2026-12-10",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "藤井風 Prema World Tour",
-   "en": "Fujii Kaze Prema World Tour"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "tokyo-comic-con-2026",
-  "city": "tokyo",
-  "start": "2026-12-11",
-  "end": "2026-12-13",
-  "venue": {
-   "ja": "幕張メッセ",
-   "en": "Makuhari Messe"
-  },
-  "title": {
-   "ja": "東京コミコン2026",
-   "en": "Tokyo Comic Con 2026"
-  },
-  "category": "expo",
-  "scale": 2,
-  "url": "https://www.m-messe.co.jp/event/"
- },
- {
-  "id": "yazawa-budokan-1211",
-  "city": "tokyo",
-  "start": "2026-12-11",
-  "end": "2026-12-12",
-  "venue": {
-   "ja": "日本武道館",
-   "en": "Nippon Budokan"
-  },
-  "title": {
-   "ja": "矢沢永吉 2026 全国ツアー",
-   "en": "Eikichi Yazawa 2026 Japan Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/87.html"
- },
- {
-  "id": "bump-marinemesse",
-  "city": "fukuoka",
-  "start": "2026-12-12",
-  "end": "2026-12-13",
-  "venue": {
-   "ja": "マリンメッセ福岡",
-   "en": "Marine Messe Fukuoka"
-  },
-  "title": {
-   "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
-   "en": "BUMP OF CHICKEN Tour 2026-2027 Ratio Clavis"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/71.html"
- },
- {
-  "id": "hsj-paypay",
-  "city": "fukuoka",
-  "start": "2026-12-12",
-  "end": "2026-12-13",
-  "venue": {
-   "ja": "みずほPayPayドーム福岡",
-   "en": "Mizuho PayPay Dome Fukuoka"
-  },
-  "title": {
-   "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet",
-   "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/38.html"
- },
- {
-  "id": "fujiikaze-kyocera-1212",
-  "city": "osaka",
-  "start": "2026-12-12",
-  "end": "2026-12-13",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "藤井風 Prema World Tour",
-   "en": "Fujii Kaze Prema World Tour"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "glay-kitaeru",
-  "city": "sapporo",
-  "start": "2026-12-12",
-  "end": "2026-12-13",
-  "venue": {
-   "ja": "北海きたえーる",
-   "en": "Hokkai Kitaeru"
-  },
-  "title": {
-   "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
-   "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/76.html"
- },
- {
-  "id": "yamapi-xebio-sendai",
-  "city": "sendai",
-  "start": "2026-12-12",
-  "end": "2026-12-13",
-  "venue": {
-   "ja": "ゼビオアリーナ仙台",
-   "en": "Xebio Arena Sendai"
-  },
-  "title": {
-   "ja": "山下智久 TOUR 2026 DREAMING",
-   "en": "Tomohisa Yamashita Tour 2026 DREAMING"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/212.html"
- },
- {
-  "id": "kawaii-lab-xmas-ariake",
-  "city": "tokyo",
-  "start": "2026-12-12",
-  "end": "2026-12-13",
-  "venue": {
-   "ja": "有明アリーナ",
-   "en": "Ariake Arena"
-  },
-  "title": {
-   "ja": "KAWAII LAB. クリスマスイベント2026",
-   "en": "KAWAII LAB. Christmas Event 2026"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/663.html"
- },
- {
-  "id": "sumika-tgt",
-  "city": "tokyo",
-  "start": "2026-12-12",
-  "end": "2026-12-13",
-  "venue": {
-   "ja": "東京ガーデンシアター",
-   "en": "Tokyo Garden Theater"
-  },
-  "title": {
-   "ja": "sumika 2026 秋冬全国ツアー",
-   "en": "sumika Autumn/Winter 2026 Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/608.html"
- },
- {
-  "id": "bigbang-tokyo-dome",
-  "city": "tokyo",
-  "start": "2026-12-13",
-  "end": "2026-12-15",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "BIGBANG 2026-2027 WORLD TOUR <XX : COSMOS> IN JAPAN",
-   "en": "BIGBANG 2026-2027 World Tour <XX: COSMOS> in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
- },
- {
-  "id": "mga-grandi21",
-  "city": "sendai",
-  "start": "2026-12-15",
-  "end": "2026-12-16",
-  "venue": {
-   "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
-   "en": "Sekisui Heim Super Arena (Grandi 21)"
-  },
-  "title": {
-   "ja": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\"",
-   "en": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/75.html"
- },
- {
-  "id": "saucydog-ariake",
-  "city": "tokyo",
-  "start": "2026-12-15",
-  "end": "2026-12-16",
-  "venue": {
-   "ja": "有明アリーナ",
-   "en": "Ariake Arena"
-  },
-  "title": {
-   "ja": "Saucy Dog 2026-2027 全国アリーナツアー",
-   "en": "Saucy Dog 2026-2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/663.html"
- },
- {
-  "id": "kuwata-gaishi",
-  "city": "nagoya",
-  "start": "2026-12-16",
-  "end": "2026-12-17",
-  "venue": {
-   "ja": "日本ガイシホール",
-   "en": "Nippon Gaishi Hall"
-  },
-  "title": {
-   "ja": "桑田佳祐 2026 全国アリーナツアー 追加公演",
-   "en": "Keisuke Kuwata 2026 Arena Tour (added shows)"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/70.html"
- },
- {
-  "id": "yonezu-k-arena",
-  "city": "yokohama",
-  "start": "2026-12-16",
-  "end": "2026-12-17",
-  "venue": {
-   "ja": "Kアリーナ横浜",
-   "en": "K-Arena Yokohama"
-  },
-  "title": {
-   "ja": "米津玄師 2026 全国アリーナツアー",
-   "en": "Kenshi Yonezu 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/694.html"
- },
- {
-  "id": "glay-marinemesse",
-  "city": "fukuoka",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "マリンメッセ福岡",
-   "en": "Marine Messe Fukuoka"
-  },
-  "title": {
-   "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
-   "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/71.html"
- },
- {
-  "id": "txt-paypay",
-  "city": "fukuoka",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "みずほPayPayドーム福岡",
-   "en": "Mizuho PayPay Dome Fukuoka"
-  },
-  "title": {
-   "ja": "TOMORROW X TOGETHER WORLD TOUR IN JAPAN",
-   "en": "TOMORROW X TOGETHER World Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/38.html"
- },
- {
-  "id": "omi-glion",
-  "city": "kobe",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "GLION ARENA KOBE",
-   "en": "GLION ARENA KOBE"
-  },
-  "title": {
-   "ja": "ØMI MOON NIGHT 2026 \"Ø to 3\" ～大忘年会SPECIAL～",
-   "en": "OMI MOON NIGHT 2026 \"O to 3\" Year-End Special"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/748.html"
- },
- {
-  "id": "bump-ig",
-  "city": "nagoya",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "IGアリーナ",
-   "en": "IG Arena"
-  },
-  "title": {
-   "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
-   "en": "BUMP OF CHICKEN Tour 2026-2027 Ratio Clavis"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/763.html"
- },
- {
-  "id": "hsj-vantelin",
-  "city": "nagoya",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "バンテリンドーム ナゴヤ",
-   "en": "Vantelin Dome Nagoya"
-  },
-  "title": {
-   "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet",
-   "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/44.html"
- },
- {
-  "id": "merry-rock-parade-2026",
-  "city": "nagoya",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "ポートメッセなごや",
-   "en": "Port Messe Nagoya"
-  },
-  "title": {
-   "ja": "MERRY ROCK PARADE 2026",
-   "en": "MERRY ROCK PARADE 2026"
-  },
-  "category": "fes",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/383.html"
- },
- {
-  "id": "kobukuro-osakajo",
-  "city": "osaka",
-  "start": "2026-12-19",
-  "end": "2026-12-19",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "KOBUKURO LIVE TOUR 2026 霞日和 追加公演",
-   "en": "Kobukuro Live Tour 2026 (added show)"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/78.html"
- },
- {
-  "id": "lesserafim-kyocera",
-  "city": "osaka",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "2026 LE SSERAFIM TOUR 'PUREFLOW' IN KYOCERA DOME OSAKA",
-   "en": "LE SSERAFIM Tour 'PUREFLOW' in Kyocera Dome Osaka"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "fujiikaze-tokyo-dome",
-  "city": "tokyo",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "藤井風 Prema World Tour",
-   "en": "Fujii Kaze Prema World Tour"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
- },
- {
-  "id": "jump-festa-2027",
-  "city": "tokyo",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "幕張メッセ",
-   "en": "Makuhari Messe"
-  },
-  "title": {
-   "ja": "ジャンプフェスタ2027",
-   "en": "Jump Festa 2027"
-  },
-  "category": "expo",
-  "scale": 3,
-  "url": "https://animeanime.jp/article/2026/09/28/103297.html"
- },
- {
-  "id": "mga-pia-arena",
-  "city": "yokohama",
-  "start": "2026-12-19",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "ぴあアリーナMM",
-   "en": "PIA Arena MM"
-  },
-  "title": {
-   "ja": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\"",
-   "en": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/603.html"
- },
- {
-  "id": "zenkoku-hs-ekiden-2026",
-  "city": "kyoto",
-  "start": "2026-12-20",
-  "end": "2026-12-20",
-  "venue": {
-   "ja": "たけびしスタジアム京都 発着",
-   "en": "Takebishi Stadium Kyoto (start/finish)"
-  },
-  "title": {
-   "ja": "全国高校駅伝（男子第77回・女子第38回）",
-   "en": "All Japan High School Ekiden (Men 77th / Women 38th)"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://spocale.com/sports/7/game/365864"
- },
- {
-  "id": "hinatazaka-gaishi",
-  "city": "nagoya",
-  "start": "2026-12-22",
-  "end": "2026-12-24",
-  "venue": {
-   "ja": "日本ガイシホール",
-   "en": "Nippon Gaishi Hall"
-  },
-  "title": {
-   "ja": "日向坂46 ひなくり2026",
-   "en": "Hinatazaka46 \"Hinakuri 2026\" Christmas Event"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/70.html"
- },
- {
-  "id": "kuwata-osakajo",
-  "city": "osaka",
-  "start": "2026-12-22",
-  "end": "2026-12-23",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "桑田佳祐 2026 全国アリーナツアー 追加公演",
-   "en": "Keisuke Kuwata 2026 Arena Tour (added shows)"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/78.html"
- },
- {
-  "id": "generations-yoyogi",
-  "city": "tokyo",
-  "start": "2026-12-22",
-  "end": "2026-12-23",
-  "venue": {
-   "ja": "国立代々木競技場 第一体育館",
-   "en": "Yoyogi National Gymnasium"
-  },
-  "title": {
-   "ja": "GENERATIONS 2026 全国アリーナツアー",
-   "en": "GENERATIONS 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/84.html"
- },
- {
-  "id": "sekaowa-pia-arena",
-  "city": "yokohama",
-  "start": "2026-12-22",
-  "end": "2026-12-23",
-  "venue": {
-   "ja": "ぴあアリーナMM",
-   "en": "PIA Arena MM"
-  },
-  "title": {
-   "ja": "SEKAI NO OWARI 2026 ファンクラブライブ",
-   "en": "SEKAI NO OWARI 2026 Fan Club Live"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/603.html"
- },
- {
-  "id": "saucydog-marinemesse",
-  "city": "fukuoka",
-  "start": "2026-12-23",
-  "end": "2026-12-23",
-  "venue": {
-   "ja": "マリンメッセ福岡",
-   "en": "Marine Messe Fukuoka"
-  },
-  "title": {
-   "ja": "Saucy Dog 2026-2027 全国アリーナツアー",
-   "en": "Saucy Dog 2026-2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/71.html"
- },
- {
-  "id": "alfee-budokan",
-  "city": "tokyo",
-  "start": "2026-12-23",
-  "end": "2026-12-24",
-  "venue": {
-   "ja": "日本武道館",
-   "en": "Nippon Budokan"
-  },
-  "title": {
-   "ja": "THE ALFEE 2026 冬 全国アリーナツアー",
-   "en": "THE ALFEE Winter 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/87.html"
- },
- {
-  "id": "snowman-tokyo-dome",
-  "city": "tokyo",
-  "start": "2026-12-23",
-  "end": "2026-12-26",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "Snow Man DOME TOUR 2026-2027 ALL SUITE",
-   "en": "Snow Man Dome Tour 2026-2027 ALL SUITE"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
- },
- {
-  "id": "all-japan-figure-2026",
-  "city": "osaka",
-  "start": "2026-12-24",
-  "end": "2026-12-27",
-  "venue": {
-   "ja": "東和薬品RACTABドーム（門真）",
-   "en": "Towa Pharmaceutical RACTAB Dome (Kadoma)"
-  },
-  "title": {
-   "ja": "第95回全日本フィギュアスケート選手権大会",
-   "en": "95th All Japan Figure Skating Championships"
-  },
-  "category": "sports",
-  "scale": 2,
-  "url": "https://www.skatingjapan.or.jp/figure/event/detail.php?id=2419"
- },
- {
-  "id": "kismyft2-kyocera",
-  "city": "osaka",
-  "start": "2026-12-25",
-  "end": "2026-12-26",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "Kis-My-Ft2 DOME TOUR 2026-2027 fan IS",
-   "en": "Kis-My-Ft2 Dome Tour 2026-2027 \"fan IS\""
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "milk-osakajo",
-  "city": "osaka",
-  "start": "2026-12-25",
-  "end": "2026-12-26",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "M!LK 2026-2027 全国アリーナツアー",
-   "en": "M!LK 2026-2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/78.html"
- },
- {
-  "id": "bigbang-paypay",
-  "city": "fukuoka",
-  "start": "2026-12-26",
-  "end": "2026-12-27",
-  "venue": {
-   "ja": "みずほPayPayドーム福岡",
-   "en": "Mizuho PayPay Dome Fukuoka"
-  },
-  "title": {
-   "ja": "BIGBANG 2026-2027 WORLD TOUR IN JAPAN",
-   "en": "BIGBANG 2026-2027 World Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/38.html"
- },
- {
-  "id": "enhypen-vantelin",
-  "city": "nagoya",
-  "start": "2026-12-26",
-  "end": "2026-12-27",
-  "venue": {
-   "ja": "バンテリンドーム ナゴヤ",
-   "en": "Vantelin Dome Nagoya"
-  },
-  "title": {
-   "ja": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN JAPAN",
-   "en": "ENHYPEN World Tour 'BLOOD SAGA' in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://prtimes.jp/main/html/rd/p/000000684.000045862.html"
- },
- {
-  "id": "yamapi-portmesse",
-  "city": "nagoya",
-  "start": "2026-12-26",
-  "end": "2026-12-27",
-  "venue": {
-   "ja": "ポートメッセなごや",
-   "en": "Port Messe Nagoya"
-  },
-  "title": {
-   "ja": "山下智久 TOUR 2026 DREAMING",
-   "en": "Tomohisa Yamashita Tour 2026 DREAMING"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/383.html"
- },
- {
-  "id": "radio-crazy-2026",
-  "city": "osaka",
-  "start": "2026-12-26",
-  "end": "2026-12-28",
-  "venue": {
-   "ja": "インテックス大阪",
-   "en": "INTEX Osaka"
-  },
-  "title": {
-   "ja": "FM802 ROCK FESTIVAL RADIO CRAZY 2026",
-   "en": "FM802 Rock Festival RADIO CRAZY 2026"
-  },
-  "category": "fes",
-  "scale": 2,
-  "url": "https://eplus.jp/radiocrazy2026/"
- },
- {
-  "id": "countdown-japan-2627",
-  "city": "tokyo",
-  "start": "2026-12-26",
-  "end": "2026-12-31",
-  "venue": {
-   "ja": "幕張メッセ",
-   "en": "Makuhari Messe"
-  },
-  "title": {
-   "ja": "COUNTDOWN JAPAN 26/27（12/28休演）",
-   "en": "COUNTDOWN JAPAN 26/27 (no show Dec 28)"
-  },
-  "category": "fes",
-  "scale": 3,
-  "url": "https://www.m-messe.co.jp/event/"
- },
- {
-  "id": "fukuyama-k-arena-1226",
-  "city": "yokohama",
-  "start": "2026-12-26",
-  "end": "2026-12-27",
-  "venue": {
-   "ja": "Kアリーナ横浜",
-   "en": "K-Arena Yokohama"
-  },
-  "title": {
-   "ja": "福山雅治 冬の大感謝祭 2026",
-   "en": "Masaharu Fukuyama Winter Thanksgiving Festival 2026"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/694.html"
- },
- {
-  "id": "hanazono-hs-rugby-2026",
-  "city": "osaka",
-  "start": "2026-12-27",
-  "end": "2027-01-07",
-  "venue": {
-   "ja": "東大阪市花園ラグビー場",
-   "en": "Hanazono Rugby Stadium (Higashiosaka)"
-  },
-  "title": {
-   "ja": "第106回全国高等学校ラグビーフットボール大会（花園）",
-   "en": "106th National High School Rugby Tournament (Hanazono)"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://www.kanaloco.jp/sports/misc/article-1318831.html"
- },
- {
-  "id": "arima-kinen-2026",
-  "city": "tokyo",
-  "start": "2026-12-27",
-  "end": "2026-12-27",
-  "venue": {
-   "ja": "中山競馬場（船橋）",
-   "en": "Nakayama Racecourse (Funabashi)"
-  },
-  "title": {
-   "ja": "有馬記念（GI）",
-   "en": "Arima Kinen (G1)"
-  },
-  "category": "sports",
-  "scale": 3,
-  "url": "https://jra.jp/news/202611/111301.html"
- },
- {
-  "id": "hs-soccer-opening-2026",
-  "city": "tokyo",
-  "start": "2026-12-28",
-  "end": "2026-12-28",
-  "venue": {
-   "ja": "MUFGスタジアム（国立競技場）",
-   "en": "MUFG Stadium (Japan National Stadium)"
-  },
-  "title": {
-   "ja": "第105回全国高校サッカー選手権 開会式・開幕戦",
-   "en": "105th All Japan High School Soccer Tournament: Opening Match"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://l-tike.com/ntvzero/event/hs105.html"
- },
- {
-  "id": "kuwata-yokohama-arena-1228",
-  "city": "yokohama",
-  "start": "2026-12-28",
-  "end": "2026-12-28",
-  "venue": {
-   "ja": "横浜アリーナ",
-   "en": "Yokohama Arena"
-  },
-  "title": {
-   "ja": "桑田佳祐 2026 全国アリーナツアー 追加公演",
-   "en": "Keisuke Kuwata 2026 Arena Tour (added show)"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/63.html"
- },
- {
-  "id": "alfee-osakajo",
-  "city": "osaka",
-  "start": "2026-12-29",
-  "end": "2026-12-29",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "THE ALFEE 2026 冬 全国アリーナツアー",
-   "en": "THE ALFEE Winter 2026 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/78.html"
- },
- {
-  "id": "comiket-c109",
-  "city": "tokyo",
-  "start": "2026-12-29",
-  "end": "2026-12-31",
-  "venue": {
-   "ja": "東京ビッグサイト",
-   "en": "Tokyo Big Sight"
-  },
-  "title": {
-   "ja": "コミックマーケット109（C109）",
-   "en": "Comic Market 109 (Comiket C109)"
-  },
-  "category": "expo",
-  "scale": 3,
-  "url": "https://kai-you.net/article/94962"
- },
- {
-  "id": "hsj-tokyo-dome-dec",
-  "city": "tokyo",
-  "start": "2026-12-29",
-  "end": "2026-12-30",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet",
-   "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
- },
- {
-  "id": "fukuyama-k-arena-1229",
-  "city": "yokohama",
-  "start": "2026-12-29",
-  "end": "2026-12-29",
-  "venue": {
-   "ja": "Kアリーナ横浜",
-   "en": "K-Arena Yokohama"
-  },
-  "title": {
-   "ja": "福山雅治 冬の大感謝祭 2026",
-   "en": "Masaharu Fukuyama Winter Thanksgiving Festival 2026"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/694.html"
- },
- {
-  "id": "kobe-music-commons-2026",
-  "city": "kobe",
-  "start": "2026-12-30",
-  "end": "2026-12-30",
-  "venue": {
-   "ja": "GLION ARENA KOBE",
-   "en": "GLION ARENA KOBE"
-  },
-  "title": {
-   "ja": "KOBE MUSIC COMMONS 2026",
-   "en": "KOBE MUSIC COMMONS 2026"
-  },
-  "category": "fes",
-  "scale": 1,
-  "url": "https://prtimes.jp/main/html/rd/p/000000235.000086732.html"
- },
- {
-  "id": "ayu-countdown-yoyogi",
-  "city": "tokyo",
-  "start": "2026-12-30",
-  "end": "2026-12-31",
-  "venue": {
-   "ja": "国立代々木競技場 第一体育館",
-   "en": "Yoyogi National Gymnasium"
-  },
-  "title": {
-   "ja": "浜崎あゆみ COUNTDOWN LIVE 2026-2027",
-   "en": "Ayumi Hamasaki Countdown Live 2026-2027"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/84.html"
- },
- {
-  "id": "kuwata-yokohama-arena-1230",
-  "city": "yokohama",
-  "start": "2026-12-30",
-  "end": "2026-12-31",
-  "venue": {
-   "ja": "横浜アリーナ",
-   "en": "Yokohama Arena"
-  },
-  "title": {
-   "ja": "桑田佳祐 2026 全国アリーナツアー 追加公演（年越し）",
-   "en": "Keisuke Kuwata 2026 Arena Tour (year-end shows)"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/63.html"
- },
- {
-  "id": "rizin-nye-nagoya-2026",
-  "city": "nagoya",
-  "start": "2026-12-31",
-  "end": "2026-12-31",
-  "venue": {
-   "ja": "バンテリンドーム ナゴヤ",
-   "en": "Vantelin Dome Nagoya"
-  },
-  "title": {
-   "ja": "RIZIN 大晦日 名古屋大会（RIZIN NYE in Nagoya）",
-   "en": "RIZIN New Year's Eve in Nagoya"
-  },
-  "category": "sports",
-  "scale": 2,
-  "url": "https://www.rizin.tv/products/rizin-nye-in-nagoya"
- },
- {
-  "id": "aiko-osakajo-countdown",
-  "city": "osaka",
-  "start": "2026-12-31",
-  "end": "2026-12-31",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "aiko カウントダウンライブ（Love Like Pop vol.26）",
-   "en": "aiko Countdown Live (Love Like Pop vol.26)"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/78.html"
- },
- {
-  "id": "naniwa-kyocera-countdown",
-  "city": "osaka",
-  "start": "2026-12-31",
-  "end": "2027-01-01",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "なにわ男子 DOME LIVE 2026-2027「ND⁵+」～あけおめぇ 初夢ぇ Stay with MEE～",
-   "en": "Naniwa Danshi Dome Live 2026-2027 \"ND5+\" (Countdown)"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "fukuyama-k-arena-1231",
-  "city": "yokohama",
-  "start": "2026-12-31",
-  "end": "2026-12-31",
-  "venue": {
-   "ja": "Kアリーナ横浜",
-   "en": "K-Arena Yokohama"
-  },
-  "title": {
-   "ja": "福山雅治 冬の大感謝祭 2026（大晦日）",
-   "en": "Masaharu Fukuyama Winter Thanksgiving Festival 2026 (NYE)"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/694.html"
- },
- {
-  "id": "kawasaki-daishi-hatsumode-2027",
-  "city": "kawasaki",
-  "start": "2027-01-01",
-  "end": "2027-01-03",
-  "venue": {
-   "ja": "川崎大師 平間寺",
-   "en": "Kawasaki Daishi Heikenji"
-  },
-  "title": {
-   "ja": "川崎大師 初詣（三が日）",
-   "en": "New Year temple visits at Kawasaki Daishi"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://tabi-mag.jp/hatsumoude-best20/"
- },
- {
-  "id": "ikuta-hatsumode-2027",
-  "city": "kobe",
-  "start": "2027-01-01",
-  "end": "2027-01-03",
-  "venue": {
-   "ja": "生田神社",
-   "en": "Ikuta Shrine"
-  },
-  "title": {
-   "ja": "生田神社 初詣（三が日）",
-   "en": "New Year shrine visits at Ikuta Shrine"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://tabi-mag.jp/hatsumoude-best20/"
- },
- {
-  "id": "fushimi-inari-hatsumode-2027",
-  "city": "kyoto",
-  "start": "2027-01-01",
-  "end": "2027-01-03",
-  "venue": {
-   "ja": "伏見稲荷大社",
-   "en": "Fushimi Inari Taisha"
-  },
-  "title": {
-   "ja": "伏見稲荷大社 初詣（三が日）",
-   "en": "New Year shrine visits at Fushimi Inari Taisha"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://tabi-mag.jp/hatsumoude-best20/"
- },
- {
-  "id": "atsuta-hatsumode-2027",
-  "city": "nagoya",
-  "start": "2027-01-01",
-  "end": "2027-01-03",
-  "venue": {
-   "ja": "熱田神宮",
-   "en": "Atsuta Jingu"
-  },
-  "title": {
-   "ja": "熱田神宮 初詣（三が日）",
-   "en": "New Year shrine visits at Atsuta Jingu"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://tabi-mag.jp/hatsumoude-best20/"
- },
- {
-  "id": "sumiyoshi-hatsumode-2027",
-  "city": "osaka",
-  "start": "2027-01-01",
-  "end": "2027-01-03",
-  "venue": {
-   "ja": "住吉大社",
-   "en": "Sumiyoshi Taisha"
-  },
-  "title": {
-   "ja": "住吉大社 初詣（三が日）",
-   "en": "New Year shrine visits at Sumiyoshi Taisha"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://tabi-mag.jp/hatsumoude-best20/"
- },
- {
-  "id": "hikawa-hatsumode-2027",
-  "city": "saitama",
-  "start": "2027-01-01",
-  "end": "2027-01-03",
-  "venue": {
-   "ja": "武蔵一宮 氷川神社",
-   "en": "Musashi Ichinomiya Hikawa Shrine"
-  },
-  "title": {
-   "ja": "氷川神社 初詣（三が日）",
-   "en": "New Year shrine visits at Hikawa Shrine"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://tabi-mag.jp/hatsumoude-best20/"
- },
- {
-  "id": "emperors-cup-final-2027",
-  "city": "tokyo",
-  "start": "2027-01-01",
-  "end": "2027-01-01",
-  "venue": {
-   "ja": "MUFGスタジアム（国立競技場）",
-   "en": "MUFG Stadium (Japan National Stadium)"
-  },
-  "title": {
-   "ja": "第106回天皇杯 決勝（皇后杯決勝 同日開催）",
-   "en": "106th Emperor's Cup Final (with Empress's Cup Final)"
-  },
-  "category": "sports",
-  "scale": 2,
-  "url": "https://jfa.jp/news/00035896/"
- },
- {
-  "id": "hsj-tokyo-dome-jan1",
-  "city": "tokyo",
-  "start": "2027-01-01",
-  "end": "2027-01-01",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet（元日公演）",
-   "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet (New Year's Day)"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
- },
- {
-  "id": "meiji-jingu-hatsumode-2027",
-  "city": "tokyo",
-  "start": "2027-01-01",
-  "end": "2027-01-03",
-  "venue": {
-   "ja": "明治神宮",
-   "en": "Meiji Jingu"
-  },
-  "title": {
-   "ja": "明治神宮 初詣（三が日）",
-   "en": "New Year shrine visits at Meiji Jingu"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://tabi-mag.jp/hatsumoude-best20/"
- },
- {
-  "id": "hakone-ekiden-2027",
-  "city": "tokyo",
-  "start": "2027-01-02",
-  "end": "2027-01-03",
-  "venue": {
-   "ja": "読売新聞東京本社前（大手町）発着",
-   "en": "Yomiuri Shimbun HQ, Otemachi (start/finish)"
-  },
-  "title": {
-   "ja": "第103回東京箱根間往復大学駅伝競走（箱根駅伝）",
-   "en": "103rd Hakone Ekiden"
-  },
-  "category": "sports",
-  "scale": 3,
-  "url": "https://sportiva.shueisha.co.jp/announce/ekiden2027/"
- },
- {
-  "id": "kansai-jr-osakajo",
-  "city": "osaka",
-  "start": "2027-01-03",
-  "end": "2027-01-05",
-  "venue": {
-   "ja": "大阪城ホール",
-   "en": "Osaka-Jo Hall"
-  },
-  "title": {
-   "ja": "関西ジュニア 2027 コンサート",
-   "en": "Kansai Junior 2027 Concert"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/78.html"
- },
- {
-  "id": "bruno-mars-vantelin",
-  "city": "nagoya",
-  "start": "2027-01-04",
-  "end": "2027-01-05",
-  "venue": {
-   "ja": "バンテリンドーム ナゴヤ",
-   "en": "Vantelin Dome Nagoya"
-  },
-  "title": {
-   "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
-   "en": "Bruno Mars: The Romantic Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
- },
- {
-  "id": "snowman-kyocera",
-  "city": "osaka",
-  "start": "2027-01-04",
-  "end": "2027-01-07",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "Snow Man DOME TOUR 2026-2027 ALL SUITE",
-   "en": "Snow Man Dome Tour 2026-2027 ALL SUITE"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "travisjapan-yokohama-arena",
-  "city": "yokohama",
-  "start": "2027-01-04",
-  "end": "2027-01-07",
-  "venue": {
-   "ja": "横浜アリーナ",
-   "en": "Yokohama Arena"
-  },
-  "title": {
-   "ja": "Travis Japan 2027 全国アリーナツアー",
-   "en": "Travis Japan 2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/63.html"
- },
- {
-  "id": "haruko-volleyball-2027",
-  "city": "tokyo",
-  "start": "2027-01-05",
-  "end": "2027-01-11",
-  "venue": {
-   "ja": "東京体育館",
-   "en": "Tokyo Metropolitan Gymnasium"
-  },
-  "title": {
-   "ja": "春の高校バレー（第79回全日本バレーボール高等学校選手権大会）",
-   "en": "Spring High School Volleyball (79th All Japan HS Championships)"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://spocale.com/blog/haruko/"
- },
- {
-  "id": "txt-tokyo-dome",
-  "city": "tokyo",
-  "start": "2027-01-07",
-  "end": "2027-01-08",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "TOMORROW X TOGETHER WORLD TOUR IN JAPAN",
-   "en": "TOMORROW X TOGETHER World Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/14.html"
- },
- {
-  "id": "inaba-glion",
-  "city": "kobe",
-  "start": "2027-01-09",
-  "end": "2027-01-10",
-  "venue": {
-   "ja": "GLION ARENA KOBE",
-   "en": "GLION ARENA KOBE"
-  },
-  "title": {
-   "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
-   "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/748.html"
- },
- {
-  "id": "numberi-vantelin",
-  "city": "nagoya",
-  "start": "2027-01-09",
-  "end": "2027-01-11",
-  "venue": {
-   "ja": "バンテリンドーム ナゴヤ",
-   "en": "Vantelin Dome Nagoya"
-  },
-  "title": {
-   "ja": "Number_i LIVE TOUR No.III",
-   "en": "Number_i Live Tour No.III"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/44.html"
- },
- {
-  "id": "imamiya-tokaebisu-2027",
-  "city": "osaka",
-  "start": "2027-01-09",
-  "end": "2027-01-11",
-  "venue": {
-   "ja": "今宮戎神社",
-   "en": "Imamiya Ebisu Shrine"
-  },
-  "title": {
-   "ja": "今宮戎 十日戎",
-   "en": "Toka Ebisu Festival at Imamiya Ebisu"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://osaka-info.jp/event/imamiyaebisu-tokaebisu/"
- },
- {
-  "id": "hsj-kyocera",
-  "city": "osaka",
-  "start": "2027-01-10",
-  "end": "2027-01-12",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet",
-   "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "bruno-mars-sapporo",
-  "city": "sapporo",
-  "start": "2027-01-10",
-  "end": "2027-01-11",
-  "venue": {
-   "ja": "大和ハウス プレミストドーム（札幌ドーム）",
-   "en": "Daiwa House Premist Dome (Sapporo Dome)"
-  },
-  "title": {
-   "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
-   "en": "Bruno Mars: The Romantic Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
- },
- {
-  "id": "sumo-hatsu-basho-2027",
-  "city": "tokyo",
-  "start": "2027-01-10",
-  "end": "2027-01-24",
-  "venue": {
-   "ja": "両国国技館",
-   "en": "Ryogoku Kokugikan"
-  },
-  "title": {
-   "ja": "大相撲 一月場所（初場所）",
-   "en": "Grand Sumo January Tournament (Hatsu Basho)"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://www.tabix.co.jp/domestic/special/sumo/january/"
- },
- {
-  "id": "befirst-tokyo-dome",
-  "city": "tokyo",
-  "start": "2027-01-11",
-  "end": "2027-01-12",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "BE:FIRST 5th Anniversary DOME TOUR 2027",
-   "en": "BE:FIRST 5th Anniversary Dome Tour 2027"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/14.html"
- },
- {
-  "id": "hs-soccer-final-2027",
-  "city": "tokyo",
-  "start": "2027-01-11",
-  "end": "2027-01-11",
-  "venue": {
-   "ja": "MUFGスタジアム（国立競技場）",
-   "en": "MUFG Stadium (Japan National Stadium)"
-  },
-  "title": {
-   "ja": "第105回全国高校サッカー選手権 決勝",
-   "en": "105th All Japan High School Soccer Tournament: Final"
-  },
-  "category": "sports",
-  "scale": 2,
-  "url": "https://l-tike.com/ntvzero/event/hs105.html"
- },
- {
-  "id": "dontosai-sendai-2027",
-  "city": "sendai",
-  "start": "2027-01-14",
-  "end": "2027-01-14",
-  "venue": {
-   "ja": "大崎八幡宮",
-   "en": "Osaki Hachimangu"
-  },
-  "title": {
-   "ja": "松焚祭（どんと祭）",
-   "en": "Matsutaki Festival (Donto-sai)"
-  },
-  "category": "festival",
-  "scale": 2,
-  "url": "https://www.oosaki-hachiman.or.jp/festival/matsutaki/pdf/donto.pdf"
- },
- {
-  "id": "bleague-allstar-2027",
-  "city": "nagoya",
-  "start": "2027-01-15",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "IGアリーナ",
-   "en": "IG Arena"
-  },
-  "title": {
-   "ja": "B.LEAGUE ALL-STAR GAME WEEKEND 2027 IN AICHI-NAGOYA",
-   "en": "B.LEAGUE All-Star Game Weekend 2027 in Aichi-Nagoya"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://www.nagoya-info.jp/upload/foundnewss/origin/2263546596ab48962c2d8b.pdf"
- },
- {
-  "id": "bruno-mars-belluna",
-  "city": "saitama",
-  "start": "2027-01-15",
-  "end": "2027-01-16",
-  "venue": {
-   "ja": "ベルーナドーム",
-   "en": "Belluna Dome"
-  },
-  "title": {
-   "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
-   "en": "Bruno Mars: The Romantic Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
- },
- {
-  "id": "naniwa-tokyo-dome",
-  "city": "tokyo",
-  "start": "2027-01-15",
-  "end": "2027-01-16",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "なにわ男子 DOME LIVE 2026-2027「ND⁵+」",
-   "en": "Naniwa Danshi Dome Live 2026-2027 \"ND5+\""
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/14.html"
- },
- {
-  "id": "tokyo-auto-salon-2027",
-  "city": "tokyo",
-  "start": "2027-01-15",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "幕張メッセ",
-   "en": "Makuhari Messe"
-  },
-  "title": {
-   "ja": "東京オートサロン2027",
-   "en": "Tokyo Auto Salon 2027"
-  },
-  "category": "expo",
-  "scale": 3,
-  "url": "https://carview.yahoo.co.jp/news/detail/a582ee6b66f6df4a522f0c37b7136f52d6b96e33/?mode=top"
- },
- {
-  "id": "milk-yokohama-arena",
-  "city": "yokohama",
-  "start": "2027-01-15",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "横浜アリーナ",
-   "en": "Yokohama Arena"
-  },
-  "title": {
-   "ja": "M!LK 2026-2027 全国アリーナツアー",
-   "en": "M!LK 2026-2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/63.html"
- },
- {
-  "id": "numberi-paypay",
-  "city": "fukuoka",
-  "start": "2027-01-16",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "みずほPayPayドーム福岡",
-   "en": "Mizuho PayPay Dome Fukuoka"
-  },
-  "title": {
-   "ja": "Number_i LIVE TOUR No.III",
-   "en": "Number_i Live Tour No.III"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/38.html"
- },
- {
-  "id": "glay-glion",
-  "city": "kobe",
-  "start": "2027-01-16",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "GLION ARENA KOBE",
-   "en": "GLION ARENA KOBE"
-  },
-  "title": {
-   "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
-   "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/748.html"
- },
- {
-  "id": "inaba-portmesse",
-  "city": "nagoya",
-  "start": "2027-01-16",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "ポートメッセなごや",
-   "en": "Port Messe Nagoya"
-  },
-  "title": {
-   "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
-   "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/383.html"
- },
- {
-  "id": "befirst-kyocera",
-  "city": "osaka",
-  "start": "2027-01-16",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "BE:FIRST 5th Anniversary DOME TOUR 2027",
-   "en": "BE:FIRST 5th Anniversary Dome Tour 2027"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "travisjapan-grandi21",
-  "city": "sendai",
-  "start": "2027-01-16",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
-   "en": "Sekisui Heim Super Arena (Grandi 21)"
-  },
-  "title": {
-   "ja": "Travis Japan 2027 全国アリーナツアー",
-   "en": "Travis Japan 2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/75.html"
- },
- {
-  "id": "kitani-pia-arena",
-  "city": "yokohama",
-  "start": "2027-01-16",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "ぴあアリーナMM",
-   "en": "PIA Arena MM"
-  },
-  "title": {
-   "ja": "キタニタツヤ 2026-2027 アリーナツアー",
-   "en": "Tatsuya Kitani 2026-2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/603.html"
- },
- {
-  "id": "superbeaver-k-arena",
-  "city": "yokohama",
-  "start": "2027-01-16",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "Kアリーナ横浜",
-   "en": "K-Arena Yokohama"
-  },
-  "title": {
-   "ja": "SUPER BEAVER 2026-2027 全国ツアー",
-   "en": "SUPER BEAVER 2026-2027 Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/694.html"
- },
- {
-  "id": "womens-ekiden-kyoto-2027",
-  "city": "kyoto",
-  "start": "2027-01-17",
-  "end": "2027-01-17",
-  "venue": {
-   "ja": "たけびしスタジアム京都 発着",
-   "en": "Takebishi Stadium Kyoto (start/finish)"
-  },
-  "title": {
-   "ja": "皇后盃 第45回全国都道府県対抗女子駅伝",
-   "en": "45th Empress's Cup Inter-Prefectural Women's Ekiden"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://www.jaaf-miyagi.com/track-and-field/wp-content/uploads/2026/04/c0da3af366f645e2075b166fd04dc916.pdf"
- },
- {
-  "id": "bruno-mars-kyocera",
-  "city": "osaka",
-  "start": "2027-01-19",
-  "end": "2027-01-20",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
-   "en": "Bruno Mars: The Romantic Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "equal-love-tokyo-dome",
-  "city": "tokyo",
-  "start": "2027-01-19",
-  "end": "2027-01-20",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "＝LOVE in TOKYO DOME「全ては＝LOVE」",
-   "en": "=LOVE in Tokyo Dome"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/14.html"
- },
- {
-  "id": "bruno-mars-paypay",
-  "city": "fukuoka",
-  "start": "2027-01-23",
-  "end": "2027-01-24",
-  "venue": {
-   "ja": "みずほPayPayドーム福岡",
-   "en": "Mizuho PayPay Dome Fukuoka"
-  },
-  "title": {
-   "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
-   "en": "Bruno Mars: The Romantic Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
- },
- {
-  "id": "kitani-glion",
-  "city": "kobe",
-  "start": "2027-01-23",
-  "end": "2027-01-24",
-  "venue": {
-   "ja": "GLION ARENA KOBE",
-   "en": "GLION ARENA KOBE"
-  },
-  "title": {
-   "ja": "キタニタツヤ 2026-2027 アリーナツアー",
-   "en": "Tatsuya Kitani 2026-2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/748.html"
- },
- {
-  "id": "bump-kyocera",
-  "city": "osaka",
-  "start": "2027-01-23",
-  "end": "2027-01-24",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
-   "en": "BUMP OF CHICKEN Tour 2026-2027 Ratio Clavis"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "inaba-grandi21",
-  "city": "sendai",
-  "start": "2027-01-23",
-  "end": "2027-01-23",
-  "venue": {
-   "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
-   "en": "Sekisui Heim Super Arena (Grandi 21)"
-  },
-  "title": {
-   "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
-   "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/75.html"
- },
- {
-  "id": "laposta-2027",
-  "city": "tokyo",
-  "start": "2027-01-23",
-  "end": "2027-01-24",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "LAPOSTA 2027（JO1・INI・ME:I ほか）",
-   "en": "LAPOSTA 2027 (JO1, INI, ME:I and more)"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://live-events.a-jp.org/soko/plc/14.html"
- },
- {
-  "id": "mens-ekiden-hiroshima-2027",
-  "city": "hiroshima",
-  "start": "2027-01-24",
-  "end": "2027-01-24",
-  "venue": {
-   "ja": "平和記念公園前 発着",
-   "en": "Peace Memorial Park (start/finish)"
-  },
-  "title": {
-   "ja": "天皇盃 第32回全国都道府県対抗男子駅伝",
-   "en": "32nd Emperor's Cup Inter-Prefectural Men's Ekiden"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://www.jaaf-miyagi.com/track-and-field/wp-content/uploads/2026/04/1339899c4c2075cd3370aaba2b6ed619.pdf"
- },
- {
-  "id": "bruno-mars-tokyo-dome",
-  "city": "tokyo",
-  "start": "2027-01-27",
-  "end": "2027-01-28",
-  "venue": {
-   "ja": "東京ドーム",
-   "en": "Tokyo Dome"
-  },
-  "title": {
-   "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
-   "en": "Bruno Mars: The Romantic Tour in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
- },
- {
-  "id": "inaba-k-arena-0128",
-  "city": "yokohama",
-  "start": "2027-01-28",
-  "end": "2027-01-28",
-  "venue": {
-   "ja": "Kアリーナ横浜",
-   "en": "K-Arena Yokohama"
-  },
-  "title": {
-   "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
-   "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/694.html"
- },
- {
-  "id": "kobe-luminarie-2027",
-  "city": "kobe",
-  "start": "2027-01-29",
-  "end": "2027-02-07",
-  "venue": {
-   "ja": "東遊園地・旧居留地・メリケンパーク",
-   "en": "Higashi Yuenchi, Former Foreign Settlement & Meriken Park"
-  },
-  "title": {
-   "ja": "第32回 神戸ルミナリエ",
-   "en": "32nd Kobe Luminarie"
-  },
-  "category": "festival",
-  "scale": 3,
-  "url": "https://happyell.co.jp/event/kobe-luminarie2027"
- },
- {
-  "id": "aiko-budokan",
-  "city": "tokyo",
-  "start": "2027-01-29",
-  "end": "2027-01-30",
-  "venue": {
-   "ja": "日本武道館",
-   "en": "Nippon Budokan"
-  },
-  "title": {
-   "ja": "aiko Love Like Pop vol.26",
-   "en": "aiko Love Like Pop vol.26"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/87.html"
- },
- {
-  "id": "misia-marinemesse",
-  "city": "fukuoka",
-  "start": "2027-01-30",
-  "end": "2027-01-31",
-  "venue": {
-   "ja": "マリンメッセ福岡",
-   "en": "Marine Messe Fukuoka"
-  },
-  "title": {
-   "ja": "MISIA 2027 全国アリーナツアー",
-   "en": "MISIA 2027 Arena Tour"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/71.html"
- },
- {
-  "id": "glay-hiroshima-green-arena",
-  "city": "hiroshima",
-  "start": "2027-01-30",
-  "end": "2027-01-31",
-  "venue": {
-   "ja": "広島グリーンアリーナ",
-   "en": "Hiroshima Green Arena"
-  },
-  "title": {
-   "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
-   "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/79.html"
- },
- {
-  "id": "txt-kyocera",
-  "city": "osaka",
-  "start": "2027-01-30",
-  "end": "2027-01-31",
-  "venue": {
-   "ja": "京セラドーム大阪",
-   "en": "Kyocera Dome Osaka"
-  },
-  "title": {
-   "ja": "TOMORROW X TOGETHER WORLD TOUR <STEAL THE WIND> IN JAPAN",
-   "en": "TOMORROW X TOGETHER World Tour <STEAL THE WIND> in Japan"
-  },
-  "category": "live",
-  "scale": 2,
-  "url": "https://www.kyoceradome-osaka.jp/event/"
- },
- {
-  "id": "inaba-k-arena-0130",
-  "city": "yokohama",
-  "start": "2027-01-30",
-  "end": "2027-01-31",
-  "venue": {
-   "ja": "Kアリーナ横浜",
-   "en": "K-Arena Yokohama"
-  },
-  "title": {
-   "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
-   "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
-  },
-  "category": "live",
-  "scale": 1,
-  "url": "https://live-events.a-jp.org/soko/plc/694.html"
- },
- {
-  "id": "osaka-womens-marathon-2027",
-  "city": "osaka",
-  "start": "2027-01-31",
-  "end": "2027-01-31",
-  "venue": {
-   "ja": "ヤンマースタジアム長居 発着",
-   "en": "Yanmar Stadium Nagai (start/finish)"
-  },
-  "title": {
-   "ja": "第46回大阪国際女子マラソン",
-   "en": "46th Osaka International Women's Marathon"
-  },
-  "category": "sports",
-  "scale": 1,
-  "url": "https://www.osaka-marathon.jp/"
- }
+  {
+    "id": "munich-xmas-sapporo-2026",
+    "city": "sapporo",
+    "start": "2026-11-20",
+    "end": "2026-12-25",
+    "venue": {
+      "ja": "大通公園 西1・2丁目",
+      "en": "Odori Park (W1-2)"
+    },
+    "title": {
+      "ja": "ミュンヘン・クリスマス市 in Sapporo",
+      "en": "Munich Christmas Market in Sapporo"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.sapporo.travel/white-illumination/event/munich/"
+  },
+  {
+    "id": "tomoo-osakajo",
+    "city": "osaka",
+    "start": "2026-11-23",
+    "end": "2026-11-23",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "TOMOO 大阪城ホール公演",
+      "en": "TOMOO at Osaka-Jo Hall"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event/"
+  },
+  {
+    "id": "giants-fanfesta-2026",
+    "city": "tokyo",
+    "start": "2026-11-23",
+    "end": "2026-11-23",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "ジャイアンツ・ファンフェスタ2026",
+      "en": "Giants Fan Festa 2026"
+    },
+    "category": "sports",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html"
+  },
+  {
+    "id": "generations-osakajo",
+    "city": "osaka",
+    "start": "2026-11-25",
+    "end": "2026-11-26",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "GENERATIONS 2026 全国アリーナツアー",
+      "en": "GENERATIONS 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/78.html"
+  },
+  {
+    "id": "chotokkyu-tokyo-dome",
+    "city": "tokyo",
+    "start": "2026-11-25",
+    "end": "2026-11-26",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "超特急 BULLET TRAIN 1st DOME LIVE Signal",
+      "en": "BULLET TRAIN (Chotokkyu) 1st Dome Live \"Signal\""
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html"
+  },
+  {
+    "id": "snowman-vantelin",
+    "city": "nagoya",
+    "start": "2026-11-26",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "Snow Man DOME TOUR 2026-2027 ALL SUITE",
+      "en": "Snow Man Dome Tour 2026-2027 ALL SUITE"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/44.html"
+  },
+  {
+    "id": "yonezu-marinemesse",
+    "city": "fukuoka",
+    "start": "2026-11-27",
+    "end": "2026-11-28",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "米津玄師 2026 全国アリーナツアー",
+      "en": "Kenshi Yonezu 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/71.html"
+  },
+  {
+    "id": "bigbang-kyocera",
+    "city": "osaka",
+    "start": "2026-11-27",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "BIGBANG 2026-2027 WORLD TOUR <XX : COSMOS> IN JAPAN",
+      "en": "BIGBANG 2026-2027 World Tour <XX: COSMOS> in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "yoasobi-paypay",
+    "city": "fukuoka",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "YOASOBI ASIA DOME & STADIUM TOUR 2026-2027",
+      "en": "YOASOBI Asia Dome & Stadium Tour 2026-2027"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/38.html"
+  },
+  {
+    "id": "bump-hiroshima-green-arena",
+    "city": "hiroshima",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "広島グリーンアリーナ",
+      "en": "Hiroshima Green Arena"
+    },
+    "title": {
+      "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
+      "en": "BUMP OF CHICKEN Tour 2026-2027 Ratio Clavis"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/79.html"
+  },
+  {
+    "id": "cutie-street-ig",
+    "city": "nagoya",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "IGアリーナ",
+      "en": "IG Arena"
+    },
+    "title": {
+      "ja": "CUTIE STREET 2026 アリーナツアー",
+      "en": "CUTIE STREET 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/763.html"
+  },
+  {
+    "id": "yazawa-osakajo",
+    "city": "osaka",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "矢沢永吉 2026 全国ツアー",
+      "en": "Eikichi Yazawa 2026 Japan Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/78.html"
+  },
+  {
+    "id": "glay-ariake",
+    "city": "tokyo",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
+      "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/663.html"
+  },
+  {
+    "id": "haipa-game-final-tokyo-dome",
+    "city": "tokyo",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "配信者ハイパーゲーム大会 FINAL",
+      "en": "Streamer Hyper Game Tournament FINAL"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html"
+  },
+  {
+    "id": "yamapi-pia-arena",
+    "city": "yokohama",
+    "start": "2026-11-28",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "山下智久 TOUR 2026 DREAMING",
+      "en": "Tomohisa Yamashita Tour 2026 DREAMING"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/603.html"
+  },
+  {
+    "id": "macaroni-glion",
+    "city": "kobe",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "マカロニえんぴつ 2026 全国アリーナツアー",
+      "en": "Macaroni Enpitsu 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/748.html"
+  },
+  {
+    "id": "japan-cup-2026",
+    "city": "tokyo",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "東京競馬場（府中）",
+      "en": "Tokyo Racecourse (Fuchu)"
+    },
+    "title": {
+      "ja": "ジャパンカップ（GI）",
+      "en": "Japan Cup (G1)"
+    },
+    "category": "sports",
+    "scale": 3,
+    "url": "https://www.jra.go.jp/datafile/ranking/g1/2026.html"
+  },
+  {
+    "id": "ayaka-budokan",
+    "city": "tokyo",
+    "start": "2026-11-29",
+    "end": "2026-11-29",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "絢香 20th ANNIVERSARY LIVE TOUR",
+      "en": "Ayaka 20th Anniversary Live Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "aimyon-budokan",
+    "city": "tokyo",
+    "start": "2026-11-30",
+    "end": "2026-12-01",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "あいみょん AIMYON 10th anniversary LIVE 2026",
+      "en": "Aimyon 10th Anniversary Live 2026"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "uverworld-osakajo",
+    "city": "osaka",
+    "start": "2026-12-01",
+    "end": "2026-12-02",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "UVERworld 大阪城ホール公演",
+      "en": "UVERworld at Osaka-Jo Hall"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event/"
+  },
+  {
+    "id": "enhypen-tokyo-dome",
+    "city": "tokyo",
+    "start": "2026-12-01",
+    "end": "2026-12-02",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN JAPAN",
+      "en": "ENHYPEN World Tour 'BLOOD SAGA' in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
+  },
+  {
+    "id": "ipf-japan-2026",
+    "city": "tokyo",
+    "start": "2026-12-01",
+    "end": "2026-12-05",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "IPF Japan 2026 国際プラスチックフェア",
+      "en": "IPF Japan 2026 International Plastic Fair"
+    },
+    "category": "expo",
+    "scale": 1,
+    "url": "https://www.m-messe.co.jp/event/"
+  },
+  {
+    "id": "mga-glion",
+    "city": "kobe",
+    "start": "2026-12-02",
+    "end": "2026-12-03",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\"",
+      "en": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/748.html"
+  },
+  {
+    "id": "aiko-gaishi",
+    "city": "nagoya",
+    "start": "2026-12-02",
+    "end": "2026-12-03",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "aiko Love Like Pop vol.26",
+      "en": "aiko Love Like Pop vol.26"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/70.html"
+  },
+  {
+    "id": "numberi-kyocera",
+    "city": "osaka",
+    "start": "2026-12-02",
+    "end": "2026-12-02",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "Number_i LIVE TOUR No.III",
+      "en": "Number_i Live Tour No.III"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "ecopro-2026",
+    "city": "tokyo",
+    "start": "2026-12-02",
+    "end": "2026-12-04",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "エコプロ2026",
+      "en": "Eco-Products 2026"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://messe.nikkei.co.jp/images/ecopro26_fieldtripguide.pdf"
+  },
+  {
+    "id": "japan-build-tokyo-2026",
+    "city": "tokyo",
+    "start": "2026-12-02",
+    "end": "2026-12-04",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "JAPAN BUILD TOKYO 2026（建築・土木・不動産の先端技術展）",
+      "en": "JAPAN BUILD TOKYO 2026"
+    },
+    "category": "expo",
+    "scale": 1,
+    "url": "https://www.bigsight.jp/visitor/event/"
+  },
+  {
+    "id": "mrchildren-yokohama-arena",
+    "city": "yokohama",
+    "start": "2026-12-02",
+    "end": "2026-12-03",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "Mr.Children 2026 全国アリーナツアー",
+      "en": "Mr.Children 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/63.html"
+  },
+  {
+    "id": "angerme-pia-arena",
+    "city": "yokohama",
+    "start": "2026-12-02",
+    "end": "2026-12-02",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "アンジュルム 2026秋 FINAL 風林火山・極",
+      "en": "ANGERME Autumn 2026 FINAL"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2026&p2=12.html"
+  },
+  {
+    "id": "yonezu-grandi21",
+    "city": "sendai",
+    "start": "2026-12-03",
+    "end": "2026-12-04",
+    "venue": {
+      "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
+      "en": "Sekisui Heim Super Arena (Grandi 21)"
+    },
+    "title": {
+      "ja": "米津玄師 2026 全国アリーナツアー",
+      "en": "Kenshi Yonezu 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/75.html"
+  },
+  {
+    "id": "yazawa-budokan-1203",
+    "city": "tokyo",
+    "start": "2026-12-03",
+    "end": "2026-12-03",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "矢沢永吉 2026 全国ツアー",
+      "en": "Eikichi Yazawa 2026 Japan Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "snowman-paypay",
+    "city": "fukuoka",
+    "start": "2026-12-04",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "Snow Man DOME TOUR 2026-2027 ALL SUITE",
+      "en": "Snow Man Dome Tour 2026-2027 ALL SUITE"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/38.html"
+  },
+  {
+    "id": "dreamination-2026",
+    "city": "hiroshima",
+    "start": "2026-12-04",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "平和大通り ほか市内中心部",
+      "en": "Peace Boulevard & central Hiroshima"
+    },
+    "title": {
+      "ja": "ひろしまドリミネーション2026",
+      "en": "Hiroshima Dreamination 2026"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.walkerplus.com/event/ar0834e17637/"
+  },
+  {
+    "id": "sendai-pageant-2026",
+    "city": "sendai",
+    "start": "2026-12-04",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "定禅寺通",
+      "en": "Jozenji-dori Avenue"
+    },
+    "title": {
+      "ja": "SENDAI光のページェント",
+      "en": "SENDAI Pageant of Starlight"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://www.city.sendai.jp/kyoikukate/documents/20260819hikapeangels.pdf"
+  },
+  {
+    "id": "jx-k-arena",
+    "city": "yokohama",
+    "start": "2026-12-04",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "JX 2026 TOUR CONCERT「CORE」IN YOKOHAMA",
+      "en": "JX 2026 Tour Concert \"CORE\" in Yokohama"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2026&m=12"
+  },
+  {
+    "id": "conti-new-fes-hiroshima-2026",
+    "city": "hiroshima",
+    "start": "2026-12-05",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "広島グリーンアリーナ",
+      "en": "Hiroshima Green Arena"
+    },
+    "title": {
+      "ja": "HIROSHIMA CONTI-NeW FeS 2026",
+      "en": "HIROSHIMA CONTI-NeW FeS 2026"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/7300060/events"
+  },
+  {
+    "id": "bigbang-vantelin",
+    "city": "nagoya",
+    "start": "2026-12-05",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "BIGBANG 2026-2027 WORLD TOUR IN JAPAN",
+      "en": "BIGBANG 2026-2027 World Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/44.html"
+  },
+  {
+    "id": "kitani-gaishi",
+    "city": "nagoya",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "キタニタツヤ 2026-2027 アリーナツアー",
+      "en": "Tatsuya Kitani 2026-2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/70.html"
+  },
+  {
+    "id": "exile-kyocera",
+    "city": "osaka",
+    "start": "2026-12-05",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "EXILE 25th ANNIVERSARY BEST LIVE ～LDH PERFECT YEAR 2026～",
+      "en": "EXILE 25th Anniversary Best Live - LDH Perfect Year 2026"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "macaroni-ariake",
+    "city": "tokyo",
+    "start": "2026-12-05",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "マカロニえんぴつ 2026 全国アリーナツアー",
+      "en": "Macaroni Enpitsu 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/663.html"
+  },
+  {
+    "id": "yazawa-budokan-1205",
+    "city": "tokyo",
+    "start": "2026-12-05",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "矢沢永吉 2026 全国ツアー",
+      "en": "Eikichi Yazawa 2026 Japan Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "yoasobi-tokyo-dome",
+    "city": "tokyo",
+    "start": "2026-12-05",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "YOASOBI 11-CITY ASIA-OCEANIA TOUR 2026-2027 \"超惑星\"",
+      "en": "YOASOBI Asia-Oceania Tour 2026-2027 \"Chouwakusei\""
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
+  },
+  {
+    "id": "ryokushaka-yokohama-arena",
+    "city": "yokohama",
+    "start": "2026-12-05",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "緑黄色社会 2026 全国アリーナツアー",
+      "en": "Ryokuoushoku Shakai 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/63.html"
+  },
+  {
+    "id": "blackorwhite-pia-arena",
+    "city": "yokohama",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "NewsPicks Presents BLACK or WHITE 大天下獲り FESTIVAL2",
+      "en": "NewsPicks Presents BLACK or WHITE Festival 2"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2026&p2=12.html"
+  },
+  {
+    "id": "yamapi-marinemesse",
+    "city": "fukuoka",
+    "start": "2026-12-06",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "山下智久 TOUR 2026 DREAMING",
+      "en": "Tomohisa Yamashita Tour 2026 DREAMING"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/71.html"
+  },
+  {
+    "id": "daiku-10000-osakajo",
+    "city": "osaka",
+    "start": "2026-12-06",
+    "end": "2026-12-06",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "サントリー1万人の第九",
+      "en": "Suntory 10,000-Voice Beethoven's Ninth"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event/?ym=202612"
+  },
+  {
+    "id": "yonezu-portmesse",
+    "city": "nagoya",
+    "start": "2026-12-08",
+    "end": "2026-12-09",
+    "venue": {
+      "ja": "ポートメッセなごや",
+      "en": "Port Messe Nagoya"
+    },
+    "title": {
+      "ja": "米津玄師 2026 全国アリーナツアー",
+      "en": "Kenshi Yonezu 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/383.html"
+  },
+  {
+    "id": "yunho-gaishi",
+    "city": "nagoya",
+    "start": "2026-12-08",
+    "end": "2026-12-09",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "U-KNOW PROJECT 26 : SCENE #1 – EDIT（東方神起 ユンホ）",
+      "en": "U-KNOW (TVXQ Yunho) PROJECT 26 Japan"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/70.html"
+  },
+  {
+    "id": "ellegarden-toyota-arena",
+    "city": "tokyo",
+    "start": "2026-12-08",
+    "end": "2026-12-08",
+    "venue": {
+      "ja": "TOYOTA ARENA TOKYO",
+      "en": "TOYOTA ARENA TOKYO"
+    },
+    "title": {
+      "ja": "ELLEGARDEN Bad For Education Tour II (2026) GRAND FINAL",
+      "en": "ELLEGARDEN Bad For Education Tour II (2026) Grand Final"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/1351450/events"
+  },
+  {
+    "id": "monstax-pia-arena",
+    "city": "yokohama",
+    "start": "2026-12-08",
+    "end": "2026-12-09",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "2026 MONSTA X WORLD TOUR THE:X NEXUS ENCORE in JAPAN",
+      "en": "MONSTA X World Tour THE:X NEXUS Encore in Japan"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2026&p2=12.html"
+  },
+  {
+    "id": "mga-marinemesse",
+    "city": "fukuoka",
+    "start": "2026-12-09",
+    "end": "2026-12-10",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\"",
+      "en": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/71.html"
+  },
+  {
+    "id": "hinatazaka-xmas-yoyogi",
+    "city": "tokyo",
+    "start": "2026-12-09",
+    "end": "2026-12-11",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "日向坂46 クリスマスイベント2026",
+      "en": "Hinatazaka46 Christmas Event 2026"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/84.html"
+  },
+  {
+    "id": "numberi-tokyo-dome",
+    "city": "tokyo",
+    "start": "2026-12-09",
+    "end": "2026-12-10",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "Number_i LIVE TOUR No.III",
+      "en": "Number_i Live Tour No.III"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
+  },
+  {
+    "id": "yazawa-budokan-1209",
+    "city": "tokyo",
+    "start": "2026-12-09",
+    "end": "2026-12-09",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "矢沢永吉 2026 全国ツアー",
+      "en": "Eikichi Yazawa 2026 Japan Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "semicon-japan-2026",
+    "city": "tokyo",
+    "start": "2026-12-09",
+    "end": "2026-12-11",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "SEMICON Japan 2026",
+      "en": "SEMICON Japan 2026"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/"
+  },
+  {
+    "id": "fujiikaze-kyocera-1210",
+    "city": "osaka",
+    "start": "2026-12-10",
+    "end": "2026-12-10",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "藤井風 Prema World Tour",
+      "en": "Fujii Kaze Prema World Tour"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "toukenranbu-osakajo",
+    "city": "osaka",
+    "start": "2026-12-10",
+    "end": "2026-12-11",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "ミュージカル『刀剣乱舞』～真剣乱舞祭2026～",
+      "en": "Musical Touken Ranbu ~Shinken Ranbusai 2026~"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event/?ym=202612"
+  },
+  {
+    "id": "ldh-kouhaku-ariake",
+    "city": "tokyo",
+    "start": "2026-12-10",
+    "end": "2026-12-10",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "陣 presents『CL6th LDH紅白頂上決戦』",
+      "en": "JIN presents CL6th LDH Kohaku Battle"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/next/"
+  },
+  {
+    "id": "tokyo-comic-con-2026",
+    "city": "tokyo",
+    "start": "2026-12-11",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "東京コミコン2026",
+      "en": "Tokyo Comic Con 2026"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.m-messe.co.jp/event/"
+  },
+  {
+    "id": "yazawa-budokan-1211",
+    "city": "tokyo",
+    "start": "2026-12-11",
+    "end": "2026-12-12",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "矢沢永吉 2026 全国ツアー",
+      "en": "Eikichi Yazawa 2026 Japan Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "and2ble-k-arena",
+    "city": "yokohama",
+    "start": "2026-12-11",
+    "end": "2026-12-12",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "2026 AND2BLE FAN-CON <W!nter inside> In Yokohama",
+      "en": "2026 AND2BLE FAN-CON <W!nter inside> in Yokohama"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2026&m=12"
+  },
+  {
+    "id": "bump-marinemesse",
+    "city": "fukuoka",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
+      "en": "BUMP OF CHICKEN Tour 2026-2027 Ratio Clavis"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/71.html"
+  },
+  {
+    "id": "hsj-paypay",
+    "city": "fukuoka",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet",
+      "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/38.html"
+  },
+  {
+    "id": "fujiikaze-kyocera-1212",
+    "city": "osaka",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "藤井風 Prema World Tour",
+      "en": "Fujii Kaze Prema World Tour"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "glay-kitaeru",
+    "city": "sapporo",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "北海きたえーる",
+      "en": "Hokkai Kitaeru"
+    },
+    "title": {
+      "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
+      "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/76.html"
+  },
+  {
+    "id": "yamapi-xebio-sendai",
+    "city": "sendai",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "ゼビオアリーナ仙台",
+      "en": "Xebio Arena Sendai"
+    },
+    "title": {
+      "ja": "山下智久 TOUR 2026 DREAMING",
+      "en": "Tomohisa Yamashita Tour 2026 DREAMING"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/212.html"
+  },
+  {
+    "id": "kawaii-lab-xmas-ariake",
+    "city": "tokyo",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "KAWAII LAB. クリスマスイベント2026",
+      "en": "KAWAII LAB. Christmas Event 2026"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/663.html"
+  },
+  {
+    "id": "sumika-tgt",
+    "city": "tokyo",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "東京ガーデンシアター",
+      "en": "Tokyo Garden Theater"
+    },
+    "title": {
+      "ja": "sumika 2026 秋冬全国ツアー",
+      "en": "sumika Autumn/Winter 2026 Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/608.html"
+  },
+  {
+    "id": "yunho-tokyo-taikan",
+    "city": "tokyo",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "東京体育館",
+      "en": "Tokyo Metropolitan Gymnasium"
+    },
+    "title": {
+      "ja": "U-KNOW PROJECT 26 : SCENE #1 – EDIT（東方神起 ユンホ）",
+      "en": "U-KNOW (TVXQ Yunho) PROJECT 26 Japan"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/151.html"
+  },
+  {
+    "id": "fnc-kingdom-pia-arena",
+    "city": "yokohama",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "2026 FNC KINGDOM - THE FLOATING BAZAAR -",
+      "en": "2026 FNC KINGDOM - THE FLOATING BAZAAR -"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2026&p2=12.html"
+  },
+  {
+    "id": "zigzag-osakajo",
+    "city": "osaka",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "-真天地開闢集団-ジグザグ 大阪城ホール公演",
+      "en": "Zig Zag at Osaka-Jo Hall"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event/?ym=202612"
+  },
+  {
+    "id": "bigbang-tokyo-dome",
+    "city": "tokyo",
+    "start": "2026-12-13",
+    "end": "2026-12-15",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "BIGBANG 2026-2027 WORLD TOUR <XX : COSMOS> IN JAPAN",
+      "en": "BIGBANG 2026-2027 World Tour <XX: COSMOS> in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
+  },
+  {
+    "id": "yuuri-k-arena-1213",
+    "city": "yokohama",
+    "start": "2026-12-13",
+    "end": "2026-12-13",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "優里 2026年 単独公演（追加公演）",
+      "en": "Yuuri 2026 solo show (added date)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2026&m=12"
+  },
+  {
+    "id": "mga-grandi21",
+    "city": "sendai",
+    "start": "2026-12-15",
+    "end": "2026-12-16",
+    "venue": {
+      "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
+      "en": "Sekisui Heim Super Arena (Grandi 21)"
+    },
+    "title": {
+      "ja": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\"",
+      "en": "Mrs. GREEN APPLE Ringo Jam Tour \"SHADOWS\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/75.html"
+  },
+  {
+    "id": "saucydog-ariake",
+    "city": "tokyo",
+    "start": "2026-12-15",
+    "end": "2026-12-16",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "Saucy Dog 2026-2027 全国アリーナツアー",
+      "en": "Saucy Dog 2026-2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/663.html"
+  },
+  {
+    "id": "sakurazaka-backs-pia-arena",
+    "city": "yokohama",
+    "start": "2026-12-15",
+    "end": "2026-12-16",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "櫻坂46 16th Single BACKS LIVE!!",
+      "en": "Sakurazaka46 16th Single BACKS LIVE!!"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2026&p2=12.html"
+  },
+  {
+    "id": "kuwata-gaishi",
+    "city": "nagoya",
+    "start": "2026-12-16",
+    "end": "2026-12-17",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "桑田佳祐 2026 全国アリーナツアー 追加公演",
+      "en": "Keisuke Kuwata 2026 Arena Tour (added shows)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/70.html"
+  },
+  {
+    "id": "larc-osakajo",
+    "city": "osaka",
+    "start": "2026-12-16",
+    "end": "2026-12-17",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "L'Arc-en-Ciel 35th L'Anniversary TOUR",
+      "en": "L'Arc-en-Ciel 35th L'Anniversary Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event/?ym=202612"
+  },
+  {
+    "id": "nanotech-enex-bigsight-2026",
+    "city": "tokyo",
+    "start": "2026-12-16",
+    "end": "2026-12-18",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "nano tech 2026 / ENEX2027 / 東京ケアウィーク'26 ほか同時開催展",
+      "en": "nano tech 2026 / ENEX 2027 / Tokyo Care Week '26 and co-located shows"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/"
+  },
+  {
+    "id": "nogizaka-6ki-budokan",
+    "city": "tokyo",
+    "start": "2026-12-16",
+    "end": "2026-12-16",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "乃木坂46 6期生全国ツアー2026 FINAL",
+      "en": "Nogizaka46 6th Generation Tour 2026 FINAL"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "yonezu-k-arena",
+    "city": "yokohama",
+    "start": "2026-12-16",
+    "end": "2026-12-17",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "米津玄師 2026 全国アリーナツアー",
+      "en": "Kenshi Yonezu 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/694.html"
+  },
+  {
+    "id": "glay-marinemesse",
+    "city": "fukuoka",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
+      "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/71.html"
+  },
+  {
+    "id": "txt-paypay",
+    "city": "fukuoka",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "TOMORROW X TOGETHER WORLD TOUR IN JAPAN",
+      "en": "TOMORROW X TOGETHER World Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/38.html"
+  },
+  {
+    "id": "omi-glion",
+    "city": "kobe",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "ØMI MOON NIGHT 2026 \"Ø to 3\" ～大忘年会SPECIAL～",
+      "en": "OMI MOON NIGHT 2026 \"O to 3\" Year-End Special"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/748.html"
+  },
+  {
+    "id": "bump-ig",
+    "city": "nagoya",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "IGアリーナ",
+      "en": "IG Arena"
+    },
+    "title": {
+      "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
+      "en": "BUMP OF CHICKEN Tour 2026-2027 Ratio Clavis"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/763.html"
+  },
+  {
+    "id": "hsj-vantelin",
+    "city": "nagoya",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet",
+      "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/44.html"
+  },
+  {
+    "id": "merry-rock-parade-2026",
+    "city": "nagoya",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "ポートメッセなごや",
+      "en": "Port Messe Nagoya"
+    },
+    "title": {
+      "ja": "MERRY ROCK PARADE 2026",
+      "en": "MERRY ROCK PARADE 2026"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/383.html"
+  },
+  {
+    "id": "kobukuro-osakajo",
+    "city": "osaka",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "KOBUKURO LIVE TOUR 2026 霞日和 追加公演",
+      "en": "Kobukuro Live Tour 2026 (added show)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/78.html"
+  },
+  {
+    "id": "lesserafim-kyocera",
+    "city": "osaka",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "2026 LE SSERAFIM TOUR 'PUREFLOW' IN KYOCERA DOME OSAKA",
+      "en": "LE SSERAFIM Tour 'PUREFLOW' in Kyocera Dome Osaka"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "fujiikaze-tokyo-dome",
+    "city": "tokyo",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "藤井風 Prema World Tour",
+      "en": "Fujii Kaze Prema World Tour"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
+  },
+  {
+    "id": "jump-festa-2027",
+    "city": "tokyo",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "ジャンプフェスタ2027",
+      "en": "Jump Festa 2027"
+    },
+    "category": "expo",
+    "scale": 3,
+    "url": "https://animeanime.jp/article/2026/09/28/103297.html"
+  },
+  {
+    "id": "lunasea-ariake",
+    "city": "tokyo",
+    "start": "2026-12-19",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "LUNA SEA TOUR 2026 UNENDING JOURNEY -TO RISE-",
+      "en": "LUNA SEA Tour 2026 UNENDING JOURNEY -TO RISE-"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/next/"
+  },
+  {
+    "id": "yuuri-k-arena-1219",
+    "city": "yokohama",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "優里 2026年 最後の単独公演",
+      "en": "Yuuri final 2026 solo show"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2026&m=12"
+  },
+  {
+    "id": "zenkoku-hs-ekiden-2026",
+    "city": "kyoto",
+    "start": "2026-12-20",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "たけびしスタジアム京都 発着",
+      "en": "Takebishi Stadium Kyoto (start/finish)"
+    },
+    "title": {
+      "ja": "全国高校駅伝（男子第77回・女子第38回）",
+      "en": "All Japan High School Ekiden (Men 77th / Women 38th)"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://spocale.com/sports/7/game/365864"
+  },
+  {
+    "id": "suisei-k-arena",
+    "city": "yokohama",
+    "start": "2026-12-20",
+    "end": "2026-12-20",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "星降る晩餐会（tuki. / 星街すいせい）",
+      "en": "Hoshifuru Bansankai (tuki. / Hoshimachi Suisei)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2026&m=12"
+  },
+  {
+    "id": "hinatazaka-gaishi",
+    "city": "nagoya",
+    "start": "2026-12-22",
+    "end": "2026-12-24",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "日向坂46 ひなくり2026",
+      "en": "Hinatazaka46 \"Hinakuri 2026\" Christmas Event"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/70.html"
+  },
+  {
+    "id": "kuwata-osakajo",
+    "city": "osaka",
+    "start": "2026-12-22",
+    "end": "2026-12-23",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "桑田佳祐 2026 全国アリーナツアー 追加公演",
+      "en": "Keisuke Kuwata 2026 Arena Tour (added shows)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/78.html"
+  },
+  {
+    "id": "generations-yoyogi",
+    "city": "tokyo",
+    "start": "2026-12-22",
+    "end": "2026-12-23",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "GENERATIONS 2026 全国アリーナツアー",
+      "en": "GENERATIONS 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/84.html"
+  },
+  {
+    "id": "sekaowa-pia-arena",
+    "city": "yokohama",
+    "start": "2026-12-22",
+    "end": "2026-12-23",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "SEKAI NO OWARI 2026 ファンクラブライブ",
+      "en": "SEKAI NO OWARI 2026 Fan Club Live"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/603.html"
+  },
+  {
+    "id": "saucydog-marinemesse",
+    "city": "fukuoka",
+    "start": "2026-12-23",
+    "end": "2026-12-23",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "Saucy Dog 2026-2027 全国アリーナツアー",
+      "en": "Saucy Dog 2026-2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/71.html"
+  },
+  {
+    "id": "alfee-budokan",
+    "city": "tokyo",
+    "start": "2026-12-23",
+    "end": "2026-12-24",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "THE ALFEE 2026 冬 全国アリーナツアー",
+      "en": "THE ALFEE Winter 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "snowman-tokyo-dome",
+    "city": "tokyo",
+    "start": "2026-12-23",
+    "end": "2026-12-26",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "Snow Man DOME TOUR 2026-2027 ALL SUITE",
+      "en": "Snow Man Dome Tour 2026-2027 ALL SUITE"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
+  },
+  {
+    "id": "wintercup-2026",
+    "city": "tokyo",
+    "start": "2026-12-23",
+    "end": "2026-12-29",
+    "venue": {
+      "ja": "東京体育館・京王アリーナTOKYO",
+      "en": "Tokyo Metropolitan Gymnasium / Keio Arena TOKYO"
+    },
+    "title": {
+      "ja": "SoftBank ウインターカップ2026（第79回全国高等学校バスケットボール選手権）",
+      "en": "SoftBank Winter Cup 2026 (National High School Basketball Championship)"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://wintercup2026.japanbasketball.jp/outline/"
+  },
+  {
+    "id": "all-japan-figure-2026",
+    "city": "osaka",
+    "start": "2026-12-24",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "東和薬品RACTABドーム（門真）",
+      "en": "Towa Pharmaceutical RACTAB Dome (Kadoma)"
+    },
+    "title": {
+      "ja": "第95回全日本フィギュアスケート選手権大会",
+      "en": "95th All Japan Figure Skating Championships"
+    },
+    "category": "sports",
+    "scale": 2,
+    "url": "https://www.skatingjapan.or.jp/figure/event/detail.php?id=2419"
+  },
+  {
+    "id": "larc-ariake",
+    "city": "tokyo",
+    "start": "2026-12-24",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "L'Arc-en-Ciel 35th L'Anniversary TOUR（12/24 FC限定・12/26-27）",
+      "en": "L'Arc-en-Ciel 35th L'Anniversary Tour (Dec 24 FC-only, Dec 26-27)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/next/"
+  },
+  {
+    "id": "kismyft2-kyocera",
+    "city": "osaka",
+    "start": "2026-12-25",
+    "end": "2026-12-26",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "Kis-My-Ft2 DOME TOUR 2026-2027 fan IS",
+      "en": "Kis-My-Ft2 Dome Tour 2026-2027 \"fan IS\""
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "milk-osakajo",
+    "city": "osaka",
+    "start": "2026-12-25",
+    "end": "2026-12-26",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "M!LK 2026-2027 全国アリーナツアー",
+      "en": "M!LK 2026-2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/78.html"
+  },
+  {
+    "id": "chotokkyu-dish-yoyogi",
+    "city": "tokyo",
+    "start": "2026-12-25",
+    "end": "2026-12-25",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "超特急×DISH// 結成15周年記念イベント",
+      "en": "BULLET TRAIN x DISH// 15th Anniversary Special Event"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/84.html"
+  },
+  {
+    "id": "bigbang-paypay",
+    "city": "fukuoka",
+    "start": "2026-12-26",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "BIGBANG 2026-2027 WORLD TOUR IN JAPAN",
+      "en": "BIGBANG 2026-2027 World Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/38.html"
+  },
+  {
+    "id": "enhypen-vantelin",
+    "city": "nagoya",
+    "start": "2026-12-26",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN JAPAN",
+      "en": "ENHYPEN World Tour 'BLOOD SAGA' in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://prtimes.jp/main/html/rd/p/000000684.000045862.html"
+  },
+  {
+    "id": "yamapi-portmesse",
+    "city": "nagoya",
+    "start": "2026-12-26",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "ポートメッセなごや",
+      "en": "Port Messe Nagoya"
+    },
+    "title": {
+      "ja": "山下智久 TOUR 2026 DREAMING",
+      "en": "Tomohisa Yamashita Tour 2026 DREAMING"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/383.html"
+  },
+  {
+    "id": "macaroni-gaishi",
+    "city": "nagoya",
+    "start": "2026-12-26",
+    "end": "2026-12-26",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "マカロニえんぴつ 2026 全国アリーナツアー",
+      "en": "Macaroni Enpitsu 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/70.html"
+  },
+  {
+    "id": "radio-crazy-2026",
+    "city": "osaka",
+    "start": "2026-12-26",
+    "end": "2026-12-28",
+    "venue": {
+      "ja": "インテックス大阪",
+      "en": "INTEX Osaka"
+    },
+    "title": {
+      "ja": "FM802 ROCK FESTIVAL RADIO CRAZY 2026",
+      "en": "FM802 Rock Festival RADIO CRAZY 2026"
+    },
+    "category": "fes",
+    "scale": 2,
+    "url": "https://eplus.jp/radiocrazy2026/"
+  },
+  {
+    "id": "countdown-japan-2627",
+    "city": "tokyo",
+    "start": "2026-12-26",
+    "end": "2026-12-31",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "COUNTDOWN JAPAN 26/27（12/28休演）",
+      "en": "COUNTDOWN JAPAN 26/27 (no show Dec 28)"
+    },
+    "category": "fes",
+    "scale": 3,
+    "url": "https://www.m-messe.co.jp/event/"
+  },
+  {
+    "id": "fukuyama-k-arena-1226",
+    "city": "yokohama",
+    "start": "2026-12-26",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "福山雅治 冬の大感謝祭 2026",
+      "en": "Masaharu Fukuyama Winter Thanksgiving Festival 2026"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/694.html"
+  },
+  {
+    "id": "porno-pia-arena-1226",
+    "city": "yokohama",
+    "start": "2026-12-26",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "みなとみらいロマンスポルノ'26 〜鳥〜（ポルノグラフィティ）",
+      "en": "Porno Graffitti Minatomirai Romance Porno '26"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2026&p2=12.html"
+  },
+  {
+    "id": "hanazono-hs-rugby-2026",
+    "city": "osaka",
+    "start": "2026-12-27",
+    "end": "2027-01-07",
+    "venue": {
+      "ja": "東大阪市花園ラグビー場",
+      "en": "Hanazono Rugby Stadium (Higashiosaka)"
+    },
+    "title": {
+      "ja": "第106回全国高等学校ラグビーフットボール大会（花園）",
+      "en": "106th National High School Rugby Tournament (Hanazono)"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.kanaloco.jp/sports/misc/article-1318831.html"
+  },
+  {
+    "id": "hotei-osakajo",
+    "city": "osaka",
+    "start": "2026-12-27",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "布袋寅泰 大阪城ホール公演",
+      "en": "Tomoyasu Hotei at Osaka-Jo Hall"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event/?ym=202612"
+  },
+  {
+    "id": "arima-kinen-2026",
+    "city": "tokyo",
+    "start": "2026-12-27",
+    "end": "2026-12-27",
+    "venue": {
+      "ja": "中山競馬場（船橋）",
+      "en": "Nakayama Racecourse (Funabashi)"
+    },
+    "title": {
+      "ja": "有馬記念（GI）",
+      "en": "Arima Kinen (G1)"
+    },
+    "category": "sports",
+    "scale": 3,
+    "url": "https://jra.jp/news/202611/111301.html"
+  },
+  {
+    "id": "hs-soccer-opening-2026",
+    "city": "tokyo",
+    "start": "2026-12-28",
+    "end": "2026-12-28",
+    "venue": {
+      "ja": "MUFGスタジアム（国立競技場）",
+      "en": "MUFG Stadium (Japan National Stadium)"
+    },
+    "title": {
+      "ja": "第105回全国高校サッカー選手権 開会式・開幕戦",
+      "en": "105th All Japan High School Soccer Tournament: Opening Match"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://l-tike.com/ntvzero/event/hs105.html"
+  },
+  {
+    "id": "kuwata-yokohama-arena-1228",
+    "city": "yokohama",
+    "start": "2026-12-28",
+    "end": "2026-12-28",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "桑田佳祐 2026 全国アリーナツアー 追加公演",
+      "en": "Keisuke Kuwata 2026 Arena Tour (added show)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/63.html"
+  },
+  {
+    "id": "alfee-osakajo",
+    "city": "osaka",
+    "start": "2026-12-29",
+    "end": "2026-12-29",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "THE ALFEE 2026 冬 全国アリーナツアー",
+      "en": "THE ALFEE Winter 2026 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/78.html"
+  },
+  {
+    "id": "comiket-c109",
+    "city": "tokyo",
+    "start": "2026-12-29",
+    "end": "2026-12-31",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "コミックマーケット109（C109）",
+      "en": "Comic Market 109 (Comiket C109)"
+    },
+    "category": "expo",
+    "scale": 3,
+    "url": "https://kai-you.net/article/94962"
+  },
+  {
+    "id": "hsj-tokyo-dome-dec",
+    "city": "tokyo",
+    "start": "2026-12-29",
+    "end": "2026-12-30",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet",
+      "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
+  },
+  {
+    "id": "fukuyama-k-arena-1229",
+    "city": "yokohama",
+    "start": "2026-12-29",
+    "end": "2026-12-29",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "福山雅治 冬の大感謝祭 2026",
+      "en": "Masaharu Fukuyama Winter Thanksgiving Festival 2026"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/694.html"
+  },
+  {
+    "id": "kobe-music-commons-2026",
+    "city": "kobe",
+    "start": "2026-12-30",
+    "end": "2026-12-30",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "KOBE MUSIC COMMONS 2026",
+      "en": "KOBE MUSIC COMMONS 2026"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://prtimes.jp/main/html/rd/p/000000235.000086732.html"
+  },
+  {
+    "id": "ayu-countdown-yoyogi",
+    "city": "tokyo",
+    "start": "2026-12-30",
+    "end": "2026-12-31",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "浜崎あゆみ COUNTDOWN LIVE 2026-2027",
+      "en": "Ayumi Hamasaki Countdown Live 2026-2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/84.html"
+  },
+  {
+    "id": "kuwata-yokohama-arena-1230",
+    "city": "yokohama",
+    "start": "2026-12-30",
+    "end": "2026-12-31",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "桑田佳祐 2026 全国アリーナツアー 追加公演（年越し）",
+      "en": "Keisuke Kuwata 2026 Arena Tour (year-end shows)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/63.html"
+  },
+  {
+    "id": "porno-pia-arena-1230",
+    "city": "yokohama",
+    "start": "2026-12-30",
+    "end": "2026-12-31",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "みなとみらいロマンスポルノ'26 〜鳥〜（ポルノグラフィティ）年末公演",
+      "en": "Porno Graffitti Minatomirai Romance Porno '26 (year-end)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2026&p2=12.html"
+  },
+  {
+    "id": "rizin-nye-nagoya-2026",
+    "city": "nagoya",
+    "start": "2026-12-31",
+    "end": "2026-12-31",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "RIZIN 大晦日 名古屋大会（RIZIN NYE in Nagoya）",
+      "en": "RIZIN New Year's Eve in Nagoya"
+    },
+    "category": "sports",
+    "scale": 2,
+    "url": "https://www.rizin.tv/products/rizin-nye-in-nagoya"
+  },
+  {
+    "id": "aiko-osakajo-countdown",
+    "city": "osaka",
+    "start": "2026-12-31",
+    "end": "2026-12-31",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "aiko カウントダウンライブ（Love Like Pop vol.26）",
+      "en": "aiko Countdown Live (Love Like Pop vol.26)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/78.html"
+  },
+  {
+    "id": "naniwa-kyocera-countdown",
+    "city": "osaka",
+    "start": "2026-12-31",
+    "end": "2027-01-01",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "なにわ男子 DOME LIVE 2026-2027「ND⁵+」～あけおめぇ 初夢ぇ Stay with MEE～",
+      "en": "Naniwa Danshi Dome Live 2026-2027 \"ND5+\" (Countdown)"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "fukuyama-k-arena-1231",
+    "city": "yokohama",
+    "start": "2026-12-31",
+    "end": "2026-12-31",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "福山雅治 冬の大感謝祭 2026（大晦日）",
+      "en": "Masaharu Fukuyama Winter Thanksgiving Festival 2026 (NYE)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/694.html"
+  },
+  {
+    "id": "kawasaki-daishi-hatsumode-2027",
+    "city": "kawasaki",
+    "start": "2027-01-01",
+    "end": "2027-01-03",
+    "venue": {
+      "ja": "川崎大師 平間寺",
+      "en": "Kawasaki Daishi Heikenji"
+    },
+    "title": {
+      "ja": "川崎大師 初詣（三が日）",
+      "en": "New Year temple visits at Kawasaki Daishi"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://tabi-mag.jp/hatsumoude-best20/"
+  },
+  {
+    "id": "ikuta-hatsumode-2027",
+    "city": "kobe",
+    "start": "2027-01-01",
+    "end": "2027-01-03",
+    "venue": {
+      "ja": "生田神社",
+      "en": "Ikuta Shrine"
+    },
+    "title": {
+      "ja": "生田神社 初詣（三が日）",
+      "en": "New Year shrine visits at Ikuta Shrine"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://tabi-mag.jp/hatsumoude-best20/"
+  },
+  {
+    "id": "fushimi-inari-hatsumode-2027",
+    "city": "kyoto",
+    "start": "2027-01-01",
+    "end": "2027-01-03",
+    "venue": {
+      "ja": "伏見稲荷大社",
+      "en": "Fushimi Inari Taisha"
+    },
+    "title": {
+      "ja": "伏見稲荷大社 初詣（三が日）",
+      "en": "New Year shrine visits at Fushimi Inari Taisha"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://tabi-mag.jp/hatsumoude-best20/"
+  },
+  {
+    "id": "atsuta-hatsumode-2027",
+    "city": "nagoya",
+    "start": "2027-01-01",
+    "end": "2027-01-03",
+    "venue": {
+      "ja": "熱田神宮",
+      "en": "Atsuta Jingu"
+    },
+    "title": {
+      "ja": "熱田神宮 初詣（三が日）",
+      "en": "New Year shrine visits at Atsuta Jingu"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://tabi-mag.jp/hatsumoude-best20/"
+  },
+  {
+    "id": "sumiyoshi-hatsumode-2027",
+    "city": "osaka",
+    "start": "2027-01-01",
+    "end": "2027-01-03",
+    "venue": {
+      "ja": "住吉大社",
+      "en": "Sumiyoshi Taisha"
+    },
+    "title": {
+      "ja": "住吉大社 初詣（三が日）",
+      "en": "New Year shrine visits at Sumiyoshi Taisha"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://tabi-mag.jp/hatsumoude-best20/"
+  },
+  {
+    "id": "hikawa-hatsumode-2027",
+    "city": "saitama",
+    "start": "2027-01-01",
+    "end": "2027-01-03",
+    "venue": {
+      "ja": "武蔵一宮 氷川神社",
+      "en": "Musashi Ichinomiya Hikawa Shrine"
+    },
+    "title": {
+      "ja": "氷川神社 初詣（三が日）",
+      "en": "New Year shrine visits at Hikawa Shrine"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://tabi-mag.jp/hatsumoude-best20/"
+  },
+  {
+    "id": "emperors-cup-final-2027",
+    "city": "tokyo",
+    "start": "2027-01-01",
+    "end": "2027-01-01",
+    "venue": {
+      "ja": "MUFGスタジアム（国立競技場）",
+      "en": "MUFG Stadium (Japan National Stadium)"
+    },
+    "title": {
+      "ja": "第106回天皇杯 決勝（皇后杯決勝 同日開催）",
+      "en": "106th Emperor's Cup Final (with Empress's Cup Final)"
+    },
+    "category": "sports",
+    "scale": 2,
+    "url": "https://jfa.jp/news/00035896/"
+  },
+  {
+    "id": "hsj-tokyo-dome-jan1",
+    "city": "tokyo",
+    "start": "2027-01-01",
+    "end": "2027-01-01",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet（元日公演）",
+      "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet (New Year's Day)"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/system/files?file=facilities/dome/event/pdf/2026/domeevent_202612.pdf"
+  },
+  {
+    "id": "meiji-jingu-hatsumode-2027",
+    "city": "tokyo",
+    "start": "2027-01-01",
+    "end": "2027-01-03",
+    "venue": {
+      "ja": "明治神宮",
+      "en": "Meiji Jingu"
+    },
+    "title": {
+      "ja": "明治神宮 初詣（三が日）",
+      "en": "New Year shrine visits at Meiji Jingu"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://tabi-mag.jp/hatsumoude-best20/"
+  },
+  {
+    "id": "hakone-ekiden-2027",
+    "city": "tokyo",
+    "start": "2027-01-02",
+    "end": "2027-01-03",
+    "venue": {
+      "ja": "読売新聞東京本社前（大手町）発着",
+      "en": "Yomiuri Shimbun HQ, Otemachi (start/finish)"
+    },
+    "title": {
+      "ja": "第103回東京箱根間往復大学駅伝競走（箱根駅伝）",
+      "en": "103rd Hakone Ekiden"
+    },
+    "category": "sports",
+    "scale": 3,
+    "url": "https://sportiva.shueisha.co.jp/announce/ekiden2027/"
+  },
+  {
+    "id": "univ-rugby-semifinal-2027",
+    "city": "tokyo",
+    "start": "2027-01-02",
+    "end": "2027-01-02",
+    "venue": {
+      "ja": "MUFGスタジアム（国立競技場）",
+      "en": "MUFG Stadium (Japan National Stadium)"
+    },
+    "title": {
+      "ja": "第63回全国大学ラグビー選手権 準決勝",
+      "en": "63rd All-Japan University Rugby Championship Semi-finals"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://ragasapu.com/news/university-championship-2026-27-schedule"
+  },
+  {
+    "id": "kansai-jr-osakajo",
+    "city": "osaka",
+    "start": "2027-01-03",
+    "end": "2027-01-05",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "関西ジュニア 2027 コンサート",
+      "en": "Kansai Junior 2027 Concert"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/78.html"
+  },
+  {
+    "id": "bruno-mars-vantelin",
+    "city": "nagoya",
+    "start": "2027-01-04",
+    "end": "2027-01-05",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
+      "en": "Bruno Mars: The Romantic Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
+  },
+  {
+    "id": "snowman-kyocera",
+    "city": "osaka",
+    "start": "2027-01-04",
+    "end": "2027-01-07",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "Snow Man DOME TOUR 2026-2027 ALL SUITE",
+      "en": "Snow Man Dome Tour 2026-2027 ALL SUITE"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "travisjapan-yokohama-arena",
+    "city": "yokohama",
+    "start": "2027-01-04",
+    "end": "2027-01-07",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "Travis Japan 2027 全国アリーナツアー",
+      "en": "Travis Japan 2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/63.html"
+  },
+  {
+    "id": "haruko-volleyball-2027",
+    "city": "tokyo",
+    "start": "2027-01-05",
+    "end": "2027-01-11",
+    "venue": {
+      "ja": "東京体育館",
+      "en": "Tokyo Metropolitan Gymnasium"
+    },
+    "title": {
+      "ja": "春の高校バレー（第79回全日本バレーボール高等学校選手権大会）",
+      "en": "Spring High School Volleyball (79th All Japan HS Championships)"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://spocale.com/blog/haruko/"
+  },
+  {
+    "id": "txt-tokyo-dome",
+    "city": "tokyo",
+    "start": "2027-01-07",
+    "end": "2027-01-08",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "TOMORROW X TOGETHER WORLD TOUR IN JAPAN",
+      "en": "TOMORROW X TOGETHER World Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/14.html"
+  },
+  {
+    "id": "gero-osakajo",
+    "city": "osaka",
+    "start": "2027-01-08",
+    "end": "2027-01-08",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "Gero 大阪城ホール公演",
+      "en": "Gero at Osaka-Jo Hall"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event/?ym=202701"
+  },
+  {
+    "id": "inaba-glion",
+    "city": "kobe",
+    "start": "2027-01-09",
+    "end": "2027-01-10",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
+      "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/748.html"
+  },
+  {
+    "id": "numberi-vantelin",
+    "city": "nagoya",
+    "start": "2027-01-09",
+    "end": "2027-01-11",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "Number_i LIVE TOUR No.III",
+      "en": "Number_i Live Tour No.III"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/44.html"
+  },
+  {
+    "id": "imamiya-tokaebisu-2027",
+    "city": "osaka",
+    "start": "2027-01-09",
+    "end": "2027-01-11",
+    "venue": {
+      "ja": "今宮戎神社",
+      "en": "Imamiya Ebisu Shrine"
+    },
+    "title": {
+      "ja": "今宮戎 十日戎",
+      "en": "Toka Ebisu Festival at Imamiya Ebisu"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://osaka-info.jp/event/imamiyaebisu-tokaebisu/"
+  },
+  {
+    "id": "aiko-asue",
+    "city": "osaka",
+    "start": "2027-01-09",
+    "end": "2027-01-10",
+    "venue": {
+      "ja": "Asueアリーナ大阪",
+      "en": "Asue Arena Osaka"
+    },
+    "title": {
+      "ja": "aiko Love Like Pop vol.26",
+      "en": "aiko Love Like Pop vol.26"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/128.html"
+  },
+  {
+    "id": "hs-soccer-semifinal-2027",
+    "city": "tokyo",
+    "start": "2027-01-09",
+    "end": "2027-01-09",
+    "venue": {
+      "ja": "MUFGスタジアム（国立競技場）",
+      "en": "MUFG Stadium (Japan National Stadium)"
+    },
+    "title": {
+      "ja": "第105回全国高校サッカー選手権 準決勝",
+      "en": "105th All Japan High School Soccer Championship Semi-finals"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://l-tike.com/ntvzero/event/hs105.html"
+  },
+  {
+    "id": "hanyu-icestory-pia-arena",
+    "city": "yokohama",
+    "start": "2027-01-09",
+    "end": "2027-01-13",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "羽生結弦 ICE STORY 4th WHITE BOX（1/9・11・13）",
+      "en": "Yuzuru Hanyu ICE STORY 4th WHITE BOX (Jan 9/11/13)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=01.html"
+  },
+  {
+    "id": "hololive-records-k-arena",
+    "city": "yokohama",
+    "start": "2027-01-09",
+    "end": "2027-01-10",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "hololive RECORDS MUSIC STAGE 2027",
+      "en": "hololive RECORDS MUSIC STAGE 2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=1"
+  },
+  {
+    "id": "hsj-kyocera",
+    "city": "osaka",
+    "start": "2027-01-10",
+    "end": "2027-01-12",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "Hey! Say! JUMP DOME TOUR 2026-2027 Juliet",
+      "en": "Hey! Say! JUMP Dome Tour 2026-2027 Juliet"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "bruno-mars-sapporo",
+    "city": "sapporo",
+    "start": "2027-01-10",
+    "end": "2027-01-11",
+    "venue": {
+      "ja": "大和ハウス プレミストドーム（札幌ドーム）",
+      "en": "Daiwa House Premist Dome (Sapporo Dome)"
+    },
+    "title": {
+      "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
+      "en": "Bruno Mars: The Romantic Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
+  },
+  {
+    "id": "sumo-hatsu-basho-2027",
+    "city": "tokyo",
+    "start": "2027-01-10",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "両国国技館",
+      "en": "Ryogoku Kokugikan"
+    },
+    "title": {
+      "ja": "大相撲 一月場所（初場所）",
+      "en": "Grand Sumo January Tournament (Hatsu Basho)"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.tabix.co.jp/domestic/special/sumo/january/"
+  },
+  {
+    "id": "ado-ariake",
+    "city": "tokyo",
+    "start": "2027-01-10",
+    "end": "2027-01-11",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "Adoの歌ってみたツアー2027",
+      "en": "Ado Utattemita Tour 2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/two/"
+  },
+  {
+    "id": "univ-rugby-final-2027",
+    "city": "tokyo",
+    "start": "2027-01-10",
+    "end": "2027-01-10",
+    "venue": {
+      "ja": "MUFGスタジアム（国立競技場）",
+      "en": "MUFG Stadium (Japan National Stadium)"
+    },
+    "title": {
+      "ja": "第63回全国大学ラグビー選手権 決勝",
+      "en": "63rd All-Japan University Rugby Championship Final"
+    },
+    "category": "sports",
+    "scale": 2,
+    "url": "https://ragasapu.com/news/university-championship-2026-27-schedule"
+  },
+  {
+    "id": "befirst-tokyo-dome",
+    "city": "tokyo",
+    "start": "2027-01-11",
+    "end": "2027-01-12",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "BE:FIRST 5th Anniversary DOME TOUR 2027",
+      "en": "BE:FIRST 5th Anniversary Dome Tour 2027"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/14.html"
+  },
+  {
+    "id": "hs-soccer-final-2027",
+    "city": "tokyo",
+    "start": "2027-01-11",
+    "end": "2027-01-11",
+    "venue": {
+      "ja": "MUFGスタジアム（国立競技場）",
+      "en": "MUFG Stadium (Japan National Stadium)"
+    },
+    "title": {
+      "ja": "第105回全国高校サッカー選手権 決勝",
+      "en": "105th All Japan High School Soccer Tournament: Final"
+    },
+    "category": "sports",
+    "scale": 2,
+    "url": "https://l-tike.com/ntvzero/event/hs105.html"
+  },
+  {
+    "id": "saucydog-gaishi",
+    "city": "nagoya",
+    "start": "2027-01-13",
+    "end": "2027-01-14",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "Saucy Dog 2026-2027 全国アリーナツアー",
+      "en": "Saucy Dog 2026-2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/70.html"
+  },
+  {
+    "id": "dontosai-sendai-2027",
+    "city": "sendai",
+    "start": "2027-01-14",
+    "end": "2027-01-14",
+    "venue": {
+      "ja": "大崎八幡宮",
+      "en": "Osaki Hachimangu"
+    },
+    "title": {
+      "ja": "松焚祭（どんと祭）",
+      "en": "Matsutaki Festival (Donto-sai)"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://www.oosaki-hachiman.or.jp/festival/matsutaki/pdf/donto.pdf"
+  },
+  {
+    "id": "kitagawa-pacifico",
+    "city": "yokohama",
+    "start": "2027-01-14",
+    "end": "2027-01-14",
+    "venue": {
+      "ja": "パシフィコ横浜 国立大ホール",
+      "en": "Pacifico Yokohama National Convention Hall"
+    },
+    "title": {
+      "ja": "北川悠仁 50th Birthday Special Live 2027 DRESS CODE",
+      "en": "Yujin Kitagawa (Yuzu) 50th Birthday Special Live 2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/89.html"
+  },
+  {
+    "id": "bleague-allstar-2027",
+    "city": "nagoya",
+    "start": "2027-01-15",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "IGアリーナ",
+      "en": "IG Arena"
+    },
+    "title": {
+      "ja": "B.LEAGUE ALL-STAR GAME WEEKEND 2027 IN AICHI-NAGOYA",
+      "en": "B.LEAGUE All-Star Game Weekend 2027 in Aichi-Nagoya"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.nagoya-info.jp/upload/foundnewss/origin/2263546596ab48962c2d8b.pdf"
+  },
+  {
+    "id": "bruno-mars-belluna",
+    "city": "saitama",
+    "start": "2027-01-15",
+    "end": "2027-01-16",
+    "venue": {
+      "ja": "ベルーナドーム",
+      "en": "Belluna Dome"
+    },
+    "title": {
+      "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
+      "en": "Bruno Mars: The Romantic Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
+  },
+  {
+    "id": "naniwa-tokyo-dome",
+    "city": "tokyo",
+    "start": "2027-01-15",
+    "end": "2027-01-16",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "なにわ男子 DOME LIVE 2026-2027「ND⁵+」",
+      "en": "Naniwa Danshi Dome Live 2026-2027 \"ND5+\""
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/14.html"
+  },
+  {
+    "id": "tokyo-auto-salon-2027",
+    "city": "tokyo",
+    "start": "2027-01-15",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "東京オートサロン2027",
+      "en": "Tokyo Auto Salon 2027"
+    },
+    "category": "expo",
+    "scale": 3,
+    "url": "https://carview.yahoo.co.jp/news/detail/a582ee6b66f6df4a522f0c37b7136f52d6b96e33/?mode=top"
+  },
+  {
+    "id": "milk-yokohama-arena",
+    "city": "yokohama",
+    "start": "2027-01-15",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "M!LK 2026-2027 全国アリーナツアー",
+      "en": "M!LK 2026-2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/63.html"
+  },
+  {
+    "id": "numberi-paypay",
+    "city": "fukuoka",
+    "start": "2027-01-16",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "Number_i LIVE TOUR No.III",
+      "en": "Number_i Live Tour No.III"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/38.html"
+  },
+  {
+    "id": "glay-glion",
+    "city": "kobe",
+    "start": "2027-01-16",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
+      "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/748.html"
+  },
+  {
+    "id": "inaba-portmesse",
+    "city": "nagoya",
+    "start": "2027-01-16",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "ポートメッセなごや",
+      "en": "Port Messe Nagoya"
+    },
+    "title": {
+      "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
+      "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/383.html"
+  },
+  {
+    "id": "befirst-kyocera",
+    "city": "osaka",
+    "start": "2027-01-16",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "BE:FIRST 5th Anniversary DOME TOUR 2027",
+      "en": "BE:FIRST 5th Anniversary Dome Tour 2027"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "travisjapan-grandi21",
+    "city": "sendai",
+    "start": "2027-01-16",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
+      "en": "Sekisui Heim Super Arena (Grandi 21)"
+    },
+    "title": {
+      "ja": "Travis Japan 2027 全国アリーナツアー",
+      "en": "Travis Japan 2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/75.html"
+  },
+  {
+    "id": "nogizaka-six-live-ariake",
+    "city": "tokyo",
+    "start": "2027-01-16",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "乃木坂スター誕生！SIX LIVE",
+      "en": "Nogizaka Star Tanjo! SIX LIVE"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/two/"
+  },
+  {
+    "id": "kitani-pia-arena",
+    "city": "yokohama",
+    "start": "2027-01-16",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "キタニタツヤ 2026-2027 アリーナツアー",
+      "en": "Tatsuya Kitani 2026-2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/603.html"
+  },
+  {
+    "id": "superbeaver-k-arena",
+    "city": "yokohama",
+    "start": "2027-01-16",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "SUPER BEAVER 2026-2027 全国ツアー",
+      "en": "SUPER BEAVER 2026-2027 Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/694.html"
+  },
+  {
+    "id": "womens-ekiden-kyoto-2027",
+    "city": "kyoto",
+    "start": "2027-01-17",
+    "end": "2027-01-17",
+    "venue": {
+      "ja": "たけびしスタジアム京都 発着",
+      "en": "Takebishi Stadium Kyoto (start/finish)"
+    },
+    "title": {
+      "ja": "皇后盃 第45回全国都道府県対抗女子駅伝",
+      "en": "45th Empress's Cup Inter-Prefectural Women's Ekiden"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.jaaf-miyagi.com/track-and-field/wp-content/uploads/2026/04/c0da3af366f645e2075b166fd04dc916.pdf"
+  },
+  {
+    "id": "bruno-mars-kyocera",
+    "city": "osaka",
+    "start": "2027-01-19",
+    "end": "2027-01-20",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
+      "en": "Bruno Mars: The Romantic Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "equal-love-tokyo-dome",
+    "city": "tokyo",
+    "start": "2027-01-19",
+    "end": "2027-01-20",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "＝LOVE in TOKYO DOME「全ては＝LOVE」",
+      "en": "=LOVE in Tokyo Dome"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/14.html"
+  },
+  {
+    "id": "winter-sports-festa-makuhari-2027",
+    "city": "tokyo",
+    "start": "2027-01-22",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "冬スポ!!WINTER SPORTS FESTA season26",
+      "en": "Winter Sports Festa season26"
+    },
+    "category": "expo",
+    "scale": 1,
+    "url": "https://www.m-messe.co.jp/event/"
+  },
+  {
+    "id": "bruno-mars-paypay",
+    "city": "fukuoka",
+    "start": "2027-01-23",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
+      "en": "Bruno Mars: The Romantic Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
+  },
+  {
+    "id": "kitani-glion",
+    "city": "kobe",
+    "start": "2027-01-23",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "キタニタツヤ 2026-2027 アリーナツアー",
+      "en": "Tatsuya Kitani 2026-2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/748.html"
+  },
+  {
+    "id": "bump-kyocera",
+    "city": "osaka",
+    "start": "2027-01-23",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
+      "en": "BUMP OF CHICKEN Tour 2026-2027 Ratio Clavis"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "inaba-grandi21",
+    "city": "sendai",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "venue": {
+      "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
+      "en": "Sekisui Heim Super Arena (Grandi 21)"
+    },
+    "title": {
+      "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
+      "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/75.html"
+  },
+  {
+    "id": "laposta-2027",
+    "city": "tokyo",
+    "start": "2027-01-23",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "LAPOSTA 2027（JO1・INI・ME:I ほか）",
+      "en": "LAPOSTA 2027 (JO1, INI, ME:I and more)"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://live-events.a-jp.org/soko/plc/14.html"
+  },
+  {
+    "id": "bluearchive-fes-makuhari-2027",
+    "city": "tokyo",
+    "start": "2027-01-23",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "ブルアカふぇす!～ろっく・うぃず・みー♪～",
+      "en": "Blue Archive Fes ~Rock with Me~"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.m-messe.co.jp/event/"
+  },
+  {
+    "id": "sidem-battle-fes-makuhari-2027",
+    "city": "tokyo",
+    "start": "2027-01-23",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "315 Production presents F@NTASTIC BATTLE FES ～Wanna step in～ 幕張公演",
+      "en": "315 Production presents F@NTASTIC BATTLE FES (Makuhari)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.m-messe.co.jp/event/"
+  },
+  {
+    "id": "nanajigen-pia-arena",
+    "city": "yokohama",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "劇場版 七次元生徒会！ ～ずっと一緒大作戦！～",
+      "en": "Nanajigen Seitokai! live event"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=01.html"
+  },
+  {
+    "id": "starish-k-arena",
+    "city": "yokohama",
+    "start": "2027-01-23",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "ST☆RISH 15th Anniversary Live『WE LOVE ST☆RISH SHINING RAINBOW』",
+      "en": "ST☆RISH 15th Anniversary Live \"WE LOVE ST☆RISH SHINING RAINBOW\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=1"
+  },
+  {
+    "id": "mens-ekiden-hiroshima-2027",
+    "city": "hiroshima",
+    "start": "2027-01-24",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "平和記念公園前 発着",
+      "en": "Peace Memorial Park (start/finish)"
+    },
+    "title": {
+      "ja": "天皇盃 第32回全国都道府県対抗男子駅伝",
+      "en": "32nd Emperor's Cup Inter-Prefectural Men's Ekiden"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.jaaf-miyagi.com/track-and-field/wp-content/uploads/2026/04/1339899c4c2075cd3370aaba2b6ed619.pdf"
+  },
+  {
+    "id": "voltaction-pia-arena",
+    "city": "yokohama",
+    "start": "2027-01-24",
+    "end": "2027-01-24",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "VOLTACTION 2nd LIVE \"EVOLVE\"",
+      "en": "VOLTACTION 2nd LIVE \"EVOLVE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=01.html"
+  },
+  {
+    "id": "bruno-mars-tokyo-dome",
+    "city": "tokyo",
+    "start": "2027-01-27",
+    "end": "2027-01-28",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "ブルーノ・マーズ The Romantic Tour in Japan",
+      "en": "Bruno Mars: The Romantic Tour in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://realsound.jp/2026/06/post-2436387.html/amp"
+  },
+  {
+    "id": "ijt-live-ent-expo-makuhari-2027",
+    "city": "tokyo",
+    "start": "2027-01-27",
+    "end": "2027-01-29",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "国際宝飾展・ライブ・エンターテイメントEXPO・クリエイターEXPO ほか同時開催展",
+      "en": "International Jewellery Tokyo / Live Entertainment Expo / Creator Expo and co-located shows"
+    },
+    "category": "expo",
+    "scale": 1,
+    "url": "https://www.m-messe.co.jp/event/"
+  },
+  {
+    "id": "toukenranbu-ariake",
+    "city": "tokyo",
+    "start": "2027-01-28",
+    "end": "2027-01-31",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "ミュージカル『刀剣乱舞』～真剣乱舞祭2026～",
+      "en": "Musical Touken Ranbu ~Shinken Ranbusai 2026~"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/two/"
+  },
+  {
+    "id": "inaba-k-arena-0128",
+    "city": "yokohama",
+    "start": "2027-01-28",
+    "end": "2027-01-28",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
+      "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/694.html"
+  },
+  {
+    "id": "kobe-luminarie-2027",
+    "city": "kobe",
+    "start": "2027-01-29",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "東遊園地・旧居留地・メリケンパーク",
+      "en": "Higashi Yuenchi, Former Foreign Settlement & Meriken Park"
+    },
+    "title": {
+      "ja": "第32回 神戸ルミナリエ",
+      "en": "32nd Kobe Luminarie"
+    },
+    "category": "festival",
+    "scale": 3,
+    "url": "https://happyell.co.jp/event/kobe-luminarie2027"
+  },
+  {
+    "id": "aiko-budokan",
+    "city": "tokyo",
+    "start": "2027-01-29",
+    "end": "2027-01-30",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "aiko Love Like Pop vol.26",
+      "en": "aiko Love Like Pop vol.26"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "misia-marinemesse",
+    "city": "fukuoka",
+    "start": "2027-01-30",
+    "end": "2027-01-31",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "MISIA 2027 全国アリーナツアー",
+      "en": "MISIA 2027 Arena Tour"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/71.html"
+  },
+  {
+    "id": "glay-hiroshima-green-arena",
+    "city": "hiroshima",
+    "start": "2027-01-30",
+    "end": "2027-01-31",
+    "venue": {
+      "ja": "広島グリーンアリーナ",
+      "en": "Hiroshima Green Arena"
+    },
+    "title": {
+      "ja": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\"",
+      "en": "GLAY Arena Tour 2026-2027 \"EXOFIRE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/79.html"
+  },
+  {
+    "id": "txt-kyocera",
+    "city": "osaka",
+    "start": "2027-01-30",
+    "end": "2027-01-31",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "TOMORROW X TOGETHER WORLD TOUR <STEAL THE WIND> IN JAPAN",
+      "en": "TOMORROW X TOGETHER World Tour <STEAL THE WIND> in Japan"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/event/"
+  },
+  {
+    "id": "inaba-k-arena-0130",
+    "city": "yokohama",
+    "start": "2027-01-30",
+    "end": "2027-01-31",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "稲葉浩志 LIVE 2026-2027 ~enV~",
+      "en": "Koshi Inaba LIVE 2026-2027 ~enV~"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/694.html"
+  },
+  {
+    "id": "colorfulpeach-pia-arena",
+    "city": "yokohama",
+    "start": "2027-01-30",
+    "end": "2027-01-31",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "カラフルピーチ からぴちパラダイスARENA TOUR 2026 追加公演",
+      "en": "Colorful Peach Arena Tour 2026 (added shows)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=01.html"
+  },
+  {
+    "id": "osaka-womens-marathon-2027",
+    "city": "osaka",
+    "start": "2027-01-31",
+    "end": "2027-01-31",
+    "venue": {
+      "ja": "ヤンマースタジアム長居 発着",
+      "en": "Yanmar Stadium Nagai (start/finish)"
+    },
+    "title": {
+      "ja": "第46回大阪国際女子マラソン",
+      "en": "46th Osaka International Women's Marathon"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.osaka-marathon.jp/"
+  },
+  {
+    "id": "ayumu-imazu-budokan",
+    "city": "tokyo",
+    "start": "2027-01-31",
+    "end": "2027-01-31",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "Ayumu Imazu LIVE 2027 at 日本武道館",
+      "en": "Ayumu Imazu LIVE 2027 at Nippon Budokan"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  }
 ]
