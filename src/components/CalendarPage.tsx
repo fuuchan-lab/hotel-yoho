@@ -5,9 +5,11 @@ import { addDays, daysInMonth, diffDays, HORIZON_DAYS, parseYmd, weekday, ymd, t
 import { eventsOn } from '../events.ts'
 import { dayTone, formatDate, formatMonth, formatRange } from '../format.ts'
 import { holidayName } from '../holidays.ts'
+import type { Mood } from '../forecast.ts'
 import type { ForecastData } from '../hooks/useForecastData.ts'
 import type { PrefsState } from '../hooks/usePrefs.ts'
 import { useI18n } from '../i18n/useI18n.ts'
+import { dayWatch, toggleDayWatch } from '../watch.ts'
 import { CityPicker } from './CityPicker.tsx'
 import { CATEGORY_ICON } from './eventIcons.ts'
 import { Face } from './Face.tsx'
@@ -89,6 +91,7 @@ export function CalendarPage({ data, prefs, today, city, onCity, selected, onSel
             const ok = inRange(d)
             const fc = ok ? data.forecast(city, d) : null
             const evs = eventsOn(data.events, d, city)
+            const watched = dayWatch(prefs.prefs, city, d) !== undefined
             return (
               <button
                 key={d}
@@ -99,6 +102,11 @@ export function CalendarPage({ data, prefs, today, city, onCity, selected, onSel
                 aria-label={`${formatDate(d, lang)}${fc ? ` ${t(`mood.${fc.mood}`)}` : ''}${evs.length ? ` ${t('cal.events', { n: evs.length })}` : ''}`}
               >
                 <span className={`cal-d ${dayTone(d)}`}>{parseYmd(d).d}</span>
+                {watched && (
+                  <span className="cal-star" aria-label={t('watch.on')}>
+                    ★
+                  </span>
+                )}
                 {fc ? <Face mood={fc.mood} size={26} estimate={fc.source === 'estimate'} /> : <span className="cal-face-blank" />}
                 <span className="cal-ev">{evs.slice(0, 3).map((e) => CATEGORY_ICON[e.category]).join('')}</span>
               </button>
@@ -109,10 +117,13 @@ export function CalendarPage({ data, prefs, today, city, onCity, selected, onSel
       </div>
 
       <div className="card">
-        <h2 className={dayTone(selected)}>
-          {formatDate(selected, lang)}
-          {holidayName(selected) && <span className="holiday-tag">{holidayName(selected)![lang]}</span>}
-        </h2>
+        <div className="row">
+          <h2 className={dayTone(selected)}>
+            {formatDate(selected, lang)}
+            {holidayName(selected) && <span className="holiday-tag">{holidayName(selected)![lang]}</span>}
+          </h2>
+          {f && <WatchStar prefs={prefs} city={city} date={selected} mood={f.mood} />}
+        </div>
         {f ? (
           <div className="day-detail">
             <Face mood={f.mood} size={56} estimate={f.source === 'estimate'} label={t(`mood.${f.mood}`)} />
@@ -161,5 +172,27 @@ export function CalendarPage({ data, prefs, today, city, onCity, selected, onSel
         )}
       </div>
     </div>
+  )
+}
+
+/** その日をウォッチする ★（カレンダー・1 週間の予報で使う） */
+export function WatchStar({ prefs, city, date, mood, compact = false }: { prefs: PrefsState; city: CityId; date: Ymd; mood: Mood; compact?: boolean }) {
+  const { t } = useI18n()
+  const watch = dayWatch(prefs.prefs, city, date)
+  const on = watch !== undefined
+  // 何泊かの予定の一部は、ここでは外せない（ウォッチの画面で削除する）
+  const locked = on && watch.nights > 1
+  return (
+    <button
+      type="button"
+      className={`watch-btn${on ? ' on' : ''}${compact ? ' compact' : ''}`}
+      aria-pressed={on}
+      disabled={locked}
+      title={locked ? t('watch.locked') : undefined}
+      onClick={() => prefs.update((p) => toggleDayWatch(p, city, date, mood))}
+    >
+      {on ? '★' : '☆'}
+      {!compact && <span> {t(on ? 'watch.on' : 'watch.add')}</span>}
+    </button>
   )
 }

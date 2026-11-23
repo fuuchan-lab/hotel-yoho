@@ -9,12 +9,12 @@ import { EventsPage } from './components/EventsPage.tsx'
 import { Header } from './components/Header.tsx'
 import { MapPage } from './components/MapPage.tsx'
 import { SettingsPage } from './components/SettingsPage.tsx'
-import { TripsPage, type TripDraft } from './components/TripsPage.tsx'
+import { WatchPage, type WatchDraft } from './components/WatchPage.tsx'
 import { useForecastData } from './hooks/useForecastData.ts'
 import { useGoogleAuth } from './hooks/useGoogleAuth.ts'
 import { usePrefs } from './hooks/usePrefs.ts'
-import { tripNights } from './prefs.ts'
 import { loadTheme, type ThemePreference } from './theme.ts'
+import { needsAttention } from './watch.ts'
 
 /** 日付が変わったら（開いたまま日をまたいだ時）、今日を更新する */
 function useToday(): Ymd {
@@ -36,7 +36,7 @@ export default function App() {
   const [sheetCity, setSheetCity] = useState<CityId | null>(null)
   const [calCity, setCalCity] = useState<CityId>(prefs.prefs.homeCity ?? 'tokyo')
   const [calDate, setCalDate] = useState<Ymd>(today)
-  const [draft, setDraft] = useState<TripDraft | null>(null)
+  const [draft, setDraft] = useState<WatchDraft | null>(null)
   const [theme, setTheme] = useState<ThemePreference>(loadTheme)
   const [doc, setDoc] = useState<{ page: 'help' | 'privacy'; hash?: string } | null>(null)
 
@@ -52,18 +52,12 @@ export default function App() {
     (city: CityId, checkin: Ymd) => {
       setSheetCity(null)
       setDraft({ city, checkin })
-      openTab('trips')
+      openTab('watch')
     },
     [openTab],
   )
 
-  const tripAlert = useMemo(
-    () =>
-      prefs.prefs.trips.some((trip) =>
-        tripNights(trip).some((d) => d >= today && d < addDays(today, HORIZON_DAYS) && data.forecast(trip.city, d).mood === 4),
-      ),
-    [prefs.prefs.trips, data, today],
-  )
+  const watchAlert = useMemo(() => needsAttention(prefs.prefs, today, data.forecast), [prefs.prefs, data, today])
 
   return (
     <div className="app">
@@ -95,8 +89,8 @@ export default function App() {
           }}
         />
       )}
-      {tab === 'trips' && (
-        <TripsPage
+      {tab === 'watch' && (
+        <WatchPage
           data={data}
           prefs={prefs}
           account={auth.account}
@@ -104,6 +98,10 @@ export default function App() {
           draft={draft}
           onDraftUsed={() => setDraft(null)}
           onLogin={() => void auth.login()}
+          onCity={(city, d) => {
+            setDate(d)
+            setSheetCity(city)
+          }}
         />
       )}
       {tab === 'settings' && (
@@ -135,7 +133,7 @@ export default function App() {
       )}
       {doc && <DocFrame page={doc.page} hash={doc.hash} onClose={() => setDoc(null)} />}
 
-      <BottomDock tab={tab} onTab={openTab} tripAlert={tripAlert} />
+      <BottomDock tab={tab} onTab={openTab} watchAlert={watchAlert} />
     </div>
   )
 }

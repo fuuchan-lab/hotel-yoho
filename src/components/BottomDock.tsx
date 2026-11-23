@@ -1,9 +1,9 @@
 import { useEffect, useRef, type ReactNode } from 'react'
 import { useI18n } from '../i18n/useI18n.ts'
 
-export type Tab = 'map' | 'calendar' | 'events' | 'trips' | 'settings'
+export type Tab = 'map' | 'calendar' | 'events' | 'watch' | 'settings'
 
-export const TABS: Tab[] = ['map', 'calendar', 'events', 'trips', 'settings']
+export const TABS: Tab[] = ['map', 'calendar', 'events', 'watch', 'settings']
 
 // アイコンは currentColor で塗る（LeadLog と同じ作り）。抜き部分は .cut（ドックの背景色）
 const ICONS: Record<Tab, ReactNode> = {
@@ -40,16 +40,12 @@ const ICONS: Record<Tab, ReactNode> = {
       <path className="cut" d="m12 8.2 1.1 2.3 2.5.3-1.8 1.7.5 2.5-2.3-1.2-2.3 1.2.5-2.5-1.8-1.7 2.5-.3z" />
     </svg>
   ),
-  // マイ予定: ベッド
-  trips: (
+  // ウォッチ: 星と目（見張る）
+  watch: (
     <svg className="nav-icon" viewBox="0 0 24 24" aria-hidden="true">
-      <g fill="currentColor">
-        <rect x="2" y="5" width="2.4" height="15" rx="1" />
-        <rect x="2" y="13" width="20" height="4" rx="1" />
-        <rect x="19.6" y="13" width="2.4" height="7" rx="1" />
-        <circle cx="7.6" cy="10.4" r="2.2" />
-        <path d="M10.8 8.6h7.4a3.4 3.4 0 0 1 3.4 3.4v1h-10.8z" />
-      </g>
+      <path d="m12 1.8 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 16.6l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z" fill="currentColor" />
+      <ellipse className="cut" cx="12" cy="11.4" rx="4.4" ry="2.7" />
+      <circle cx="12" cy="11.4" r="1.6" fill="currentColor" />
     </svg>
   ),
   settings: (
@@ -68,12 +64,12 @@ const ICONS: Record<Tab, ReactNode> = {
 interface Props {
   tab: Tab
   onTab: (tab: Tab) => void
-  /** 予定の泊に、困った顔の日があれば「！」 */
-  tripAlert: boolean
+  /** ウォッチしている日の顔が変わった・困った顔になったら「！」 */
+  watchAlert: boolean
 }
 
 /** 画面の下に固定するメニュー（LeadLog と同じ形） */
-export function BottomDock({ tab, onTab, tripAlert }: Props) {
+export function BottomDock({ tab, onTab, watchAlert }: Props) {
   const { t } = useI18n()
   const ref = useRef<HTMLDivElement>(null)
 
@@ -102,8 +98,8 @@ export function BottomDock({ tab, onTab, tripAlert }: Props) {
           >
             <span className="nav-icon-wrap">
               {ICONS[id]}
-              {id === 'trips' && tripAlert && (
-                <span className="nav-bang" aria-label={t('nav.tripAlert')}>
+              {id === 'watch' && watchAlert && (
+                <span className="nav-bang" aria-label={t('nav.watchAlert')}>
                   !
                 </span>
               )}

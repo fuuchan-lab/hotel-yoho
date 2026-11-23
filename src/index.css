@@ -953,7 +953,7 @@ button.link.danger {
 
 .week-row {
   display: grid;
-  grid-template-columns: 78px auto minmax(0, 1fr);
+  grid-template-columns: 78px auto minmax(0, 1fr) auto;
   align-items: center;
   gap: 10px;
   padding: 8px 12px;
@@ -1243,26 +1243,193 @@ button.link.danger {
   color: #f59e0b;
 }
 
-/* ---- マイ予定 ---- */
-.trip.past {
+/* ---- ウォッチ ---- */
+.watch-btn {
+  flex: none;
+  min-height: 38px;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.watch-btn.compact {
+  min-width: 38px;
+  padding: 0;
+  font-size: 1.15rem;
+}
+
+.watch-btn.on {
+  color: #b45309;
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+
+:root[data-theme='dark'] .watch-btn.on {
+  background: #3a2a06;
+  color: #fcd34d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .watch-btn.on {
+    background: #3a2a06;
+    color: #fcd34d;
+  }
+}
+
+.watch-btn:disabled {
+  opacity: 0.7;
+}
+
+.cal-cell {
+  position: relative;
+}
+
+.cal-star {
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  font-size: 0.7rem;
+  color: #f59e0b;
+  line-height: 1;
+}
+
+.watch-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.watch-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.watch-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+
+.watch-item:first-child {
+  border-top: 0;
+}
+
+.watch-item.past {
   opacity: 0.6;
 }
 
-.trip-nights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.watch-title {
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  font-size: 0.95rem;
 }
 
-.trip-night {
+.watch-nights {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.watch-night {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2px;
-  min-width: 64px;
-  padding: 6px;
+  min-width: 58px;
+  padding: 4px;
   border-radius: 10px;
   background: var(--bg);
+}
+
+.watch-status {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: 4px;
+  font-size: 0.85rem;
+}
+
+.change {
+  width: fit-content;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 1px 8px;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.change.worse {
+  background: #dc2626;
+}
+
+.change.better {
+  background: #16a34a;
+}
+
+.fav-table {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 -6px;
+}
+
+.fav-head,
+.fav-row {
+  display: grid;
+  grid-template-columns: minmax(58px, 1.4fr) repeat(7, minmax(0, 1fr));
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+}
+
+.fav-head span {
+  line-height: 1.15;
+  font-size: 0.66rem;
+}
+
+.fav-name {
+  border: 0;
+  background: none;
+  padding: 0 0 0 4px;
+  text-align: left;
+  font-weight: 800;
+  font-size: 0.82rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fav-cell {
+  border: 0;
+  background: none;
+  padding: 2px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.watch-event {
+  align-items: center;
+}
+
+details summary {
+  cursor: pointer;
+  margin-top: 6px;
 }
 
 /* ---- 設定 ---- */
@@ -1332,7 +1499,7 @@ button.link.danger {
     padding: 6px 8px;
   }
   .week-row {
-    grid-template-columns: 66px auto minmax(0, 1fr);
+    grid-template-columns: 62px auto minmax(0, 1fr) auto;
     gap: 8px;
   }
 }

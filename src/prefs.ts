@@ -1,5 +1,5 @@
 /**
- * 利用者の設定・予定。端末（localStorage）に保存し、ログイン中は Google ドライブの HotelYoho/prefs.json にも保存して、
+ * 利用者の設定・ウォッチリスト（お気に入りの都市・ウォッチする日・印を付けたイベント）。端末（localStorage）に保存し、ログイン中は Google ドライブの HotelYoho/prefs.json にも保存して、
  * 同じアカウントの端末で共通にする（新しく変えたほうを残す）。
  */
 import { isCityId, type CityId } from './cities.ts'
@@ -12,6 +12,11 @@ export interface Trip {
   /** 泊数 */
   nights: number
   note: string
+  /**
+   * 最後にウォッチリストで見た時の顔（泊のうちいちばん困った顔。0〜4）。
+   * いまの予報と違えば「悪化・改善」を知らせる。まだ予報の範囲外なら null
+   */
+  seen: number | null
 }
 
 export interface Prefs {
@@ -51,7 +56,11 @@ export function normalizePrefs(raw: unknown): Prefs {
   const v = raw as Record<string, unknown>
   const favorites = Array.isArray(v.favorites) ? [...new Set(v.favorites.filter(isCityId))] : []
   const trips = Array.isArray(v.trips)
-    ? v.trips.filter(isTrip).map((t) => ({ ...t, note: typeof t.note === 'string' ? t.note.slice(0, 200) : '' }))
+    ? v.trips.filter(isTrip).map((t) => ({
+        ...t,
+        note: typeof t.note === 'string' ? t.note.slice(0, 200) : '',
+        seen: typeof t.seen === 'number' && t.seen >= 0 && t.seen <= 4 ? t.seen : null,
+      }))
     : []
   const starred = Array.isArray(v.starred) ? [...new Set(v.starred.filter((s): s is string => typeof s === 'string'))] : []
   return {

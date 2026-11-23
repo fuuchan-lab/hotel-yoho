@@ -7,6 +7,7 @@ import { holidayName } from '../holidays.ts'
 import type { ForecastData } from '../hooks/useForecastData.ts'
 import type { PrefsState } from '../hooks/usePrefs.ts'
 import { useI18n } from '../i18n/useI18n.ts'
+import { WatchStar } from './CalendarPage.tsx'
 import { Face } from './Face.tsx'
 import { Figures, Reasons } from './ForecastDetail.tsx'
 import { Sheet } from './Sheet.tsx'
@@ -78,6 +79,7 @@ export function CitySheet({ cityId, start, data, prefs, onClose, onCalendar, onA
                 <Figures f={f} />
                 <Reasons f={f} max={3} />
               </span>
+              <WatchStar prefs={prefs} city={cityId} date={d} mood={f.mood} compact />
             </li>
           )
         })}
