@@ -1,15 +1,12 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import type { CityId } from './cities.ts'
 import { addDays, HORIZON_DAYS, todayJst, type Ymd } from './dates.ts'
 import { BottomDock, type Tab } from './components/BottomDock.tsx'
-import { CalendarPage } from './components/CalendarPage.tsx'
 import { CitySheet } from './components/CitySheet.tsx'
 import { DocFrame } from './components/DocFrame.tsx'
-import { EventsPage } from './components/EventsPage.tsx'
 import { Header } from './components/Header.tsx'
 import { MapPage } from './components/MapPage.tsx'
-import { SettingsPage } from './components/SettingsPage.tsx'
-import { WatchPage, type WatchDraft } from './components/WatchPage.tsx'
+import type { WatchDraft } from './components/WatchPage.tsx'
 import { useForecastData } from './hooks/useForecastData.ts'
 import { useGoogleAuth } from './hooks/useGoogleAuth.ts'
 import { usePrefs } from './hooks/usePrefs.ts'
@@ -17,6 +14,12 @@ import { useI18n } from './i18n/useI18n.ts'
 import type { Lang } from './i18n/context.ts'
 import { applyTheme, loadTheme, saveTheme, type ThemePreference } from './theme.ts'
 import { needsAttention } from './watch.ts'
+
+// 最初に開く予報地図のほかの画面は、開いた時に読み込む（起動を速くするため。オフライン用には PWA が先に保存しておく）
+const CalendarPage = lazy(() => import('./components/CalendarPage.tsx').then((m) => ({ default: m.CalendarPage })))
+const EventsPage = lazy(() => import('./components/EventsPage.tsx').then((m) => ({ default: m.EventsPage })))
+const WatchPage = lazy(() => import('./components/WatchPage.tsx').then((m) => ({ default: m.WatchPage })))
+const SettingsPage = lazy(() => import('./components/SettingsPage.tsx').then((m) => ({ default: m.SettingsPage })))
 
 /** 日付が変わったら（開いたまま日をまたいだ時）、今日を更新する */
 function useToday(): Ymd {
@@ -127,6 +130,7 @@ export default function App() {
           onStripCity={setStripCity}
         />
       )}
+      <Suspense fallback={<div className="page" />}>
       {tab === 'calendar' && (
         <CalendarPage
           data={data}
@@ -176,9 +180,11 @@ export default function App() {
           onDoc={(page, hash) => setDoc({ page, hash })}
         />
       )}
+      </Suspense>
 
       {sheetCity && (
         <CitySheet
+          key={`${sheetCity}|${date}`}
           cityId={sheetCity}
           start={date < today ? today : date}
           data={data}

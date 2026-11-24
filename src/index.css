@@ -845,6 +845,12 @@ button.link.danger {
   gap: 8px;
 }
 
+.city-section-title {
+  margin: 14px 2px 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .city-row {
   width: 100%;
   display: flex;
@@ -1042,9 +1048,24 @@ button.link.danger {
   border-top: 0;
 }
 
+.week-row {
+  cursor: pointer;
+}
+
+/* 予約の日付に選んでいる日 */
+.week-row.picked {
+  background: color-mix(in srgb, #e8540e 10%, var(--card));
+  box-shadow: inset 4px 0 0 #e8540e;
+}
+
 .week-date {
   font-weight: 800;
   font-size: 0.9rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  font-family: inherit;
 }
 
 .week-main {
@@ -1119,6 +1140,37 @@ button.link.danger {
 }
 
 /* ---- 横並びの選択（都市・種類） ---- */
+.city-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* 選んだ都市の地方（2 段目）。大都市の行の、同じ地方のボタンにも印を付ける */
+.chip-row.sub-row {
+  align-items: center;
+  padding-top: 0;
+}
+
+.sub-label {
+  flex: none;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--muted);
+  padding-right: 2px;
+}
+
+.chip.small {
+  min-height: 32px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+}
+
+.chip.in-region {
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
 .chip-row {
   display: flex;
   gap: 6px;

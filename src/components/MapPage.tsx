@@ -1,5 +1,5 @@
-import { useCallback, useMemo } from 'react'
-import { CITIES, type CityId } from '../cities.ts'
+import { lazy, Suspense, useCallback, useMemo } from 'react'
+import { BIG_CITIES, CITIES, cityById, citiesIn, type CityId } from '../cities.ts'
 import type { Ymd } from '../dates.ts'
 import { averageMood, type DayForecast } from '../forecast.ts'
 import { formatDate } from '../format.ts'
@@ -11,8 +11,10 @@ import { CityPicker } from './CityPicker.tsx'
 import { DateStrip } from './DateStrip.tsx'
 import { Face } from './Face.tsx'
 import { Figures, Reasons } from './ForecastDetail.tsx'
-import { JapanMap } from './JapanMap.tsx'
 import { Legend } from './Legend.tsx'
+
+// 地図のライブラリ（MapLibre）は大きいので分けて読み込み、日付の帯・一覧を先に出す
+const JapanMap = lazy(() => import('./JapanMap.tsx').then((m) => ({ default: m.JapanMap })))
 
 interface Props {
   data: ForecastData
@@ -28,29 +30,52 @@ interface Props {
 
 export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, onStripCity }: Props) {
   const { t, lang } = useI18n()
-  const forecasts = useMemo(() => CITIES.map((c) => data.forecast(c.id, date)), [data, date])
+  const { forecast } = data
+  const forecasts = useMemo(() => CITIES.map((c) => forecast(c.id, date)), [forecast, date])
   // 日付の帯の顔: 最初は全国平均、都市を選んだらその都市の予報
   const overall = useCallback(
     (d: Ymd) => {
       if (stripCity) {
-        const f = data.forecast(stripCity, d)
+        const f = forecast(stripCity, d)
         return { mood: f.mood, estimate: f.source === 'estimate' }
       }
-      const all = CITIES.map((c) => data.forecast(c.id, d))
-      return { mood: averageMood(all.map((f) => f.mood)), estimate: all.every((f) => f.source === 'estimate') }
+      const all = CITIES.map((c) => forecast(c.id, d))
+      return {
+        mood: averageMood(all.map((f) => f.mood)),
+        estimate: all.every((f) => f.source === 'estimate'),
+      }
     },
-    [data, stripCity],
+    [forecast, stripCity],
   )
-  const stripName = stripCity ? CITIES.find((c) => c.id === stripCity)!.name[lang] : t('map.national')
+  const stripName = stripCity ? cityById(stripCity)!.name[lang] : t('map.national')
   const naha = forecasts.find((f) => f.city === 'naha')
   const moodLabel = useCallback((f: DayForecast) => t(`mood.${f.mood}`), [t])
   const holiday = holidayName(date)
 
-  // お気に入りを上に、あとは北から
-  const list = useMemo(() => {
-    const fav = new Set(prefs.favorites)
-    return [...forecasts].sort((a, b) => Number(fav.has(b.city)) - Number(fav.has(a.city)))
-  }, [forecasts, prefs.favorites])
+  // 地図の下の一覧: お気に入り、選んだ都市の地方、大都市の順（61 都市を全部並べると長いので）
+  const sections = useMemo(() => {
+    const byCity = new Map(forecasts.map((f) => [f.city, f]))
+    const shown = new Set<CityId>()
+    const take = (ids: CityId[]) => ids.filter((id) => !shown.has(id) && shown.add(id)).map((id) => byCity.get(id)!)
+    const region = stripCity ? cityById(stripCity)!.region : null
+    return [
+      { key: 'fav', title: t('city.favorites'), items: take(prefs.favorites) },
+      ...(region
+        ? [
+            {
+              key: 'region',
+              title: t('city.regionOf', { region: t(`region.${region}`) }),
+              items: take(citiesIn(region).map((c) => c.id)),
+            },
+          ]
+        : []),
+      {
+        key: 'big',
+        title: t('city.big'),
+        items: take(BIG_CITIES.map((c) => c.id)),
+      },
+    ].filter((sec) => sec.items.length > 0)
+  }, [forecasts, prefs.favorites, stripCity, t])
 
   return (
     <div className="page">
@@ -68,7 +93,9 @@ export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, o
         {holiday && <span className="holiday-tag">{holiday[lang]}</span>}
       </h2>
       <div className="map-card">
-        <JapanMap forecasts={forecasts} onCity={onCity} moodLabel={moodLabel} selected={stripCity} />
+        <Suspense fallback={<div className="japan-map" />}>
+          <JapanMap forecasts={forecasts} onCity={onCity} moodLabel={moodLabel} selected={stripCity} />
+        </Suspense>
         {naha && (
           // 天気予報の地図と同じく、沖縄は左下の囲みに出す（地図を動かせば本来の位置にも顔がある）
           <button
@@ -86,28 +113,39 @@ export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, o
       <Legend />
       <p className="muted small">{t('map.hint')}</p>
 
-      <ul className="city-list">
-        {list.map((f) => {
-          const city = CITIES.find((c) => c.id === f.city)!
-          return (
-            <li key={f.city}>
-              <button type="button" className="city-row" onClick={() => onCity(f.city)}>
-                <Face mood={f.mood} size={40} estimate={f.source === 'estimate'} label={t(`mood.${f.mood}`)} />
-                <span className="city-row-main">
-                  <span className="city-row-name">
-                    {prefs.favorites.includes(f.city) && <span className="star on" aria-label={t('fav.on')}>★</span>}
-                    {city.name[lang]}
-                    <span className="mood-text">{t(`mood.${f.mood}`)}</span>
-                  </span>
-                  <Figures f={f} />
-                  <Reasons f={f} max={2} />
-                </span>
-                <span className="chev" aria-hidden="true">›</span>
-              </button>
-            </li>
-          )
-        })}
-      </ul>
+      {sections.map((sec) => (
+        <section key={sec.key} className="city-section">
+          <h3 className="city-section-title">{sec.title}</h3>
+          <ul className="city-list">
+            {sec.items.map((f) => {
+              const city = cityById(f.city)!
+              return (
+                <li key={f.city}>
+                  <button type="button" className="city-row" onClick={() => onCity(f.city)}>
+                    <Face mood={f.mood} size={40} estimate={f.source === 'estimate'} label={t(`mood.${f.mood}`)} />
+                    <span className="city-row-main">
+                      <span className="city-row-name">
+                        {prefs.favorites.includes(f.city) && (
+                          <span className="star on" aria-label={t('fav.on')}>
+                            ★
+                          </span>
+                        )}
+                        {city.name[lang]}
+                        <span className="mood-text">{t(`mood.${f.mood}`)}</span>
+                      </span>
+                      <Figures f={f} />
+                      <Reasons f={f} max={2} />
+                    </span>
+                    <span className="chev" aria-hidden="true">
+                      ›
+                    </span>
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
+      ))}
     </div>
   )
 }

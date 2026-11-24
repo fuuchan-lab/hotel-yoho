@@ -6,9 +6,9 @@
  * - 推定（estimate）: 実データがまだない日は、曜日・祝日・年末年始などの時期・大型イベントから見積もる。
  *   画面には「推定」と明記する。
  */
-import { CITIES, type City, type CityId } from './cities.ts'
+import { cityById, type City, type CityId } from './cities.ts'
 import { addDays, diffDays, parseYmd, weekday, type Ymd } from './dates.ts'
-import { eventWeightForNight, type BigEvent } from './events.ts'
+import { type BigEvent } from './events.ts'
 import { isDayOff, isHoliday } from './holidays.ts'
 
 /** 0 = とても空いている（笑顔）… 4 = 満室に近く高騰（困った顔） */
@@ -244,17 +244,46 @@ function combine(weights: number[]): number {
   return sorted[0] + 0.3 * sorted.slice(1).reduce((s, w) => s + w, 0)
 }
 
+interface NightEvent {
+  e: BigEvent
+  /** その夜への重み（開催日 1・前夜 0.5。何週間も続くものは小さく） */
+  w: number
+}
+
+/**
+ * イベントを「影響する夜」ごとに引けるようにする（予報は都市 × 日付の数だけ何千回も呼ばれるので、
+ * そのたびに全部のイベントを日付の計算つきで調べると重い）。イベントの配列ごとに 1 回だけ作る
+ */
+const nightIndexCache = new WeakMap<BigEvent[], Map<Ymd, NightEvent[]>>()
+
+function eventsByNight(events: BigEvent[]): Map<Ymd, NightEvent[]> {
+  let index = nightIndexCache.get(events)
+  if (index) return index
+  index = new Map()
+  for (const e of events) {
+    // 何週間も続くもの（クリスマス市・イルミネーションなど）は、毎晩の宿泊への影響が小さい
+    const long = diffDays(e.end, e.start) > 7 ? 0.3 : 1
+    const add = (night: Ymd, w: number) => {
+      const list = index!.get(night)
+      if (list) list.push({ e, w: w * long })
+      else index!.set(night, [{ e, w: w * long }])
+    }
+    // 前夜（遠くから前日に来る人）は 0.5、開催日の夜は 1（events.ts の eventWeightForNight と同じ）
+    add(addDays(e.start, -1), 0.5)
+    for (let d = e.start; d <= e.end; d = addDays(d, 1)) add(d, 1)
+  }
+  nightIndexCache.set(events, index)
+  return index
+}
+
 export function estimateForecast(cityId: CityId, night: Ymd, events: BigEvent[]): DayForecast {
-  const city = CITIES.find((c) => c.id === cityId)!
+  const city = cityById(cityId)!
   const wk = weekdayFactors(night)
   const season = seasonFactors(city, night)
   const own: number[] = []
   const near: number[] = []
   const reasons: Reason[] = [...wk.reasons, ...season.reasons]
-  for (const e of events) {
-    // 何週間も続くもの（クリスマス市・イルミネーションなど）は、毎晩の宿泊への影響が小さい
-    const w = eventWeightForNight(e, night) * (diffDays(e.end, e.start) > 7 ? 0.3 : 1)
-    if (w === 0) continue
+  for (const { e, w } of eventsByNight(events).get(night) ?? []) {
     if (e.city === cityId) {
       own.push((SCALE_WEIGHT[e.scale] ?? 1) * w)
       reasons.push({ key: 'event', event: e })
@@ -288,10 +317,24 @@ export function forecastFor(
   const obs = data?.days[night]
   if (data && obs && now - obs.at <= LIVE_MAX_AGE_MS) {
     const live = liveForecast(cityId, night, obs, cityBaseline(data))
-    for (const e of events) {
-      if (e.city === cityId && eventWeightForNight(e, night) > 0) live.reasons.push({ key: 'event', event: e })
+    for (const { e } of eventsByNight(events).get(night) ?? []) {
+      if (e.city === cityId) live.reasons.push({ key: 'event', event: e })
     }
     return live
   }
   return estimateForecast(cityId, night, events)
+}
+
+/** forecastFor の結果を、同じ観測・イベントの間は都市・日付ごとに覚えておく */
+export function memoForecaster(summary: Summary | null, events: BigEvent[]): (city: CityId, night: Ymd) => DayForecast {
+  const cache = new Map<string, DayForecast>()
+  return (city, night) => {
+    const key = `${city}|${night}`
+    let f = cache.get(key)
+    if (!f) {
+      f = forecastFor(city, night, summary, events)
+      cache.set(key, f)
+    }
+    return f
+  }
 }

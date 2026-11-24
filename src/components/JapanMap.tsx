@@ -2,8 +2,8 @@ import * as maplibregl from 'maplibre-gl'
 import type { ExpressionSpecification, GeoJSONSourceSpecification, StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
-import { useEffect, useRef, useState } from 'react'
-import { CITIES, type CityId } from '../cities.ts'
+import { useEffect, useRef } from 'react'
+import { cityById, type City, type CityId } from '../cities.ts'
 import { faceSvg } from '../face.ts'
 import type { DayForecast } from '../forecast.ts'
 import { useI18n } from '../i18n/useI18n.ts'
@@ -260,12 +260,52 @@ const FACE_SIZE = { 1: 40, 2: 32, 3: 30 } as const
 
 const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
 
-function pinHtml(name: string, svg: string, dx: number, dy: number): string {
-  const line =
-    dx || dy
-      ? `<svg class="pin-line" width="1" height="1" aria-hidden="true"><line x1="0" y1="0" x2="${dx}" y2="${dy}"/></svg><span class="pin-dot"></span>`
-      : ''
-  return `${line}<div class="pin-bubble" style="transform:translate(${dx}px,${dy}px)">${svg}<span class="pin-name">${escapeHtml(name)}</span></div>`
+/** 顔・名前・引き出し線。位置（ずらす量）は layoutPins で、style・属性だけを書き換える */
+function pinHtml(name: string, svg: string): string {
+  return `<svg class="pin-line" width="1" height="1" aria-hidden="true"><line x1="0" y1="0" x2="0" y2="0"/></svg><span class="pin-dot"></span><div class="pin-bubble">${svg}<span class="pin-name">${escapeHtml(name)}</span></div>`
+}
+
+interface PinEntry {
+  marker: maplibregl.Marker
+  el: HTMLButtonElement
+  city: City
+  /** 中身（顔・名前）を作った時の条件。変わった時だけ作り直す */
+  content: string
+  /** いまの位置（ずらす量）と表示。変わった時だけ DOM を書き換える */
+  pos: string
+}
+
+/**
+ * 縮尺に合わせて、顔の位置（ずらす量）と表示・非表示を変える。拡大・縮小の間は毎フレーム呼ばれるので、
+ * 中身は作り直さず、変わったものの style・属性だけを書き換える
+ */
+function layoutPins(pins: Iterable<PinEntry>, zoom: number, selected: CityId | null) {
+  const k = offsetScale(zoom)
+  for (const p of pins) {
+    const { city } = p
+    const hidden = zoom < TIER_MIN_ZOOM[city.tier] && city.id !== selected
+    const [ox, oy] = city.offset
+    const [nx, ny] = city.nudge ?? [0, 0]
+    const dx = hidden ? 0 : Math.round(ox * k + nx * (1 - k))
+    const dy = hidden ? 0 : Math.round(oy * k + ny * (1 - k))
+    const pos = hidden ? 'hidden' : `${dx},${dy}`
+    if (pos === p.pos) continue
+    p.pos = pos
+    p.el.style.display = hidden ? 'none' : ''
+    if (hidden) continue
+    const bubble = p.el.querySelector<HTMLElement>('.pin-bubble')
+    const line = p.el.querySelector<SVGLineElement>('.pin-line line')
+    const lineBox = p.el.querySelector<SVGSVGElement>('.pin-line')
+    const dot = p.el.querySelector<HTMLElement>('.pin-dot')
+    if (bubble) bubble.style.transform = `translate(${dx}px,${dy}px)`
+    const moved = dx !== 0 || dy !== 0
+    if (line) {
+      line.setAttribute('x2', String(dx))
+      line.setAttribute('y2', String(dy))
+    }
+    if (lineBox) lineBox.style.display = moved ? '' : 'none'
+    if (dot) dot.style.display = moved ? '' : 'none'
+  }
 }
 
 /** 全国地図に、各都市の予報の顔を出す。顔を押すと onCity */
@@ -273,12 +313,12 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
   const { lang, t } = useI18n()
   const holder = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
-  const markers = useRef(new Map<CityId, { marker: maplibregl.Marker; el: HTMLButtonElement }>())
+  const markers = useRef(new Map<CityId, PinEntry>())
   const onCityRef = useRef(onCity)
   useEffect(() => {
     onCityRef.current = onCity
   })
-  const [zoom, setZoom] = useState(0)
+  const selectedRef = useRef(selected)
   const langRef = useRef(lang)
   useEffect(() => {
     langRef.current = lang
@@ -302,12 +342,22 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
       pitchWithRotate: false,
       renderWorldCopies: false,
       cooperativeGestures: false,
+      // スマホ（Android アプリ）で軽くする: タイルのフェードをやめ、描く解像度は 2 倍まで
+      fadeDuration: 0,
+      pixelRatio: Math.min(window.devicePixelRatio || 1, 2),
     })
     map.touchZoomRotate.disableRotation()
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right')
     mapRef.current = map
-    setZoom(map.getZoom())
-    map.on('zoom', () => setZoom(map.getZoom()))
+    // 拡大・縮小の間は、1 フレームに 1 回だけ顔の位置を直す（React の再描画はしない）
+    let frame = 0
+    map.on('zoom', () => {
+      if (frame) return
+      frame = requestAnimationFrame(() => {
+        frame = 0
+        layoutPins(markers.current.values(), map.getZoom(), selectedRef.current)
+      })
+    })
 
     map.on('load', () => {
       fetch('./data/area.json')
@@ -359,14 +409,12 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
     }
   }, [])
 
+  // 顔の中身（予報・言語・選んだ都市が変わった時だけ）
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
-    const k = offsetScale(zoom)
     for (const f of forecasts) {
-      const city = CITIES.find((c) => c.id === f.city)!
-      const [ox, oy] = city.offset
-      const [nx, ny] = city.nudge ?? [0, 0]
+      const city = cityById(f.city)!
       const label = `${city.name[lang]}: ${moodLabel(f)}`
       let entry = markers.current.get(f.city)
       if (!entry) {
@@ -378,22 +426,23 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
           onCityRef.current(f.city)
         })
         const marker = new maplibregl.Marker({ element: el, anchor: 'top-left' }).setLngLat([city.lng, city.lat]).addTo(map)
-        entry = { marker, el }
+        entry = { marker, el, city, content: '', pos: '' }
         markers.current.set(f.city, entry)
       }
-      const hidden = zoom < TIER_MIN_ZOOM[city.tier] && f.city !== selected
-      entry.el.style.display = hidden ? 'none' : ''
-      entry.el.setAttribute('aria-label', label)
-      entry.el.classList.toggle('selected', f.city === selected)
-      entry.marker.getElement().style.zIndex = f.city === selected ? '5' : ''
-      entry.el.innerHTML = pinHtml(
-        city.name[lang],
-        faceSvg(f.mood, FACE_SIZE[city.tier], f.source === 'estimate', label),
-        Math.round(ox * k + nx * (1 - k)),
-        Math.round(oy * k + ny * (1 - k)),
-      )
+      const isSelected = f.city === selected
+      const content = `${label}|${f.source}|${isSelected}`
+      if (content !== entry.content) {
+        entry.content = content
+        entry.pos = ''
+        entry.el.setAttribute('aria-label', label)
+        entry.el.classList.toggle('selected', isSelected)
+        entry.marker.getElement().style.zIndex = isSelected ? '5' : ''
+        entry.el.innerHTML = pinHtml(city.name[lang], faceSvg(f.mood, FACE_SIZE[city.tier], f.source === 'estimate', label))
+      }
     }
-  }, [forecasts, lang, moodLabel, zoom, selected])
+    selectedRef.current = selected
+    layoutPins(markers.current.values(), map.getZoom(), selected)
+  }, [forecasts, lang, moodLabel, selected])
 
   return <div className="japan-map" ref={holder} role="region" aria-label={t('map.aria')} />
 }

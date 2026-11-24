@@ -34,6 +34,9 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // 地図の描画の部品（maplibre-gl-worker の .mjs）も先に保存する（オフラインや Android アプリで地図を出すため）
+        globPatterns: ['**/*.{js,mjs,css,html,ico,png,svg,webmanifest}'],
+        maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         // help.html・privacy.html はアプリ（SPA）ではない単独のページ。指定しないと、オフライン対応の仕組みがアプリの画面を返してしまう
         navigateFallbackDenylist: [/\/(help|privacy)\.html(\?.*)?$/, /\/\.well-known\//],
         runtimeCaching: [
