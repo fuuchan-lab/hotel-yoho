@@ -50,3 +50,12 @@ android/local.properties
 
 # 中継サーバーから手元に保存した観測の記録（scripts/fetch-logs.mjs）
 data/logs/
+
+# Android 有料版 (TWA)
+android-paid/.gradle/
+android-paid/build/
+android-paid/app/build/
+android-paid/*.aab
+android-paid/*.apk
+android-paid/*.idsig
+android-paid/local.properties
