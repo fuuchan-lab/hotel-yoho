@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import { TRIAL_DAYS, type Access } from '../access.ts'
 import { BIG_CITIES, CITIES, cityById, citiesIn, type CityId } from '../cities.ts'
 import { dateRange, type Ymd } from '../dates.ts'
@@ -35,6 +35,8 @@ interface Props {
 export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, onStripCity, access, onSettings }: Props) {
   const { t, lang } = useI18n()
   const { forecast, request } = data
+  // 地図を拡大している間は、沖縄の枠を隠す（地図のじゃまになるため。那覇は地図を動かせば本来の位置にある）
+  const [zoomed, setZoomed] = useState(false)
   // 自分のキーの時: 選んだ日の、大都市・お気に入り・選んだ都市の地方を楽天に問い合わせる。都市を選んでいれば、その 1 週間も
   const favorites = prefs.favorites
   useEffect(() => {
@@ -106,9 +108,9 @@ export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, o
       </h2>
       <div className="map-card">
         <Suspense fallback={<div className="japan-map" />}>
-          <JapanMap forecasts={forecasts} onCity={onCity} moodLabel={moodLabel} selected={stripCity} />
+          <JapanMap forecasts={forecasts} onCity={onCity} moodLabel={moodLabel} selected={stripCity} onZoomed={setZoomed} />
         </Suspense>
-        {naha && (
+        {naha && !zoomed && (
           // 天気予報の地図と同じく、沖縄は左下の囲みに出す（地図を動かせば本来の位置にも顔がある）
           <button
             type="button"

@@ -17,6 +17,8 @@ interface Props {
   moodLabel: (f: DayForecast) => string
   /** 日付の帯で選んでいる都市（顔を目立たせる） */
   selected?: CityId | null
+  /** 最初の全国表示から拡大したか（変わった時だけ呼ぶ）。沖縄の枠を、拡大した時に隠すのに使う */
+  onZoomed?: (zoomed: boolean) => void
 }
 
 type LngLat = [number, number]
@@ -309,14 +311,16 @@ function layoutPins(pins: Iterable<PinEntry>, zoom: number, selected: CityId | n
 }
 
 /** 全国地図に、各都市の予報の顔を出す。顔を押すと onCity */
-export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Props) {
+export function JapanMap({ forecasts, onCity, moodLabel, selected = null, onZoomed }: Props) {
   const { lang, t } = useI18n()
   const holder = useRef<HTMLDivElement>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const markers = useRef(new Map<CityId, PinEntry>())
   const onCityRef = useRef(onCity)
+  const onZoomedRef = useRef(onZoomed)
   useEffect(() => {
     onCityRef.current = onCity
+    onZoomedRef.current = onZoomed
   })
   const selectedRef = useRef(selected)
   const langRef = useRef(lang)
@@ -351,11 +355,20 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
     mapRef.current = map
     // 拡大・縮小の間は、1 フレームに 1 回だけ顔の位置を直す（React の再描画はしない）
     let frame = 0
+    const startZoom = map.getZoom()
+    let zoomed = false
     map.on('zoom', () => {
       if (frame) return
       frame = requestAnimationFrame(() => {
         frame = 0
-        layoutPins(markers.current.values(), map.getZoom(), selectedRef.current)
+        const z = map.getZoom()
+        layoutPins(markers.current.values(), z, selectedRef.current)
+        // 最初の全国表示より少しでも拡大したら知らせる（沖縄の枠を隠す）
+        const now = z > startZoom + 0.3
+        if (now !== zoomed) {
+          zoomed = now
+          onZoomedRef.current?.(now)
+        }
       })
     })
 
