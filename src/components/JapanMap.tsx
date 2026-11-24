@@ -245,16 +245,18 @@ function applyMapTheme(map: maplibregl.Map) {
 /** 拡大するほど、顔をずらす量を小さくする（離れて見えるようになるため） */
 function offsetScale(zoom: number): number {
   if (zoom <= 4.6) return 1
-  if (zoom >= 7) return 0
-  return (7 - zoom) / 2.4
+  if (zoom >= 6) return 0
+  return (6 - zoom) / 1.4
 }
 
 /**
- * 人口 100 万人に満たない都市は、縮小した全国表示では隠す（顔が多すぎて見にくくなるため）。
- * 選んでいる都市は、いつも出す。那覇は地図の左上の枠に別に出す（MapPage.tsx）
+ * 都市の顔を出し始める縮尺（src/cities.ts の tier）。縮小した全国表示では人口 100 万人以上だけにして、
+ * 少し拡大すると県庁所在地と作者が加えた都市、さらに拡大するとそのほかの人口 50 万人以上の都市も出す（顔が多すぎて見にくくならないように）。
+ * 選んでいる都市は、いつも出す。那覇は地図の左上の枠にも出す（MapPage.tsx）
  */
-const SMALL_CITY_POP = 100
-const SMALL_CITY_MIN_ZOOM = 5.6
+const TIER_MIN_ZOOM = { 1: 0, 2: 6, 3: 6.8 } as const
+/** 小さい都市の顔は、少し小さく（px） */
+const FACE_SIZE = { 1: 40, 2: 32, 3: 30 } as const
 
 const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
 
@@ -364,6 +366,7 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
     for (const f of forecasts) {
       const city = CITIES.find((c) => c.id === f.city)!
       const [ox, oy] = city.offset
+      const [nx, ny] = city.nudge ?? [0, 0]
       const label = `${city.name[lang]}: ${moodLabel(f)}`
       let entry = markers.current.get(f.city)
       if (!entry) {
@@ -378,16 +381,16 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
         entry = { marker, el }
         markers.current.set(f.city, entry)
       }
-      const hidden = city.pop < SMALL_CITY_POP && zoom < SMALL_CITY_MIN_ZOOM && f.city !== selected
+      const hidden = zoom < TIER_MIN_ZOOM[city.tier] && f.city !== selected
       entry.el.style.display = hidden ? 'none' : ''
       entry.el.setAttribute('aria-label', label)
       entry.el.classList.toggle('selected', f.city === selected)
       entry.marker.getElement().style.zIndex = f.city === selected ? '5' : ''
       entry.el.innerHTML = pinHtml(
         city.name[lang],
-        faceSvg(f.mood, 40, f.source === 'estimate', label),
-        Math.round(ox * k),
-        Math.round(oy * k),
+        faceSvg(f.mood, FACE_SIZE[city.tier], f.source === 'estimate', label),
+        Math.round(ox * k + nx * (1 - k)),
+        Math.round(oy * k + ny * (1 - k)),
       )
     }
   }, [forecasts, lang, moodLabel, zoom, selected])

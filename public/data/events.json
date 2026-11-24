@@ -358,7 +358,7 @@
   },
   {
     "id": "ipf-japan-2026",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2026-12-01",
     "end": "2026-12-05",
     "venue": {
@@ -987,7 +987,7 @@
   },
   {
     "id": "tokyo-comic-con-2026",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2026-12-11",
     "end": "2026-12-13",
     "venue": {
@@ -1531,7 +1531,7 @@
   },
   {
     "id": "jump-festa-2027",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2026-12-19",
     "end": "2026-12-20",
     "venue": {
@@ -1922,7 +1922,7 @@
   },
   {
     "id": "countdown-japan-2627",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2026-12-26",
     "end": "2026-12-31",
     "venue": {
@@ -2908,7 +2908,7 @@
   },
   {
     "id": "tokyo-auto-salon-2027",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2027-01-15",
     "end": "2027-01-17",
     "venue": {
@@ -3129,7 +3129,7 @@
   },
   {
     "id": "winter-sports-festa-makuhari-2027",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2027-01-22",
     "end": "2027-01-24",
     "venue": {
@@ -3231,7 +3231,7 @@
   },
   {
     "id": "bluearchive-fes-makuhari-2027",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2027-01-23",
     "end": "2027-01-24",
     "venue": {
@@ -3248,7 +3248,7 @@
   },
   {
     "id": "sidem-battle-fes-makuhari-2027",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2027-01-23",
     "end": "2027-01-24",
     "venue": {
@@ -3350,7 +3350,7 @@
   },
   {
     "id": "ijt-live-ent-expo-makuhari-2027",
-    "city": "tokyo",
+    "city": "chiba",
     "start": "2027-01-27",
     "end": "2027-01-29",
     "venue": {

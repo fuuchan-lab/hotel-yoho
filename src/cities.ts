@@ -1,6 +1,6 @@
 /**
- * 対象の都市。人口 100 万人以上の 12 都市（東京は 23 区＝特別区を 1 つの都市として扱う）に、
- * 観光・出張・空港の拠点として作者が選んだ都市（那覇・熊本・千歳・静岡・金沢・長野・新潟・富山・奈良・岡山・鹿児島）を加えている。
+ * 対象の都市。人口 50 万人以上の都市（東京は 23 区＝特別区を 1 つの都市として扱う）と、すべての県庁所在地に、
+ * 観光・出張・空港の拠点として作者が選んだ都市（千歳・函館・松本・鈴鹿・伊勢など）を加えている。
  * 緯度・経度は、ホテルが集まる中心部（中継サーバーが楽天トラベルを半径 3km で検索する中心）。
  * worker/src/cities.js と id・緯度・経度をそろえる。並びは北から（一覧の順）
  */
@@ -13,10 +13,18 @@ export interface City {
   /** 人口（万人、おおよそ） */
   pop: number
   /**
+   * 地図のどの縮尺から顔を出すか（顔が多すぎて見にくくならないように）。
+   * 1: 人口 100 万人以上（いつも）、2: 県庁所在地と作者が加えた都市（少し拡大）、3: そのほかの人口 50 万人以上の都市（さらに拡大）。
+   * 選んでいる都市は、いつも出す（JapanMap.tsx）
+   */
+  tier: 1 | 2 | 3
+  /**
    * 全国表示の時に、顔のアイコンを本来の位置からずらす量（px）。首都圏・関西などは都市が近く、重なるため。
    * 地図を拡大すると、ずらす量を小さくする（JapanMap.tsx）
    */
   offset: [number, number]
+  /** 拡大した時（offset が 0 になる縮尺）に、すぐ近くの都市と重ならないようにずらす量（px）。offset から少しずつ切り替える */
+  nudge?: [number, number]
   /** 推定の時の、ふだんの混みやすさ（観光・出張の多い都市はプラス） */
   base: number
   /**
@@ -32,25 +40,63 @@ export interface City {
 export type CityId =
   | 'sapporo'
   | 'chitose'
+  | 'hakodate'
+  | 'aomori'
+  | 'morioka'
+  | 'akita'
   | 'sendai'
+  | 'yamagata'
+  | 'fukushima'
   | 'niigata'
+  | 'mito'
+  | 'utsunomiya'
+  | 'maebashi'
   | 'saitama'
+  | 'kawaguchi'
+  | 'chiba'
+  | 'funabashi'
   | 'tokyo'
+  | 'hachioji'
+  | 'sagamihara'
   | 'kawasaki'
   | 'yokohama'
+  | 'kofu'
   | 'nagano'
+  | 'matsumoto'
   | 'toyama'
   | 'kanazawa'
+  | 'fukui'
   | 'shizuoka'
+  | 'hamamatsu'
   | 'nagoya'
+  | 'gifu'
+  | 'tsu'
+  | 'suzuka'
+  | 'ise'
+  | 'otsu'
   | 'kyoto'
   | 'osaka'
+  | 'sakai'
   | 'kobe'
+  | 'himeji'
   | 'nara'
+  | 'wakayama'
+  | 'tottori'
+  | 'matsue'
   | 'okayama'
   | 'hiroshima'
+  | 'yamaguchi'
+  | 'tokushima'
+  | 'takamatsu'
+  | 'matsuyama'
+  | 'kochi'
+  | 'kitakyushu'
   | 'fukuoka'
+  | 'saga'
+  | 'nagasaki'
   | 'kumamoto'
+  | 'oita'
+  | 'miyazaki'
   | 'kagoshima'
   | 'naha'
 
@@ -62,6 +108,7 @@ export const CITIES: City[] = [
     lat: 43.0618,
     lng: 141.3545,
     pop: 196,
+    tier: 1,
     offset: [-24, -26],
     base: 0,
     jalan: '010000/LRG_010200/',
@@ -74,10 +121,63 @@ export const CITIES: City[] = [
     lat: 42.8195,
     lng: 141.652,
     pop: 10,
+    tier: 2,
     offset: [30, 30],
     base: -0.5,
     jalan: '010000/LRG_012900/SML_012911/',
     near: ['sapporo'],
+  },
+  {
+    id: 'hakodate',
+    name: { ja: '函館', en: 'Hakodate' },
+    pref: { ja: '北海道', en: 'Hokkaido' },
+    lat: 41.7737,
+    lng: 140.7264,
+    pop: 24,
+    tier: 2,
+    offset: [0, 0],
+    base: 0.5,
+    jalan: '010000/LRG_011400/SML_011402/',
+    near: [],
+  },
+  {
+    id: 'aomori',
+    name: { ja: '青森', en: 'Aomori' },
+    pref: { ja: '青森県', en: 'Aomori' },
+    lat: 40.8286,
+    lng: 140.7341,
+    pop: 27,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '020000/LRG_020200/',
+    near: [],
+  },
+  {
+    id: 'morioka',
+    name: { ja: '盛岡', en: 'Morioka' },
+    pref: { ja: '岩手県', en: 'Iwate' },
+    lat: 39.7016,
+    lng: 141.1365,
+    pop: 28,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '030000/LRG_030200/',
+    near: [],
+  },
+  {
+    id: 'akita',
+    name: { ja: '秋田', en: 'Akita' },
+    pref: { ja: '秋田県', en: 'Akita' },
+    lat: 39.717,
+    lng: 140.1294,
+    pop: 30,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '050000/LRG_050200/',
+    near: [],
   },
   {
     id: 'sendai',
@@ -86,9 +186,36 @@ export const CITIES: City[] = [
     lat: 38.2618,
     lng: 140.8768,
     pop: 110,
+    tier: 1,
     offset: [24, -26],
     base: 0,
     jalan: '040000/LRG_040200/SML_040202/',
+    near: [],
+  },
+  {
+    id: 'yamagata',
+    name: { ja: '山形', en: 'Yamagata' },
+    pref: { ja: '山形県', en: 'Yamagata' },
+    lat: 38.2484,
+    lng: 140.3279,
+    pop: 24,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '060000/LRG_060200/SML_060202/',
+    near: [],
+  },
+  {
+    id: 'fukushima',
+    name: { ja: '福島', en: 'Fukushima' },
+    pref: { ja: '福島県', en: 'Fukushima' },
+    lat: 37.7542,
+    lng: 140.4596,
+    pop: 27,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '070000/LRG_070200/SML_070202/',
     near: [],
   },
   {
@@ -98,9 +225,49 @@ export const CITIES: City[] = [
     lat: 37.9122,
     lng: 139.0613,
     pop: 77,
+    tier: 2,
     offset: [16, -20],
     base: 0,
     jalan: '170000/LRG_170200/SML_170208/',
+    near: [],
+  },
+  {
+    id: 'mito',
+    name: { ja: '水戸', en: 'Mito' },
+    pref: { ja: '茨城県', en: 'Ibaraki' },
+    lat: 36.3708,
+    lng: 140.4762,
+    pop: 27,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '100000/LRG_100500/SML_100502/',
+    near: [],
+  },
+  {
+    id: 'utsunomiya',
+    name: { ja: '宇都宮', en: 'Utsunomiya' },
+    pref: { ja: '栃木県', en: 'Tochigi' },
+    lat: 36.5591,
+    lng: 139.8985,
+    pop: 51,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '080000/LRG_080200/SML_080202/',
+    near: [],
+  },
+  {
+    id: 'maebashi',
+    name: { ja: '前橋', en: 'Maebashi' },
+    pref: { ja: '群馬県', en: 'Gunma' },
+    lat: 36.3834,
+    lng: 139.0733,
+    pop: 33,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '090000/LRG_091400/SML_091411/',
     near: [],
   },
   {
@@ -110,10 +277,54 @@ export const CITIES: City[] = [
     lat: 35.9064,
     lng: 139.6237,
     pop: 135,
+    tier: 1,
     offset: [12, -56],
+    nudge: [-20, -40],
     base: -0.5,
     jalan: '110000/LRG_110200/SML_110205/',
     near: ['tokyo'],
+  },
+  {
+    id: 'kawaguchi',
+    name: { ja: '川口', en: 'Kawaguchi' },
+    pref: { ja: '埼玉県', en: 'Saitama' },
+    lat: 35.8017,
+    lng: 139.7173,
+    pop: 58,
+    tier: 3,
+    offset: [0, 0],
+    nudge: [-40, -6],
+    base: -0.5,
+    jalan: '110000/LRG_110200/SML_110211/',
+    near: ['tokyo', 'saitama'],
+  },
+  {
+    id: 'chiba',
+    name: { ja: '千葉', en: 'Chiba' },
+    pref: { ja: '千葉県', en: 'Chiba' },
+    lat: 35.6131,
+    lng: 140.1134,
+    pop: 98,
+    tier: 2,
+    offset: [0, 0],
+    nudge: [40, 24],
+    base: 0,
+    jalan: '120000/LRG_120200/SML_120202/',
+    near: ['tokyo'],
+  },
+  {
+    id: 'funabashi',
+    name: { ja: '船橋', en: 'Funabashi' },
+    pref: { ja: '千葉県', en: 'Chiba' },
+    lat: 35.7016,
+    lng: 139.9853,
+    pop: 64,
+    tier: 3,
+    offset: [0, 0],
+    nudge: [40, -30],
+    base: -0.5,
+    jalan: '120000/LRG_120500/SML_120505/',
+    near: ['tokyo', 'chiba'],
   },
   {
     id: 'tokyo',
@@ -122,10 +333,40 @@ export const CITIES: City[] = [
     lat: 35.6812,
     lng: 139.7671,
     pop: 980,
+    tier: 1,
     offset: [50, -30],
+    nudge: [10, -10],
     base: 0.5,
     jalan: '130000/LRG_136200/',
-    near: ['kawasaki', 'yokohama', 'saitama'],
+    near: ['kawasaki', 'yokohama', 'saitama', 'chiba'],
+  },
+  {
+    id: 'hachioji',
+    name: { ja: '八王子', en: 'Hachioji' },
+    pref: { ja: '東京都', en: 'Tokyo' },
+    lat: 35.6556,
+    lng: 139.3389,
+    pop: 58,
+    tier: 3,
+    offset: [0, 0],
+    nudge: [0, -24],
+    base: -0.5,
+    jalan: '130000/LRG_139200/SML_139205/',
+    near: ['tokyo'],
+  },
+  {
+    id: 'sagamihara',
+    name: { ja: '相模原', en: 'Sagamihara' },
+    pref: { ja: '神奈川県', en: 'Kanagawa' },
+    lat: 35.5948,
+    lng: 139.3449,
+    pop: 72,
+    tier: 3,
+    offset: [0, 0],
+    nudge: [0, 24],
+    base: -0.5,
+    jalan: '140000/LRG_141400/',
+    near: [],
   },
   {
     id: 'kawasaki',
@@ -134,7 +375,9 @@ export const CITIES: City[] = [
     lat: 35.5313,
     lng: 139.6969,
     pop: 155,
+    tier: 1,
     offset: [60, 16],
+    nudge: [34, 22],
     base: -0.5,
     jalan: '140000/LRG_140100/',
     near: ['tokyo', 'yokohama'],
@@ -146,10 +389,25 @@ export const CITIES: City[] = [
     lat: 35.4588,
     lng: 139.6295,
     pop: 377,
+    tier: 1,
     offset: [22, 56],
+    nudge: [-30, 30],
     base: 0,
     jalan: '140000/LRG_140200/',
     near: ['tokyo', 'kawasaki'],
+  },
+  {
+    id: 'kofu',
+    name: { ja: '甲府', en: 'Kofu' },
+    pref: { ja: '山梨県', en: 'Yamanashi' },
+    lat: 35.6667,
+    lng: 138.5689,
+    pop: 19,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '150000/LRG_150100/SML_150105/',
+    near: [],
   },
   {
     id: 'nagano',
@@ -158,9 +416,23 @@ export const CITIES: City[] = [
     lat: 36.6431,
     lng: 138.1887,
     pop: 37,
+    tier: 2,
     offset: [0, 0],
     base: 0,
     jalan: '160000/LRG_160200/SML_160202/',
+    near: [],
+  },
+  {
+    id: 'matsumoto',
+    name: { ja: '松本', en: 'Matsumoto' },
+    pref: { ja: '長野県', en: 'Nagano' },
+    lat: 36.2309,
+    lng: 137.9644,
+    pop: 24,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '160000/LRG_162200/SML_162202/',
     near: [],
   },
   {
@@ -170,6 +442,7 @@ export const CITIES: City[] = [
     lat: 36.7013,
     lng: 137.2133,
     pop: 41,
+    tier: 2,
     offset: [24, -50],
     base: 0,
     jalan: '180000/LRG_180500/',
@@ -182,10 +455,24 @@ export const CITIES: City[] = [
     lat: 36.57,
     lng: 136.653,
     pop: 46,
+    tier: 2,
     offset: [-20, -44],
     base: 0.5,
     jalan: '190000/LRG_192000/SML_192002/',
     near: ['toyama'],
+  },
+  {
+    id: 'fukui',
+    name: { ja: '福井', en: 'Fukui' },
+    pref: { ja: '福井県', en: 'Fukui' },
+    lat: 36.0621,
+    lng: 136.2233,
+    pop: 26,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '200000/LRG_200300/SML_200302/',
+    near: [],
   },
   {
     id: 'shizuoka',
@@ -194,9 +481,23 @@ export const CITIES: City[] = [
     lat: 34.9717,
     lng: 138.389,
     pop: 68,
+    tier: 2,
     offset: [4, 50],
     base: -0.5,
     jalan: '210000/LRG_212600/SML_212602/',
+    near: [],
+  },
+  {
+    id: 'hamamatsu',
+    name: { ja: '浜松', en: 'Hamamatsu' },
+    pref: { ja: '静岡県', en: 'Shizuoka' },
+    lat: 34.7038,
+    lng: 137.7349,
+    pop: 79,
+    tier: 3,
+    offset: [0, 0],
+    base: 0,
+    jalan: '210000/LRG_213500/SML_213509/',
     near: [],
   },
   {
@@ -206,10 +507,79 @@ export const CITIES: City[] = [
     lat: 35.1702,
     lng: 136.8955,
     pop: 233,
+    tier: 1,
     offset: [0, 0],
     base: 0,
     jalan: '230000/LRG_230200/',
     near: [],
+  },
+  {
+    id: 'gifu',
+    name: { ja: '岐阜', en: 'Gifu' },
+    pref: { ja: '岐阜県', en: 'Gifu' },
+    lat: 35.4094,
+    lng: 136.7564,
+    pop: 40,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '220000/LRG_221100/SML_221102/',
+    near: ['nagoya'],
+  },
+  {
+    id: 'tsu',
+    name: { ja: '津', en: 'Tsu' },
+    pref: { ja: '三重県', en: 'Mie' },
+    lat: 34.734,
+    lng: 136.5108,
+    pop: 27,
+    tier: 2,
+    offset: [0, 0],
+    nudge: [-22, 16],
+    base: -0.5,
+    jalan: '240000/LRG_240800/SML_240802/',
+    near: ['suzuka'],
+  },
+  {
+    id: 'suzuka',
+    name: { ja: '鈴鹿', en: 'Suzuka' },
+    pref: { ja: '三重県', en: 'Mie' },
+    lat: 34.8291,
+    lng: 136.5856,
+    pop: 19,
+    tier: 2,
+    offset: [0, 0],
+    nudge: [20, -20],
+    base: -0.5,
+    jalan: '240000/LRG_240200/SML_240208/',
+    near: ['nagoya', 'tsu'],
+  },
+  {
+    id: 'ise',
+    name: { ja: '伊勢', en: 'Ise' },
+    pref: { ja: '三重県', en: 'Mie' },
+    lat: 34.4874,
+    lng: 136.7094,
+    pop: 12,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '240000/LRG_241000/',
+    near: [],
+  },
+  {
+    id: 'otsu',
+    name: { ja: '大津', en: 'Otsu' },
+    pref: { ja: '滋賀県', en: 'Shiga' },
+    lat: 35.0035,
+    lng: 135.8643,
+    pop: 34,
+    tier: 2,
+    offset: [0, 0],
+    nudge: [30, -8],
+    base: 0,
+    jalan: '250000/LRG_250200/',
+    near: ['kyoto'],
   },
   {
     id: 'kyoto',
@@ -218,6 +588,7 @@ export const CITIES: City[] = [
     lat: 34.9965,
     lng: 135.7605,
     pop: 144,
+    tier: 1,
     offset: [-14, -50],
     base: 0.5,
     jalan: '260000/LRG_260500/',
@@ -230,10 +601,25 @@ export const CITIES: City[] = [
     lat: 34.6845,
     lng: 135.5,
     pop: 280,
+    tier: 1,
     offset: [6, 54],
     base: 0.5,
     jalan: '270000/LRG_272000/',
     near: ['kyoto', 'kobe', 'nara'],
+  },
+  {
+    id: 'sakai',
+    name: { ja: '堺', en: 'Sakai' },
+    pref: { ja: '大阪府', en: 'Osaka' },
+    lat: 34.5786,
+    lng: 135.4823,
+    pop: 82,
+    tier: 3,
+    offset: [0, 0],
+    nudge: [-24, 22],
+    base: -0.5,
+    jalan: '270000/LRG_273800/SML_273802/',
+    near: ['osaka'],
   },
   {
     id: 'kobe',
@@ -242,10 +628,24 @@ export const CITIES: City[] = [
     lat: 34.6937,
     lng: 135.1955,
     pop: 150,
+    tier: 1,
     offset: [-40, 40],
     base: 0,
     jalan: '280000/LRG_280200/',
     near: ['osaka'],
+  },
+  {
+    id: 'himeji',
+    name: { ja: '姫路', en: 'Himeji' },
+    pref: { ja: '兵庫県', en: 'Hyogo' },
+    lat: 34.827,
+    lng: 134.6907,
+    pop: 53,
+    tier: 3,
+    offset: [0, 0],
+    base: 0,
+    jalan: '280000/LRG_280800/SML_280802/',
+    near: [],
   },
   {
     id: 'nara',
@@ -254,10 +654,50 @@ export const CITIES: City[] = [
     lat: 34.6847,
     lng: 135.8286,
     pop: 35,
+    tier: 2,
     offset: [30, 40],
     base: 0,
     jalan: '290000/LRG_290200/SML_290202/',
     near: ['kyoto', 'osaka'],
+  },
+  {
+    id: 'wakayama',
+    name: { ja: '和歌山', en: 'Wakayama' },
+    pref: { ja: '和歌山県', en: 'Wakayama' },
+    lat: 34.232,
+    lng: 135.1915,
+    pop: 35,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '300000/LRG_300200/',
+    near: ['osaka'],
+  },
+  {
+    id: 'tottori',
+    name: { ja: '鳥取', en: 'Tottori' },
+    pref: { ja: '鳥取県', en: 'Tottori' },
+    lat: 35.494,
+    lng: 134.2256,
+    pop: 18,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '310000/LRG_310200/SML_310202/',
+    near: [],
+  },
+  {
+    id: 'matsue',
+    name: { ja: '松江', en: 'Matsue' },
+    pref: { ja: '島根県', en: 'Shimane' },
+    lat: 35.4646,
+    lng: 133.0628,
+    pop: 20,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '320000/LRG_320100/SML_320102/',
+    near: [],
   },
   {
     id: 'okayama',
@@ -266,6 +706,7 @@ export const CITIES: City[] = [
     lat: 34.6662,
     lng: 133.9177,
     pop: 72,
+    tier: 2,
     offset: [0, -44],
     base: 0,
     jalan: '330000/LRG_330200/SML_330202/',
@@ -278,9 +719,88 @@ export const CITIES: City[] = [
     lat: 34.3938,
     lng: 132.4655,
     pop: 118,
+    tier: 1,
     offset: [0, -44],
     base: 0,
     jalan: '340000/LRG_340900/SML_340902/',
+    near: [],
+  },
+  {
+    id: 'yamaguchi',
+    name: { ja: '山口', en: 'Yamaguchi' },
+    pref: { ja: '山口県', en: 'Yamaguchi' },
+    lat: 34.1709,
+    lng: 131.4736,
+    pop: 19,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '350000/LRG_350600/SML_350602/',
+    near: [],
+  },
+  {
+    id: 'tokushima',
+    name: { ja: '徳島', en: 'Tokushima' },
+    pref: { ja: '徳島県', en: 'Tokushima' },
+    lat: 34.0743,
+    lng: 134.5515,
+    pop: 25,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '360000/LRG_360200/SML_360202/',
+    near: [],
+  },
+  {
+    id: 'takamatsu',
+    name: { ja: '高松', en: 'Takamatsu' },
+    pref: { ja: '香川県', en: 'Kagawa' },
+    lat: 34.3503,
+    lng: 134.0469,
+    pop: 41,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '370000/LRG_370200/SML_370202/',
+    near: [],
+  },
+  {
+    id: 'matsuyama',
+    name: { ja: '松山', en: 'Matsuyama' },
+    pref: { ja: '愛媛県', en: 'Ehime' },
+    lat: 33.8417,
+    lng: 132.7656,
+    pop: 50,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '380000/LRG_380200/SML_380202/',
+    near: [],
+  },
+  {
+    id: 'kochi',
+    name: { ja: '高知', en: 'Kochi' },
+    pref: { ja: '高知県', en: 'Kochi' },
+    lat: 33.5672,
+    lng: 133.5434,
+    pop: 32,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '390000/LRG_390200/SML_390202/',
+    near: [],
+  },
+  {
+    id: 'kitakyushu',
+    name: { ja: '北九州', en: 'Kitakyushu' },
+    pref: { ja: '福岡県', en: 'Fukuoka' },
+    lat: 33.8868,
+    lng: 130.8826,
+    pop: 92,
+    tier: 3,
+    offset: [0, 0],
+    base: 0,
+    jalan: '400000/LRG_400800/SML_400802/',
     near: [],
   },
   {
@@ -290,9 +810,36 @@ export const CITIES: City[] = [
     lat: 33.5905,
     lng: 130.4103,
     pop: 166,
+    tier: 1,
     offset: [-26, -22],
     base: 0.5,
     jalan: '400000/LRG_400100/',
+    near: [],
+  },
+  {
+    id: 'saga',
+    name: { ja: '佐賀', en: 'Saga' },
+    pref: { ja: '佐賀県', en: 'Saga' },
+    lat: 33.2644,
+    lng: 130.297,
+    pop: 23,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '410000/LRG_410200/SML_410202/',
+    near: ['fukuoka'],
+  },
+  {
+    id: 'nagasaki',
+    name: { ja: '長崎', en: 'Nagasaki' },
+    pref: { ja: '長崎県', en: 'Nagasaki' },
+    lat: 32.7524,
+    lng: 129.8697,
+    pop: 40,
+    tier: 2,
+    offset: [0, 0],
+    base: 0.5,
+    jalan: '420000/LRG_420200/SML_420202/',
     near: [],
   },
   {
@@ -302,9 +849,36 @@ export const CITIES: City[] = [
     lat: 32.798,
     lng: 130.7,
     pop: 74,
+    tier: 2,
     offset: [20, 30],
     base: 0,
     jalan: '430000/LRG_430200/SML_430202/',
+    near: [],
+  },
+  {
+    id: 'oita',
+    name: { ja: '大分', en: 'Oita' },
+    pref: { ja: '大分県', en: 'Oita' },
+    lat: 33.2329,
+    lng: 131.6066,
+    pop: 47,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '440000/LRG_440200/SML_440202/',
+    near: [],
+  },
+  {
+    id: 'miyazaki',
+    name: { ja: '宮崎', en: 'Miyazaki' },
+    pref: { ja: '宮崎県', en: 'Miyazaki' },
+    lat: 31.9156,
+    lng: 131.432,
+    pop: 40,
+    tier: 2,
+    offset: [0, 0],
+    base: 0,
+    jalan: '450000/LRG_450200/SML_450202/',
     near: [],
   },
   {
@@ -314,6 +888,7 @@ export const CITIES: City[] = [
     lat: 31.5838,
     lng: 130.5413,
     pop: 59,
+    tier: 2,
     offset: [0, 40],
     base: 0,
     jalan: '460000/LRG_460200/',
@@ -326,6 +901,7 @@ export const CITIES: City[] = [
     lat: 26.2148,
     lng: 127.6792,
     pop: 32,
+    tier: 2,
     offset: [0, 0],
     base: 0.5,
     jalan: '470000/LRG_470200/SML_470202/',
