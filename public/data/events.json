@@ -3551,5 +3551,2623 @@
     "category": "live",
     "scale": 1,
     "url": "https://live-events.a-jp.org/soko/plc/87.html"
+  },
+  {
+    "id": "shikotsuko-hyoto-2027",
+    "city": "chitose",
+    "start": "2027-01-30",
+    "end": "2027-02-23",
+    "venue": {
+      "ja": "支笏湖温泉",
+      "en": "Lake Shikotsu Onsen"
+    },
+    "title": {
+      "ja": "2027千歳・支笏湖氷濤まつり",
+      "en": "Chitose-Lake Shikotsu Ice Festival 2027"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.visit-hokkaido.jp/event/detail_11029.html"
+  },
+  {
+    "id": "ateez-zero-to-all-yoyogi-2027",
+    "city": "tokyo",
+    "start": "2027-02-02",
+    "end": "2027-02-03",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "2027 ATEEZ WORLD TOUR “ZERO TO ALL” IN JAPAN",
+      "en": "2027 ATEEZ WORLD TOUR \"ZERO TO ALL\" IN JAPAN"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.jpnsport.go.jp/yoyogi/event/1st_202702.html"
+  },
+  {
+    "id": "maroon5-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-02-02",
+    "end": "2027-02-02",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "Maroon 5 Asia 2027",
+      "en": "Maroon 5 Asia 2027"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "da-ice-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-02-04",
+    "end": "2027-02-04",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "Da-iCE DAY DOME PHASE 2027",
+      "en": "Da-iCE DAY DOME PHASE 2027"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "sapporo-snow-festival-2027",
+    "city": "sapporo",
+    "start": "2027-02-04",
+    "end": "2027-02-11",
+    "venue": {
+      "ja": "大通公園・すすきの・つどーむ",
+      "en": "Odori Park, Susukino and Tsudome sites"
+    },
+    "title": {
+      "ja": "第77回さっぽろ雪まつり",
+      "en": "77th Sapporo Snow Festival"
+    },
+    "category": "festival",
+    "scale": 3,
+    "url": "https://www.snowfes.com/"
+  },
+  {
+    "id": "japan-campingcar-show-2027",
+    "city": "chiba",
+    "start": "2027-02-05",
+    "end": "2027-02-08",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "Japan CampingCar Show 2027",
+      "en": "Japan CampingCar Show 2027"
+    },
+    "category": "expo",
+    "scale": 1,
+    "url": "https://www.m-messe.co.jp/event/detail/8982"
+  },
+  {
+    "id": "nagasaki-lantern-festival-2027",
+    "city": "nagasaki",
+    "start": "2027-02-05",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "新地中華街・中央公園 ほか市内中心部",
+      "en": "Shinchi Chinatown, Chuo Park and central Nagasaki"
+    },
+    "title": {
+      "ja": "2027長崎ランタンフェスティバル",
+      "en": "Nagasaki Lantern Festival 2027"
+    },
+    "category": "festival",
+    "scale": 2,
+    "url": "https://www.at-nagasaki.jp/lantern-festival/news/1283"
+  },
+  {
+    "id": "never-young-beach-budokan-2027",
+    "city": "tokyo",
+    "start": "2027-02-05",
+    "end": "2027-02-05",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "never young beach 日本武道館公演",
+      "en": "never young beach at Nippon Budokan"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/word/71616"
+  },
+  {
+    "id": "aimyon-cosmic-pia-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-06",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "あいみょん AIMYON TOUR 2027 - cosmic % -",
+      "en": "AIMYON TOUR 2027 - cosmic % -"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=02.html"
+  },
+  {
+    "id": "andteam-ig-arena-2027",
+    "city": "nagoya",
+    "start": "2027-02-06",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "IGアリーナ",
+      "en": "IG Arena"
+    },
+    "title": {
+      "ja": "2026-2027 &TEAM CONCERT TOUR 'Mark on You'",
+      "en": "2026-2027 &TEAM CONCERT TOUR 'Mark on You'"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.ig-arena.jp/events/?month=2027-02"
+  },
+  {
+    "id": "beams-be-fes-yoyogi-2027",
+    "city": "tokyo",
+    "start": "2027-02-06",
+    "end": "2027-02-06",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "BEAMS 50th ANNIVERSARY FES.『BEAMS PARK』BEAMS MUSIC FESTIVAL『BE FES』",
+      "en": "BEAMS 50th ANNIVERSARY FES. \"BEAMS PARK\" / BEAMS MUSIC FESTIVAL \"BE FES\""
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://www.jpnsport.go.jp/yoyogi/event/1st_202702.html"
+  },
+  {
+    "id": "bump-of-chicken-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-02-06",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis",
+      "en": "BUMP OF CHICKEN TOUR 2026-2027 Ratio Clavis"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "ebichu-daigakugeikai-garden-theater-2027",
+    "city": "tokyo",
+    "start": "2027-02-06",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "東京ガーデンシアター",
+      "en": "Tokyo Garden Theater"
+    },
+    "title": {
+      "ja": "私立恵比寿中学 大学芸会2027 This is GR8",
+      "en": "Shiritsu Ebisu Chugaku Dai-Gakugeikai 2027 \"This is GR8\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/schedule/?date=2027-02"
+  },
+  {
+    "id": "enhypen-paypay-2027",
+    "city": "fukuoka",
+    "start": "2027-02-06",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN JAPAN",
+      "en": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN JAPAN"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.softbankhawks.co.jp/stadium/event_schedule/2027/"
+  },
+  {
+    "id": "laposta-kyocera-2027",
+    "city": "osaka",
+    "start": "2027-02-06",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "LAPOSTA 2027（JO1・INI・DXTEEN・ME:I・IS:SUE ほか）",
+      "en": "LAPOSTA 2027 (JO1, INI, DXTEEN, ME:I, IS:SUE and more)"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/schedule/?yearId=2027&monthId=2&cat="
+  },
+  {
+    "id": "misia-big-band-yokohama-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-06",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM",
+      "en": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.yokohama-arena.co.jp/event/2027-02"
+  },
+  {
+    "id": "real-akiba-boyz-roots-budokan-2027",
+    "city": "tokyo",
+    "start": "2027-02-06",
+    "end": "2027-02-06",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "THE REAL AKIBA BOYZ ONEMAN LIVE 2027 LIVE \"ROOTS\" 日本武道館",
+      "en": "THE REAL AKIBA BOYZ ONEMAN LIVE 2027 LIVE \"ROOTS\" at Nippon Budokan"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://dime.jp/company_news/detail/?pr=2715149"
+  },
+  {
+    "id": "urashimasakatasen-ariake-2027",
+    "city": "tokyo",
+    "start": "2027-02-06",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "浦島坂田船〜歌ってみた超祭り！〜",
+      "en": "Urashimasakatasen - Utattemita Super Festival!"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/three/"
+  },
+  {
+    "id": "ehime-marathon-2027",
+    "city": "matsuyama",
+    "start": "2027-02-07",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "愛媛県庁前スタート",
+      "en": "Start: Ehime Prefectural Office"
+    },
+    "title": {
+      "ja": "第64回愛媛マラソン",
+      "en": "64th Ehime Marathon"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://ehimemarathon.jp/entry/"
+  },
+  {
+    "id": "sumo-tournament-51-kokugikan-2027",
+    "city": "tokyo",
+    "start": "2027-02-07",
+    "end": "2027-02-07",
+    "venue": {
+      "ja": "両国国技館",
+      "en": "Ryogoku Kokugikan"
+    },
+    "title": {
+      "ja": "日本大相撲トーナメント 第五十一回大会",
+      "en": "51st Japan Grand Sumo Tournament"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/word/0000151567"
+  },
+  {
+    "id": "hirai-dai-homecoming-pia-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-10",
+    "end": "2027-02-11",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "平井 大 HIRAIDAI presents HOMECOMING 2027",
+      "en": "HIRAIDAI presents HOMECOMING 2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=02.html"
+  },
+  {
+    "id": "ini-5th-fanmeeting-ariake-2027",
+    "city": "tokyo",
+    "start": "2027-02-10",
+    "end": "2027-02-10",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "Thank YOU From INI ～5th Anniversary Fan Meeting～",
+      "en": "Thank YOU From INI - 5th Anniversary Fan Meeting"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/three/"
+  },
+  {
+    "id": "miyamoto-hiroji-yoyogi-2027",
+    "city": "tokyo",
+    "start": "2027-02-10",
+    "end": "2027-02-11",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "宮本浩次 TOUR 2026〜2027 I AM HERO",
+      "en": "Hiroji Miyamoto TOUR 2026-2027 I AM HERO"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.jpnsport.go.jp/yoyogi/event/1st_202702.html"
+  },
+  {
+    "id": "xg-the-core-final-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-02-10",
+    "end": "2027-02-11",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "XG WORLD TOUR: THE CORE FINAL",
+      "en": "XG WORLD TOUR: THE CORE FINAL"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "bukurock-festival-makuhari-2027",
+    "city": "chiba",
+    "start": "2027-02-11",
+    "end": "2027-02-11",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "ブクロック!フェスティバル2027幕張",
+      "en": "Bukurock! Festival 2027 Makuhari"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://www.m-messe.co.jp/event/detail/8973"
+  },
+  {
+    "id": "mito-ume-matsuri-2027",
+    "city": "mito",
+    "start": "2027-02-11",
+    "end": "2027-03-22",
+    "venue": {
+      "ja": "偕楽園・弘道館",
+      "en": "Kairakuen Garden and Kodokan"
+    },
+    "title": {
+      "ja": "第131回水戸の梅まつり",
+      "en": "131st Mito Plum Blossom Festival"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://mitokoumon.com/event/history/mitoplumblossumfestival/"
+  },
+  {
+    "id": "tokyo-ska-budokan-2027",
+    "city": "tokyo",
+    "start": "2027-02-11",
+    "end": "2027-02-12",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "東京スカパラダイスオーケストラ 日本武道館公演",
+      "en": "Tokyo Ska Paradise Orchestra at Nippon Budokan"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/tokyoska27arena-hp/"
+  },
+  {
+    "id": "osaka-auto-messe-2027",
+    "city": "osaka",
+    "start": "2027-02-12",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "インテックス大阪",
+      "en": "INTEX Osaka"
+    },
+    "title": {
+      "ja": "大阪オートメッセ2027",
+      "en": "Osaka Auto Messe 2027"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.automesse.jp/"
+  },
+  {
+    "id": "aimyon-sundome-fukui-2027",
+    "city": "fukui",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "サンドーム福井",
+      "en": "Sun Dome Fukui"
+    },
+    "title": {
+      "ja": "AIMYON TOUR 2027 cosmic %",
+      "en": "AIMYON TOUR 2027 cosmic %"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.aimyong.net/feature/cosmic_percent"
+  },
+  {
+    "id": "befirst-paypay-2027",
+    "city": "fukuoka",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "BE:FIRST 5th Anniversary DOME TOUR 2027",
+      "en": "BE:FIRST 5th Anniversary DOME TOUR 2027"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.softbankhawks.co.jp/stadium/event_schedule/2027/"
+  },
+  {
+    "id": "daice-kyocera-2027",
+    "city": "osaka",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "Da-iCE DAY DOME PHASE 2027",
+      "en": "Da-iCE DAY DOME PHASE 2027"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/schedule/?yearId=2027&monthId=2&cat="
+  },
+  {
+    "id": "kawaii-lab-5th-k-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "KAWAII LAB. 5th ANNIVERSARY TOUR",
+      "en": "KAWAII LAB. 5th ANNIVERSARY TOUR"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=2"
+  },
+  {
+    "id": "lovelive-fes-encore-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "LoveLive! Series 15th Anniversary ラブライブ!フェス Encore in TOKYO DOME",
+      "en": "LoveLive! Series 15th Anniversary LoveLive! Fes Encore in TOKYO DOME"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "momoclo-valentine-yokohama-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "ニッポン放送 ももいろクローバーZ ももクロくらぶxoxo ～バレンタイン DE NIGHT だぁ～Z！2027「裏」「表」",
+      "en": "Momoiro Clover Z \"Momoclo Club xoxo: Valentine DE NIGHT da~Z! 2027\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.yokohama-arena.co.jp/event/2027-02"
+  },
+  {
+    "id": "superbeaver-anabuki-kagawa-2027",
+    "city": "takamatsu",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "あなぶきアリーナ香川",
+      "en": "Anabuki Arena Kagawa"
+    },
+    "title": {
+      "ja": "SUPER BEAVER 都会のラクダ TOUR 2026-2027 〜ラクダの人生、ゴーゴーゴー〜",
+      "en": "SUPER BEAVER Tokai no Rakuda TOUR 2026-2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://sp.super-beaver.com/feature/tour2627"
+  },
+  {
+    "id": "wannyan-dome-2027",
+    "city": "nagoya",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "わんにゃんドーム2027",
+      "en": "Wan-Nyan Dome 2027 (pet show)"
+    },
+    "category": "expo",
+    "scale": 1,
+    "url": "https://www.nagoya-dome.co.jp/enjoy/index.php"
+  },
+  {
+    "id": "wonder-festival-2027-winter",
+    "city": "chiba",
+    "start": "2027-02-13",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "ワンダーフェスティバル2027[冬]",
+      "en": "Wonder Festival 2027 [Winter]"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://wonfes.jp/specialsite/"
+  },
+  {
+    "id": "saitama-marathon-2027",
+    "city": "saitama",
+    "start": "2027-02-14",
+    "end": "2027-02-14",
+    "venue": {
+      "ja": "さいたまスーパーアリーナ（GMOアリーナさいたま）けやきひろば周辺",
+      "en": "Saitama Super Arena (GMO Arena Saitama) / Keyaki Hiroba area"
+    },
+    "title": {
+      "ja": "さいたまマラソン2027",
+      "en": "Saitama Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.saitama-arena.co.jp/schedule/2027/02/"
+  },
+  {
+    "id": "aiko-llp26-budokan-0217-2027",
+    "city": "tokyo",
+    "start": "2027-02-17",
+    "end": "2027-02-18",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "aiko Live Tour「Love Like Pop vol.26」追加公演",
+      "en": "aiko Live Tour \"Love Like Pop vol.26\" (additional shows)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/aiko-llp26-2/"
+  },
+  {
+    "id": "king-gnu-kickoff-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-02-17",
+    "end": "2027-02-18",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "King Gnu 10th Anniversary Opening Live “KICKOFF”",
+      "en": "King Gnu 10th Anniversary Opening Live \"KICKOFF\""
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "nepcon-cosme-week-bigsight-2027",
+    "city": "tokyo",
+    "start": "2027-02-17",
+    "end": "2027-02-19",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "第41回 ネプコン ジャパン / 第17回 COSME Week [東京] ほか同時開催展",
+      "en": "41st NEPCON JAPAN / 17th COSME Week Tokyo and co-located shows"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/search.php"
+  },
+  {
+    "id": "enhypen-kyocera-2027",
+    "city": "osaka",
+    "start": "2027-02-19",
+    "end": "2027-02-20",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN JAPAN",
+      "en": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN JAPAN"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/schedule/?yearId=2027&monthId=2&cat="
+  },
+  {
+    "id": "aimyon-tokimesse-2027",
+    "city": "niigata",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "朱鷺メッセ",
+      "en": "Toki Messe"
+    },
+    "title": {
+      "ja": "AIMYON TOUR 2027 cosmic %",
+      "en": "AIMYON TOUR 2027 cosmic %"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.aimyong.net/feature/cosmic_percent"
+  },
+  {
+    "id": "glay-exofire-yokohama-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "GLAY ARENA TOUR 2026-2027 “EXOFIRE”",
+      "en": "GLAY ARENA TOUR 2026-2027 \"EXOFIRE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.yokohama-arena.co.jp/event/2027-02"
+  },
+  {
+    "id": "hiraidai-marinemesse-2027",
+    "city": "fukuoka",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "平井 大 HIRAIDAI presents HOMECOMING 2027",
+      "en": "HIRAIDAI presents HOMECOMING 2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/8120020/events"
+  },
+  {
+    "id": "irene-seulgi-makuhari-2027",
+    "city": "chiba",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "幕張メッセ",
+      "en": "Makuhari Messe"
+    },
+    "title": {
+      "ja": "IRENE & SEULGI JAPAN TOUR 2026 -blank-（追加公演・幕張イベントホール）",
+      "en": "IRENE & SEULGI JAPAN TOUR 2026 -blank- (additional shows, Makuhari Event Hall)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.m-messe.co.jp/event/detail/8979"
+  },
+  {
+    "id": "kawaiilab-ig-arena-2027",
+    "city": "nagoya",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "IGアリーナ",
+      "en": "IG Arena"
+    },
+    "title": {
+      "ja": "KAWAII LAB. 5th ANNIVERSARY TOUR（FRUITS ZIPPER・CANDY TUNE ほか）",
+      "en": "KAWAII LAB. 5th ANNIVERSARY TOUR (FRUITS ZIPPER, CANDY TUNE and more)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://kawaiilab.asobisystem.com/news/detail/92410"
+  },
+  {
+    "id": "mga-harmony2-k-arena-0220-2027",
+    "city": "yokohama",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "Mrs. GREEN APPLE on \"Harmony2\"",
+      "en": "Mrs. GREEN APPLE on \"Harmony2\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=2"
+  },
+  {
+    "id": "misia-glion-2027",
+    "city": "kobe",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM",
+      "en": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://misiasp.com/beyondfreedom2027/"
+  },
+  {
+    "id": "superbeaver-wakayama-bigwhale-2027",
+    "city": "wakayama",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "和歌山ビッグホエール",
+      "en": "Wakayama Big Whale"
+    },
+    "title": {
+      "ja": "SUPER BEAVER 都会のラクダ TOUR 2026-2027 〜ラクダの人生、ゴーゴーゴー〜",
+      "en": "SUPER BEAVER Tokai no Rakuda TOUR 2026-2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://sp.super-beaver.com/feature/tour2627"
+  },
+  {
+    "id": "txt-vantelin-2027",
+    "city": "nagoya",
+    "start": "2027-02-20",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "TOMORROW X TOGETHER WORLD TOUR <STEAL THE WIND> IN JAPAN",
+      "en": "TOMORROW X TOGETHER WORLD TOUR <STEAL THE WIND> IN JAPAN"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.nagoya-dome.co.jp/enjoy/index.php"
+  },
+  {
+    "id": "kis-my-ft2-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-02-21",
+    "end": "2027-02-23",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "Kis-My-Ft2 DOME TOUR 2026-2027 fan IS······",
+      "en": "Kis-My-Ft2 DOME TOUR 2026-2027 fan IS······"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "kitakyushu-marathon-2027",
+    "city": "kitakyushu",
+    "start": "2027-02-21",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "北九州市内（マラソンコース）",
+      "en": "Kitakyushu city marathon course"
+    },
+    "title": {
+      "ja": "北九州マラソン2027",
+      "en": "Kitakyushu Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://kitakyushu-marathon.jp/"
+  },
+  {
+    "id": "kochi-ryoma-marathon-2027",
+    "city": "kochi",
+    "start": "2027-02-21",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "高知市内（マラソンコース）",
+      "en": "Kochi city marathon course"
+    },
+    "title": {
+      "ja": "高知龍馬マラソン2027",
+      "en": "Kochi Ryoma Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://ryoma-marathon.jp/outline/"
+  },
+  {
+    "id": "kumamotojo-marathon-2027",
+    "city": "kumamoto",
+    "start": "2027-02-21",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "熊本市中心部（受付: 花畑広場）",
+      "en": "Central Kumamoto (check-in: Hanabata Square)"
+    },
+    "title": {
+      "ja": "熊本城マラソン2027",
+      "en": "Kumamoto Castle Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.city.kumamoto.jp/kiji00373477/index.html"
+  },
+  {
+    "id": "kyoto-marathon-2027",
+    "city": "kyoto",
+    "start": "2027-02-21",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "京都市内（マラソンコース）",
+      "en": "Kyoto city marathon course"
+    },
+    "title": {
+      "ja": "京都マラソン2027",
+      "en": "Kyoto Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.kyoto-marathon.com/info/"
+  },
+  {
+    "id": "valentine-rose-fes-bigsight-2027",
+    "city": "tokyo",
+    "start": "2027-02-21",
+    "end": "2027-02-21",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "VALENTINE ROSE FES 2027",
+      "en": "VALENTINE ROSE FES 2027"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/search.php"
+  },
+  {
+    "id": "indigo-la-end-k-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-23",
+    "end": "2027-02-23",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "indigo la End「蒼き花束 vol.4」",
+      "en": "indigo la End \"Aoki Hanataba vol.4\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=2"
+  },
+  {
+    "id": "kansai-collection-2027ss",
+    "city": "osaka",
+    "start": "2027-02-23",
+    "end": "2027-02-23",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "KANSAI COLLECTION 2027 SPRING&SUMMER",
+      "en": "KANSAI COLLECTION 2027 SPRING&SUMMER"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://www.kyoceradome-osaka.jp/schedule/?yearId=2027&monthId=2&cat="
+  },
+  {
+    "id": "skapara-gaishi-2027",
+    "city": "nagoya",
+    "start": "2027-02-23",
+    "end": "2027-02-23",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "東京スカパラダイスオーケストラ 名古屋公演",
+      "en": "Tokyo Ska Paradise Orchestra in Nagoya"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/4570020/events"
+  },
+  {
+    "id": "sugafes-yokohama-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-23",
+    "end": "2027-02-23",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "スガフェス × \"ACOUSTIC SUPERNOVA\" THE GRAND FINALE 2027",
+      "en": "SUGA FES x \"ACOUSTIC SUPERNOVA\" THE GRAND FINALE 2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.yokohama-arena.co.jp/event/2027-02"
+  },
+  {
+    "id": "taniyuuki-glion-2027",
+    "city": "kobe",
+    "start": "2027-02-23",
+    "end": "2027-02-23",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "Tani Yuuki GLION ARENA KOBE公演",
+      "en": "Tani Yuuki at GLION ARENA KOBE"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/6501590/events"
+  },
+  {
+    "id": "umeda-cypher-budokan-2027",
+    "city": "tokyo",
+    "start": "2027-02-23",
+    "end": "2027-02-23",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "梅田サイファー「THE CYPHER in 日本武道館」",
+      "en": "Umeda Cypher \"THE CYPHER in Nippon Budokan\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.sonymusic.co.jp/artist/UMEDACYPHER/info/584645"
+  },
+  {
+    "id": "equal-love-vantelin-2027",
+    "city": "nagoya",
+    "start": "2027-02-24",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "＝LOVE DOME LIVE in NAGOYA「全ては＝LOVE」",
+      "en": "=LOVE DOME LIVE in NAGOYA \"Subete wa =LOVE\""
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.nagoya-dome.co.jp/enjoy/index.php"
+  },
+  {
+    "id": "megadeth-budokan-2027",
+    "city": "tokyo",
+    "start": "2027-02-24",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "MEGADETH 日本武道館公演",
+      "en": "MEGADETH at Nippon Budokan"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/megadeth/"
+  },
+  {
+    "id": "tokyo-gift-show-spring-2027",
+    "city": "tokyo",
+    "start": "2027-02-24",
+    "end": "2027-02-26",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "第103回東京インターナショナル・ギフト・ショー春2027",
+      "en": "103rd Tokyo International Gift Show Spring 2027"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/search.php"
+  },
+  {
+    "id": "bon-jovi-tokyo-dome-0225-2027",
+    "city": "tokyo",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "BON JOVI FOREVER TOUR",
+      "en": "BON JOVI FOREVER TOUR"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "kokkoritsu-zenki-fukuoka-2027",
+    "city": "fukuoka",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "九州大学 ほか",
+      "en": "Kyushu University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "kokkoritsu-zenki-kanazawa-2027",
+    "city": "kanazawa",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "金沢大学 ほか",
+      "en": "Kanazawa University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "kokkoritsu-zenki-kumamoto-2027",
+    "city": "kumamoto",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "熊本大学 ほか",
+      "en": "Kumamoto University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "kokkoritsu-zenki-kyoto-2027",
+    "city": "kyoto",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "京都大学 ほか",
+      "en": "Kyoto University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "kokkoritsu-zenki-nagoya-2027",
+    "city": "nagoya",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "名古屋大学 ほか",
+      "en": "Nagoya University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "kokkoritsu-zenki-niigata-2027",
+    "city": "niigata",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "新潟大学 ほか",
+      "en": "Niigata University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "kokkoritsu-zenki-okayama-2027",
+    "city": "okayama",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "岡山大学 ほか",
+      "en": "Okayama University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "kokkoritsu-zenki-sapporo-2027",
+    "city": "sapporo",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "北海道大学 ほか",
+      "en": "Hokkaido University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "kokkoritsu-zenki-sendai-2027",
+    "city": "sendai",
+    "start": "2027-02-25",
+    "end": "2027-02-25",
+    "venue": {
+      "ja": "東北大学 ほか",
+      "en": "Tohoku University and others"
+    },
+    "title": {
+      "ja": "国公立大学 2次試験（前期日程）",
+      "en": "National/public university entrance exams (first-term schedule)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.mext.go.jp/content/20260928-mxt_daigakuc02-000052178_5-9.pdf"
+  },
+  {
+    "id": "nct-wish-yoyogi-2027",
+    "city": "tokyo",
+    "start": "2027-02-26",
+    "end": "2027-02-28",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "NCT WISH 2nd CONCERT TOUR 'INTO THE WISH : Face Our WISH' IN JAPAN",
+      "en": "NCT WISH 2nd CONCERT TOUR 'INTO THE WISH : Face Our WISH' IN JAPAN"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.jpnsport.go.jp/yoyogi/event/1st_202702.html"
+  },
+  {
+    "id": "bon-jovi-tokyo-dome-0227-2027",
+    "city": "tokyo",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "BON JOVI FOREVER TOUR",
+      "en": "BON JOVI FOREVER TOUR"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-02"
+  },
+  {
+    "id": "kizu-budokan-2027",
+    "city": "tokyo",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "キズ 単独公演「武道館」",
+      "en": "Kizu one-man show \"Budokan\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/kizu/"
+  },
+  {
+    "id": "mga-harmony2-k-arena-0227-2027",
+    "city": "yokohama",
+    "start": "2027-02-27",
+    "end": "2027-02-28",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "Mrs. GREEN APPLE on \"Harmony2\"",
+      "en": "Mrs. GREEN APPLE on \"Harmony2\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=2"
+  },
+  {
+    "id": "miyamoto-glion-2027",
+    "city": "kobe",
+    "start": "2027-02-27",
+    "end": "2027-02-28",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "宮本浩次 TOUR 2026～2027 I AM HERO",
+      "en": "Hiroji Miyamoto TOUR 2026-2027 I AM HERO"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/6501590/events"
+  },
+  {
+    "id": "oishi-masayoshi-yokohama-arena-2027",
+    "city": "yokohama",
+    "start": "2027-02-27",
+    "end": "2027-02-28",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "オーイシ横アリ ～オーイシマサヨシ ワンマンライブ at 横浜アリーナ～",
+      "en": "Oishi Yokoari - Masayoshi Oishi One-Man Live at Yokohama Arena"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.yokohama-arena.co.jp/event/2027-02"
+  },
+  {
+    "id": "sawano-gundam-garden-theater-2027",
+    "city": "tokyo",
+    "start": "2027-02-27",
+    "end": "2027-02-27",
+    "venue": {
+      "ja": "東京ガーデンシアター",
+      "en": "Tokyo Garden Theater"
+    },
+    "title": {
+      "ja": "澤野弘之 × THE SOUND OF GUNDAM – 機動戦士ガンダムUC・NT・HATHAWAY Concert –",
+      "en": "Hiroyuki Sawano x THE SOUND OF GUNDAM - Mobile Suit Gundam UC / NT / HATHAWAY Concert"
+    },
+    "category": "concert",
+    "scale": 1,
+    "url": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/schedule/?date=2027-02"
+  },
+  {
+    "id": "starglow-kitayell-2027",
+    "city": "sapporo",
+    "start": "2027-02-27",
+    "end": "2027-02-28",
+    "venue": {
+      "ja": "北海きたえーる",
+      "en": "Hokkai Kitaeru"
+    },
+    "title": {
+      "ja": "STARGLOW 1st Arena Tour 2027 Aurora - The Dawn -",
+      "en": "STARGLOW 1st Arena Tour 2027 Aurora - The Dawn -"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.oricon.co.jp/pressrelease/3001314/"
+  },
+  {
+    "id": "xg-kyocera-2027",
+    "city": "osaka",
+    "start": "2027-02-27",
+    "end": "2027-02-28",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "XG WORLD TOUR: THE CORE FINAL \"1\"&\"7\"",
+      "en": "XG WORLD TOUR: THE CORE FINAL \"1\"&\"7\""
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/schedule/?yearId=2027&monthId=2&cat="
+  },
+  {
+    "id": "osaka-marathon-2027",
+    "city": "osaka",
+    "start": "2027-02-28",
+    "end": "2027-02-28",
+    "venue": {
+      "ja": "大阪市内（マラソンコース）",
+      "en": "Osaka city marathon course"
+    },
+    "title": {
+      "ja": "大阪マラソン2027（第15回）",
+      "en": "Osaka Marathon 2027 (15th)"
+    },
+    "category": "sports",
+    "scale": 2,
+    "url": "https://www.osaka-marathon.com/"
+  },
+  {
+    "id": "todaiji-shunie-2027",
+    "city": "nara",
+    "start": "2027-03-01",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "東大寺 二月堂",
+      "en": "Todai-ji Nigatsu-do"
+    },
+    "title": {
+      "ja": "東大寺 修二会（お水取り）",
+      "en": "Todai-ji Shuni-e (Omizutori)"
+    },
+    "category": "festival",
+    "scale": 1,
+    "url": "https://www.todaiji.or.jp/annual_event/shunie/"
+  },
+  {
+    "id": "nikkei-messe-2027",
+    "city": "tokyo",
+    "start": "2027-03-02",
+    "end": "2027-03-05",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "日経メッセ2027 街づくり・店づくり総合展",
+      "en": "NIKKEI MESSE 2027"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/search.php"
+  },
+  {
+    "id": "misia-gaishi-2027",
+    "city": "nagoya",
+    "start": "2027-03-03",
+    "end": "2027-03-04",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM",
+      "en": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://misiasp.com/beyondfreedom2027/"
+  },
+  {
+    "id": "sweet-steady-3rd-anniv-budokan-2027",
+    "city": "tokyo",
+    "start": "2027-03-04",
+    "end": "2027-03-04",
+    "venue": {
+      "ja": "日本武道館",
+      "en": "Nippon Budokan"
+    },
+    "title": {
+      "ja": "SWEET STEADY 3rd ANNIVERSARY LIVE",
+      "en": "SWEET STEADY 3rd ANNIVERSARY LIVE"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://realsound.jp/2026/08/post-2500114.html"
+  },
+  {
+    "id": "aespa-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-03-06",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "2027 aespa LIVE TOUR – SYNK : COMPLaeXITY in JAPAN",
+      "en": "2027 aespa LIVE TOUR - SYNK : COMPLaeXITY in JAPAN"
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-03"
+  },
+  {
+    "id": "liella-8th-lovelive-ariake-2027",
+    "city": "tokyo",
+    "start": "2027-03-06",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "ラブライブ！スーパースター!! Liella! 8th LoveLive! Tour ～Our Song, Our Dreams～",
+      "en": "Love Live! Superstar!! Liella! 8th LoveLive! Tour - Our Song, Our Dreams"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/last/"
+  },
+  {
+    "id": "mga-harmony2-k-arena-0306-2027",
+    "city": "yokohama",
+    "start": "2027-03-06",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "Mrs. GREEN APPLE on \"Harmony2\"",
+      "en": "Mrs. GREEN APPLE on \"Harmony2\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=3"
+  },
+  {
+    "id": "otoichi-otoza-2027",
+    "city": "nagoya",
+    "start": "2027-03-06",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "日本ガイシホール",
+      "en": "Nippon Gaishi Hall"
+    },
+    "title": {
+      "ja": "音市音座 2027",
+      "en": "OTOICHI OTOZA 2027"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/4570020/events"
+  },
+  {
+    "id": "reona-pia-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-06",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "ReoNa ANIME & GAME スーパーベストコンサート “ハロー、アンハッピー” at ぴあアリーナMM",
+      "en": "ReoNa ANIME & GAME Super Best Concert \"Hello, Unhappy\" at PIA Arena MM"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=03.html"
+  },
+  {
+    "id": "sakanaction-kitayell-2027",
+    "city": "sapporo",
+    "start": "2027-03-06",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "北海きたえーる",
+      "en": "Hokkai Kitaeru"
+    },
+    "title": {
+      "ja": "サカナクション SAKANAQUARIUM 2026-2027 \"透明\"",
+      "en": "sakanaction SAKANAQUARIUM 2026-2027 \"Toumei\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://sakanaction.jp/feature/tour2026-2027"
+  },
+  {
+    "id": "spitz-jamboree-yokohama-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-06",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "SPITZ JAMBOREE TOUR 2027 “kettle”",
+      "en": "SPITZ JAMBOREE TOUR 2027 \"kettle\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.yokohama-arena.co.jp/event/2027-03"
+  },
+  {
+    "id": "superbeaver-tokimesse-2027",
+    "city": "niigata",
+    "start": "2027-03-06",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "朱鷺メッセ",
+      "en": "Toki Messe"
+    },
+    "title": {
+      "ja": "SUPER BEAVER 都会のラクダ TOUR 2026-2027 〜ラクダの人生、ゴーゴーゴー〜",
+      "en": "SUPER BEAVER Tokai no Rakuda TOUR 2026-2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://sp.super-beaver.com/feature/tour2627"
+  },
+  {
+    "id": "tgc-2027-ss-yoyogi",
+    "city": "tokyo",
+    "start": "2027-03-06",
+    "end": "2027-03-06",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "第44回 マイナビ 東京ガールズコレクション 2027 SPRING/SUMMER",
+      "en": "44th Mynavi TOKYO GIRLS COLLECTION 2027 SPRING/SUMMER"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://www.jpnsport.go.jp/yoyogi/event/1st_202703.html"
+  },
+  {
+    "id": "agestock-yoyogi-2027",
+    "city": "tokyo",
+    "start": "2027-03-07",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "AGESTOCK2027 in 国立代々木競技場第一体育館 supported by TGC CAMPUS",
+      "en": "AGESTOCK2027 in Yoyogi National Gymnasium supported by TGC CAMPUS"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://www.jpnsport.go.jp/yoyogi/event/1st_202703.html"
+  },
+  {
+    "id": "chemistry-25th-finale-garden-theater-2027",
+    "city": "tokyo",
+    "start": "2027-03-07",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "東京ガーデンシアター",
+      "en": "Tokyo Garden Theater"
+    },
+    "title": {
+      "ja": "CHEMISTRY 25th Anniversary Finale 「ONE」",
+      "en": "CHEMISTRY 25th Anniversary Finale \"ONE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/schedule/?date=2027-03"
+  },
+  {
+    "id": "kagoshima-marathon-2027",
+    "city": "kagoshima",
+    "start": "2027-03-07",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "ドルフィンポート跡地前スタート〜鹿児島市役所前フィニッシュ",
+      "en": "Start: former Dolphin Port / Finish: Kagoshima City Hall"
+    },
+    "title": {
+      "ja": "鹿児島マラソン2027",
+      "en": "Kagoshima Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.kagoshima-marathon.jp/about/"
+  },
+  {
+    "id": "tokyo-marathon-2027",
+    "city": "tokyo",
+    "start": "2027-03-07",
+    "end": "2027-03-07",
+    "venue": {
+      "ja": "東京都庁前スタート〜東京駅前フィニッシュ",
+      "en": "Start: Tokyo Metropolitan Govt. Bldg. / Finish: Tokyo Station"
+    },
+    "title": {
+      "ja": "東京マラソン2027（第20回記念大会）",
+      "en": "Tokyo Marathon 2027 (20th anniversary)"
+    },
+    "category": "sports",
+    "scale": 3,
+    "url": "https://www.marathon.tokyo/"
+  },
+  {
+    "id": "foodex-japan-2027",
+    "city": "tokyo",
+    "start": "2027-03-09",
+    "end": "2027-03-12",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "FOODEX JAPAN 2027",
+      "en": "FOODEX JAPAN 2027"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/search.php"
+  },
+  {
+    "id": "mga-harmony2-k-arena-0310-2027",
+    "city": "yokohama",
+    "start": "2027-03-10",
+    "end": "2027-03-11",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "Mrs. GREEN APPLE on \"Harmony2\"",
+      "en": "Mrs. GREEN APPLE on \"Harmony2\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=3"
+  },
+  {
+    "id": "skapara-osakajo-2027",
+    "city": "osaka",
+    "start": "2027-03-11",
+    "end": "2027-03-11",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "東京スカパラダイスオーケストラ 大阪城ホール公演",
+      "en": "Tokyo Ska Paradise Orchestra at Osaka-Jo Hall"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event?ym=202703"
+  },
+  {
+    "id": "aimyon-cosmic-k-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-13",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "あいみょん AIMYON TOUR 2027 - cosmic % -",
+      "en": "AIMYON TOUR 2027 - cosmic % -"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=3"
+  },
+  {
+    "id": "anisama-fukuoka-2027",
+    "city": "fukuoka",
+    "start": "2027-03-13",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "みずほPayPayドーム福岡",
+      "en": "Mizuho PayPay Dome Fukuoka"
+    },
+    "title": {
+      "ja": "ANISAMA FUKUOKA 2027",
+      "en": "ANISAMA FUKUOKA 2027"
+    },
+    "category": "fes",
+    "scale": 2,
+    "url": "https://www.softbankhawks.co.jp/stadium/event_schedule/2027/"
+  },
+  {
+    "id": "disney-on-classic-rapunzel-yokohama-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-13",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "Disney on CLASSIC Premium 『塔の上のラプンツェル』イン・コンサート",
+      "en": "Disney on CLASSIC Premium \"Tangled\" in Concert"
+    },
+    "category": "concert",
+    "scale": 1,
+    "url": "https://www.yokohama-arena.co.jp/event/2027-03"
+  },
+  {
+    "id": "kinggnu-kyocera-2027",
+    "city": "osaka",
+    "start": "2027-03-13",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "King Gnu 10th Anniversary Opening Live \"KICKOFF\"",
+      "en": "King Gnu 10th Anniversary Opening Live \"KICKOFF\""
+    },
+    "category": "live",
+    "scale": 2,
+    "url": "https://www.kyoceradome-osaka.jp/schedule/?yearId=2027&monthId=3&cat="
+  },
+  {
+    "id": "misia-osakajo-2027-03",
+    "city": "osaka",
+    "start": "2027-03-13",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM",
+      "en": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://misiasp.com/beyondfreedom2027/"
+  },
+  {
+    "id": "starglow-hiroshima-green-arena-2027",
+    "city": "hiroshima",
+    "start": "2027-03-13",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "広島グリーンアリーナ",
+      "en": "Hiroshima Green Arena"
+    },
+    "title": {
+      "ja": "STARGLOW 1st Arena Tour 2027 Aurora - The Dawn -",
+      "en": "STARGLOW 1st Arena Tour 2027 Aurora - The Dawn -"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.oricon.co.jp/pressrelease/3001314/"
+  },
+  {
+    "id": "unicorn-garden-theater-2027",
+    "city": "tokyo",
+    "start": "2027-03-13",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "東京ガーデンシアター",
+      "en": "Tokyo Garden Theater"
+    },
+    "title": {
+      "ja": "ユニコーン2026-2027ツアー「こえてたあ」",
+      "en": "UNICORN 2026-2027 Tour \"Koeteta\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/schedule/?date=2027-03"
+  },
+  {
+    "id": "biwako-marathon-2027",
+    "city": "otsu",
+    "start": "2027-03-14",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "皇子山陸上競技場スタート〜烏丸半島フィニッシュ",
+      "en": "Start: Ojiyama Stadium / Finish: Karasuma Peninsula"
+    },
+    "title": {
+      "ja": "びわ湖マラソン2027",
+      "en": "Lake Biwa Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.pref.shiga.lg.jp/kensei/koho/e-shinbun/oshirase/350274.html"
+  },
+  {
+    "id": "nagoya-womens-marathon-2027",
+    "city": "nagoya",
+    "start": "2027-03-14",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ 発着",
+      "en": "Vantelin Dome Nagoya (start/finish)"
+    },
+    "title": {
+      "ja": "名古屋ウィメンズマラソン2027",
+      "en": "Nagoya Women's Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 2,
+    "url": "https://womens-marathon.nagoya/"
+  },
+  {
+    "id": "shizuoka-marathon-2027",
+    "city": "shizuoka",
+    "start": "2027-03-14",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "静岡市役所静岡庁舎前スタート〜JR清水駅東口フィニッシュ",
+      "en": "Start: Shizuoka City Hall / Finish: JR Shimizu Station East Exit"
+    },
+    "title": {
+      "ja": "静岡マラソン2027",
+      "en": "Shizuoka Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.city.shizuoka.lg.jp/697_000123.html"
+  },
+  {
+    "id": "sumo-haru-basho-2027",
+    "city": "osaka",
+    "start": "2027-03-14",
+    "end": "2027-03-28",
+    "venue": {
+      "ja": "エディオンアリーナ大阪（大阪府立体育会館）",
+      "en": "EDION Arena Osaka"
+    },
+    "title": {
+      "ja": "大相撲三月場所",
+      "en": "Grand Sumo March Tournament"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.sumo.or.jp/Admission/schedule/"
+  },
+  {
+    "id": "tokushima-marathon-2027",
+    "city": "tokushima",
+    "start": "2027-03-14",
+    "end": "2027-03-14",
+    "venue": {
+      "ja": "とくぎんトモニアリーナ前スタート",
+      "en": "Start: Tokugin Tomoni Arena"
+    },
+    "title": {
+      "ja": "とくしまマラソン2027",
+      "en": "Tokushima Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://tokushima-marathon.jp/outline/"
+  },
+  {
+    "id": "creepy-nuts-ariake-2027",
+    "city": "tokyo",
+    "start": "2027-03-16",
+    "end": "2027-03-17",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "Creepy Nuts ONEMAN TOUR 2027",
+      "en": "Creepy Nuts ONEMAN TOUR 2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/last/"
+  },
+  {
+    "id": "disney-on-classic-rapunzel-osakajo-2027",
+    "city": "osaka",
+    "start": "2027-03-16",
+    "end": "2027-03-17",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "Disney on CLASSIC Premium『塔の上のラプンツェル』イン・コンサート",
+      "en": "Disney on CLASSIC Premium: Tangled in Concert"
+    },
+    "category": "concert",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event?ym=202703"
+  },
+  {
+    "id": "hcj-kenkohaku-bigsight-2027",
+    "city": "tokyo",
+    "start": "2027-03-16",
+    "end": "2027-03-19",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "HCJ2027（第55回国際ホテル・レストラン・ショー ほか）/ 健康博覧会2027",
+      "en": "HCJ 2027 (55th HOTERES JAPAN etc.) / Health Expo 2027"
+    },
+    "category": "expo",
+    "scale": 1,
+    "url": "https://www.bigsight.jp/visitor/event/search.php"
+  },
+  {
+    "id": "mga-harmony2-k-arena-0316-2027",
+    "city": "yokohama",
+    "start": "2027-03-16",
+    "end": "2027-03-17",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "Mrs. GREEN APPLE on \"Harmony2\"",
+      "en": "Mrs. GREEN APPLE on \"Harmony2\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=3"
+  },
+  {
+    "id": "sakanaction-glion-2027",
+    "city": "kobe",
+    "start": "2027-03-17",
+    "end": "2027-03-18",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "サカナクション SAKANAQUARIUM 2026-2027 \"透明\"",
+      "en": "sakanaction SAKANAQUARIUM 2026-2027 \"Toumei\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://sakanaction.jp/feature/tour2026-2027"
+  },
+  {
+    "id": "daichi-miura-garden-theater-2027",
+    "city": "tokyo",
+    "start": "2027-03-18",
+    "end": "2027-03-18",
+    "venue": {
+      "ja": "東京ガーデンシアター",
+      "en": "Tokyo Garden Theater"
+    },
+    "title": {
+      "ja": "三浦大知 DAICHI MIURA LIVE TOUR 2026 Raw / Bare",
+      "en": "DAICHI MIURA LIVE TOUR 2026 Raw / Bare"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/schedule/?date=2027-03"
+  },
+  {
+    "id": "senbatsu-koshien-2027",
+    "city": "osaka",
+    "start": "2027-03-19",
+    "end": "2027-03-31",
+    "venue": {
+      "ja": "阪神甲子園球場（西宮市）",
+      "en": "Hanshin Koshien Stadium (Nishinomiya)"
+    },
+    "title": {
+      "ja": "第99回選抜高等学校野球大会",
+      "en": "99th National High School Baseball Invitational (Senbatsu)"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.jhbf.or.jp/senbatsu/2027/"
+  },
+  {
+    "id": "aimyon-grandi21-2027",
+    "city": "sendai",
+    "start": "2027-03-20",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "セキスイハイムスーパーアリーナ（グランディ・21）",
+      "en": "Sekisui Heim Super Arena (Grandi 21)"
+    },
+    "title": {
+      "ja": "AIMYON TOUR 2027 cosmic %",
+      "en": "AIMYON TOUR 2027 cosmic %"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.aimyong.net/feature/cosmic_percent"
+  },
+  {
+    "id": "hana-born-to-bloom-yokohama-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-20",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "横浜アリーナ",
+      "en": "Yokohama Arena"
+    },
+    "title": {
+      "ja": "HANA LIVE TOUR 2027 “Born to Bloom Ⅱ”",
+      "en": "HANA LIVE TOUR 2027 \"Born to Bloom II\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.yokohama-arena.co.jp/event/2027-03"
+  },
+  {
+    "id": "kawaiilab-glion-2027",
+    "city": "kobe",
+    "start": "2027-03-20",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "KAWAII LAB. 5th ANNIVERSARY TOUR（FRUITS ZIPPER・CANDY TUNE ほか）",
+      "en": "KAWAII LAB. 5th ANNIVERSARY TOUR (FRUITS ZIPPER, CANDY TUNE and more)"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://kawaiilab.asobisystem.com/news/detail/92410"
+  },
+  {
+    "id": "mega-vegas-2027",
+    "city": "kobe",
+    "start": "2027-03-20",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "ワールド記念ホール",
+      "en": "World Memorial Hall (Kobe)"
+    },
+    "title": {
+      "ja": "MEGA VEGAS 2027",
+      "en": "MEGA VEGAS 2027"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/6500200/events"
+  },
+  {
+    "id": "momoclo-arena-tour-pia-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-20",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "ももいろクローバーZ ARENA TOUR 2027 \"VOGUE AND ROMANCE\"",
+      "en": "MOMOIRO CLOVER Z ARENA TOUR 2027 \"VOGUE AND ROMANCE\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=03.html"
+  },
+  {
+    "id": "osaka-motorcycle-show-2027",
+    "city": "osaka",
+    "start": "2027-03-20",
+    "end": "2027-03-22",
+    "venue": {
+      "ja": "インテックス大阪",
+      "en": "INTEX Osaka"
+    },
+    "title": {
+      "ja": "大阪モーターサイクルショー2027",
+      "en": "Osaka Motorcycle Show 2027"
+    },
+    "category": "expo",
+    "scale": 1,
+    "url": "https://www.motorcycleshow.jp/"
+  },
+  {
+    "id": "spitz-nagano-bighat-2027",
+    "city": "nagano",
+    "start": "2027-03-20",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "長野ビッグハット",
+      "en": "Nagano Big Hat"
+    },
+    "title": {
+      "ja": "SPITZ JAMBOREE TOUR 2027 \"kettle\"",
+      "en": "SPITZ JAMBOREE TOUR 2027 \"kettle\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://spitz-web.com/kettle/tour/schedule/"
+  },
+  {
+    "id": "superbeaver-mie-sunarena-2027",
+    "city": "ise",
+    "start": "2027-03-20",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "三重県営サンアリーナ",
+      "en": "Mie Sun Arena"
+    },
+    "title": {
+      "ja": "SUPER BEAVER 都会のラクダ TOUR 2026-2027 〜ラクダの人生、ゴーゴーゴー〜",
+      "en": "SUPER BEAVER Tokai no Rakuda TOUR 2026-2027"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://sp.super-beaver.com/feature/tour2627"
+  },
+  {
+    "id": "togenashi-togeari-k-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-20",
+    "end": "2027-03-20",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "トゲナシトゲアリ ONE-MAN LIVE \"凛音の耀\"",
+      "en": "TOGENASHI TOGEARI ONE-MAN LIVE \"Rinne no Kagayaki\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=3"
+  },
+  {
+    "id": "haru-comic-city-tokyo-2027",
+    "city": "tokyo",
+    "start": "2027-03-21",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "HARU COMIC CITY 東京 2027",
+      "en": "HARU COMIC CITY Tokyo 2027"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/search.php"
+  },
+  {
+    "id": "saga-sakura-marathon-2027",
+    "city": "saga",
+    "start": "2027-03-21",
+    "end": "2027-03-21",
+    "venue": {
+      "ja": "佐賀市内（マラソンコース）",
+      "en": "Saga city marathon course"
+    },
+    "title": {
+      "ja": "さが桜マラソン2027",
+      "en": "Saga Sakura Marathon 2027"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.sagasakura-marathon.jp/"
+  },
+  {
+    "id": "okazaki-taiiku-osakajo-2027",
+    "city": "osaka",
+    "start": "2027-03-22",
+    "end": "2027-03-22",
+    "venue": {
+      "ja": "大阪城ホール",
+      "en": "Osaka-Jo Hall"
+    },
+    "title": {
+      "ja": "岡崎体育 大阪城ホール公演",
+      "en": "Okazaki Taiiku at Osaka-Jo Hall"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.osaka-johall.com/event?ym=202703"
+  },
+  {
+    "id": "tani-yuuki-pia-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-22",
+    "end": "2027-03-22",
+    "venue": {
+      "ja": "ぴあアリーナMM",
+      "en": "PIA Arena MM"
+    },
+    "title": {
+      "ja": "Tani Yuuki Live Tour 26-27 \"SPACE RENDEZVOUS\"",
+      "en": "Tani Yuuki Live Tour 26-27 \"SPACE RENDEZVOUS\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://pia-arena-mm.jp/event@p1=2027&p2=03.html"
+  },
+  {
+    "id": "tele-tour-k-arena-2027",
+    "city": "yokohama",
+    "start": "2027-03-22",
+    "end": "2027-03-22",
+    "venue": {
+      "ja": "Kアリーナ横浜",
+      "en": "K-Arena Yokohama"
+    },
+    "title": {
+      "ja": "Tele Tour 2027「風の脆さを知る友へ」",
+      "en": "Tele Tour 2027 \"Kaze no Morosa wo Shiru Tomo e\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://k-arena.com/schedule/?y=2027&m=3"
+  },
+  {
+    "id": "toto-asue-2027",
+    "city": "osaka",
+    "start": "2027-03-22",
+    "end": "2027-03-22",
+    "venue": {
+      "ja": "Asueアリーナ大阪",
+      "en": "Asue Arena Osaka"
+    },
+    "title": {
+      "ja": "TOTO 50TH ANNIVERSARY TOUR",
+      "en": "TOTO 50TH ANNIVERSARY TOUR"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://eplus.jp/sf/venue/5520010/events"
+  },
+  {
+    "id": "toto-50th-ariake-2027",
+    "city": "tokyo",
+    "start": "2027-03-23",
+    "end": "2027-03-24",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "TOTO 50TH ANNIVERSARY TOUR",
+      "en": "TOTO 50TH ANNIVERSARY TOUR"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/last/"
+  },
+  {
+    "id": "smart-energy-week-spring-2027",
+    "city": "tokyo",
+    "start": "2027-03-24",
+    "end": "2027-03-26",
+    "venue": {
+      "ja": "東京ビッグサイト",
+      "en": "Tokyo Big Sight"
+    },
+    "title": {
+      "ja": "SMART ENERGY WEEK【春】2027 / サステナブル経営 WEEK【春】2027",
+      "en": "SMART ENERGY WEEK Spring 2027 / Sustainable Management WEEK Spring 2027"
+    },
+    "category": "expo",
+    "scale": 2,
+    "url": "https://www.bigsight.jp/visitor/event/search.php"
+  },
+  {
+    "id": "ultra-teens-fes-yoyogi-2027",
+    "city": "tokyo",
+    "start": "2027-03-25",
+    "end": "2027-03-25",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "超十代 -ULTRA TEENS FES- 2027",
+      "en": "Cho-Judai -ULTRA TEENS FES- 2027"
+    },
+    "category": "fes",
+    "scale": 1,
+    "url": "https://www.jpnsport.go.jp/yoyogi/event/1st_202703.html"
+  },
+  {
+    "id": "giants-dragons-opening-series-tokyo-dome-2027",
+    "city": "tokyo",
+    "start": "2027-03-26",
+    "end": "2027-03-28",
+    "venue": {
+      "ja": "東京ドーム",
+      "en": "Tokyo Dome"
+    },
+    "title": {
+      "ja": "プロ野球公式戦 巨人－中日（開幕カード）",
+      "en": "NPB regular season opening series: Giants vs Dragons"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.tokyo-dome.co.jp/dome/event/schedule.html?date=2027-03"
+  },
+  {
+    "id": "npb-hanshin-hiroshima-kyocera-2027",
+    "city": "osaka",
+    "start": "2027-03-26",
+    "end": "2027-03-28",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "プロ野球 阪神 vs 広島（京セラドーム大阪 3連戦）",
+      "en": "NPB: Hanshin Tigers vs Hiroshima Carp (3-game series)"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.kyoceradome-osaka.jp/schedule/?yearId=2027&monthId=3&cat="
+  },
+  {
+    "id": "ikizuraibu-3rd-live-ariake-2027",
+    "city": "tokyo",
+    "start": "2027-03-27",
+    "end": "2027-03-28",
+    "venue": {
+      "ja": "有明アリーナ",
+      "en": "Ariake Arena"
+    },
+    "title": {
+      "ja": "いきづらい部！ 3rd LIVE いつかみんなで叶いそう",
+      "en": "Ikizuraibu! 3rd LIVE \"Itsuka Minna de Kanaisou\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://ariake-arena.tokyo/event/last/"
+  },
+  {
+    "id": "misia-anabuki-kagawa-2027",
+    "city": "takamatsu",
+    "start": "2027-03-27",
+    "end": "2027-03-28",
+    "venue": {
+      "ja": "あなぶきアリーナ香川",
+      "en": "Anabuki Arena Kagawa"
+    },
+    "title": {
+      "ja": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM",
+      "en": "STARTS presents MISIA BIG BAND ORCHESTRA 2027 BEYOND FREEDOM"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://misiasp.com/beyondfreedom2027/"
+  },
+  {
+    "id": "sakanaction-portmesse-2027",
+    "city": "nagoya",
+    "start": "2027-03-27",
+    "end": "2027-03-28",
+    "venue": {
+      "ja": "ポートメッセなごや",
+      "en": "Port Messe Nagoya"
+    },
+    "title": {
+      "ja": "サカナクション SAKANAQUARIUM 2026-2027 \"透明\"",
+      "en": "sakanaction SAKANAQUARIUM 2026-2027 \"Toumei\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://sakanaction.jp/feature/tour2026-2027"
+  },
+  {
+    "id": "spitz-marinemesse-2027",
+    "city": "fukuoka",
+    "start": "2027-03-27",
+    "end": "2027-03-28",
+    "venue": {
+      "ja": "マリンメッセ福岡",
+      "en": "Marine Messe Fukuoka"
+    },
+    "title": {
+      "ja": "SPITZ JAMBOREE TOUR 2027 \"kettle\"",
+      "en": "SPITZ JAMBOREE TOUR 2027 \"kettle\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://spitz-web.com/kettle/tour/schedule/"
+  },
+  {
+    "id": "starglow-glion-2027",
+    "city": "kobe",
+    "start": "2027-03-27",
+    "end": "2027-03-28",
+    "venue": {
+      "ja": "GLION ARENA KOBE",
+      "en": "GLION ARENA KOBE"
+    },
+    "title": {
+      "ja": "STARGLOW 1st Arena Tour 2027 Aurora - The Dawn -",
+      "en": "STARGLOW 1st Arena Tour 2027 Aurora - The Dawn -"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.oricon.co.jp/pressrelease/3001314/"
+  },
+  {
+    "id": "exile-premium-hall-tour-garden-theater-2027",
+    "city": "tokyo",
+    "start": "2027-03-30",
+    "end": "2027-03-31",
+    "venue": {
+      "ja": "東京ガーデンシアター",
+      "en": "Tokyo Garden Theater"
+    },
+    "title": {
+      "ja": "EXILE PREMIUM HALL TOUR 2027 “E・M・O・I”",
+      "en": "EXILE PREMIUM HALL TOUR 2027 \"E・M・O・I\""
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/schedule/?date=2027-03"
+  },
+  {
+    "id": "npb-chunichi-hanshin-vantelin-2027",
+    "city": "nagoya",
+    "start": "2027-03-30",
+    "end": "2027-03-31",
+    "venue": {
+      "ja": "バンテリンドーム ナゴヤ",
+      "en": "Vantelin Dome Nagoya"
+    },
+    "title": {
+      "ja": "プロ野球 中日 vs 阪神",
+      "en": "NPB: Chunichi Dragons vs Hanshin Tigers"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.nagoya-dome.co.jp/enjoy/index.php"
+  },
+  {
+    "id": "npb-orix-softbank-kyocera-2027",
+    "city": "osaka",
+    "start": "2027-03-30",
+    "end": "2027-03-31",
+    "venue": {
+      "ja": "京セラドーム大阪",
+      "en": "Kyocera Dome Osaka"
+    },
+    "title": {
+      "ja": "プロ野球 オリックス vs ソフトバンク",
+      "en": "NPB: ORIX Buffaloes vs SoftBank Hawks"
+    },
+    "category": "sports",
+    "scale": 1,
+    "url": "https://www.kyoceradome-osaka.jp/schedule/?yearId=2027&monthId=3&cat="
+  },
+  {
+    "id": "aimyon-cosmic-yoyogi-0331-2027",
+    "city": "tokyo",
+    "start": "2027-03-31",
+    "end": "2027-03-31",
+    "venue": {
+      "ja": "国立代々木競技場 第一体育館",
+      "en": "Yoyogi National Gymnasium"
+    },
+    "title": {
+      "ja": "あいみょん AIMYON TOUR 2027 - cosmic % -",
+      "en": "AIMYON TOUR 2027 - cosmic % -"
+    },
+    "category": "live",
+    "scale": 1,
+    "url": "https://www.jpnsport.go.jp/yoyogi/event/1st_202703.html"
   }
 ]
