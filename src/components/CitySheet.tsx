@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { bookingLinks, fetchCityHotels, type CityHotels } from '../api.ts'
+import { fetchCityHotels, type CityHotels } from '../api.ts'
+import { jalanBookingUrl } from '../booking.ts'
 import { cityById, type CityId } from '../cities.ts'
 import { dateRange, type Ymd } from '../dates.ts'
 import { dayTone, formatDate, formatYen } from '../format.ts'
@@ -29,7 +30,6 @@ export function CitySheet({ cityId, start, data, prefs, onClose, onCalendar, onA
   const days = dateRange(start, 7)
   const [hotels, setHotels] = useState<CityHotels | null>(null)
   const fav = prefs.prefs.favorites.includes(cityId)
-  const links = bookingLinks(city)
   const picks = hotels?.days[start]?.h ?? []
 
   useEffect(() => {
@@ -92,9 +92,7 @@ export function CitySheet({ cityId, start, data, prefs, onClose, onCalendar, onA
           <ul className="picks">
             {picks.map((h) => (
               <li key={h.u || h.n}>
-                <a href={h.u} target="_blank" rel="noopener noreferrer">
-                  {h.n}
-                </a>
+                <span className="pick-name">{h.n}</span>
                 <span>{formatYen(h.c, lang)}〜</span>
               </li>
             ))}
@@ -104,18 +102,15 @@ export function CitySheet({ cityId, start, data, prefs, onClose, onCalendar, onA
       )}
 
       <div className="card">
-        <h3>{t('sheet.book')}</h3>
+        <h3>
+          {t('sheet.book')} <span className="pr-badge" title={t('book.prNote')}>PR</span>
+        </h3>
         <div className="book-links">
-          <a className="book rakuten" href={links.rakuten} target="_blank" rel="noopener noreferrer">
-            {t('site.rakuten')}
-          </a>
-          <a className="book jalan" href={links.jalan} target="_blank" rel="noopener noreferrer">
-            {t('site.jalan')}
-          </a>
-          <a className="book yahoo" href={links.yahoo} target="_blank" rel="noopener noreferrer">
-            {t('site.yahoo')}
+          <a className="book jalan" href={jalanBookingUrl(city, start)} target="_blank" rel="noopener sponsored">
+            {t('book.jalan', { date: formatDate(start, lang) })}
           </a>
         </div>
+        <p className="muted small">{t('book.prNote')}</p>
       </div>
 
       <div className="row gap wrap">

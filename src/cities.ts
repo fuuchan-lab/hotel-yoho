@@ -19,9 +19,12 @@ export interface City {
   offset: [number, number]
   /** 推定の時の、ふだんの混みやすさ（観光・出張の多い都市はプラス） */
   base: number
-  /** 予約サイトの都道府県ページ */
-  rakutenPref: string
-  jalanPref: string
+  /**
+   * じゃらんの、その都市の中心部の宿の一覧（https://www.jalan.net/ のあとの部分）。
+   * じゃらんの都道府県コードは独自（JIS とは違う）。東京は 23 区の一覧がないので東京駅・銀座・日本橋、
+   * 京都は京都駅周辺、大阪は梅田周辺のページ
+   */
+  jalan: string
   /** 近くの都市（イベントの影響が及ぶ） */
   near: CityId[]
 }
@@ -61,8 +64,7 @@ export const CITIES: City[] = [
     pop: 196,
     offset: [-24, -26],
     base: 0,
-    rakutenPref: 'hokkaido',
-    jalanPref: '010000',
+    jalan: '010000/LRG_010200/',
     near: ['chitose'],
   },
   {
@@ -74,8 +76,7 @@ export const CITIES: City[] = [
     pop: 10,
     offset: [30, 30],
     base: -0.5,
-    rakutenPref: 'hokkaido',
-    jalanPref: '010000',
+    jalan: '010000/LRG_012900/SML_012911/',
     near: ['sapporo'],
   },
   {
@@ -87,8 +88,7 @@ export const CITIES: City[] = [
     pop: 110,
     offset: [24, -26],
     base: 0,
-    rakutenPref: 'miyagi',
-    jalanPref: '040000',
+    jalan: '040000/LRG_040200/SML_040202/',
     near: [],
   },
   {
@@ -100,8 +100,7 @@ export const CITIES: City[] = [
     pop: 77,
     offset: [16, -20],
     base: 0,
-    rakutenPref: 'niigata',
-    jalanPref: '150000',
+    jalan: '170000/LRG_170200/SML_170208/',
     near: [],
   },
   {
@@ -113,8 +112,7 @@ export const CITIES: City[] = [
     pop: 135,
     offset: [12, -56],
     base: -0.5,
-    rakutenPref: 'saitama',
-    jalanPref: '110000',
+    jalan: '110000/LRG_110200/SML_110205/',
     near: ['tokyo'],
   },
   {
@@ -126,8 +124,7 @@ export const CITIES: City[] = [
     pop: 980,
     offset: [50, -30],
     base: 0.5,
-    rakutenPref: 'tokyo',
-    jalanPref: '130000',
+    jalan: '130000/LRG_136200/',
     near: ['kawasaki', 'yokohama', 'saitama'],
   },
   {
@@ -139,8 +136,7 @@ export const CITIES: City[] = [
     pop: 155,
     offset: [60, 16],
     base: -0.5,
-    rakutenPref: 'kanagawa',
-    jalanPref: '140000',
+    jalan: '140000/LRG_140100/',
     near: ['tokyo', 'yokohama'],
   },
   {
@@ -152,8 +148,7 @@ export const CITIES: City[] = [
     pop: 377,
     offset: [22, 56],
     base: 0,
-    rakutenPref: 'kanagawa',
-    jalanPref: '140000',
+    jalan: '140000/LRG_140200/',
     near: ['tokyo', 'kawasaki'],
   },
   {
@@ -165,8 +160,7 @@ export const CITIES: City[] = [
     pop: 37,
     offset: [0, 0],
     base: 0,
-    rakutenPref: 'nagano',
-    jalanPref: '200000',
+    jalan: '160000/LRG_160200/SML_160202/',
     near: [],
   },
   {
@@ -178,8 +172,7 @@ export const CITIES: City[] = [
     pop: 41,
     offset: [24, -50],
     base: 0,
-    rakutenPref: 'toyama',
-    jalanPref: '160000',
+    jalan: '180000/LRG_180500/',
     near: ['kanazawa'],
   },
   {
@@ -191,8 +184,7 @@ export const CITIES: City[] = [
     pop: 46,
     offset: [-20, -44],
     base: 0.5,
-    rakutenPref: 'ishikawa',
-    jalanPref: '170000',
+    jalan: '190000/LRG_192000/SML_192002/',
     near: ['toyama'],
   },
   {
@@ -204,8 +196,7 @@ export const CITIES: City[] = [
     pop: 68,
     offset: [4, 50],
     base: -0.5,
-    rakutenPref: 'shizuoka',
-    jalanPref: '220000',
+    jalan: '210000/LRG_212600/SML_212602/',
     near: [],
   },
   {
@@ -217,8 +208,7 @@ export const CITIES: City[] = [
     pop: 233,
     offset: [0, 0],
     base: 0,
-    rakutenPref: 'aichi',
-    jalanPref: '230000',
+    jalan: '230000/LRG_230200/',
     near: [],
   },
   {
@@ -230,8 +220,7 @@ export const CITIES: City[] = [
     pop: 144,
     offset: [-14, -50],
     base: 0.5,
-    rakutenPref: 'kyoto',
-    jalanPref: '260000',
+    jalan: '260000/LRG_260500/',
     near: ['osaka', 'nara'],
   },
   {
@@ -243,8 +232,7 @@ export const CITIES: City[] = [
     pop: 280,
     offset: [6, 54],
     base: 0.5,
-    rakutenPref: 'osaka',
-    jalanPref: '270000',
+    jalan: '270000/LRG_272000/',
     near: ['kyoto', 'kobe', 'nara'],
   },
   {
@@ -256,8 +244,7 @@ export const CITIES: City[] = [
     pop: 150,
     offset: [-40, 40],
     base: 0,
-    rakutenPref: 'hyogo',
-    jalanPref: '280000',
+    jalan: '280000/LRG_280200/',
     near: ['osaka'],
   },
   {
@@ -269,8 +256,7 @@ export const CITIES: City[] = [
     pop: 35,
     offset: [30, 40],
     base: 0,
-    rakutenPref: 'nara',
-    jalanPref: '290000',
+    jalan: '290000/LRG_290200/SML_290202/',
     near: ['kyoto', 'osaka'],
   },
   {
@@ -282,8 +268,7 @@ export const CITIES: City[] = [
     pop: 72,
     offset: [0, -44],
     base: 0,
-    rakutenPref: 'okayama',
-    jalanPref: '330000',
+    jalan: '330000/LRG_330200/SML_330202/',
     near: [],
   },
   {
@@ -295,8 +280,7 @@ export const CITIES: City[] = [
     pop: 118,
     offset: [0, -44],
     base: 0,
-    rakutenPref: 'hiroshima',
-    jalanPref: '340000',
+    jalan: '340000/LRG_340900/SML_340902/',
     near: [],
   },
   {
@@ -308,8 +292,7 @@ export const CITIES: City[] = [
     pop: 166,
     offset: [-26, -22],
     base: 0.5,
-    rakutenPref: 'fukuoka',
-    jalanPref: '400000',
+    jalan: '400000/LRG_400100/',
     near: [],
   },
   {
@@ -321,8 +304,7 @@ export const CITIES: City[] = [
     pop: 74,
     offset: [20, 30],
     base: 0,
-    rakutenPref: 'kumamoto',
-    jalanPref: '430000',
+    jalan: '430000/LRG_430200/SML_430202/',
     near: [],
   },
   {
@@ -334,8 +316,7 @@ export const CITIES: City[] = [
     pop: 59,
     offset: [0, 40],
     base: 0,
-    rakutenPref: 'kagoshima',
-    jalanPref: '460000',
+    jalan: '460000/LRG_460200/',
     near: [],
   },
   {
@@ -347,8 +328,7 @@ export const CITIES: City[] = [
     pop: 32,
     offset: [0, 0],
     base: 0.5,
-    rakutenPref: 'okinawa',
-    jalanPref: '470000',
+    jalan: '470000/LRG_470200/SML_470202/',
     near: [],
   },
 ]

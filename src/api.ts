@@ -15,7 +15,7 @@ export interface HotelPick {
   n: string
   /** 1 人 1 泊の料金（円） */
   c: number
-  /** 予約ページ */
+  /** 楽天トラベルの宿のページ（予約のリンクはじゃらんだけにしたので、画面には出さない） */
   u: string
 }
 
@@ -55,13 +55,4 @@ export async function fetchCityHotels(id: CityId): Promise<CityHotels> {
   const res = await fetch(`${API_BASE}/city?id=${encodeURIComponent(id)}`)
   if (!res.ok) throw new Error(`city-${res.status}`)
   return (await res.json()) as CityHotels
-}
-
-/** 予約サイトの検索ページ（日付は各サイトで選び直す） */
-export function bookingLinks(city: { rakutenPref: string; jalanPref: string; name: { ja: string } }) {
-  return {
-    rakuten: `https://travel.rakuten.co.jp/yado/${city.rakutenPref}/`,
-    jalan: `https://www.jalan.net/${city.jalanPref}/`,
-    yahoo: 'https://travel.yahoo.co.jp/',
-  }
 }

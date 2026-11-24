@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { bookingLinks } from '../api.ts'
+import { jalanBookingUrl } from '../booking.ts'
 import { cityById, type CityId } from '../cities.ts'
 import { addDays, daysInMonth, diffDays, HORIZON_DAYS, parseYmd, weekday, ymd, type Ymd } from '../dates.ts'
 import { eventsOn } from '../events.ts'
@@ -56,7 +56,6 @@ export function CalendarPage({ data, prefs, today, city, onCity, selected, onSel
   const inRange = (d: Ymd) => d >= today && d <= last
   const f = inRange(selected) ? data.forecast(city, selected) : null
   const dayEvents = eventsOn(data.events, selected, city)
-  const links = bookingLinks(info)
 
   return (
     <div className="page">
@@ -156,14 +155,11 @@ export function CalendarPage({ data, prefs, today, city, onCity, selected, onSel
         )}
         {f && (
           <div className="book-links">
-            <a className="book rakuten" href={links.rakuten} target="_blank" rel="noopener noreferrer">
-              {t('site.rakuten')}
-            </a>
-            <a className="book jalan" href={links.jalan} target="_blank" rel="noopener noreferrer">
-              {t('site.jalan')}
-            </a>
-            <a className="book yahoo" href={links.yahoo} target="_blank" rel="noopener noreferrer">
-              {t('site.yahoo')}
+            <a className="book jalan" href={jalanBookingUrl(info, selected)} target="_blank" rel="noopener sponsored">
+              {t('book.jalan', { date: formatDate(selected, lang) })}
+              <span className="pr-badge on-dark" title={t('book.prNote')}>
+                PR
+              </span>
             </a>
             <button type="button" className="secondary" onClick={() => onAddTrip(city, selected)}>
               ＋ {t('sheet.addTrip')}
