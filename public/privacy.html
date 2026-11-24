@@ -37,7 +37,7 @@
       <h2>外部への通信</h2>
       <ul>
         <li>推定の予報は、端末の中で計算します（統計の数字はアプリに含まれています）。</li>
-        <li>ログインして最初の14日間（お試し）は、開発者が運用する中継サーバー（Cloudflare Workers）から、全都市の空室・料金の要約を受け取ります。利用者を識別する情報は送りません（通常の通信と同じく IP アドレスなどは届きますが、記録しません）。中継サーバーは、楽天ウェブサービス（楽天トラベル）の API から空室・料金を集めています。</li>
+        <li>ログインして最初の7日間（お試し）は、開発者が運用する中継サーバー（Cloudflare Workers）から、全都市の空室・料金の要約を受け取ります。利用者を識別する情報は送りません（通常の通信と同じく IP アドレスなどは届きますが、記録しません）。中継サーバーは、楽天ウェブサービス（楽天トラベル）の API から空室・料金を集めています。</li>
         <li>ご自分の楽天ウェブサービスのキー（アプリ ID・アクセスキー）を登録した場合、キーは端末と、利用者自身の Google ドライブ（HotelYoho フォルダーの prefs.json）にだけ保存します。キーは、見ている都市・日付の空室・料金を取得するために、端末から楽天の API に直接送ります。開発者のサーバーには送りません。この時、開発者の中継サーバーからは、比べる基準（都市ごとのふだんの料金など）だけを受け取ります。</li>
         <li>地図の表示のため、国土地理院の地図タイルを読み込みます。</li>
         <li>予約サイト（じゃらん）やイベントの公式ページは、利用者がリンクを押した時だけ開きます。じゃらんへのリンクは A8.net（株式会社ファンコミュニケーションズ）のアフィリエイトを通るため、押した時に A8.net が紹介の記録のために Cookie などを使います（A8.net のプライバシーポリシーに従います）。このアプリからは、利用者の個人の情報を A8.net に送りません。</li>
@@ -73,7 +73,7 @@
       <h2>Network communication</h2>
       <ul>
         <li>Estimated forecasts are calculated on your device (the statistics are bundled with the app).</li>
-        <li>For the first 14 days after you sign in (the trial), the app downloads a summary of vacancies and prices for all cities from a relay server run by the developer (Cloudflare Workers). No information identifying you is sent (your IP address reaches the server as with any connection, but it is not recorded). The relay server collects vacancies and prices from the Rakuten Web Service (Rakuten Travel) API.</li>
+        <li>For the first 7 days after you sign in (the trial), the app downloads a summary of vacancies and prices for all cities from a relay server run by the developer (Cloudflare Workers). No information identifying you is sent (your IP address reaches the server as with any connection, but it is not recorded). The relay server collects vacancies and prices from the Rakuten Web Service (Rakuten Travel) API.</li>
         <li>If you add your own Rakuten Web Service key (application ID and access key), it is stored only on your device and in your own Google Drive (prefs.json in the HotelYoho folder). The key is sent directly from your device to Rakuten’s API to fetch vacancies and prices for the cities and dates you view. It is never sent to the developer’s server. In this case the app downloads only comparison baselines (such as each city’s usual price) from the developer’s relay server.</li>
         <li>Map tiles are loaded from GSI Japan.</li>
         <li>The booking site (Jalan) and official event pages open only when you tap a link. The Jalan link goes through A8.net (FAN Communications, Inc.) affiliate tracking, so when you tap it A8.net may use cookies to record the referral, under A8.net’s privacy policy. The app does not send your personal information to A8.net.</li>

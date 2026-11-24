@@ -11,7 +11,7 @@
  */
 import type { Prefs } from './prefs.ts'
 
-export const TRIAL_DAYS = 14
+export const TRIAL_DAYS = 7
 const DAY_MS = 86_400_000
 
 export type AccessMode = 'guest' | 'trial' | 'expired' | 'own'

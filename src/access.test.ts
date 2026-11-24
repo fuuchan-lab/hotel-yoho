@@ -10,12 +10,12 @@ test('ログインしていなければ推定だけ（キーがあっても）',
   assert.equal(accessOf(false, { rakuten: key, trialStart: 0 }).mode, 'guest')
 })
 
-test('ログインして 14 日間はお試し、その後は終了', () => {
+test('ログインして 7 日間はお試し、その後は終了', () => {
   const start = 1_000_000_000_000
   assert.deepEqual(accessOf(true, { rakuten: null, trialStart: null }, start), { mode: 'trial', daysLeft: TRIAL_DAYS })
   assert.deepEqual(accessOf(true, { rakuten: null, trialStart: start }, start + 1000), { mode: 'trial', daysLeft: TRIAL_DAYS })
-  assert.deepEqual(accessOf(true, { rakuten: null, trialStart: start }, start + 13.5 * DAY), { mode: 'trial', daysLeft: 1 })
-  assert.equal(accessOf(true, { rakuten: null, trialStart: start }, start + 14 * DAY + 1).mode, 'expired')
+  assert.deepEqual(accessOf(true, { rakuten: null, trialStart: start }, start + (TRIAL_DAYS - 0.5) * DAY), { mode: 'trial', daysLeft: 1 })
+  assert.equal(accessOf(true, { rakuten: null, trialStart: start }, start + TRIAL_DAYS * DAY + 1).mode, 'expired')
 })
 
 test('自分のキーを登録すれば、お試しの後も実データ', () => {
