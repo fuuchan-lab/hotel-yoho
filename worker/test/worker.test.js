@@ -78,7 +78,7 @@ test('順番: 直近を優先し、重ならずに 2 か月を回る', () => {
 })
 
 test('古い日付を消し、ふだんの料金はゆっくり動く', () => {
-  assert.deepEqual(Object.keys(pruneDays({ '2026-11-30': {}, '2026-12-01': {}, '2027-03-01': {} }, '2026-12-01')), ['2026-12-01'])
+  assert.deepEqual(Object.keys(pruneDays({ '2026-11-30': {}, '2026-12-01': {}, '2027-04-01': {} }, '2026-12-01')), ['2026-12-01'])
   assert.equal(updateRef(null, 10000), 10000)
   assert.equal(updateRef(10000, 20000), 10100)
   assert.equal(updateRef(10000, null), 10000)

@@ -34,7 +34,7 @@ function levelOf(f: DayForecast): { value: number; live: boolean } {
 }
 
 /**
- * 料金の水準の推移（約 2 か月先まで）。金額ではなく、ふだんを 100 とした指数で、上がる傾向か下がる傾向かを見る。
+ * 料金の水準の推移（約 3 か月先まで）。金額ではなく、ふだんを 100 とした指数で、上がる傾向か下がる傾向かを見る。
  * 曜日でぎざぎざするので、前後 7 日の平均（太い線）で傾向を出し、日ごとの値は細い線にする
  */
 export function TrendChart({ city, today, forecast }: Props) {
@@ -116,7 +116,7 @@ export function TrendChart({ city, today, forecast }: Props) {
           </g>
         ))}
         {points.map((p, i) =>
-          p.date.endsWith('-01') || i === 0 ? (
+          (p.date.endsWith('-01') && i > 12) || i === 0 ? (
             <text key={p.date} className="trend-tick" x={x(i)} y={H - 6} textAnchor={i === 0 ? 'start' : 'middle'}>
               {formatShortDate(p.date, lang)}
             </text>

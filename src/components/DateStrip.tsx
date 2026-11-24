@@ -13,12 +13,12 @@ interface Props {
   overall: (date: Ymd) => { mood: Mood; estimate: boolean }
 }
 
-/** 2 か月分の日付を横に並べ、選んだ日の予報を地図に出す（天気予報の週間表示のように） */
+/** 3 か月分の日付を横に並べ、選んだ日の予報を地図に出す（天気予報の週間表示のように） */
 export const DateStrip = memo(function DateStrip({ today, value, onChange, overall }: Props) {
   const { lang, t } = useI18n()
   const ref = useRef<HTMLDivElement>(null)
   const days = useMemo(() => dateRange(today, HORIZON_DAYS), [today])
-  // 2 か月分の顔は、予報か選んだ都市が変わった時だけ計算する
+  // 3 か月分の顔は、予報か選んだ都市が変わった時だけ計算する
   const faces = useMemo(() => days.map((d) => overall(d)), [days, overall])
 
   useEffect(() => {

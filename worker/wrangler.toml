@@ -7,7 +7,7 @@ compatibility_date = "2026-10-01"
 binding = "HOTEL"
 id = "99e23e9743724865a536393d528beb9d"
 
-# 5 分ごとに楽天トラベルを 40 件ずつ検索する（index.js の scheduled）。61 都市 × 61 日を約 10 時間で一巡し、直近 1 週間は約 4.5 時間ごと
+# 5 分ごとに楽天トラベルを 40 件ずつ検索する（index.js の scheduled）。61 都市 × 92 日を約 15 時間で一巡し、直近 1 週間は約 4.5 時間ごと
 [triggers]
 crons = ["*/5 * * * *"]
 

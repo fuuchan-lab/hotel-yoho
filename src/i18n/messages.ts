@@ -167,8 +167,8 @@ export const ja = {
   'cal.prev': '前の月',
   'cal.next': '次の月',
   'cal.events': 'イベント {n} 件',
-  'cal.hint': '日付を押すと、その日の詳しい予報とイベントが見られます。予報は今日から約2か月先までです。',
-  'cal.outOfRange': '予報の範囲外です（予報は約2か月先まで）。',
+  'cal.hint': '日付を押すと、その日の詳しい予報とイベントが見られます。予報は今日から約3か月先までです。',
+  'cal.outOfRange': '予報の範囲外です（予報は約3か月先まで）。',
 
   // イベント
   'ev.kind': 'イベントの種類',
@@ -408,8 +408,8 @@ export const en: Record<MessageKey, string> = {
   'cal.prev': 'Previous month',
   'cal.next': 'Next month',
   'cal.events': '{n} events',
-  'cal.hint': 'Tap a date for its forecast and events. Forecasts cover about 2 months from today.',
-  'cal.outOfRange': 'Outside the forecast range (about 2 months ahead).',
+  'cal.hint': 'Tap a date for its forecast and events. Forecasts cover about 3 months from today.',
+  'cal.outOfRange': 'Outside the forecast range (about 3 months ahead).',
 
   'ev.kind': 'Event type',
   'ev.starredOnly': 'Starred',

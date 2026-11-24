@@ -4,8 +4,8 @@
 
 export type Ymd = string
 
-/** 予報する日数（今日を含む）。おおよそ 2 か月 */
-export const HORIZON_DAYS = 61
+/** 予報する日数（今日を含む）。おおよそ 3 か月 */
+export const HORIZON_DAYS = 92
 
 export function ymd(year: number, month: number, day: number): Ymd {
   return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`

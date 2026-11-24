@@ -17,7 +17,7 @@ export default defineConfig({
       manifest: {
         name: 'ホテル予報 Hotel Forecast',
         short_name: 'ホテル予報',
-        description: '日本の主要都市のホテルの空室・料金高騰を、天気予報のように2か月先まで予報。大型イベントのカレンダー付き',
+        description: '日本の主要都市のホテルの空室・料金高騰を、天気予報のように3か月先まで予報。大型イベントのカレンダー付き',
         lang: 'ja',
         id: './',
         display: 'standalone',

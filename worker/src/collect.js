@@ -1,7 +1,7 @@
 // 何を・どの順で集めるか（Cloudflare の無料枠に収めるため、1 回の実行で少しずつ集める）
 import { CITIES } from './cities.js'
 
-export const HORIZON_DAYS = 61
+export const HORIZON_DAYS = 92
 /** 1 回の実行で検索する数（外部リクエストは 1 回の実行で 50 件まで） */
 export const PER_RUN = 40
 /** そのうち、直近 1 週間を優先して検索する数 */
@@ -26,7 +26,7 @@ function item(today, i) {
 }
 
 /**
- * この回に検索するものを選ぶ。直近 1 週間を NEAR_PER_RUN 件、残りは 2 か月分を順に回る。
+ * この回に検索するものを選ぶ。直近 1 週間を NEAR_PER_RUN 件、残りは 3 か月分を順に回る。
  * 戻り値の cursor・nearCursor を次の回に渡す
  */
 export function planRun(today, cursor = 0, nearCursor = 0) {
@@ -54,7 +54,7 @@ export function planRun(today, cursor = 0, nearCursor = 0) {
   return { plan, cursor: main, nearCursor: near }
 }
 
-/** 今日より前の日付と、2 か月より先の日付を消す */
+/** 今日より前の日付と、3 か月より先の日付を消す */
 export function pruneDays(days, today) {
   const last = addDays(today, HORIZON_DAYS - 1)
   const out = {}

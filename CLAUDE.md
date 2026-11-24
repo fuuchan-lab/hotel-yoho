@@ -1,6 +1,6 @@
 # ホテル予報（Hotel Forecast）— プロジェクトの指示
 
-日本の主要都市のホテルの空室・料金高騰を、天気予報のように約 2 か月先まで予報する Web アプリ。
+日本の主要都市のホテルの空室・料金高騰を、天気予報のように約 3 か月先まで予報する Web アプリ。
 リポジトリ: fuuchan-lab/hotel-yoho。公開先: https://hotel-yoho.doitmyself.net/ （GitHub Pages の独自ドメイン。`public/CNAME`。Vite の base は `./`）
 
 ## やりとり
