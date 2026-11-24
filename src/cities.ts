@@ -1,6 +1,6 @@
 /**
  * 対象の都市。人口 100 万人以上の 12 都市（東京は 23 区＝特別区を 1 つの都市として扱う）に、
- * 観光・出張・空港の拠点として作者が選んだ都市（那覇・熊本・千歳・静岡・金沢）を加えている。
+ * 観光・出張・空港の拠点として作者が選んだ都市（那覇・熊本・千歳・静岡・金沢・長野・新潟・富山・奈良・岡山・鹿児島）を加えている。
  * 緯度・経度は、ホテルが集まる中心部（中継サーバーが楽天トラベルを半径 3km で検索する中心）。
  * worker/src/cities.js と id・緯度・経度をそろえる。並びは北から（一覧の順）
  */
@@ -30,19 +30,25 @@ export type CityId =
   | 'sapporo'
   | 'chitose'
   | 'sendai'
+  | 'niigata'
   | 'saitama'
   | 'tokyo'
   | 'kawasaki'
   | 'yokohama'
+  | 'nagano'
+  | 'toyama'
   | 'kanazawa'
   | 'shizuoka'
   | 'nagoya'
   | 'kyoto'
   | 'osaka'
   | 'kobe'
+  | 'nara'
+  | 'okayama'
   | 'hiroshima'
   | 'fukuoka'
   | 'kumamoto'
+  | 'kagoshima'
   | 'naha'
 
 export const CITIES: City[] = [
@@ -83,6 +89,19 @@ export const CITIES: City[] = [
     base: 0,
     rakutenPref: 'miyagi',
     jalanPref: '040000',
+    near: [],
+  },
+  {
+    id: 'niigata',
+    name: { ja: '新潟', en: 'Niigata' },
+    pref: { ja: '新潟県', en: 'Niigata' },
+    lat: 37.9122,
+    lng: 139.0613,
+    pop: 77,
+    offset: [16, -20],
+    base: 0,
+    rakutenPref: 'niigata',
+    jalanPref: '150000',
     near: [],
   },
   {
@@ -138,17 +157,43 @@ export const CITIES: City[] = [
     near: ['tokyo', 'kawasaki'],
   },
   {
+    id: 'nagano',
+    name: { ja: '長野', en: 'Nagano' },
+    pref: { ja: '長野県', en: 'Nagano' },
+    lat: 36.6431,
+    lng: 138.1887,
+    pop: 37,
+    offset: [0, 0],
+    base: 0,
+    rakutenPref: 'nagano',
+    jalanPref: '200000',
+    near: [],
+  },
+  {
+    id: 'toyama',
+    name: { ja: '富山', en: 'Toyama' },
+    pref: { ja: '富山県', en: 'Toyama' },
+    lat: 36.7013,
+    lng: 137.2133,
+    pop: 41,
+    offset: [24, -50],
+    base: 0,
+    rakutenPref: 'toyama',
+    jalanPref: '160000',
+    near: ['kanazawa'],
+  },
+  {
     id: 'kanazawa',
     name: { ja: '金沢', en: 'Kanazawa' },
     pref: { ja: '石川県', en: 'Ishikawa' },
     lat: 36.57,
     lng: 136.653,
     pop: 46,
-    offset: [14, -52],
+    offset: [-20, -44],
     base: 0.5,
     rakutenPref: 'ishikawa',
     jalanPref: '170000',
-    near: [],
+    near: ['toyama'],
   },
   {
     id: 'shizuoka',
@@ -187,7 +232,7 @@ export const CITIES: City[] = [
     base: 0.5,
     rakutenPref: 'kyoto',
     jalanPref: '260000',
-    near: ['osaka'],
+    near: ['osaka', 'nara'],
   },
   {
     id: 'osaka',
@@ -200,7 +245,7 @@ export const CITIES: City[] = [
     base: 0.5,
     rakutenPref: 'osaka',
     jalanPref: '270000',
-    near: ['kyoto', 'kobe'],
+    near: ['kyoto', 'kobe', 'nara'],
   },
   {
     id: 'kobe',
@@ -214,6 +259,32 @@ export const CITIES: City[] = [
     rakutenPref: 'hyogo',
     jalanPref: '280000',
     near: ['osaka'],
+  },
+  {
+    id: 'nara',
+    name: { ja: '奈良', en: 'Nara' },
+    pref: { ja: '奈良県', en: 'Nara' },
+    lat: 34.6847,
+    lng: 135.8286,
+    pop: 35,
+    offset: [30, 40],
+    base: 0,
+    rakutenPref: 'nara',
+    jalanPref: '290000',
+    near: ['kyoto', 'osaka'],
+  },
+  {
+    id: 'okayama',
+    name: { ja: '岡山', en: 'Okayama' },
+    pref: { ja: '岡山県', en: 'Okayama' },
+    lat: 34.6662,
+    lng: 133.9177,
+    pop: 72,
+    offset: [0, -44],
+    base: 0,
+    rakutenPref: 'okayama',
+    jalanPref: '330000',
+    near: [],
   },
   {
     id: 'hiroshima',
@@ -252,6 +323,19 @@ export const CITIES: City[] = [
     base: 0,
     rakutenPref: 'kumamoto',
     jalanPref: '430000',
+    near: [],
+  },
+  {
+    id: 'kagoshima',
+    name: { ja: '鹿児島', en: 'Kagoshima' },
+    pref: { ja: '鹿児島県', en: 'Kagoshima' },
+    lat: 31.5838,
+    lng: 130.5413,
+    pop: 59,
+    offset: [0, 40],
+    base: 0,
+    rakutenPref: 'kagoshima',
+    jalanPref: '460000',
     near: [],
   },
   {

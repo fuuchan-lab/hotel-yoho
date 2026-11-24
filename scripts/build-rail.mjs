@@ -29,10 +29,10 @@ for (const line of network.lines) {
 }
 
 // 対象の都市の空の玄関（全国表示でも出す）
-const HUB_AIRPORTS = ['CTS', 'SDJ', 'HND', 'NRT', 'KMQ', 'FSZ', 'NGO', 'ITM', 'KIX', 'UKB', 'HIJ', 'FUK', 'KMJ', 'OKA']
+const HUB_AIRPORTS = ['CTS', 'SDJ', 'HND', 'NRT', 'KMQ', 'FSZ', 'NGO', 'KIJ', 'TOY', 'OKJ', 'ITM', 'KIX', 'UKB', 'HIJ', 'FUK', 'KMJ', 'KOJ', 'OKA']
 
 // 対象の都市の代表駅も主要駅として扱う（路線が 1 本でも名前を早めに出す）
-const CITY_STATIONS = ['札幌', '新函館北斗', '仙台', '大宮', '東京', '品川', '新横浜', '静岡', '金沢', '名古屋', '京都', '新大阪', '新神戸', '広島', '博多', '熊本', '鹿児島中央']
+const CITY_STATIONS = ['札幌', '新函館北斗', '仙台', '新潟', '大宮', '東京', '品川', '新横浜', '静岡', '長野', '富山', '金沢', '名古屋', '京都', '新大阪', '新神戸', '岡山', '広島', '博多', '熊本', '鹿児島中央']
 
 const out = {
   attribution: '国土数値情報（鉄道データ N02・空港データ C28）国土交通省 を加工して作成（のりものレーダーと同じ）',

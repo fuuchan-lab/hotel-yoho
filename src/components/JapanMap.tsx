@@ -249,6 +249,13 @@ function offsetScale(zoom: number): number {
   return (7 - zoom) / 2.4
 }
 
+/**
+ * 人口 100 万人に満たない都市は、縮小した全国表示では隠す（顔が多すぎて見にくくなるため）。
+ * 選んでいる都市は、いつも出す。那覇は地図の左上の枠に別に出す（MapPage.tsx）
+ */
+const SMALL_CITY_POP = 100
+const SMALL_CITY_MIN_ZOOM = 5.6
+
 const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
 
 function pinHtml(name: string, svg: string, dx: number, dy: number): string {
@@ -371,6 +378,8 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
         entry = { marker, el }
         markers.current.set(f.city, entry)
       }
+      const hidden = city.pop < SMALL_CITY_POP && zoom < SMALL_CITY_MIN_ZOOM && f.city !== selected
+      entry.el.style.display = hidden ? 'none' : ''
       entry.el.setAttribute('aria-label', label)
       entry.el.classList.toggle('selected', f.city === selected)
       entry.marker.getElement().style.zIndex = f.city === selected ? '5' : ''
