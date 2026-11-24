@@ -13,10 +13,6 @@ export function Legend() {
           <span>{t(`mood.short.${m}`)}</span>
         </span>
       ))}
-      <span className="legend-item">
-        <Face mood={2} size={24} estimate />
-        <span>{t('legend.estimate')}</span>
-      </span>
     </div>
   )
 }

@@ -36,7 +36,7 @@
       <p>開発者のサーバーには、利用者の情報を保存しません。</p>
       <h2>外部への通信</h2>
       <ul>
-        <li>空室・料金の予報を表示するため、開発者が運用する中継サーバー（Cloudflare Workers）から、全都市の予報データを受け取ります。利用者を識別する情報は送りません（通常の通信と同じく IP アドレスなどは届きますが、記録しません）。中継サーバーは、楽天ウェブサービス（楽天トラベル）の API から空室・料金を集めています。</li>
+        <li>予報は端末の中で計算します（統計の数字はアプリに含まれています）。予報のために、利用者の情報をどこかに送ることはありません。</li>
         <li>地図の表示のため、国土地理院の地図タイルを読み込みます。</li>
         <li>予約サイト（じゃらん）やイベントの公式ページは、利用者がリンクを押した時だけ開きます。じゃらんへのリンクは A8.net（株式会社ファンコミュニケーションズ）のアフィリエイトを通るため、押した時に A8.net が紹介の記録のために Cookie などを使います（A8.net のプライバシーポリシーに従います）。このアプリからは、利用者の個人の情報を A8.net に送りません。</li>
       </ul>
@@ -70,7 +70,7 @@
       <p>None of your information is stored on the developer’s server.</p>
       <h2>Network communication</h2>
       <ul>
-        <li>To show forecasts, the app downloads forecast data for all cities from a relay server run by the developer (Cloudflare Workers). No information identifying you is sent (your IP address reaches the server as with any connection, but it is not recorded). The relay server collects vacancies and prices from the Rakuten Web Service (Rakuten Travel) API.</li>
+        <li>Forecasts are calculated on your device (the statistics are bundled with the app). Nothing about you is sent anywhere to make forecasts.</li>
         <li>Map tiles are loaded from GSI Japan.</li>
         <li>The booking site (Jalan) and official event pages open only when you tap a link. The Jalan link goes through A8.net (FAN Communications, Inc.) affiliate tracking, so when you tap it A8.net may use cookies to record the referral, under A8.net’s privacy policy. The app does not send your personal information to A8.net.</li>
       </ul>

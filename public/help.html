@@ -68,7 +68,7 @@
         <tr><td><span class="face" style="background:#fb923c"></span></td><td><strong>少なめ・高め</strong>：空室が少なめ、または料金が高め。早めの予約を。</td></tr>
         <tr><td><span class="face" style="background:#ef4444"></span></td><td><strong>満室近く・高騰</strong>：困った顔。空室がとても少なく、料金が高騰。近くの都市も検討を。</td></tr>
       </table>
-      <p>顔の縁が<strong>点線</strong>のものは<strong>推定</strong>です（下の「予報のしくみ」）。</p>
+      <p>顔は、実際の空室・料金を調べたものではなく、統計とカレンダーからの<strong>推定</strong>です（下の「予報のしくみ」）。</p>
 
       <h2 id="ja-menu">3. 下のメニュー</h2>
       <ul>
@@ -76,12 +76,11 @@
         <li><strong>カレンダー</strong>：都市ごとに、月のカレンダーに日ごとの顔とイベント（🎤ライブ 🎪フェス 🎻コンサート 🏟️スポーツ 🏢展示会 🏮祭り・行事）を出します。</li>
         <li><strong>イベント</strong>：大型イベントの一覧。都市・種類で絞り込み、☆で印を付けられます。顔を押すとその日の予報が開きます。</li>
         <li><strong>ウォッチ</strong>：ウォッチリストです。☆ を付けた都市の向こう1週間の顔、カレンダーや1週間の予報で ☆ を付けた日（何泊かの予定も登録できます）、☆ を付けたイベントをまとめて見られます。前に見た時から顔が変わると「悪化↓・改善↑」と出て、メニューに「！」が付きます（お知らせはアプリを開いた時に出ます）。</li>
-        <li><strong>設定</strong>：アカウント、言語（日本語・English）、配色、お気に入りの都市、データの状況。</li>
+        <li><strong>設定</strong>：アカウント、言語（日本語・English）、配色、お気に入りの都市、データの出典。</li>
       </ul>
 
       <h2 id="ja-how">4. 予報のしくみ</h2>
-      <p><strong>実データ</strong>：中継サーバーが数時間ごとに、楽天トラベルの空室検索 API で、各都市の中心部（半径3km）について、日付ごとに「空室のあるホテルの数」と「安いほうから30軒の料金（大人1人・1泊）」を集めます。料金の中央値をその都市のふだんの料金と、空室の数をその都市の空室の多い日と比べて、5段階の顔にします。</p>
-      <p><strong>推定</strong>：まだ集めていない日や、中継サーバーにつながらない時は、曜日（土曜・休前日は混む）、祝日、年末年始・お盆などの時期、その都市と近くの都市の大型イベントから見積もります。</p>
+      <p>予報は、実際の空室・料金を調べたものではなく、公式の統計とカレンダーからの<strong>推定</strong>です。土台は、観光庁「宿泊旅行統計調査」（2025年の確定値）の、都道府県・月ごとのシティホテル・ビジネスホテルの<strong>客室稼働率</strong>です。そこに、都市の性格（出張が中心か観光が中心か）ごとの曜日・連休の差（観光地は土曜・連休に混み、日曜の夜は空く。出張の街は平日も埋まる）、年末年始・お盆・GW・桜・紅葉などの時期、その都市と近くの都市の大型イベントを足し引きして、その夜の稼働率を見積もります。ホテルは埋まるほど料金が上がるため、稼働率が高いほど「高め・高騰」の顔にしています（目安: 66%未満は「お得」、92%以上は「高騰」）。</p>
       <p>予約は、じゃらんのその都市のページ（チェックイン日・1泊・大人1人を入れた状態）へのリンクから。じゃらんは自動で情報を集めることが利用規約で認められていないため、リンクだけを載せています。このリンクは A8.net を通したアフィリエイト（広告、「PR」と表示）で、予約されると作者に紹介料が入り、アプリの運営に使われます。</p>
 
       <h2 id="ja-cities">5. 対象の都市</h2>
@@ -92,7 +91,7 @@
 
       <h2 id="ja-data">7. データについて</h2>
       <ul>
-        <li>空室・料金：楽天トラベル（<a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">Supported by Rakuten Developers</a>）</li>
+        <li>客室稼働率：<a href="https://www.mlit.go.jp/kankocho/tokei_hakusyo/shukuhakutokei.html" target="_blank" rel="noopener">観光庁「宿泊旅行統計調査」</a>2025年（確定値）をもとに作者が加工</li>
         <li>イベント：各会場・主催者の発表をもとに、作者が手で載せています（日程は変わることがあります）。</li>
         <li>地図：<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">国土地理院</a>（淡色地図）、排他的経済水域：<a href="https://www.marineregions.org" target="_blank" rel="noopener">Marine Regions</a>（CC BY 4.0）を加工</li>
         <li>祝日：内閣府の「国民の祝日」の決まりに沿って端末で計算</li>
@@ -106,7 +105,7 @@
 
       <div class="donate-part">
       <h2 id="ja-donate">10. 運営資金のご協力</h2>
-      <p>ホテル予報は、無料・広告なしで公開しています。中継サーバーやドメインなど、続けるための費用は作者が負担しています。アプリを気に入っていただけたら、コーヒー1杯分の <strong>200円</strong> からご支援いただけるとうれしいです。</p>
+      <p>ホテル予報は、無料・広告なしで公開しています。ドメインなど、続けるための費用は作者が負担しています。アプリを気に入っていただけたら、コーヒー1杯分の <strong>200円</strong> からご支援いただけるとうれしいです。</p>
       <div class="donate">
         <h3>PayPal で安全にご支援いただけます</h3>
         <form action="https://www.paypal.com/jp/cgi-bin/webscr" method="post" target="_blank">
@@ -155,7 +154,7 @@
         <tr><td><span class="face" style="background:#fb923c"></span></td><td><strong>Pricey</strong>: fewer rooms or higher prices. Book early.</td></tr>
         <tr><td><span class="face" style="background:#ef4444"></span></td><td><strong>Surging</strong>: the troubled face. Very few rooms and surging prices. Consider nearby cities.</td></tr>
       </table>
-      <p>Faces with a <strong>dotted rim</strong> are <strong>estimates</strong> (see below).</p>
+      <p>Faces are <strong>estimates</strong> from statistics and the calendar, not live availability or prices (see below).</p>
 
       <h2 id="en-menu">3. Bottom menu</h2>
       <ul>
@@ -163,12 +162,11 @@
         <li><strong>Calendar</strong>: a monthly calendar per city with daily faces and events (🎤 live, 🎪 music festival, 🎻 concert, 🏟️ sports, 🏢 expo, 🏮 festivals).</li>
         <li><strong>Events</strong>: list of major events, filterable by city and type; star the ones you care about. Tap the face to open that day’s forecast.</li>
         <li><strong>Watchlist</strong>: the next 7 days for your starred cities, dates you starred in the calendar or a 7-day forecast (multi-night stays too), and starred events. If a face changes since you last looked, “Worse ↓ / Better ↑” appears and the menu shows a “!” (shown when you open the app).</li>
-        <li><strong>Settings</strong>: account, language, theme, favorite cities and data status.</li>
+        <li><strong>Settings</strong>: account, language, theme, favorite cities and data sources.</li>
       </ul>
 
       <h2 id="en-how">4. How the forecast works</h2>
-      <p><strong>Observed data</strong>: every few hours, a relay server uses the Rakuten Travel vacancy search API to collect, for each city center (3 km radius) and date, the number of hotels with vacancies and the prices of the 30 cheapest (1 adult, 1 night). The median price is compared with the city’s usual price and the vacancy count with the city’s high-vacancy days, giving one of five faces.</p>
-      <p><strong>Estimates</strong>: for dates not yet collected, or when the server can’t be reached, the forecast is estimated from the day of week (Saturdays and nights before holidays are busy), public holidays, seasons such as New Year and Obon, and major events in the city and nearby cities.</p>
+      <p>Forecasts are <strong>estimates</strong> from official statistics and the calendar, not live availability or prices. The baseline is the monthly <strong>room occupancy rate</strong> of city and business hotels in each prefecture from the Japan Tourism Agency’s Overnight Travel Statistics (2025 final figures). The app then adjusts for day of week and long weekends by the kind of city (tourist cities fill up on Saturdays and long weekends and empty on Sunday nights; business cities stay busy on weekdays), seasons such as New Year, Obon, Golden Week, cherry blossoms and autumn leaves, and major events in the city and nearby cities, to estimate occupancy for that night. Hotels raise prices as they fill up, so higher occupancy means a pricier face (as a guide: under 66% is “Good deal”, 92% or more is “Surging”).</p>
       <p>Booking is via a link to the city’s Jalan page with your check-in date, 1 night and 1 adult filled in. Jalan does not permit automated collection in its terms, so only a link is provided. The link is an affiliate link through A8.net (advertising, marked “PR”): if you book, the developer earns a referral fee that helps run the app.</p>
 
       <h2 id="en-cities">5. Cities covered</h2>
@@ -179,7 +177,7 @@
 
       <h2 id="en-data">7. Data sources</h2>
       <ul>
-        <li>Vacancies & prices: Rakuten Travel (<a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">Supported by Rakuten Developers</a>)</li>
+        <li>Room occupancy: adapted by the author from the <a href="https://www.mlit.go.jp/kankocho/tokei_hakusyo/shukuhakutokei.html" target="_blank" rel="noopener">Japan Tourism Agency Overnight Travel Statistics</a> 2025 (final)</li>
         <li>Events: compiled by the author from venue and organizer announcements (dates may change).</li>
         <li>Map: <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">GSI Japan</a>; EEZ: adapted from <a href="https://www.marineregions.org" target="_blank" rel="noopener">Marine Regions</a> (CC BY 4.0)</li>
         <li>Holidays: calculated on the device from Japan’s national holiday rules</li>
@@ -193,7 +191,7 @@
 
       <div class="donate-part">
       <h2 id="en-donate">10. Support the app</h2>
-      <p>Hotel Forecast is free and ad-free. The author pays for the relay server, domain and other running costs. If you like the app, support from <strong>¥200</strong> — about a cup of coffee — would be greatly appreciated.</p>
+      <p>Hotel Forecast is free and ad-free. The author pays for the domain and other running costs. If you like the app, support from <strong>¥200</strong> — about a cup of coffee — would be greatly appreciated.</p>
       <div class="donate">
         <h3>Donate securely with PayPal</h3>
         <form action="https://www.paypal.com/jp/cgi-bin/webscr" method="post" target="_blank">

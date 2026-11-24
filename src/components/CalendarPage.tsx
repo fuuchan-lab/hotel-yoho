@@ -106,7 +106,7 @@ export function CalendarPage({ data, prefs, today, city, onCity, selected, onSel
                     ★
                   </span>
                 )}
-                {fc ? <Face mood={fc.mood} size={26} estimate={fc.source === 'estimate'} /> : <span className="cal-face-blank" />}
+                {fc ? <Face mood={fc.mood} size={26} /> : <span className="cal-face-blank" />}
                 <span className="cal-ev">{evs.slice(0, 3).map((e) => CATEGORY_ICON[e.category]).join('')}</span>
               </button>
             )
@@ -125,7 +125,7 @@ export function CalendarPage({ data, prefs, today, city, onCity, selected, onSel
         </div>
         {f ? (
           <div className="day-detail">
-            <Face mood={f.mood} size={56} estimate={f.source === 'estimate'} label={t(`mood.${f.mood}`)} />
+            <Face mood={f.mood} size={56} label={t(`mood.${f.mood}`)} />
             <div>
               <strong>{t(`mood.${f.mood}`)}</strong>
               <Figures f={f} />

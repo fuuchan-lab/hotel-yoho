@@ -35,15 +35,8 @@ export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, o
   // 日付の帯の顔: 最初は全国平均、都市を選んだらその都市の予報
   const overall = useCallback(
     (d: Ymd) => {
-      if (stripCity) {
-        const f = forecast(stripCity, d)
-        return { mood: f.mood, estimate: f.source === 'estimate' }
-      }
-      const all = CITIES.map((c) => forecast(c.id, d))
-      return {
-        mood: averageMood(all.map((f) => f.mood)),
-        estimate: all.every((f) => f.source === 'estimate'),
-      }
+      if (stripCity) return forecast(stripCity, d).mood
+      return averageMood(CITIES.map((c) => forecast(c.id, d).mood))
     },
     [forecast, stripCity],
   )
@@ -105,7 +98,7 @@ export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, o
             aria-label={`${CITIES.find((c) => c.id === 'naha')!.name[lang]}: ${t(`mood.${naha.mood}`)}`}
           >
             <span className="okinawa-title">{t('map.okinawa')}</span>
-            <Face mood={naha.mood} size={36} estimate={naha.source === 'estimate'} />
+            <Face mood={naha.mood} size={36} />
             <span className="pin-name">{CITIES.find((c) => c.id === 'naha')!.name[lang]}</span>
           </button>
         )}
@@ -122,7 +115,7 @@ export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, o
               return (
                 <li key={f.city}>
                   <button type="button" className="city-row" onClick={() => onCity(f.city)}>
-                    <Face mood={f.mood} size={40} estimate={f.source === 'estimate'} label={t(`mood.${f.mood}`)} />
+                    <Face mood={f.mood} size={40} label={t(`mood.${f.mood}`)} />
                     <span className="city-row-main">
                       <span className="city-row-name">
                         {prefs.favorites.includes(f.city) && (

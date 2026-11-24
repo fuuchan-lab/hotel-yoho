@@ -1,28 +1,13 @@
 import { cityById } from '../cities.ts'
 import type { DayForecast, Reason } from '../forecast.ts'
-import { formatIndex, formatYen } from '../format.ts'
 import type { TFn } from '../i18n/context.ts'
 import { useI18n } from '../i18n/useI18n.ts'
 import { CATEGORY_ICON } from './eventIcons.ts'
 
-/** 料金・空室（実データ）か「推定」の一行 */
+/** 客室稼働率の目安の一行 */
 export function Figures({ f }: { f: DayForecast }) {
-  const { t, lang } = useI18n()
-  if (f.source === 'estimate') return <span className="figures muted">{t('fc.estimate')}</span>
-  if (!f.vacant) return <span className="figures">{t('fc.soldOut')}</span>
-  return (
-    <span className="figures">
-      {f.price != null && (
-        <span>
-          {t('fc.price', { price: formatYen(f.price, lang) })}
-          {f.priceIndex != null && (
-            <span className={f.priceIndex > 1.05 ? 'up' : f.priceIndex < 0.95 ? 'down' : ''}> ({formatIndex(f.priceIndex)})</span>
-          )}
-        </span>
-      )}
-      <span>{t('fc.vacant', { n: f.vacant })}</span>
-    </span>
-  )
+  const { t } = useI18n()
+  return <span className="figures muted">{t('fc.occupancy', { n: f.occupancy })}</span>
 }
 
 function reasonText(r: Reason, t: TFn, lang: 'ja' | 'en'): string {
