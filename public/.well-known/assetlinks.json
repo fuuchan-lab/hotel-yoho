@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "net.doitmyself.hotelyoho",
+      "sha256_cert_fingerprints": [
+        "FE:14:25:C8:A2:5D:E1:28:91:0E:CB:2E:72:C0:37:64:33:7F:2E:4E:14:28:97:DC:2B:82:4D:4B:8A:FB:5A:0E"
+      ]
+    }
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "packageId": "net.doitmyself.hotelyoho",
+  "host": "hotel-yoho.doitmyself.net",
+  "name": "ホテル予報",
+  "launcherName": "ホテル予報",
+  "display": "standalone",
+  "themeColor": "#0E4F7A",
+  "themeColorDark": "#0E4F7A",
+  "navigationColor": "#0E4F7A",
+  "navigationColorDark": "#0E4F7A",
+  "navigationDividerColor": "#0E4F7A",
+  "navigationDividerColorDark": "#0E4F7A",
+  "backgroundColor": "#0E4F7A",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://hotel-yoho.doitmyself.net/icon-512.png",
+  "maskableIconUrl": "https://hotel-yoho.doitmyself.net/icon-maskable-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "C:/Users/user/.bubblewrap/keys/hotelyoho-upload.keystore",
+    "alias": "hotelyoho"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://hotel-yoho.doitmyself.net/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://hotel-yoho.doitmyself.net/",
+  "minSdkVersion": 24,
+  "orientation": "portrait",
+  "fingerprints": [
+    {
+      "name": "upload",
+      "value": "FE:14:25:C8:A2:5D:E1:28:91:0E:CB:2E:72:C0:37:64:33:7F:2E:4E:14:28:97:DC:2B:82:4D:4B:8A:FB:5A:0E"
+    }
+  ],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "displayOverride": [],
+  "appVersion": "1.0.0"
+}

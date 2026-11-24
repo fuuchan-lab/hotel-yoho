@@ -39,6 +39,7 @@
 - Google の OAuth クライアント ID は公開してよい値
 
 ## コード
+- Android アプリ（TWA、`android/`、パッケージ net.doitmyself.hotelyoho）。作り直し・署名鍵・assetlinks は `android/README.md`。アプリの中（`.in-app`）では寄付の案内を出さない
 - Android アプリ化を前提に、速さを保つ: 予報は `memoForecaster` で都市・日付ごとに覚え、イベントは夜ごとの索引（`eventsByNight`）で引く。地図の拡大・縮小中は React で再描画せず、顔の位置だけを書き換える（`layoutPins`）。予報地図以外の画面と地図のライブラリは分けて読み込む（`lazy`）
 - 周りのコードに合わせる（コメントは日本語、命名・書き方も既存に合わせる）
 - 変更後は `npm test`・`npm run lint`・`npm run build`（型チェックを含む）が通ることを確かめる

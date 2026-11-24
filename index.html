@@ -18,6 +18,15 @@
         var theme = localStorage.getItem('hotelyoho-theme')
         if (theme === 'light' || theme === 'dark') document.documentElement.setAttribute('data-theme', theme)
       } catch (e) {}
+      // Android アプリ（Google Play 版の TWA）から開かれたか。最初の読み込みだけ referrer が android-app:// になるので、
+      // そのタブの間は覚えておく（ヘルプも同じ印を見る）。アプリの中では寄付（PayPal）への案内を出さない（Google Play の決済の決まり）
+      try {
+        var fromApp = document.referrer.indexOf('android-app://') === 0
+        if (fromApp) sessionStorage.setItem('opened-from-android-app', '1')
+        if (fromApp || sessionStorage.getItem('opened-from-android-app') === '1') document.documentElement.classList.add('in-app')
+      } catch (e) {
+        if (document.referrer.indexOf('android-app://') === 0) document.documentElement.classList.add('in-app')
+      }
     </script>
   </head>
   <body>

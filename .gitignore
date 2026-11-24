@@ -38,3 +38,12 @@ android/local.properties
 worker/node_modules
 worker/.wrangler
 worker/.dev.vars
+# Android (TWA) package: build outputs and signing keys never go to Git
+android/.gradle/
+android/build/
+android/app/build/
+android/*.aab
+android/*.apk
+android/*.idsig
+android/local.properties
+*.keystore
