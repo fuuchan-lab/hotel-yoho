@@ -47,3 +47,6 @@ android/*.apk
 android/*.idsig
 android/local.properties
 *.keystore
+
+# 中継サーバーから手元に保存した観測の記録（scripts/fetch-logs.mjs）
+data/logs/

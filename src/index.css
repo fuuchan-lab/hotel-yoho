@@ -1639,3 +1639,173 @@ details summary {
     gap: 8px;
   }
 }
+
+/* ---- 楽天トラベルの実データ（お試し・自分のキー）の案内 ---- */
+.live-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px 0 4px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.live-note.expired {
+  border-color: #e8540e;
+}
+
+.link-btn {
+  flex: none;
+  padding: 6px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: none;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.key-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.key-form input {
+  width: 100%;
+  font-family: ui-monospace, monospace;
+}
+
+.key-status {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 10%, var(--card));
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.key-status.expired {
+  background: color-mix(in srgb, #e8540e 12%, var(--card));
+}
+
+/* ---- 料金の水準の推移のグラフ ---- */
+.trend-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 6px;
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+.trend-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--muted) 18%, var(--card));
+  font-size: 1.05rem;
+}
+
+.trend-summary.up .trend-arrow {
+  background: color-mix(in srgb, #ef4444 22%, var(--card));
+}
+
+.trend-summary.down .trend-arrow {
+  background: color-mix(in srgb, #22c55e 26%, var(--card));
+}
+
+.trend-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  touch-action: pan-y;
+}
+
+.trend-grid {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+.trend-base {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+}
+
+.trend-tick {
+  fill: var(--muted);
+  font-size: 9.5px;
+}
+
+.trend-daily {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1;
+  opacity: 0.45;
+}
+
+.trend-avg {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.trend-avg.est {
+  stroke-dasharray: 1 5;
+}
+
+.trend-cross {
+  stroke: var(--muted);
+  stroke-width: 1;
+}
+
+.trend-dot {
+  fill: var(--accent);
+  stroke: var(--card);
+  stroke-width: 2;
+}
+
+.trend-read {
+  min-height: 1.5em;
+  margin: 4px 0;
+}
+
+.trend-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  margin: 0 0 6px;
+}
+
+.trend-legend .key {
+  display: inline-block;
+  width: 18px;
+  height: 0;
+  margin-left: 8px;
+  border-top: 2px solid var(--accent);
+}
+
+.trend-legend .key:first-child {
+  margin-left: 0;
+}
+
+.trend-legend .key.daily {
+  border-top: 1px solid var(--muted);
+}
+
+.trend-legend .key.est {
+  border-top: 2px dotted var(--accent);
+}

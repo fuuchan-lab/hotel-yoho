@@ -101,7 +101,7 @@ export function EventsPage({ data, prefs, today, onOpen }: Props) {
                         onClick={() => onOpen(e.city, night)}
                         aria-label={t('ev.forecast', { city: c.name[lang] })}
                       >
-                        <Face mood={f.mood} size={30} />
+                        <Face mood={f.mood} size={30} estimate={f.source === 'estimate'} />
                       </button>
                       <button
                         type="button"

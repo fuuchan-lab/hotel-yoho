@@ -33,6 +33,13 @@ export interface Prefs {
   lang: Lang | null
   /** 配色。同じアカウントの端末で共通 */
   theme: ThemePreference
+  /**
+   * 利用者が自分で取った、楽天ウェブサービスのアプリ ID・アクセスキー（access.ts の own）。
+   * 利用者の端末と、利用者自身の Google ドライブにだけ保存し、楽天の API にだけ送る
+   */
+  rakuten: { appId: string; accessKey: string } | null
+  /** 作者のキーでのお試しを始めた時刻（ミリ秒）。初めてログインした時に入れる */
+  trialStart: number | null
   /** 最後に変えた時刻（ミリ秒）。端末とドライブのどちらが新しいかの判定に使う */
   updatedAt: number
 }
@@ -40,7 +47,17 @@ export interface Prefs {
 export const PREFS_KEY = 'hotelyoho-prefs'
 export const PREFS_FILE = 'prefs.json'
 
-export const EMPTY_PREFS: Prefs = { favorites: [], homeCity: null, trips: [], starred: [], lang: null, theme: 'auto', updatedAt: 0 }
+export const EMPTY_PREFS: Prefs = {
+  favorites: [],
+  homeCity: null,
+  trips: [],
+  starred: [],
+  lang: null,
+  theme: 'auto',
+  rakuten: null,
+  trialStart: null,
+  updatedAt: 0,
+}
 
 function isTrip(t: unknown): t is Trip {
   if (typeof t !== 'object' || t === null) return false
@@ -68,6 +85,9 @@ export function normalizePrefs(raw: unknown): Prefs {
         seen: typeof t.seen === 'number' && t.seen >= 0 && t.seen <= 4 ? t.seen : null,
       }))
     : []
+  const rk = v.rakuten as { appId?: unknown; accessKey?: unknown } | null | undefined
+  const appId = typeof rk?.appId === 'string' ? rk.appId.trim().slice(0, 200) : ''
+  const accessKey = typeof rk?.accessKey === 'string' ? rk.accessKey.trim().slice(0, 200) : ''
   const starred = Array.isArray(v.starred) ? [...new Set(v.starred.filter((s): s is string => typeof s === 'string'))] : []
   return {
     favorites,
@@ -76,6 +96,8 @@ export function normalizePrefs(raw: unknown): Prefs {
     starred,
     lang: v.lang === 'ja' || v.lang === 'en' ? v.lang : null,
     theme: v.theme === 'light' || v.theme === 'dark' ? v.theme : 'auto',
+    rakuten: appId ? { appId, accessKey } : null,
+    trialStart: typeof v.trialStart === 'number' && Number.isFinite(v.trialStart) && v.trialStart > 0 ? v.trialStart : null,
     updatedAt: typeof v.updatedAt === 'number' && Number.isFinite(v.updatedAt) ? v.updatedAt : 0,
   }
 }

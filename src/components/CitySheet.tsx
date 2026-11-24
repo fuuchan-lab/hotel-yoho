@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { fetchCityHotels, type CityHotels } from '../api.ts'
 import { jalanBookingUrl } from '../booking.ts'
 import { cityById, type CityId } from '../cities.ts'
-import { dateRange, type Ymd } from '../dates.ts'
-import { dayTone, formatDate } from '../format.ts'
+import { dateRange, todayJst, type Ymd } from '../dates.ts'
+import { dayTone, formatDate, formatYen } from '../format.ts'
 import { holidayName } from '../holidays.ts'
 import type { ForecastData } from '../hooks/useForecastData.ts'
 import type { PrefsState } from '../hooks/usePrefs.ts'
@@ -11,6 +12,7 @@ import { WatchStar } from './WatchStar.tsx'
 import { Face } from './Face.tsx'
 import { Figures, Reasons } from './ForecastDetail.tsx'
 import { Sheet } from './Sheet.tsx'
+import { TrendChart } from './TrendChart.tsx'
 
 interface Props {
   cityId: CityId
@@ -27,10 +29,32 @@ export function CitySheet({ cityId, start, data, prefs, onClose, onCalendar, onA
   const { t, lang } = useI18n()
   const city = cityById(cityId)!
   const days = dateRange(start, 7)
+  const [hotels, setHotels] = useState<CityHotels | null>(null)
   const fav = prefs.prefs.favorites.includes(cityId)
   // 予約のボタンの日付。1 週間の一覧の日を押すと、その日にする
   const [bookDate, setBookDate] = useState<Ymd>(start)
+  // 安いホテル: 自分のキーで集めた分があればそれを、お試しの間は中継サーバーの分を出す
+  const picks = data.summary?.cities[cityId]?.days[bookDate]?.h ?? hotels?.days[bookDate]?.h ?? []
+  const { mode, request } = data
 
+  // 自分のキーの時: この都市の 1 週間を楽天に問い合わせる（あとから頼んだものが先になる）
+  // 推移のグラフ用に、今日から 4 週間分も（1 週間の予報のあとで）
+  const today = todayJst()
+  useEffect(() => {
+    request([cityId], dateRange(today, 28))
+    request([cityId], dateRange(start, 7))
+  }, [request, cityId, start, today])
+
+  useEffect(() => {
+    if (mode !== 'trial') return
+    let cancelled = false
+    fetchCityHotels(cityId)
+      .then((h) => !cancelled && setHotels(h))
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+  }, [cityId, mode])
 
   return (
     <Sheet title={t('sheet.title', { city: city.name[lang] })} onClose={onClose}>
@@ -63,7 +87,7 @@ export function CitySheet({ cityId, start, data, prefs, onClose, onCalendar, onA
                 {formatDate(d, lang)}
                 {holiday && <span className="holiday-mini">{holiday[lang]}</span>}
               </button>
-              <Face mood={f.mood} size={44} label={t(`mood.${f.mood}`)} />
+              <Face mood={f.mood} size={44} estimate={f.source === 'estimate'} label={t(`mood.${f.mood}`)} />
               <span className="week-main">
                 <strong>{t(`mood.${f.mood}`)}</strong>
                 <Figures f={f} />
@@ -78,6 +102,22 @@ export function CitySheet({ cityId, start, data, prefs, onClose, onCalendar, onA
       </ol>
       <p className="muted small">{t('sheet.nightNote')}</p>
 
+      <TrendChart city={cityId} today={today} forecast={data.forecast} />
+
+      {picks.length > 0 && (
+        <div className="card">
+          <h3>{t('sheet.cheapest', { date: formatDate(bookDate, lang) })}</h3>
+          <ul className="picks">
+            {picks.map((h) => (
+              <li key={h.n}>
+                <span className="pick-name">{h.n}</span>
+                <span>{formatYen(h.c, lang)}〜</span>
+              </li>
+            ))}
+          </ul>
+          <p className="muted small">{t('sheet.cheapestNote')}</p>
+        </div>
+      )}
 
       <div className="card">
         <h3>

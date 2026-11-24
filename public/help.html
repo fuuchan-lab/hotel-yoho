@@ -12,6 +12,9 @@
       h1 { font-size: 1.5rem; margin-right: 48px; } h2 { font-size: 1.15rem; margin-top: 1.8em; } h3 { font-size: 1rem; margin-bottom: 0.3em; }
       section { background: #fff; border-radius: 12px; padding: 8px 20px 16px; margin-bottom: 24px; }
       nav { margin: 0 48px 16px 0; font-size: 0.95rem; }
+      h3 { font-size: 1.02em; margin: 1.2em 0 0.4em; }
+      code { background: rgba(127, 127, 127, 0.16); padding: 0.1em 0.35em; border-radius: 4px; word-break: break-all; }
+      li table { margin: 0.5em 0; }
       .toc { columns: 2; font-size: 0.92rem; padding-left: 1.2em; }
       table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
       td, th { border-top: 1px solid #e5e7eb; padding: 6px 4px; text-align: left; vertical-align: top; }
@@ -40,7 +43,7 @@
   </head>
   <body>
     <button type="button" class="doc-close" aria-label="閉じる / Close" onclick="closeDoc()">×</button>
-    <nav><a href="#ja">日本語</a> ・ <a href="#en">English</a> ・ <a href="privacy.html">プライバシーポリシー / Privacy</a></nav>
+    <nav><a href="#ja">日本語</a> ・ <a href="#en">English</a> ・ <a href="privacy.html" id="other-doc">プライバシーポリシー / Privacy</a></nav>
 
     <section lang="ja" id="ja">
       <h1>ヘルプ（ホテル予報）</h1>
@@ -49,18 +52,21 @@
         <li><a href="#ja-faces">顔の意味</a></li>
         <li><a href="#ja-menu">下のメニュー</a></li>
         <li><a href="#ja-how">予報のしくみ</a></li>
+        <li><a href="#ja-rakuten">楽天トラベルの実データと、キーの登録</a></li>
+        <li><a href="#ja-trend">料金の水準の推移のグラフ</a></li>
         <li><a href="#ja-cities">対象の都市</a></li>
         <li><a href="#ja-login">ログインと保存</a></li>
         <li><a href="#ja-data">データについて</a></li>
+        <li><a href="#ja-faq">よくある質問</a></li>
         <li><a href="#ja-disclaimer">免責事項</a></li>
         <li><a href="#ja-author">作者について</a></li>
         <li class="donate-part"><a href="#ja-donate">運営資金のご協力</a></li>
       </ol>
 
-      <h2 id="ja-about">1. このアプリについて</h2>
+      <h2 id="ja-about">このアプリについて</h2>
       <p>ホテル予報は、日本の主要都市のホテルの空室と料金の高騰を、天気予報のように約2か月先まで予報するアプリです。全国地図で各都市のようすを顔のアイコンで一目で見られ、都市を押すと1週間の予報が見られます。ライブ・フェス・コンサート・スポーツの大型試合・展示会などの大型イベントもカレンダーに載せています。</p>
 
-      <h2 id="ja-faces">2. 顔の意味</h2>
+      <h2 id="ja-faces">顔の意味</h2>
       <table>
         <tr><td><span class="face" style="background:#22c55e"></span></td><td><strong>空室多・お得</strong>：空室が多く、料金はふだん以下。予約のねらい目。</td></tr>
         <tr><td><span class="face" style="background:#a3d93b"></span></td><td><strong>空室あり</strong>：空室があり、料金もふだんどおり。</td></tr>
@@ -68,44 +74,105 @@
         <tr><td><span class="face" style="background:#fb923c"></span></td><td><strong>少なめ・高め</strong>：空室が少なめ、または料金が高め。早めの予約を。</td></tr>
         <tr><td><span class="face" style="background:#ef4444"></span></td><td><strong>満室近く・高騰</strong>：困った顔。空室がとても少なく、料金が高騰。近くの都市も検討を。</td></tr>
       </table>
-      <p>顔は、実際の空室・料金を調べたものではなく、統計とカレンダーからの<strong>推定</strong>です（下の「予報のしくみ」）。</p>
+      <p>顔の縁が<strong>点線</strong>のものは、統計とカレンダーからの<strong>推定</strong>です。縁が実線の顔は、楽天トラベルの実際の空室・料金にもとづきます（<a href="#ja-rakuten">楽天トラベルの実データと、キーの登録</a>）。</p>
 
-      <h2 id="ja-menu">3. 下のメニュー</h2>
+      <h2 id="ja-menu">下のメニュー</h2>
       <ul>
         <li><strong>予報地図</strong>（左上のアイコンを押すと、いつでもここ・今日に戻ります）：上の日付を選ぶと、その日にチェックインして1泊する場合の全国のようすを地図に出します。日付の下の小さな顔は、最初は<strong>全国平均</strong>の予報です。都市を選ぶ（上の都市のボタン・地図の顔・一覧）と、その都市の予報に変わります。地図の下に都市の一覧もあります。</li>
         <li><strong>カレンダー</strong>：都市ごとに、月のカレンダーに日ごとの顔とイベント（🎤ライブ 🎪フェス 🎻コンサート 🏟️スポーツ 🏢展示会 🏮祭り・行事）を出します。</li>
         <li><strong>イベント</strong>：大型イベントの一覧。都市・種類で絞り込み、☆で印を付けられます。顔を押すとその日の予報が開きます。</li>
         <li><strong>ウォッチ</strong>：ウォッチリストです。☆ を付けた都市の向こう1週間の顔、カレンダーや1週間の予報で ☆ を付けた日（何泊かの予定も登録できます）、☆ を付けたイベントをまとめて見られます。前に見た時から顔が変わると「悪化↓・改善↑」と出て、メニューに「！」が付きます（お知らせはアプリを開いた時に出ます）。</li>
-        <li><strong>設定</strong>：アカウント、言語（日本語・English）、配色、お気に入りの都市、データの出典。</li>
+        <li><strong>設定</strong>：アカウント、楽天トラベルの実データ（お試しの残り日数・ご自分のキーの登録）、言語（日本語・English）、配色、お気に入りの都市、データの出典。</li>
       </ul>
 
-      <h2 id="ja-how">4. 予報のしくみ</h2>
-      <p>予報は、実際の空室・料金を調べたものではなく、公式の統計とカレンダーからの<strong>推定</strong>です。土台は、観光庁「宿泊旅行統計調査」（2025年の確定値）の、都道府県・月ごとのシティホテル・ビジネスホテルの<strong>客室稼働率</strong>です。そこに、都市の性格（出張が中心か観光が中心か）ごとの曜日・連休の差（観光地は土曜・連休に混み、日曜の夜は空く。出張の街は平日も埋まる）、年末年始・お盆・GW・桜・紅葉などの時期、その都市と近くの都市の大型イベントを足し引きして、その夜の稼働率を見積もります。ホテルは埋まるほど料金が上がるため、稼働率が高いほど「高め・高騰」の顔にしています（目安: 66%未満は「お得」、92%以上は「高騰」）。</p>
+      <h2 id="ja-how">予報のしくみ</h2>
+      <p><strong>実データ</strong>：楽天トラベルの空室検索 API で、各都市の中心部（半径3km）について、日付ごとに「空室のあるホテルの数」と「安いほうから30軒の料金（大人1人・1泊）」を調べます。料金の中央値をその都市のふだんの料金と、空室の数をその都市の空室の多い日と比べて、5段階の顔にします。お試しの間は作者のキーで集めた共有のデータ、その後はご自分のキーで取得したデータを使います。</p>
+      <p><strong>推定</strong>：実データがない日は、公式の統計とカレンダーから見積もります。土台は、観光庁「宿泊旅行統計調査」（2025年の確定値）の、都道府県・月ごとのシティホテル・ビジネスホテルの<strong>客室稼働率</strong>です。そこに、都市の性格（出張が中心か観光が中心か）ごとの曜日・連休の差（観光地は土曜・連休に混み、日曜の夜は空く。出張の街は平日も埋まる）、年末年始・お盆・GW・桜・紅葉などの時期、その都市と近くの都市の大型イベントを足し引きして、その夜の稼働率を見積もります。ホテルは埋まるほど料金が上がるため、稼働率が高いほど「高め・高騰」の顔にしています（目安: 66%未満は「お得」、92%以上は「高騰」）。</p>
       <p>予約は、じゃらんのその都市のページ（チェックイン日・1泊・大人1人を入れた状態）へのリンクから。じゃらんは自動で情報を集めることが利用規約で認められていないため、リンクだけを載せています。このリンクは A8.net を通したアフィリエイト（広告、「PR」と表示）で、予約されると作者に紹介料が入り、アプリの運営に使われます。</p>
 
-      <h2 id="ja-cities">5. 対象の都市</h2>
+      <h2 id="ja-rakuten">楽天トラベルの実データと、キーの登録</h2>
+      <p>このアプリは、<strong>楽天トラベルの実際の空室・料金</strong>を使うと、推定よりずっと確かな予報になります。使い方は3通りです。</p>
+      <table>
+        <tr><th>状態</th><th>見られるもの</th></tr>
+        <tr><td><strong>ログインしていない</strong></td><td>統計からの推定だけ（顔の縁が点線）</td></tr>
+        <tr><td><strong>ログインして最初の14日間（お試し）</strong></td><td>作者のキーで集めた、全都市・約2か月分の実データ</td></tr>
+        <tr><td><strong>お試しの後</strong></td><td>ご自分のキーを登録すると、見ている都市・日付の実データ。登録しなければ推定だけ</td></tr>
+      </table>
+      <p><strong>なぜ自分のキーが要るのか</strong>：楽天の API は「1つのキーにつき1秒に1回まで」と決まっています。みんなが作者のキー1つを使い続けると、すぐに上限に達して全員が見られなくなります。それぞれが自分のキー（無料）を使えば、アプリを長く安定して動かせます。</p>
+
+      <h3>キーの取り方（無料・5分ほど）</h3>
+      <ol>
+        <li><strong>楽天会員のIDを用意する</strong>：楽天市場などで使っているIDで構いません。なければ、楽天の会員登録（無料）をします。</li>
+        <li><strong>楽天ウェブサービスを開く</strong>：<a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">https://webservice.rakuten.co.jp/</a> を開き、右上からログインします。</li>
+        <li><strong>アプリを新しく登録する</strong>：「アプリID発行」（または「新規アプリ登録」）を押し、次のように入力します。
+          <table>
+            <tr><th>入力欄</th><th>入れる内容</th></tr>
+            <tr><td>アプリ名</td><td>自由です（例：<code>ホテル予報</code>）</td></tr>
+            <tr><td>アプリのURL</td><td><code>https://hotel-yoho.doitmyself.net/</code></td></tr>
+            <tr><td>許可されたWebサイト<br>（ドメイン・リファラーの欄）</td><td><code>hotel-yoho.doitmyself.net</code><br>ここが違うと、キーが正しくても取得できません。</td></tr>
+          </table>
+          規約を読んで同意し、登録します。</li>
+        <li><strong>2つの値を控える</strong>：登録が終わると、<strong>アプリID（applicationId）</strong>と<strong>アクセスキー（accessKey）</strong>が表示されます。</li>
+        <li><strong>このアプリに入れる</strong>：下のメニューの「設定」→「楽天トラベルの実データ」で、2つの値を貼り付けて「保存して確かめる」を押します。「確かめました。キーは使えます」と出れば完了です。</li>
+      </ol>
+      <p>楽天の画面の文言は、変わることがあります。上と違っていても、「アプリ名・URL・許可するサイト」を入れて「アプリID・アクセスキー」を受け取る流れは同じです。</p>
+
+      <h3>うまくいかない時</h3>
+      <ul>
+        <li><strong>「このキーでは取得できませんでした」と出る</strong>：アプリID・アクセスキーを写し間違えていないか（前後の空白も）、「許可されたWebサイト」に <code>hotel-yoho.doitmyself.net</code> が入っているかを確かめてください。登録した直後は、使えるようになるまで数分かかることがあります。</li>
+        <li><strong>楽天のサイトが「アクセスが集中」と出て開けない</strong>：時間をおいて、もう一度開いてください。</li>
+        <li><strong>顔がなかなか実データにならない</strong>：1秒に1件ずつ取得するので、地図の都市がそろうまで十数秒、都市の4週間分のグラフは30秒ほどかかります。取得した分は6時間この端末に覚えるので、2回目からはすぐ出ます。</li>
+      </ul>
+
+      <h3>キーの扱い</h3>
+      <ul>
+        <li>キーは、この端末と、あなたの Google ドライブの「HotelYoho」フォルダー（prefs.json）にだけ保存します。同じアカウントでログインした別の端末でも、そのまま使えます。</li>
+        <li>キーは、楽天の API にだけ送ります。作者のサーバーには送りません。</li>
+        <li>やめる時は、設定の「キーを削除」を押します。楽天ウェブサービスの画面で、アプリそのものを削除することもできます。</li>
+      </ul>
+
+      <h2 id="ja-trend">料金の水準の推移のグラフ</h2>
+      <p>都市を押して出る1週間の予報の下に、約2か月先までの<strong>料金の水準の推移</strong>のグラフがあります。金額ではなく、<strong>ふだんを100とした指数</strong>で、これから上がるのか下がるのかの傾向を見るためのものです（110 なら、ふだんより約1割高め）。</p>
+      <ul>
+        <li><strong>太い線</strong>：前後7日の平均。曜日によるぎざぎざをならした、傾向の線です。</li>
+        <li><strong>細い線</strong>：日ごとの値。週末や連休、イベントの日の山が分かります。</li>
+        <li><strong>点線の区間</strong>：実データがまだない日の推定です。</li>
+        <li>グラフの上の「上がる傾向・下がる傾向・横ばい」は、向こう1週間の平均と、その次の1週間の平均を比べたものです。</li>
+        <li>グラフを指でなぞると、その日の値が下に出ます。</li>
+      </ul>
+      <p>実データの日の値は、空室のあるホテルのうち安いほうから30軒の料金の中央値（真ん中の値）を、その都市のふだんの料金で割ったものです。平均ではなく中央値を使うのは、極端に高い・安い部屋が1つあっても、値がぶれにくいためです。</p>
+
+      <h2 id="ja-cities">対象の都市</h2>
       <p>61都市: すべての県庁所在地と、人口50万人以上の都市（東京は23区をまとめて1つ）に、千歳・函館・松本・鈴鹿・伊勢を加えています。地図を縮小しているときは人口100万人以上の12都市だけ、少し拡大すると県庁所在地と千歳・函館・松本・鈴鹿・伊勢、さらに拡大するとそのほかの人口50万人以上の都市（北九州・堺・浜松・相模原・船橋・川口・八王子・姫路）も表示します（沖縄の那覇は左上の枠にも）。地図は、のりものレーダーと同じく、日本の排他的経済水域（陸地を含む）だけを表示しています。</p>
 
-      <h2 id="ja-login">6. ログインと保存</h2>
+      <h2 id="ja-login">ログインと保存</h2>
       <p>ログインしなくても使えます。Google でログインすると、ウォッチリスト（お気に入りの都市・ウォッチする日・イベントの印）と言語・配色を、あなたの Google ドライブの「HotelYoho」フォルダー（prefs.json）に保存し、同じアカウントの端末で共通にできます。開発者のサーバーには保存しません。</p>
 
-      <h2 id="ja-data">7. データについて</h2>
+      <h2 id="ja-data">データについて</h2>
       <ul>
-        <li>客室稼働率：<a href="https://www.mlit.go.jp/kankocho/tokei_hakusyo/shukuhakutokei.html" target="_blank" rel="noopener">観光庁「宿泊旅行統計調査」</a>2025年（確定値）をもとに作者が加工</li>
+        <li>空室・料金：楽天トラベル（<a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">Supported by Rakuten Developers</a>）</li>
+        <li>客室稼働率（推定の土台）：<a href="https://www.mlit.go.jp/kankocho/tokei_hakusyo/shukuhakutokei.html" target="_blank" rel="noopener">観光庁「宿泊旅行統計調査」</a>2025年（確定値）をもとに作者が加工</li>
         <li>イベント：各会場・主催者の発表をもとに、作者が手で載せています（日程は変わることがあります）。</li>
         <li>地図：<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">国土地理院</a>（淡色地図）、排他的経済水域：<a href="https://www.marineregions.org" target="_blank" rel="noopener">Marine Regions</a>（CC BY 4.0）を加工</li>
         <li>祝日：内閣府の「国民の祝日」の決まりに沿って端末で計算</li>
       </ul>
 
-      <h2 id="ja-disclaimer">8. 免責事項</h2>
+      <h2 id="ja-faq">よくある質問</h2>
+      <p><strong>Q. 顔の縁が点線なのは？</strong><br>A. 実データがなく、統計からの推定で出している日です。ログイン（お試し）するか、ご自分の楽天のキーを登録すると、実データの顔（縁が実線）になります。</p>
+      <p><strong>Q. 地図に出ない都市があります。</strong><br>A. 地図を縮小している時は、人口100万人以上の12都市だけを出しています。地図を拡大するか、上の都市のボタンで大都市を押すと、その地方の都市が選べます。</p>
+      <p><strong>Q. 予約のボタンの日付を変えたい。</strong><br>A. 1週間の予報の一覧で、泊まりたい日を押してください。オレンジ色の「じゃらんで探す」のボタンが、その日に変わります。</p>
+      <p><strong>Q. 英語にしたい。</strong><br>A. 「設定」→「言語」で English を選びます。ヘルプとプライバシーポリシーも、選んだ言語で表示されます。</p>
+      <p><strong>Q. 予報は当たりますか？</strong><br>A. 目安です。実データの日は、その時点の楽天トラベルの空室・料金にもとづきますが、予約が進めば変わります。推定の日は、過去の統計とカレンダーからの見積もりです。実際の空室・料金は、予約サイトで確かめてください。</p>
+
+      <h2 id="ja-disclaimer">免責事項</h2>
       <p>予報は目安で、正確さを保証するものではありません。実際の空室・料金は、予約サイトで確かめてください。このアプリの情報によって生じた損害について、作者は責任を負いません。</p>
 
-      <h2 id="ja-author">9. 作者について</h2>
+      <h2 id="ja-author">作者について</h2>
       <p><strong>DoItMyself</strong>（<a href="https://doitmyself.net/" target="_blank" rel="noopener">doitmyself.net</a>）：Harry が自分で作ったアプリを公開している場所です。</p>
 
       <div class="donate-part">
-      <h2 id="ja-donate">10. 運営資金のご協力</h2>
-      <p>ホテル予報は、無料・広告なしで公開しています。ドメインなど、続けるための費用は作者が負担しています。アプリを気に入っていただけたら、コーヒー1杯分の <strong>200円</strong> からご支援いただけるとうれしいです。</p>
+      <h2 id="ja-donate">運営資金のご協力</h2>
+      <p>ホテル予報は、無料で公開しています。ドメインなど、続けるための費用は作者が負担しています。アプリを気に入っていただけたら、コーヒー1杯分の <strong>200円</strong> からご支援いただけるとうれしいです。</p>
       <div class="donate">
         <h3>PayPal で安全にご支援いただけます</h3>
         <form action="https://www.paypal.com/jp/cgi-bin/webscr" method="post" target="_blank">
@@ -135,18 +202,21 @@
         <li><a href="#en-faces">What the faces mean</a></li>
         <li><a href="#en-menu">Bottom menu</a></li>
         <li><a href="#en-how">How the forecast works</a></li>
+        <li><a href="#en-rakuten">Real Rakuten Travel data and adding your key</a></li>
+        <li><a href="#en-trend">Price level trend chart</a></li>
         <li><a href="#en-cities">Cities covered</a></li>
         <li><a href="#en-login">Sign-in and storage</a></li>
         <li><a href="#en-data">Data sources</a></li>
+        <li><a href="#en-faq">FAQ</a></li>
         <li><a href="#en-disclaimer">Disclaimer</a></li>
         <li><a href="#en-author">About the author</a></li>
         <li class="donate-part"><a href="#en-donate">Support the app</a></li>
       </ol>
 
-      <h2 id="en-about">1. About</h2>
+      <h2 id="en-about">About</h2>
       <p>Hotel Forecast predicts hotel availability and price surges in Japan’s major cities about two months ahead, like a weather forecast. A map of Japan shows each city’s outlook at a glance as a face; tap a city for its 7-day forecast. Major events — concerts, music festivals, big sports matches, expos and more — appear on the calendar.</p>
 
-      <h2 id="en-faces">2. What the faces mean</h2>
+      <h2 id="en-faces">What the faces mean</h2>
       <table>
         <tr><td><span class="face" style="background:#22c55e"></span></td><td><strong>Great</strong>: plenty of rooms, prices at or below usual. A good time to book.</td></tr>
         <tr><td><span class="face" style="background:#a3d93b"></span></td><td><strong>Good</strong>: rooms available at usual prices.</td></tr>
@@ -154,44 +224,105 @@
         <tr><td><span class="face" style="background:#fb923c"></span></td><td><strong>Pricey</strong>: fewer rooms or higher prices. Book early.</td></tr>
         <tr><td><span class="face" style="background:#ef4444"></span></td><td><strong>Surging</strong>: the troubled face. Very few rooms and surging prices. Consider nearby cities.</td></tr>
       </table>
-      <p>Faces are <strong>estimates</strong> from statistics and the calendar, not live availability or prices (see below).</p>
+      <p>Faces with a <strong>dotted rim</strong> are <strong>estimates</strong> from statistics and the calendar. Faces with a solid rim are based on real Rakuten Travel availability and prices (see <a href="#en-rakuten">Real Rakuten Travel data and adding your key</a>).</p>
 
-      <h2 id="en-menu">3. Bottom menu</h2>
+      <h2 id="en-menu">Bottom menu</h2>
       <ul>
         <li><strong>Forecast</strong> (tap the icon at the top left to return here and to today at any time): pick a date at the top to see the outlook for checking in that day for one night. The small face under each date first shows the <strong>national average</strong>; choose a city (the city buttons above, a face on the map, or the list) to see that city’s forecast instead. A list of cities follows the map.</li>
         <li><strong>Calendar</strong>: a monthly calendar per city with daily faces and events (🎤 live, 🎪 music festival, 🎻 concert, 🏟️ sports, 🏢 expo, 🏮 festivals).</li>
         <li><strong>Events</strong>: list of major events, filterable by city and type; star the ones you care about. Tap the face to open that day’s forecast.</li>
         <li><strong>Watchlist</strong>: the next 7 days for your starred cities, dates you starred in the calendar or a 7-day forecast (multi-night stays too), and starred events. If a face changes since you last looked, “Worse ↓ / Better ↑” appears and the menu shows a “!” (shown when you open the app).</li>
-        <li><strong>Settings</strong>: account, language, theme, favorite cities and data sources.</li>
+        <li><strong>Settings</strong>: account, real Rakuten Travel data (trial days left and your own key), language (日本語 / English), theme, favorite cities and data sources.</li>
       </ul>
 
-      <h2 id="en-how">4. How the forecast works</h2>
-      <p>Forecasts are <strong>estimates</strong> from official statistics and the calendar, not live availability or prices. The baseline is the monthly <strong>room occupancy rate</strong> of city and business hotels in each prefecture from the Japan Tourism Agency’s Overnight Travel Statistics (2025 final figures). The app then adjusts for day of week and long weekends by the kind of city (tourist cities fill up on Saturdays and long weekends and empty on Sunday nights; business cities stay busy on weekdays), seasons such as New Year, Obon, Golden Week, cherry blossoms and autumn leaves, and major events in the city and nearby cities, to estimate occupancy for that night. Hotels raise prices as they fill up, so higher occupancy means a pricier face (as a guide: under 66% is “Good deal”, 92% or more is “Surging”).</p>
+      <h2 id="en-how">How the forecast works</h2>
+      <p><strong>Observed data</strong>: using the Rakuten Travel vacancy search API, the app checks, for each city center (3 km radius) and date, the number of hotels with vacancies and the prices of the 30 cheapest (1 adult, 1 night). The median price is compared with the city’s usual price and the vacancy count with the city’s high-vacancy days, giving one of five faces. During the trial this is shared data collected with the developer’s key; afterwards it is data fetched with your own key.</p>
+      <p><strong>Estimates</strong>: days without observed data are estimated from official statistics and the calendar. The baseline is the monthly <strong>room occupancy rate</strong> of city and business hotels in each prefecture from the Japan Tourism Agency’s Overnight Travel Statistics (2025 final figures). The app then adjusts for day of week and long weekends by the kind of city (tourist cities fill up on Saturdays and long weekends and empty on Sunday nights; business cities stay busy on weekdays), seasons such as New Year, Obon, Golden Week, cherry blossoms and autumn leaves, and major events in the city and nearby cities, to estimate occupancy for that night. Hotels raise prices as they fill up, so higher occupancy means a pricier face (as a guide: under 66% is “Good deal”, 92% or more is “Surging”).</p>
       <p>Booking is via a link to the city’s Jalan page with your check-in date, 1 night and 1 adult filled in. Jalan does not permit automated collection in its terms, so only a link is provided. The link is an affiliate link through A8.net (advertising, marked “PR”): if you book, the developer earns a referral fee that helps run the app.</p>
 
-      <h2 id="en-cities">5. Cities covered</h2>
+      <h2 id="en-rakuten">Real Rakuten Travel data and adding your key</h2>
+      <p>With <strong>real availability and prices from Rakuten Travel</strong>, forecasts are much more reliable than estimates. There are three states.</p>
+      <table>
+        <tr><th>State</th><th>What you see</th></tr>
+        <tr><td><strong>Not signed in</strong></td><td>Estimates from statistics only (faces with a dotted rim)</td></tr>
+        <tr><td><strong>First 14 days after signing in (trial)</strong></td><td>Real data for all cities, about two months ahead, collected with the developer’s key</td></tr>
+        <tr><td><strong>After the trial</strong></td><td>Real data for the cities and dates you view, if you add your own key. Otherwise estimates only</td></tr>
+      </table>
+      <p><strong>Why your own key?</strong> Rakuten’s API allows one request per second per key. If everyone kept using the developer’s single key, it would hit the limit and stop working for all. With each person using their own free key, the app keeps running reliably.</p>
+
+      <h3>How to get a key (free, about 5 minutes)</h3>
+      <ol>
+        <li><strong>Have a Rakuten member ID</strong>: the ID you use for Rakuten Ichiba is fine. If you don’t have one, register as a Rakuten member (free).</li>
+        <li><strong>Open Rakuten Web Service</strong>: go to <a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">https://webservice.rakuten.co.jp/</a> and sign in (the site is in Japanese).</li>
+        <li><strong>Register a new app</strong>: choose “アプリID発行” (issue an app ID) or “新規アプリ登録” (new app) and enter:
+          <table>
+            <tr><th>Field</th><th>What to enter</th></tr>
+            <tr><td>アプリ名 (app name)</td><td>Anything, e.g. <code>Hotel Forecast</code></td></tr>
+            <tr><td>アプリのURL (app URL)</td><td><code>https://hotel-yoho.doitmyself.net/</code></td></tr>
+            <tr><td>許可されたWebサイト<br>(allowed websites / domain)</td><td><code>hotel-yoho.doitmyself.net</code><br>If this is wrong, requests fail even with a correct key.</td></tr>
+          </table>
+          Read and accept the terms, then register.</li>
+        <li><strong>Note two values</strong>: after registering you are shown the <strong>application ID (applicationId)</strong> and the <strong>access key (accessKey)</strong>.</li>
+        <li><strong>Enter them in this app</strong>: go to Settings → “Real data from Rakuten Travel”, paste both values and tap “Save and test”. When it says the key works, you are done.</li>
+      </ol>
+      <p>Rakuten’s wording may change. Even if it differs from the above, the flow is the same: enter an app name, URL and allowed site, and receive an application ID and access key.</p>
+
+      <h3>If it doesn’t work</h3>
+      <ul>
+        <li><strong>“Could not fetch with this key”</strong>: check the application ID and access key for typos (including spaces), and that <code>hotel-yoho.doitmyself.net</code> is in the allowed websites. A new key can take a few minutes to become active.</li>
+        <li><strong>Rakuten’s site says it is busy</strong>: wait a while and try again.</li>
+        <li><strong>Faces are slow to switch to real data</strong>: requests go one per second, so the cities on the map take a little over ten seconds and a city’s four-week chart about 30 seconds. Results are kept on the device for 6 hours, so the second time is instant.</li>
+      </ul>
+
+      <h3>How your key is handled</h3>
+      <ul>
+        <li>The key is stored only on this device and in the “HotelYoho” folder (prefs.json) in your own Google Drive, so it also works on your other devices signed in with the same account.</li>
+        <li>The key is sent only to Rakuten’s API, never to the developer’s server.</li>
+        <li>To stop, tap “Delete key” in Settings. You can also delete the app itself on Rakuten Web Service.</li>
+      </ul>
+
+      <h2 id="en-trend">Price level trend chart</h2>
+      <p>Below a city’s 7-day forecast is a chart of the <strong>price level trend</strong> for about two months ahead. It is an <strong>index with usual = 100</strong>, not an amount, so you can see whether prices are heading up or down (110 means about 10% above usual).</p>
+      <ul>
+        <li><strong>Thick line</strong>: the 7-day average, which smooths out the day-of-week zigzag to show the trend.</li>
+        <li><strong>Thin line</strong>: daily values, showing peaks on weekends, long weekends and event days.</li>
+        <li><strong>Dotted stretches</strong>: estimates for days without real data yet.</li>
+        <li>“Rising / Falling / Steady” above the chart compares the average of the next 7 days with the 7 days after.</li>
+        <li>Slide a finger over the chart to read the value for a day.</li>
+      </ul>
+      <p>On observed days the value is the median price of the 30 cheapest available hotels divided by the city’s usual price. The median is used instead of the mean because one extremely expensive or cheap room barely moves it.</p>
+
+      <h2 id="en-cities">Cities covered</h2>
       <p>61 cities: every prefectural capital and every city with 500,000+ people (Tokyo’s 23 wards count as one), plus Chitose, Hakodate, Matsumoto, Suzuka and Ise. Zoomed out, the map shows only the 12 cities with 1 million+ people; zoom in a little to see the prefectural capitals and Chitose, Hakodate, Matsumoto, Suzuka and Ise, and further to see the other cities with 500,000+ people (Kitakyushu, Sakai, Hamamatsu, Sagamihara, Funabashi, Kawaguchi, Hachioji and Himeji). Naha is also shown in the box at the top left. Like Norimono Radar, the map shows only Japan’s exclusive economic zone (including land).</p>
 
-      <h2 id="en-login">6. Sign-in and storage</h2>
+      <h2 id="en-login">Sign-in and storage</h2>
       <p>You can use the app without signing in. If you sign in with Google, your watchlist (favorite cities, watched dates and starred events), language and theme are saved to the “HotelYoho” folder (prefs.json) in your own Google Drive and shared across your devices. Nothing is stored on the developer’s server.</p>
 
-      <h2 id="en-data">7. Data sources</h2>
+      <h2 id="en-data">Data sources</h2>
       <ul>
-        <li>Room occupancy: adapted by the author from the <a href="https://www.mlit.go.jp/kankocho/tokei_hakusyo/shukuhakutokei.html" target="_blank" rel="noopener">Japan Tourism Agency Overnight Travel Statistics</a> 2025 (final)</li>
+        <li>Vacancies & prices: Rakuten Travel (<a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener">Supported by Rakuten Developers</a>)</li>
+        <li>Room occupancy (baseline for estimates): adapted by the author from the <a href="https://www.mlit.go.jp/kankocho/tokei_hakusyo/shukuhakutokei.html" target="_blank" rel="noopener">Japan Tourism Agency Overnight Travel Statistics</a> 2025 (final)</li>
         <li>Events: compiled by the author from venue and organizer announcements (dates may change).</li>
         <li>Map: <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank" rel="noopener">GSI Japan</a>; EEZ: adapted from <a href="https://www.marineregions.org" target="_blank" rel="noopener">Marine Regions</a> (CC BY 4.0)</li>
         <li>Holidays: calculated on the device from Japan’s national holiday rules</li>
       </ul>
 
-      <h2 id="en-disclaimer">8. Disclaimer</h2>
+      <h2 id="en-faq">FAQ</h2>
+      <p><strong>Q. Why do some faces have a dotted rim?</strong><br>A. Those days have no real data and are estimates from statistics. Sign in (trial) or add your own Rakuten key to get real-data faces (solid rim).</p>
+      <p><strong>Q. A city is missing from the map.</strong><br>A. Zoomed out, the map shows only the 12 cities with 1 million+ people. Zoom in, or tap a major city in the buttons at the top to choose cities in that region.</p>
+      <p><strong>Q. How do I change the date on the booking button?</strong><br>A. Tap the day you want in the 7-day list. The orange “Search Jalan” button switches to that day.</p>
+      <p><strong>Q. How do I switch to Japanese?</strong><br>A. Choose 日本語 under Settings → Language. Help and the privacy policy follow the language you choose.</p>
+      <p><strong>Q. How accurate is it?</strong><br>A. It is a guide. Observed days reflect Rakuten Travel’s availability and prices at that moment, which change as bookings come in. Estimate days come from past statistics and the calendar. Always check the booking site.</p>
+
+      <h2 id="en-disclaimer">Disclaimer</h2>
       <p>Forecasts are a guide only and accuracy is not guaranteed. Check actual availability and prices on the booking sites. The author is not liable for any loss arising from the use of this information.</p>
 
-      <h2 id="en-author">9. About the author</h2>
+      <h2 id="en-author">About the author</h2>
       <p><strong>DoItMyself</strong> (<a href="https://doitmyself.net/" target="_blank" rel="noopener">doitmyself.net</a>): where Harry publishes apps he has made.</p>
 
       <div class="donate-part">
-      <h2 id="en-donate">10. Support the app</h2>
-      <p>Hotel Forecast is free and ad-free. The author pays for the domain and other running costs. If you like the app, support from <strong>¥200</strong> — about a cup of coffee — would be greatly appreciated.</p>
+      <h2 id="en-donate">Support the app</h2>
+      <p>Hotel Forecast is free. The author pays for the domain and other running costs. If you like the app, support from <strong>¥200</strong> — about a cup of coffee — would be greatly appreciated.</p>
       <div class="donate">
         <h3>Donate securely with PayPal</h3>
         <form action="https://www.paypal.com/jp/cgi-bin/webscr" method="post" target="_blank">
@@ -215,6 +346,21 @@
     </section>
 
     <script>
+      // 言語: # の先頭（ja・en）、なければアプリで選んだ言語、それもなければ端末の言語。選んだ言語の内容だけを出す
+      function applyLang() {
+        var h = location.hash.slice(1);
+        var l = h.indexOf('en') === 0 ? 'en' : h.indexOf('ja') === 0 ? 'ja' : null;
+        if (!l) {
+          try { l = localStorage.getItem('hotelyoho-language'); } catch (e) {}
+          if (l !== 'ja' && l !== 'en') l = (navigator.language || 'ja').indexOf('ja') === 0 ? 'ja' : 'en';
+        }
+        document.documentElement.lang = l;
+        document.querySelectorAll('section[lang]').forEach(function (s) { s.hidden = s.lang !== l; });
+        var target = h && h !== l ? document.getElementById(h) : null;
+        if (target) target.scrollIntoView(); else window.scrollTo(0, 0);
+      }
+      window.addEventListener('hashchange', applyLang);
+      applyLang();
       // 右上の ×: アプリの中で重ねて開いたときはアプリに閉じてもらう。直接開いたときは前の画面かアプリへ戻る
       function closeDoc() {
         if (window.parent !== window) window.parent.postMessage('close-doc', location.origin);

@@ -1,6 +1,9 @@
+import type { Access } from '../access.ts'
+import { API_BASE } from '../api.ts'
 import { CITIES, isCityId } from '../cities.ts'
 import { driveConfig } from '../drive.ts'
 import { MOODS } from '../forecast.ts'
+import { formatTime } from '../format.ts'
 import type { GoogleAuth } from '../hooks/useGoogleAuth.ts'
 import type { ForecastData } from '../hooks/useForecastData.ts'
 import type { PrefsState } from '../hooks/usePrefs.ts'
@@ -8,11 +11,13 @@ import { useI18n } from '../i18n/useI18n.ts'
 import type { Lang } from '../i18n/context.ts'
 import type { ThemePreference } from '../theme.ts'
 import { Face } from './Face.tsx'
+import { RakutenKeyCard } from './RakutenKeyCard.tsx'
 
 interface Props {
   auth: GoogleAuth
   prefs: PrefsState
   data: ForecastData
+  access: Access
   theme: ThemePreference
   /** 配色を選ぶ（端末と、ログイン中は Google ドライブにも残す） */
   onTheme: (t: ThemePreference) => void
@@ -21,9 +26,10 @@ interface Props {
   onDoc: (page: 'help' | 'privacy', hash?: string) => void
 }
 
-export function SettingsPage({ auth, prefs, data, theme, onTheme, onLang, onDoc }: Props) {
+export function SettingsPage({ auth, prefs, data, access, theme, onTheme, onLang, onDoc }: Props) {
   const { t, lang } = useI18n()
   const p = prefs.prefs
+  const updated = data.summary?.updatedAt
 
   return (
     <div className="page">
@@ -134,14 +140,31 @@ export function SettingsPage({ auth, prefs, data, theme, onTheme, onLang, onDoc 
               </span>
             </li>
           ))}
+          <li>
+            <Face mood={2} size={32} estimate />
+            <span className="muted small">{t('set.estimateDesc')}</span>
+          </li>
         </ul>
         <p className="small">{t('set.how')}</p>
       </section>
 
+      <RakutenKeyCard prefs={prefs} access={access} data={data} onLogin={() => void auth.login()} onHelp={() => onDoc('help', `${lang}-rakuten`)} />
+
       <section className="card">
         <h2>{t('set.data')}</h2>
+        <p className="small">
+          {data.liveDays > 0
+            ? t('set.liveStatus', { n: data.liveDays, time: updated ? formatTime(updated, lang) : '-' })
+            : t('set.noLive')}
+        </p>
         <p className="small">{t('set.eventsCount', { n: data.events.length })}</p>
         <ul className="small sources">
+          <li>
+            {t('src.rakuten')}{' '}
+            <a href="https://webservice.rakuten.co.jp/" target="_blank" rel="noopener noreferrer">
+              Supported by Rakuten Developers
+            </a>
+          </li>
           <li>
             {t('src.stats')}{' '}
             <a href="https://www.mlit.go.jp/kankocho/tokei_hakusyo/shukuhakutokei.html" target="_blank" rel="noopener noreferrer">
@@ -161,6 +184,7 @@ export function SettingsPage({ auth, prefs, data, theme, onTheme, onLang, onDoc 
           </li>
           <li>{t('src.events')}</li>
         </ul>
+        <p className="muted small">API: {API_BASE}</p>
       </section>
 
       <section className="card">

@@ -430,14 +430,14 @@ export function JapanMap({ forecasts, onCity, moodLabel, selected = null }: Prop
         markers.current.set(f.city, entry)
       }
       const isSelected = f.city === selected
-      const content = `${label}|${isSelected}`
+      const content = `${label}|${f.source}|${isSelected}`
       if (content !== entry.content) {
         entry.content = content
         entry.pos = ''
         entry.el.setAttribute('aria-label', label)
         entry.el.classList.toggle('selected', isSelected)
         entry.marker.getElement().style.zIndex = isSelected ? '5' : ''
-        entry.el.innerHTML = pinHtml(city.name[lang], faceSvg(f.mood, FACE_SIZE[city.tier], false, label))
+        entry.el.innerHTML = pinHtml(city.name[lang], faceSvg(f.mood, FACE_SIZE[city.tier], f.source === 'estimate', label))
       }
     }
     selectedRef.current = selected

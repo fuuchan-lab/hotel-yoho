@@ -1,6 +1,7 @@
-import { lazy, Suspense, useCallback, useMemo } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo } from 'react'
+import { TRIAL_DAYS, type Access } from '../access.ts'
 import { BIG_CITIES, CITIES, cityById, citiesIn, type CityId } from '../cities.ts'
-import type { Ymd } from '../dates.ts'
+import { dateRange, type Ymd } from '../dates.ts'
 import { averageMood, type DayForecast } from '../forecast.ts'
 import { formatDate } from '../format.ts'
 import { holidayName } from '../holidays.ts'
@@ -26,17 +27,35 @@ interface Props {
   /** 日付の帯に出す都市。null なら全国平均 */
   stripCity: CityId | null
   onStripCity: (id: CityId | null) => void
+  /** 楽天トラベルの実データを、だれのキーで見るか */
+  access: Access
+  onSettings: () => void
 }
 
-export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, onStripCity }: Props) {
+export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, onStripCity, access, onSettings }: Props) {
   const { t, lang } = useI18n()
-  const { forecast } = data
+  const { forecast, request } = data
+  // 自分のキーの時: 選んだ日の、大都市・お気に入り・選んだ都市の地方を楽天に問い合わせる。都市を選んでいれば、その 1 週間も
+  const favorites = prefs.favorites
+  useEffect(() => {
+    const ids = new Set<CityId>([...favorites, ...BIG_CITIES.map((c) => c.id)])
+    if (stripCity) for (const c of citiesIn(cityById(stripCity)!.region)) ids.add(c.id)
+    request([...ids], [date])
+    if (stripCity) request([stripCity], dateRange(date, 7))
+  }, [request, date, stripCity, favorites])
   const forecasts = useMemo(() => CITIES.map((c) => forecast(c.id, date)), [forecast, date])
   // 日付の帯の顔: 最初は全国平均、都市を選んだらその都市の予報
   const overall = useCallback(
     (d: Ymd) => {
-      if (stripCity) return forecast(stripCity, d).mood
-      return averageMood(CITIES.map((c) => forecast(c.id, d).mood))
+      if (stripCity) {
+        const f = forecast(stripCity, d)
+        return { mood: f.mood, estimate: f.source === 'estimate' }
+      }
+      const all = CITIES.map((c) => forecast(c.id, d))
+      return {
+        mood: averageMood(all.map((f) => f.mood)),
+        estimate: all.every((f) => f.source === 'estimate'),
+      }
     },
     [forecast, stripCity],
   )
@@ -98,11 +117,25 @@ export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, o
             aria-label={`${CITIES.find((c) => c.id === 'naha')!.name[lang]}: ${t(`mood.${naha.mood}`)}`}
           >
             <span className="okinawa-title">{t('map.okinawa')}</span>
-            <Face mood={naha.mood} size={36} />
+            <Face mood={naha.mood} size={36} estimate={naha.source === 'estimate'} />
             <span className="pin-name">{CITIES.find((c) => c.id === 'naha')!.name[lang]}</span>
           </button>
         )}
       </div>
+      {access.mode !== 'own' && (
+        <p className={`live-note ${access.mode}`}>
+          <span>
+            {access.mode === 'guest'
+              ? t('live.guest', { n: TRIAL_DAYS })
+              : access.mode === 'trial'
+                ? t('live.trial', { n: access.daysLeft })
+                : t('live.expired')}
+          </span>
+          <button type="button" className="link-btn" onClick={onSettings}>
+            {t('live.open')}
+          </button>
+        </p>
+      )}
       <Legend />
       <p className="muted small">{t('map.hint')}</p>
 
@@ -115,7 +148,7 @@ export function MapPage({ data, today, date, onDate, onCity, prefs, stripCity, o
               return (
                 <li key={f.city}>
                   <button type="button" className="city-row" onClick={() => onCity(f.city)}>
-                    <Face mood={f.mood} size={40} label={t(`mood.${f.mood}`)} />
+                    <Face mood={f.mood} size={40} estimate={f.source === 'estimate'} label={t(`mood.${f.mood}`)} />
                     <span className="city-row-main">
                       <span className="city-row-name">
                         {prefs.favorites.includes(f.city) && (

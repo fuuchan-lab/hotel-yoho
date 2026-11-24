@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 import type { BigEvent } from './events.ts'
-import { averageMood, estimateForecast, memoForecaster, moodFromOccupancy } from './forecast.ts'
+import { averageMood, estimateForecast, forecastFor, memoForecaster, moodFromOccupancy, type Summary } from './forecast.ts'
 import { OCCUPANCY } from './occupancy.ts'
 
 const dome: BigEvent = {
@@ -73,8 +73,22 @@ test('近くの都市の大きなイベントも少し効く', () => {
 })
 
 test('同じ都市・日付の予報は覚えておく', () => {
-  const f = memoForecaster([])
+  const f = memoForecaster(null, [])
   assert.equal(f('osaka', '2026-12-01'), f('osaka', '2026-12-01'))
+})
+
+test('楽天の観測が新しければ実データ、古ければ推定（推定の理由・稼働率も持つ）', () => {
+  const now = Date.parse('2026-12-01T00:00:00Z')
+  const summary: Summary = {
+    updatedAt: now,
+    cities: { tokyo: { total: 100, ref: 10000, days: { '2026-12-09': { v: 10, p: 30000, lo: 20000, at: now - 10 * 86_400_000 } } } },
+  }
+  assert.equal(forecastFor('tokyo', '2026-12-09', summary, [], now).source, 'estimate')
+  summary.cities.tokyo!.days['2026-12-09'].at = now - 3_600_000
+  const live = forecastFor('tokyo', '2026-12-09', summary, [], now)
+  assert.equal(live.source, 'live')
+  assert.equal(live.priceIndex, 3)
+  assert.ok(live.occupancy > 0)
 })
 
 test('全国平均の顔', () => {

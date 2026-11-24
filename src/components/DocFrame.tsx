@@ -25,10 +25,11 @@ export function DocFrame({ page, hash, onClose }: Props) {
       window.removeEventListener('message', onMessage)
     }
   }, [onClose])
-  const anchor = hash ?? (lang === 'en' ? 'en' : '')
+  // ヘルプ・ポリシーは、# の先頭（ja・en）で、その言語の内容だけを出す
+  const anchor = hash ?? lang
   return (
     <div className="doc-overlay" role="dialog" aria-modal="true">
-      <iframe className="doc-frame" src={`./${page}.html${anchor ? `#${anchor}` : ''}`} title={t(page === 'help' ? 'set.help' : 'set.privacy')} />
+      <iframe className="doc-frame" src={`./${page}.html#${anchor}`} title={t(page === 'help' ? 'set.help' : 'set.privacy')} />
       <button type="button" className="doc-close" onClick={onClose} aria-label={t('common.close')}>
         ✕
       </button>

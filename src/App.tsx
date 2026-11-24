@@ -1,4 +1,5 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react'
+import { accessOf } from './access.ts'
 import type { CityId } from './cities.ts'
 import { addDays, HORIZON_DAYS, todayJst, type Ymd } from './dates.ts'
 import { BottomDock, type Tab } from './components/BottomDock.tsx'
@@ -32,10 +33,19 @@ function useToday(): Ymd {
 }
 
 export default function App() {
+  const today = useToday()
   const auth = useGoogleAuth()
   const prefs = usePrefs(auth.account)
-  const data = useForecastData()
-  const today = useToday()
+  // 楽天トラベルの実データを、だれのキーで見るか（お試し・自分のキー・推定だけ）
+  const loggedIn = auth.account !== null
+  const { rakuten, trialStart } = prefs.prefs
+  const access = useMemo(() => accessOf(loggedIn, { rakuten, trialStart }, Date.parse(`${today}T00:00:00+09:00`) + 86_399_000), [loggedIn, rakuten, trialStart, today])
+  const data = useForecastData(access, loggedIn ? rakuten : null)
+  // 初めてログインした時に、お試しの開始日を入れる（ドライブと合わせ終わってから。先に書くと、ドライブの設定を上書きしてしまう）
+  const { status: syncStatus, update: updatePrefs } = prefs
+  useEffect(() => {
+    if (loggedIn && syncStatus === 'synced' && trialStart === null) updatePrefs((p) => (p.trialStart === null ? { ...p, trialStart: Date.now() } : p))
+  }, [loggedIn, syncStatus, trialStart, updatePrefs])
   const [tab, setTab] = useState<Tab>('map')
   const [date, setDate] = useState<Ymd>(today)
   const [sheetCity, setSheetCity] = useState<CityId | null>(null)
@@ -126,6 +136,8 @@ export default function App() {
             setSheetCity(id)
           }}
           prefs={prefs.prefs}
+          access={access}
+          onSettings={() => openTab('settings')}
           stripCity={stripCity}
           onStripCity={setStripCity}
         />
@@ -174,6 +186,7 @@ export default function App() {
           auth={auth}
           prefs={prefs}
           data={data}
+          access={access}
           theme={theme}
           onTheme={chooseTheme}
           onLang={chooseLang}

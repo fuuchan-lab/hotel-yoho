@@ -99,7 +99,7 @@ export function WatchPage({ data, prefs, account, today, draft, onDraftUsed, onL
               <span key={d} className="watch-night">
                 <span className={`small ${dayTone(d)}`}>{formatShortDate(d, lang)}({weekdayLabel(d, lang)})</span>
                 {f ? (
-                  <Face mood={f.mood} size={32} label={t(`mood.${f.mood}`)} />
+                  <Face mood={f.mood} size={32} estimate={f.source === 'estimate'} label={t(`mood.${f.mood}`)} />
                 ) : (
                   <span className="muted small">{d < today ? t('watch.past') : t('watch.later')}</span>
                 )}
@@ -153,7 +153,7 @@ export function WatchPage({ data, prefs, account, today, draft, onDraftUsed, onL
                   const f = data.forecast(c.id, d)
                   return (
                     <button key={d} type="button" className="fav-cell" onClick={() => onCity(c.id, d)} aria-label={`${c.name[lang]} ${formatDate(d, lang)} ${t(`mood.${f.mood}`)}`}>
-                      <Face mood={f.mood} size={26} />
+                      <Face mood={f.mood} size={26} estimate={f.source === 'estimate'} />
                     </button>
                   )
                 })}
@@ -245,7 +245,7 @@ export function WatchPage({ data, prefs, account, today, draft, onDraftUsed, onL
               return (
                 <li key={e.id} className="watch-event">
                   <button type="button" className="ev-forecast icon-btn" onClick={() => onCity(e.city, night)} aria-label={t('ev.forecast', { city: cityById(e.city)!.name[lang] })}>
-                    <Face mood={f.mood} size={28} />
+                    <Face mood={f.mood} size={28} estimate={f.source === 'estimate'} />
                   </button>
                   <span>
                     {CATEGORY_ICON[e.category]}{' '}

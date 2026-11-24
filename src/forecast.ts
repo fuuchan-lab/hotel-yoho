@@ -17,6 +17,41 @@ export type Mood = 0 | 1 | 2 | 3 | 4
 
 export const MOODS: Mood[] = [0, 1, 2, 3, 4]
 
+/** 中継サーバーが返す、1 日分の観測 */
+export interface DayObs {
+  /** 空室のあるホテルの数 */
+  v: number
+  /** 安いほうから最大 30 軒の、1 人 1 泊の料金の中央値（円）。空室がなければ null */
+  p: number | null
+  /** いちばん安い料金（円） */
+  lo: number | null
+  /** 安いほうから最大 30 軒の料金の、下から 1/4・3/4 の値（円）と、料金の分かった軒数 */
+  q1?: number | null
+  q3?: number | null
+  n?: number
+  /** 最高の料金（円） */
+  hi?: number | null
+  /** 安い 3 軒（名前・料金）。自分のキーで集めた時 */
+  h?: { n: string; c: number }[]
+  /** 観測した時刻（ミリ秒） */
+  at: number
+}
+
+export interface CityData {
+  /** 検索範囲のホテルの総数（楽天トラベルに載っている施設） */
+  total: number | null
+  /** ふだんの料金（観測した中央値の長期の平均） */
+  ref: number | null
+  /** 空室の多い日の空室数（分かっていれば。なければ days から求める） */
+  vref?: number | null
+  days: Record<Ymd, DayObs>
+}
+
+export interface Summary {
+  updatedAt: number
+  cities: Partial<Record<CityId, CityData>>
+}
+
 export type ReasonKey =
   | 'weekend'
   | 'holidayEve'
@@ -33,6 +68,11 @@ export type ReasonKey =
   | 'lowSeason'
   | 'event'
   | 'nearEvent'
+  | 'fewRooms'
+  | 'manyRooms'
+  | 'highPrice'
+  | 'lowPrice'
+  | 'soldOut'
 
 export interface Reason {
   key: ReasonKey
@@ -44,9 +84,112 @@ export interface DayForecast {
   city: CityId
   date: Ymd
   mood: Mood
-  /** 客室稼働率の目安（%） */
+  /** live = 楽天トラベルの観測から、estimate = 統計・曜日・イベントからの推定 */
+  source: 'live' | 'estimate'
+  /** 統計から見積もった、客室稼働率の目安（%）。live の時も参考に持つ */
   occupancy: number
+  /** live の時: 料金の中央値（円） */
+  price?: number | null
+  /** live の時: いちばん安い料金（円） */
+  low?: number | null
+  /** live の時: ふだんの料金との比（1 = ふだんどおり） */
+  priceIndex?: number | null
+  /** live の時: 空室のあるホテルの数 */
+  vacant?: number
+  /** live の時: 空室の多い日を 1 とした、空室の多さ */
+  vacancyIndex?: number | null
+  observedAt?: number
   reasons: Reason[]
+}
+
+/** 実データを使う期限。これより古い観測は推定に戻す */
+export const LIVE_MAX_AGE_MS = 3 * 24 * 3_600_000
+
+function median(values: number[]): number | null {
+  if (values.length === 0) return null
+  const s = [...values].sort((a, b) => a - b)
+  const mid = Math.floor(s.length / 2)
+  return s.length % 2 ? s[mid] : (s[mid - 1] + s[mid]) / 2
+}
+
+function percentile(values: number[], q: number): number | null {
+  if (values.length === 0) return null
+  const s = [...values].sort((a, b) => a - b)
+  return s[Math.min(s.length - 1, Math.max(0, Math.round(q * (s.length - 1))))]
+}
+
+/** その都市の比べる基準: ふだんの料金と、空室の多い日（上位 10%）の空室数 */
+export interface CityBaseline {
+  price: number | null
+  vacant: number | null
+}
+
+export function cityBaseline(data: CityData | undefined): CityBaseline {
+  if (!data) return { price: null, vacant: null }
+  const obs = Object.values(data.days)
+  const prices = obs.map((o) => o.p).filter((p): p is number => typeof p === 'number' && p > 0)
+  const vacants = obs.map((o) => o.v).filter((v) => Number.isFinite(v))
+  return {
+    price: data.ref && data.ref > 0 ? data.ref : median(prices),
+    vacant: data.vref && data.vref > 0 ? data.vref : percentile(vacants, 0.9),
+  }
+}
+
+export function pricePoints(index: number): number {
+  if (index <= 0.92) return -1
+  if (index <= 1.05) return 0
+  if (index <= 1.2) return 1
+  if (index <= 1.45) return 2
+  return 3
+}
+
+export function vacancyPoints(index: number): number {
+  if (index >= 0.85) return -1
+  if (index >= 0.65) return 0
+  if (index >= 0.45) return 1
+  if (index >= 0.25) return 2
+  return 3
+}
+
+export function moodFromLivePoints(points: number): Mood {
+  if (points <= -1) return 0
+  if (points <= 0) return 1
+  if (points <= 2) return 2
+  if (points <= 4) return 3
+  return 4
+}
+
+export function liveForecast(city: CityId, date: Ymd, obs: DayObs, base: CityBaseline, occupancy = 0): DayForecast {
+  const reasons: Reason[] = []
+  const priceIndex = obs.p && base.price ? obs.p / base.price : null
+  const vacancyIndex = base.vacant && base.vacant > 0 ? obs.v / base.vacant : null
+  let mood: Mood
+  if (obs.v <= 0 || obs.p === null) {
+    mood = 4
+    reasons.push({ key: 'soldOut' })
+  } else {
+    const pp = priceIndex === null ? 0 : pricePoints(priceIndex)
+    const vp = vacancyIndex === null ? 0 : vacancyPoints(vacancyIndex)
+    mood = moodFromLivePoints(pp + vp)
+    if (vp >= 2) reasons.push({ key: 'fewRooms' })
+    else if (vp < 0) reasons.push({ key: 'manyRooms' })
+    if (pp >= 2) reasons.push({ key: 'highPrice' })
+    else if (pp < 0) reasons.push({ key: 'lowPrice' })
+  }
+  return {
+    city,
+    date,
+    mood,
+    source: 'live',
+    occupancy,
+    price: obs.p,
+    low: obs.lo,
+    priceIndex,
+    vacant: obs.v,
+    vacancyIndex,
+    observedAt: obs.at,
+    reasons,
+  }
 }
 
 /** 稼働率の目安（%）から顔へ。全国のシティ・ビジネスホテルの年平均は約 75%（2025 年） */
@@ -72,6 +215,12 @@ function baseOccupancy(city: City, night: Ymd): { occ: number; annual: number; m
   const occ = cur + (other - cur) * Math.abs(pos)
   const annual = table.reduce((s, v) => s + v, 0) / 12
   return { occ, annual, month: cur }
+}
+
+/** その都市の都道府県の、年平均の稼働率（%）。推移のグラフで「ふだん」として使う */
+export function annualOccupancy(cityId: CityId): number {
+  const table = OCCUPANCY[cityById(cityId)?.pref.ja ?? '']
+  return table ? table.reduce((s, v) => s + v, 0) / 12 : 75
 }
 
 /** 曜日・連休の差（ポイント）。出張中心の都市は平日も埋まり、観光中心の都市は休みの前の夜に混む */
@@ -220,7 +369,7 @@ export function estimateForecast(cityId: CityId, night: Ymd, events: BigEvent[])
   }
   const eventAdj = Math.min(30, combine(own) / capacity(city)) + Math.min(8, combine(near))
   const occ = Math.min(99, Math.max(25, base.occ + nf.adj + season.adj + eventAdj))
-  return { city: cityId, date: night, mood: moodFromOccupancy(occ), occupancy: Math.round(occ), reasons }
+  return { city: cityId, date: night, mood: moodFromOccupancy(occ), source: 'estimate', occupancy: Math.round(occ), reasons }
 }
 
 /** 全国平均の顔（各都市の顔の平均を四捨五入） */
@@ -230,14 +379,37 @@ export function averageMood(moods: Mood[]): Mood {
   return Math.min(4, Math.max(0, Math.round(mean))) as Mood
 }
 
-/** 予報を、同じイベントの間は都市・日付ごとに覚えておく（日付の帯・地図・一覧で何千回も使うため） */
-export function memoForecaster(events: BigEvent[]): (city: CityId, night: Ymd) => DayForecast {
+/** 推定は観測と関係なく決まるので、イベントの配列ごとに覚えておく（観測が届くたびに計算し直さない） */
+const estimateCache = new WeakMap<BigEvent[], Map<string, DayForecast>>()
+
+function cachedEstimate(cityId: CityId, night: Ymd, events: BigEvent[]): DayForecast {
+  let cache = estimateCache.get(events)
+  if (!cache) estimateCache.set(events, (cache = new Map()))
+  const key = `${cityId}|${night}`
+  let f = cache.get(key)
+  if (!f) cache.set(key, (f = estimateForecast(cityId, night, events)))
+  return f
+}
+
+/** 楽天トラベルの観測（新しいもの）があればそれを、なければ統計からの推定を使う。イベント・時期の理由は、どちらの場合も付ける */
+export function forecastFor(cityId: CityId, night: Ymd, summary: Summary | null, events: BigEvent[], now = Date.now()): DayForecast {
+  const est = cachedEstimate(cityId, night, events)
+  const data = summary?.cities[cityId]
+  const obs = data?.days[night]
+  if (!data || !obs || now - obs.at > LIVE_MAX_AGE_MS) return est
+  const live = liveForecast(cityId, night, obs, cityBaseline(data), est.occupancy)
+  live.reasons.push(...est.reasons)
+  return live
+}
+
+/** 予報を、同じ観測・イベントの間は都市・日付ごとに覚えておく（日付の帯・地図・一覧で何千回も使うため） */
+export function memoForecaster(summary: Summary | null, events: BigEvent[]): (city: CityId, night: Ymd) => DayForecast {
   const cache = new Map<string, DayForecast>()
   return (city, night) => {
     const key = `${city}|${night}`
     let f = cache.get(key)
     if (!f) {
-      f = estimateForecast(city, night, events)
+      f = forecastFor(city, night, summary, events)
       cache.set(key, f)
     }
     return f

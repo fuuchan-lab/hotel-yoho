@@ -39,3 +39,12 @@ test('言語・配色も残す（知らない値は既定に）', () => {
   assert.equal(q.lang, null)
   assert.equal(q.theme, 'auto')
 })
+
+test('楽天のキー・お試しの開始日（空のキーは未登録に）', () => {
+  const p = normalizePrefs({ rakuten: { appId: ' abc ', accessKey: 'k' }, trialStart: 1000 })
+  assert.deepEqual(p.rakuten, { appId: 'abc', accessKey: 'k' })
+  assert.equal(p.trialStart, 1000)
+  const q = normalizePrefs({ rakuten: { appId: '', accessKey: 'k' }, trialStart: 'x' })
+  assert.equal(q.rakuten, null)
+  assert.equal(q.trialStart, null)
+})
