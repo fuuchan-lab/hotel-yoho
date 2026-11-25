@@ -2,6 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react
 import { accessOf } from './access.ts'
 import type { CityId } from './cities.ts'
 import { addDays, HORIZON_DAYS, todayJst, type Ymd } from './dates.ts'
+import { AdBanner } from './components/AdBanner.tsx'
 import { BottomDock, type Tab } from './components/BottomDock.tsx'
 import { CitySheet } from './components/CitySheet.tsx'
 import { DocFrame } from './components/DocFrame.tsx'
@@ -194,6 +195,7 @@ export default function App() {
         />
       )}
       </Suspense>
+      <AdBanner />
 
       {sheetCity && (
         <CitySheet

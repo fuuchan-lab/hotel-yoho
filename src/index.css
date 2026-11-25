@@ -1597,6 +1597,18 @@ details summary {
   display: none;
 }
 
+/* Web 版の広告（Google AdSense）。ページの下の余白（ドック分）に食い込ませ、ページの一番下に置く */
+.ad-slot {
+  margin: calc(-1 * var(--dock-h, 64px)) auto calc(var(--dock-h, 64px) + 16px);
+  padding: 0 16px;
+  max-width: 728px;
+  min-height: 0;
+  overflow: hidden;
+}
+.in-app .ad-slot {
+  display: none;
+}
+
 /* ---- ヘルプ・プライバシーポリシーを重ねて開く ---- */
 .doc-overlay {
   position: fixed;
