@@ -1603,6 +1603,8 @@ details summary {
   padding: 0 16px;
   max-width: 728px;
   min-height: 0;
+  max-height: 50px;
+  text-align: center;
   overflow: hidden;
 }
 .in-app .ad-slot {
